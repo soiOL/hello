@@ -1,0 +1,393 @@
+﻿<!-- Copyright (c) Aurora Studio. All rights reserved.
+    
+     Licensed under the MIT License. See LICENSE in the project root for license information.-->
+
+<Page
+    x:Class="Com.Aurora.AuWeather.SettingOptions.CitiesSetting"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Com.Aurora.AuWeather.SettingOptions"
+    xmlns:ViewModels="using:Com.Aurora.AuWeather.ViewModels"
+    xmlns:Models="using:Com.Aurora.AuWeather.Models.HeWeather"
+    xmlns:SQL="using:Com.Aurora.AuWeather.Core.SQL"
+    xmlns:Converters="using:Com.Aurora.Shared.Converters"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Unloaded="Page_Unloaded"
+    RequestedTheme="{x:Bind Context.Theme,Mode=OneWay}"
+    mc:Ignorable="d">
+
+    <Page.DataContext>
+        <ViewModels:CitiesSettingViewModel x:Name="Context"/>
+    </Page.DataContext>
+
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.ThemeDictionaries>
+                <ResourceDictionary Source="../Themes/LightThemeDictionary.xaml" x:Key="Light"/>
+                <ResourceDictionary Source="../Themes/DarkThemeDictionary.xaml" x:Key="Dark"/>
+            </ResourceDictionary.ThemeDictionaries>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="../Themes/Styles.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+            <Converters:CitySettingsModelConverter x:Key="CityInfoConverter" />
+            <Style x:Key="StarButton" TargetType="ToggleButton">
+                <Setter Property="Background" Value="Transparent" />
+                <Setter Property="Foreground" Value="Transparent"/>
+                <Setter Property="BorderBrush" Value="Transparent" />
+                <Setter Property="BorderThickness" Value="0" />
+                <Setter Property="Padding" Value="8" />
+                <Setter Property="HorizontalAlignment" Value="Center" />
+                <Setter Property="VerticalAlignment" Value="Center" />
+                <Setter Property="FontFamily" Value="Segoe MDL2 Assets" />
+                <Setter Property="FontWeight" Value="Normal" />
+                <Setter Property="FontSize" Value="{ThemeResource ControlContentThemeFontSize}" />
+                <Setter Property="UseSystemFocusVisuals" Value="True" />
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="ToggleButton">
+                            <Grid x:Name="RootGrid" Background="{TemplateBinding Background}">
+                                <VisualStateManager.VisualStateGroups>
+                                    <VisualStateGroup x:Name="CommonStates">
+                                        <VisualState x:Name="Normal">
+                                            <Storyboard>
+                                                <PointerUpThemeAnimation Storyboard.TargetName="RootGrid" />
+                                            </Storyboard>
+                                        </VisualState>
+                                        <VisualState x:Name="PointerOver">
+                                            <Storyboard>
+                                                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="RootGrid"
+                                               Storyboard.TargetProperty="Background">
+                                                    <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource SystemControlBackgroundBaseLowBrush}" />
+                                                </ObjectAnimationUsingKeyFrames>
+                                                <PointerUpThemeAnimation Storyboard.TargetName="RootGrid" />
+                                            </Storyboard>
+                                        </VisualState>
+                                        <VisualState x:Name="Pressed">
+                                            <Storyboard>
+                                                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="RootGrid"
+                                               Storyboard.TargetProperty="Background">
+                                                    <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource SystemControlBackgroundBaseMediumLowBrush}" />
+                                                </ObjectAnimationUsingKeyFrames>
+                                                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="OnStar"
+                                                   Storyboard.TargetProperty="Visibility">
+                                                    <DiscreteObjectKeyFrame KeyTime="0" Value="Visible" />
+                                                </ObjectAnimationUsingKeyFrames>
+                                                <PointerDownThemeAnimation Storyboard.TargetName="RootGrid" />
+                                            </Storyboard>
+                                        </VisualState>
+                                        <VisualState x:Name="Disabled">
+                                            <Storyboard>
+                                                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="RootGrid"
+                                               Storyboard.TargetProperty="Background">
+                                                    <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource SystemControlBackgroundBaseLowBrush}" />
+                                                </ObjectAnimationUsingKeyFrames>
+                                                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="OffStar"
+                                                   Storyboard.TargetProperty="Foreground">
+                                                    <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource SystemControlBackgroundBaseMediumLowBrush}" />
+                                                </ObjectAnimationUsingKeyFrames>
+                                                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="OnStar"
+                                                   Storyboard.TargetProperty="Foreground">
+                                                    <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource SystemControlBackgroundBaseMediumLowBrush}" />
+                                                </ObjectAnimationUsingKeyFrames>
+                                            </Storyboard>
+                                        </VisualState>
+                                        <VisualState x:Name="Checked">
+                                            <Storyboard>
+                                                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="RootGrid"
+                                               Storyboard.TargetProperty="Background">
+                                                    <DiscreteObjectKeyFrame KeyTime="0" Value="Transparent" />
+                                                </ObjectAnimationUsingKeyFrames>
+                                                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="OnStar"
+                                                   Storyboard.TargetProperty="Visibility">
+                                                    <DiscreteObjectKeyFrame KeyTime="0" Value="Visible" />
+                                                </ObjectAnimationUsingKeyFrames>
+                                                <PointerUpThemeAnimation Storyboard.TargetName="RootGrid" />
+                                            </Storyboard>
+                                        </VisualState>
+                                        <VisualState x:Name="CheckedPointerOver">
+                                            <Storyboard>
+                                                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="RootGrid"
+                                               Storyboard.TargetProperty="Background">
+                                                    <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource SystemControlBackgroundBaseLowBrush}" />
+                                                </ObjectAnimationUsingKeyFrames>
+                                                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="OnStar"
+                                                   Storyboard.TargetProperty="Visibility">
+                                                    <DiscreteObjectKeyFrame KeyTime="0" Value="Visible" />
+                                                </ObjectAnimationUsingKeyFrames>
+                                                <PointerUpThemeAnimation Storyboard.TargetName="RootGrid" />
+                                            </Storyboard>
+                                        </VisualState>
+                                        <VisualState x:Name="CheckedPressed">
+                                            <Storyboard>
+                                                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="RootGrid"
+                                               Storyboard.TargetProperty="Background">
+                                                    <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource SystemControlBackgroundBaseMediumLowBrush}" />
+                                                </ObjectAnimationUsingKeyFrames>
+                                                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="OnStar"
+                                                   Storyboard.TargetProperty="Visibility">
+                                                    <DiscreteObjectKeyFrame KeyTime="0" Value="Collapsed" />
+                                                </ObjectAnimationUsingKeyFrames>
+                                                <PointerDownThemeAnimation Storyboard.TargetName="RootGrid" />
+                                            </Storyboard>
+                                        </VisualState>
+                                        <VisualState x:Name="CheckedDisabled">
+                                            <Storyboard>
+                                                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="RootGrid"
+                                               Storyboard.TargetProperty="Background">
+                                                    <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource SystemControlBackgroundBaseLowBrush}" />
+                                                </ObjectAnimationUsingKeyFrames>
+                                                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="OffStar"
+                                                   Storyboard.TargetProperty="Foreground">
+                                                    <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource SystemControlBackgroundBaseMediumLowBrush}" />
+                                                </ObjectAnimationUsingKeyFrames>
+                                                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="OnStar"
+                                                   Storyboard.TargetProperty="Foreground">
+                                                    <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource SystemControlBackgroundBaseMediumLowBrush}" />
+                                                </ObjectAnimationUsingKeyFrames>
+                                            </Storyboard>
+                                        </VisualState>
+                                        <VisualState x:Name="Indeterminate">
+                                            <Storyboard>
+                                                <PointerUpThemeAnimation Storyboard.TargetName="RootGrid" />
+                                            </Storyboard>
+                                        </VisualState>
+                                        <VisualState x:Name="IndeterminatePointerOver">
+                                            <Storyboard>
+                                                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="RootGrid"
+                                               Storyboard.TargetProperty="Background">
+                                                    <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource SystemControlBackgroundBaseLowBrush}" />
+                                                </ObjectAnimationUsingKeyFrames>
+                                                <PointerUpThemeAnimation Storyboard.TargetName="RootGrid" />
+                                            </Storyboard>
+                                        </VisualState>
+                                        <VisualState x:Name="IndeterminatePressed">
+                                            <Storyboard>
+                                                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="RootGrid"
+                                               Storyboard.TargetProperty="Background">
+                                                    <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource SystemControlBackgroundBaseMediumLowBrush}" />
+                                                </ObjectAnimationUsingKeyFrames>
+                                                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="OnStar"
+                                                   Storyboard.TargetProperty="Visibility">
+                                                    <DiscreteObjectKeyFrame KeyTime="0" Value="Collapsed" />
+                                                </ObjectAnimationUsingKeyFrames>
+                                                <PointerDownThemeAnimation Storyboard.TargetName="RootGrid" />
+                                            </Storyboard>
+                                        </VisualState>
+                                        <VisualState x:Name="IndeterminateDisabled">
+                                            <Storyboard>
+                                                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="RootGrid"
+                                               Storyboard.TargetProperty="Background">
+                                                    <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource SystemControlBackgroundBaseLowBrush}" />
+                                                </ObjectAnimationUsingKeyFrames>
+                                                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="OffStar"
+                                                   Storyboard.TargetProperty="Foreground">
+                                                    <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource SystemControlBackgroundBaseMediumLowBrush}" />
+                                                </ObjectAnimationUsingKeyFrames>
+                                                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="OnStar"
+                                                   Storyboard.TargetProperty="Foreground">
+                                                    <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource SystemControlBackgroundBaseMediumLowBrush}" />
+                                                </ObjectAnimationUsingKeyFrames>
+                                            </Storyboard>
+                                        </VisualState>
+                                    </VisualStateGroup>
+                                </VisualStateManager.VisualStateGroups>
+                                <TextBlock x:Name="OffStar" Foreground="{ThemeResource SystemControlForegroundBaseHighBrush}" FontFamily="Segoe MDL2 Assets" Text="&#xE224;" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="8" />
+                                <TextBlock x:Name="OnStar" FontFamily="Segoe MDL2 Assets" Visibility="Collapsed" Foreground="Gold" Text="&#xE00A;" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="8" />
+                            </Grid>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+        </ResourceDictionary>
+    </Page.Resources>
+    <ScrollViewer Padding="12,8,12,0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+        <ScrollViewer.Resources>
+            <Storyboard x:Name="LocatingIn">
+                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="LocatePanel" Storyboard.TargetProperty="Visibility">
+                    <DiscreteObjectKeyFrame KeyTime="0" Value="Visible" />
+                </ObjectAnimationUsingKeyFrames>
+                <DoubleAnimation Storyboard.TargetName="LocatePanel" Storyboard.TargetProperty="Height" To="48" EnableDependentAnimation="True">
+                    <DoubleAnimation.EasingFunction>
+                        <QuinticEase />
+                    </DoubleAnimation.EasingFunction>
+                </DoubleAnimation>
+                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="LocatingRing" Storyboard.TargetProperty="IsActive">
+                    <DiscreteObjectKeyFrame KeyTime="0" Value="True" />
+                </ObjectAnimationUsingKeyFrames>
+            </Storyboard>
+            <Storyboard x:Name="LocatingDisable">
+                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="LocatePanel" Storyboard.TargetProperty="Visibility">
+                    <DiscreteObjectKeyFrame KeyTime="0" Value="Collapsed" />
+                </ObjectAnimationUsingKeyFrames>
+                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="LocatingRing" Storyboard.TargetProperty="IsActive">
+                    <DiscreteObjectKeyFrame KeyTime="0" Value="False" />
+                </ObjectAnimationUsingKeyFrames>
+            </Storyboard>
+            <Storyboard x:Name="LocatingOut">
+                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="LocatedText" Storyboard.TargetProperty="Visibility">
+                    <DiscreteObjectKeyFrame KeyTime="0" Value="Visible" />
+                </ObjectAnimationUsingKeyFrames>
+                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="LocatedStar" Storyboard.TargetProperty="Visibility">
+                    <DiscreteObjectKeyFrame KeyTime="0" Value="Visible" />
+                </ObjectAnimationUsingKeyFrames>
+                <DoubleAnimation Storyboard.TargetName="LocatedText" Storyboard.TargetProperty="Opacity" To="1" EnableDependentAnimation="True">
+                    <DoubleAnimation.EasingFunction>
+                        <QuinticEase />
+                    </DoubleAnimation.EasingFunction>
+                </DoubleAnimation>
+                <DoubleAnimation Storyboard.TargetName="LocatedStar" Storyboard.TargetProperty="Opacity" To="1" EnableDependentAnimation="True">
+                    <DoubleAnimation.EasingFunction>
+                        <QuinticEase />
+                    </DoubleAnimation.EasingFunction>
+                </DoubleAnimation>
+                <DoubleAnimation Storyboard.TargetName="LocatingRing" Storyboard.TargetProperty="Opacity" To="0" EnableDependentAnimation="True">
+                    <DoubleAnimation.EasingFunction>
+                        <QuinticEase />
+                    </DoubleAnimation.EasingFunction>
+                </DoubleAnimation>
+                <DoubleAnimation Storyboard.TargetName="LocatingText" Storyboard.TargetProperty="Opacity" To="0" EnableDependentAnimation="True">
+                    <DoubleAnimation.EasingFunction>
+                        <QuinticEase />
+                    </DoubleAnimation.EasingFunction>
+                </DoubleAnimation>
+                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="LocatingRing" Storyboard.TargetProperty="IsActive">
+                    <DiscreteObjectKeyFrame KeyTime="0:0:1" Value="false" />
+                </ObjectAnimationUsingKeyFrames>
+                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="LocatingRing" Storyboard.TargetProperty="Visibility">
+                    <DiscreteObjectKeyFrame KeyTime="0:0:1" Value="Collapsed" />
+                </ObjectAnimationUsingKeyFrames>
+                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="LocatingText" Storyboard.TargetProperty="Visibility">
+                    <DiscreteObjectKeyFrame KeyTime="0:0:1" Value="Collapsed" />
+                </ObjectAnimationUsingKeyFrames>
+            </Storyboard>
+            <Storyboard x:Name="FetchComplete">
+                <DoubleAnimation Storyboard.TargetName="FetchingPanel" Storyboard.TargetProperty="Opacity" EnableDependentAnimation="True">
+                    <DoubleAnimation.EasingFunction>
+                        <QuinticEase />
+                    </DoubleAnimation.EasingFunction>
+                </DoubleAnimation>
+                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="FetchingRing" Storyboard.TargetProperty="IsActive">
+                    <DiscreteObjectKeyFrame KeyTime="0:0:1" Value="false" />
+                </ObjectAnimationUsingKeyFrames>
+                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="FetchingPanel" Storyboard.TargetProperty="Visibility">
+                    <DiscreteObjectKeyFrame KeyTime="0:0:1" Value="Collapsed" />
+                </ObjectAnimationUsingKeyFrames>
+            </Storyboard>
+            <Storyboard x:Name="LocateDenied">
+                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="LocateDeniedButton" Storyboard.TargetProperty="Visibility">
+                    <DiscreteObjectKeyFrame KeyTime="0" Value="Visible" />
+                </ObjectAnimationUsingKeyFrames>
+                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="CheckLocateAccessButton" Storyboard.TargetProperty="Visibility">
+                    <DiscreteObjectKeyFrame KeyTime="0" Value="Visible" />
+                </ObjectAnimationUsingKeyFrames>
+                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="LocateOnText" Storyboard.TargetProperty="Visibility">
+                    <DiscreteObjectKeyFrame KeyTime="0" Value="Collapsed" />
+                </ObjectAnimationUsingKeyFrames>
+                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="LocateOnSwitch" Storyboard.TargetProperty="IsEnabled">
+                    <DiscreteObjectKeyFrame KeyTime="0" Value="False" />
+                </ObjectAnimationUsingKeyFrames>
+                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="LocateOnSwitch" Storyboard.TargetProperty="Visibility">
+                    <DiscreteObjectKeyFrame KeyTime="0" Value="Collapsed" />
+                </ObjectAnimationUsingKeyFrames>
+            </Storyboard>
+            <Storyboard x:Name="LocateAllowed">
+                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="LocateDeniedButton" Storyboard.TargetProperty="Visibility">
+                    <DiscreteObjectKeyFrame KeyTime="0" Value="Collapsed" />
+                </ObjectAnimationUsingKeyFrames>
+                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="CheckLocateAccessButton" Storyboard.TargetProperty="Visibility">
+                    <DiscreteObjectKeyFrame KeyTime="0" Value="Collapsed" />
+                </ObjectAnimationUsingKeyFrames>
+                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="LocateOnText" Storyboard.TargetProperty="Visibility">
+                    <DiscreteObjectKeyFrame KeyTime="0" Value="Visible" />
+                </ObjectAnimationUsingKeyFrames>
+                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="LocateOnSwitch" Storyboard.TargetProperty="IsEnabled">
+                    <DiscreteObjectKeyFrame KeyTime="0" Value="True" />
+                </ObjectAnimationUsingKeyFrames>
+                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="LocateOnSwitch" Storyboard.TargetProperty="Visibility">
+                    <DiscreteObjectKeyFrame KeyTime="0" Value="Visible" />
+                </ObjectAnimationUsingKeyFrames>
+            </Storyboard>
+        </ScrollViewer.Resources>
+        <Grid Padding="0,0,0,96">
+            <StackPanel Orientation="Vertical" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                <Grid MaxWidth="480" HorizontalAlignment="Stretch">
+                    <TextBlock x:Uid="LocateOnText" x:Name="LocateOnText" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="8" />
+                    <ToggleSwitch IsEnabled="False" x:Name="LocateOnSwitch" Style="{ThemeResource NarrowSwitch}" IsOn="{Binding EnablePosition}" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="8" OnContent="" OffContent="" />
+                    <Button x:Uid="LocateDeniedButton" x:Name="LocateDeniedButton" Click="LocateDenied_Click" Visibility="Collapsed" Style="{ThemeResource TextBlockButtonStyle}" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="8" />
+                    <Button x:Uid="CheckLocateAccessButton" x:Name="CheckLocateAccessButton" Style="{ThemeResource TextBlockButtonStyle}" Visibility="Collapsed" HorizontalAlignment="Right" VerticalAlignment="Center" Click="CheckLocateAccessButton_Click" Margin="8,8,48,8" />
+                </Grid>
+                <RelativePanel Background="{ThemeResource SystemControlTranslucentAltHighBrush}" PointerPressed="LocatePanel_PointerPressed" PointerEntered="LocatePanel_PointerEntered" PointerExited="LocatePanel_PointerExited" PointerReleased="LocatePanel_PointerReleased" Margin="8,0,8,0" MaxWidth="480" x:Name="LocatePanel" Visibility="Collapsed" Height="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                    <RelativePanel.Resources>
+                        <Storyboard x:Name="Press">
+                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="LocatePanel" Storyboard.TargetProperty="Background">
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource SystemControlBackgroundBaseMediumLowBrush}" />
+                            </ObjectAnimationUsingKeyFrames>
+                        </Storyboard>
+                        <Storyboard x:Name="Release">
+                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="LocatePanel" Storyboard.TargetProperty="Background">
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource SystemControlBackgroundBaseLowBrush}" />
+                            </ObjectAnimationUsingKeyFrames>
+                        </Storyboard>
+                        <Storyboard x:Name="PointerIn">
+                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="LocatePanel" Storyboard.TargetProperty="Background">
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource SystemControlBackgroundBaseLowBrush}" />
+                            </ObjectAnimationUsingKeyFrames>
+                        </Storyboard>
+                        <Storyboard x:Name="PointerOut">
+                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="LocatePanel" Storyboard.TargetProperty="Background">
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="Transparent" />
+                            </ObjectAnimationUsingKeyFrames>
+                        </Storyboard>
+                    </RelativePanel.Resources>
+                    <TextBlock x:Name="LocatedText" Opacity="0" Visibility="Collapsed" RelativePanel.AlignVerticalCenterWithPanel="True" RelativePanel.AlignLeftWithPanel="True" Text="{Binding LocatedCity, Converter={StaticResource CityInfoConverter}}" Margin="8" />
+                    <ToggleButton x:Name="LocatedStar" IsChecked="{x:Bind Context.Is_Located_Current, Mode=OneWay}" Click="LocatedStar_Click" Opacity="0" Visibility="Collapsed" Style="{ThemeResource StarButton}" RelativePanel.AlignRightWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True" Margin="8" />
+                    <ProgressRing x:Name="LocatingRing" RelativePanel.AlignBottomWithPanel="True" RelativePanel.AlignTopWithPanel="True" RelativePanel.AlignLeftWithPanel="True" Margin="8" />
+                    <TextBlock x:Uid="LocatingText" x:Name="LocatingText" RelativePanel.AlignVerticalCenterWithPanel="True" RelativePanel.RightOf="LocatingRing" Margin="8" />
+                </RelativePanel>
+                <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                    <AutoSuggestBox x:Uid="AutoSuggestbox" IsEnabled="False" MaxWidth="480" x:Name="SearchBox" QueryIcon="Find" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                        <AutoSuggestBox.Transitions>
+                            <TransitionCollection>
+                                <ContentThemeTransition />
+                                <AddDeleteThemeTransition />
+                                <EntranceThemeTransition />
+                                <EdgeUIThemeTransition />
+                                <PopupThemeTransition />
+                            </TransitionCollection>
+                        </AutoSuggestBox.Transitions>
+                        <AutoSuggestBox.ItemTemplate>
+                            <DataTemplate x:DataType="SQL:City">
+                                <TextBlock Margin="8" Text="{x:Bind}" />
+                            </DataTemplate>
+                        </AutoSuggestBox.ItemTemplate>
+                    </AutoSuggestBox>
+                </Grid>
+                <ListView MaxWidth="480" x:Name="CitiesList" AllowDrop="True" CanDragItems="True" CanReorderItems="True" ReorderMode="Enabled" 
+                          DragItemsCompleted="CitiesList_DragItemsCompleted" SelectionMode="None" IsItemClickEnabled="True" ItemClick="CitiesList_ItemClick" 
+                          ItemContainerStyle="{ThemeResource GeneralListViewItemStyle}" Margin="0,8,0,8" HorizontalContentAlignment="Stretch" 
+                          VerticalContentAlignment="Stretch" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                    <ListView.ItemTemplate>
+                        <DataTemplate x:DataType="ViewModels:CitySettingsViewModel">
+                            <Grid Margin="0,4,0,4" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                                <TextBlock Text="{Binding City}" FontWeight="ExtraLight" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="4" />
+                                <ToggleButton Style="{ThemeResource StarButton}" IsChecked="{x:Bind IsCurrent, Mode=OneWay}" x:Name="ListStarButton" Click="ListStarButton_Click" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="4,4,40,4" />
+                                <Button x:Name="Delete" Click="Delete_Click" Style="{ThemeResource TextBlockButtonStyle}" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="4">
+                                    <Button.Content>
+                                        <SymbolIcon Symbol="Cancel" />
+                                    </Button.Content>
+                                </Button>
+                            </Grid>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+            </StackPanel>
+            <Grid x:Name="FetchingPanel" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <ProgressRing x:Name="FetchingRing" IsActive="True" Height="48" Width="48" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="8" />
+                <TextBlock x:Uid="LoadingDataText" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="8,64,8,8" />
+            </Grid>
+        </Grid>
+
+    </ScrollViewer>
+</Page>

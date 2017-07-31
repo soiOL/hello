@@ -1,0 +1,1636 @@
+﻿<!-- Copyright (c) Aurora Studio. All rights reserved.
+    
+     Licensed under the MIT License. See LICENSE in the project root for license information.-->
+
+<Page
+    x:Class="Com.Aurora.AuWeather.NowWeatherPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Com.Aurora.AuWeather"
+    xmlns:ViewModels="using:Com.Aurora.AuWeather.ViewModels"
+    xmlns:Converters="using:Com.Aurora.Shared.Converters"
+    xmlns:CustomControls="using:Com.Aurora.AuWeather.CustomControls"
+    xmlns:ptr ="using:Com.Aurora.Shared.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:Com.Aurora.Shared.Controls"
+    mc:Ignorable="d"
+    Unloaded="Page_Unloaded"
+    RequestedTheme="{x:Bind Context.Theme,Mode=OneWay}"
+    x:Name="Page">
+
+    <Page.DataContext>
+        <ViewModels:NowWeatherPageViewModel x:Name="Context"/>
+    </Page.DataContext>
+
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.ThemeDictionaries>
+                <ResourceDictionary Source="Themes/LightThemeDictionary.xaml" x:Key="Light"/>
+                <ResourceDictionary Source="Themes/DarkThemeDictionary.xaml" x:Key="Dark"/>
+            </ResourceDictionary.ThemeDictionaries>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Themes/Styles.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+            <CollectionViewSource x:Name="AlarmsSource" Source="{x:Bind Context.Alarms,Mode=OneWay}" />
+            <Converters:TemperatureDecoratorConverter x:Key="TempratureConverter" />
+            <Converters:TempratureConverterWithDegree x:Key="TempratureConverterWithDegree" />
+            <Converters:TempratureConverterWithoutDecoration x:Key="TempratureConverterWithoutDegree" />
+            <Converters:WindSpeedConverter x:Key="WindSpeedConverter" />
+            <Converters:WindDirectionConverter x:Key="WindDirectionConverter" />
+            <Converters:TemraturePathConverter x:Key="TempraturePathConverter" />
+            <Converters:HourMinuteConverter x:Key="HourMinuteConverter" />
+            <Converters:DateTimeConverter x:Key="DateTimeConverter" />
+            <Converters:PoptoThicknessConverter x:Key="PopConverter" />
+            <Converters:ScrollViewerConverter x:Key="ScrollViewerConverter" />
+            <Converters:ConditiontoTextConverter x:Key="ConditiontoTextConverter" />
+            <Converters:BodyTempratureAniConverter x:Key="BodyTempratureAniConverter" />
+            <Converters:HumidityAniConverter x:Key="HumidityAniConverter" />
+            <Converters:PercentageConverter x:Key="PercentageConverter" />
+            <Converters:PrecipitationConverter x:Key="PrecipitationConverter" />
+            <Converters:PcpnTransAniConverter x:Key="PcpnTransAniConverter" />
+            <Converters:TimeSpanConverter x:Key="TimeSpanConverter" />
+            <Converters:SunRiseAniConverter x:Key="SunRiseAniConverter" />
+            <Converters:SunRiseAlignmentConverter x:Key="SunRiseAlignmentConverter" />
+            <Converters:SunSetAlignmentConverter x:Key="SunSetAlignmentConverter" />
+            <Converters:MoonPhaseProgressConverter x:Key="MoonPhaseProgressConverter" />
+            <Converters:MoonPhaseTextConverter x:Key="MoonPhaseTextConverter" />
+            <Converters:VisibilityConverter x:Key="VisibilityConverter" />
+            <Converters:PressureConverter x:Key="PressureConverter" />
+            <Converters:PressureAniConverter x:Key="PressureAniConverter" />
+            <Converters:VisibilityAniConverter x:Key="VisibilityAniConverter" />
+            <Converters:AQIQualityConverter x:Key="AQIQualityConverter" />
+            <Converters:AQIValueConverter x:Key="AQIValueConverter" />
+            <Converters:PM25Converter x:Key="PM25Converter" />
+            <Converters:PM10Converter x:Key="PM10Converter" />
+            <Converters:SO2Converter x:Key="SO2Converter" />
+            <Converters:SO2ProgressConverter x:Key="SO2ProgressConverter" />
+            <Converters:AqiProgressConverter x:Key="AqiProgressConverter" />
+            <Converters:PM25ProgressConverter x:Key="PM25ProgressConverter" />
+            <Converters:PM10ProgressConverter x:Key="PM10ProgressConverter" />
+            <Converters:AqiCircleAniConverter x:Key="AqiCircleAniConverter" />
+            <Converters:AqiCircleColorConverter x:Key="AqiCircleColorConverter" />
+            <Converters:SuggestionBrfConverter x:Key="SuggestionBrfConverter" />
+            <Converters:COConverter x:Key="COConverter" />
+            <Converters:COProgressConverter x:Key="COProgressConverter" />
+            <Converters:NO2Converter x:Key="NO2Converter" />
+            <Converters:NO2ProgressConverter x:Key="NO2ProgressConverter" />
+            <Converters:O3ProgressConverter x:Key="O3ProgressConverter" />
+            <Converters:O3Converter x:Key="O3Converter" />
+            <Converters:SuggestionTxtConverter x:Key="SuggestionTxtConverter" />
+            <Converters:ImmersiveHourConverter x:Key="ImmersiveHourConverter" />
+            <Converters:ImmersiveMinConverter x:Key="ImmersiveMinConverter" />
+            <Converters:ImmersiveSecConverter x:Key="ImmersiveSecConverter" />
+            <Converters:BoolNottoVisibilityConverter x:Key="BoolNottoVisibilityConverter" />
+            <Converters:BooltoVisibilityConverter x:Key="BooltoVisibilityConverter" />
+            <Converters:RefreshCompleteConverter x:Key="RefreshCompleteConverter" />
+            <Converters:AlarmLeveltoColorConverter x:Key="AlarmLeveltoColorConverter" />
+            <Converters:AlarmLeveltoTextConverter x:Key="AlarmLeveltoTextConverter" />
+            <Converters:AlarmLeveltoForegroundConverter x:Key="AlarmLeveltoForegroundConverter" />
+            <Converters:FontSizeConverter x:Key="FontSizeConverter" />
+            <Converters:UintToDoubleConverter x:Key="UintToDoubleConverter" />
+            <Converters:ScrollablePaddingWideConverter x:Key="ScrollablePaddingWideConverter" />
+        </ResourceDictionary>
+    </Page.Resources>
+
+    <Page.Transitions>
+        <TransitionCollection>
+            <EntranceThemeTransition />
+            <NavigationThemeTransition />
+        </TransitionCollection>
+    </Page.Transitions>
+
+
+    <Grid Background="{ThemeResource SystemControlForegroundHighBrush}" x:Name="Root" LayoutUpdated="RelativePanel_LayoutUpdated" SizeChanged="Root_SizeChanged">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition x:Name="RootColumn1" Width="auto" />
+        </Grid.ColumnDefinitions>
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup>
+                <VisualState x:Name="Wide">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="720" />
+                    </VisualState.StateTriggers>
+                    <Storyboard >
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ButtonOffset" Storyboard.TargetProperty="Visibility" >
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="Visible" />
+                        </ObjectAnimationUsingKeyFrames>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="MoreButton" Storyboard.TargetProperty="Visibility" >
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="Visible" />
+                        </ObjectAnimationUsingKeyFrames>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ImmersiveButton" Storyboard.TargetProperty="Visibility" >
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="Visible" />
+                        </ObjectAnimationUsingKeyFrames>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="RefreshButton" Storyboard.TargetProperty="Visibility" >
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="Visible" />
+                        </ObjectAnimationUsingKeyFrames>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="WeatherPanel" Storyboard.TargetProperty="Padding">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="0" />
+                        </ObjectAnimationUsingKeyFrames>
+                    </Storyboard>
+                </VisualState>
+                <VisualState x:Name="Large">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="1024" />
+                    </VisualState.StateTriggers>
+                    <Storyboard>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ButtonOffset" Storyboard.TargetProperty="Visibility" >
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="Visible" />
+                        </ObjectAnimationUsingKeyFrames>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="MoreButton" Storyboard.TargetProperty="Visibility" >
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="Visible" />
+                        </ObjectAnimationUsingKeyFrames>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="DetailsPanel" Storyboard.TargetProperty="(Grid.Column)" >
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="1" />
+                        </ObjectAnimationUsingKeyFrames>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="DetailsPanel" Storyboard.TargetProperty="Margin" >
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="0,32,0,0" />
+                        </ObjectAnimationUsingKeyFrames>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="RootColumn1" Storyboard.TargetProperty="Width">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="*" />
+                        </ObjectAnimationUsingKeyFrames>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ImmersiveButton" Storyboard.TargetProperty="Visibility" >
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="Visible" />
+                        </ObjectAnimationUsingKeyFrames>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="RefreshButton" Storyboard.TargetProperty="Visibility" >
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="Visible" />
+                        </ObjectAnimationUsingKeyFrames>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="LargeModeSubPanel" Storyboard.TargetProperty="Visibility">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="Visible" />
+                        </ObjectAnimationUsingKeyFrames>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="WeatherPanel" Storyboard.TargetProperty="Padding">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="0" />
+                        </ObjectAnimationUsingKeyFrames>
+                    </Storyboard>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+        <Grid.Resources>
+            <Storyboard x:Name="TempraturePathAnimation">
+                <PointAnimation Storyboard.TargetName="PathFigure" Storyboard.TargetProperty="StartPoint" 
+                                To="{x:Bind Context.TempraturePath0,Mode=OneWay,Converter={StaticResource TempraturePathConverter},ConverterParameter=0}" 
+                                Duration="0:0:0.96" BeginTime="0:0:1.6" EnableDependentAnimation="True">
+                    <PointAnimation.EasingFunction>
+                        <QuinticEase />
+                    </PointAnimation.EasingFunction>
+                </PointAnimation>
+                <PointAnimation Storyboard.TargetName="BezierControl1" Storyboard.TargetProperty="Point1" 
+                                To="{x:Bind Context.TempraturePath0,Mode=OneWay, Converter={StaticResource TempraturePathConverter},ConverterParameter=1}" 
+                                Duration="0:0:0.96" BeginTime="0:0:1.6" EnableDependentAnimation="True">
+                    <PointAnimation.EasingFunction>
+                        <QuinticEase />
+                    </PointAnimation.EasingFunction>
+                </PointAnimation>
+                <PointAnimation Storyboard.TargetName="BezierControl1" Storyboard.TargetProperty="Point2" 
+                                To="{x:Bind Context.TempraturePath0,Mode=OneWay, Converter={StaticResource TempraturePathConverter},ConverterParameter=2}" 
+                                Duration="0:0:0.96" BeginTime="0:0:1.6" EnableDependentAnimation="True">
+                    <PointAnimation.EasingFunction>
+                        <QuinticEase />
+                    </PointAnimation.EasingFunction>
+                </PointAnimation>
+                <PointAnimation Storyboard.TargetName="BezierControl1" Storyboard.TargetProperty="Point3" 
+                                To="{x:Bind Context.TempraturePath0,Mode=OneWay, Converter={StaticResource TempraturePathConverter},ConverterParameter=3}" 
+                                Duration="0:0:0.96" BeginTime="0:0:1.6" EnableDependentAnimation="True">
+                    <PointAnimation.EasingFunction>
+                        <QuinticEase />
+                    </PointAnimation.EasingFunction>
+                </PointAnimation>
+                <PointAnimation Storyboard.TargetName="BezierControl2" Storyboard.TargetProperty="Point1" 
+                                To="{x:Bind Context.TempraturePath0,Mode=OneWay, Converter={StaticResource TempraturePathConverter},ConverterParameter=4}" 
+                                Duration="0:0:0.96" BeginTime="0:0:1.6" EnableDependentAnimation="True">
+                    <PointAnimation.EasingFunction>
+                        <QuinticEase />
+                    </PointAnimation.EasingFunction>
+                </PointAnimation>
+                <PointAnimation Storyboard.TargetName="BezierControl2" Storyboard.TargetProperty="Point2" 
+                                To="{x:Bind Context.TempraturePath1,Mode=OneWay, Converter={StaticResource TempraturePathConverter},ConverterParameter=5}" 
+                                Duration="0:0:0.96" BeginTime="0:0:1.6" EnableDependentAnimation="True">
+                    <PointAnimation.EasingFunction>
+                        <QuinticEase />
+                    </PointAnimation.EasingFunction>
+                </PointAnimation>
+                <PointAnimation Storyboard.TargetName="BezierControl2" Storyboard.TargetProperty="Point3" 
+                                To="{x:Bind Context.TempraturePath1,Mode=OneWay, Converter={StaticResource TempraturePathConverter},ConverterParameter=6}" 
+                                Duration="0:0:0.96" BeginTime="0:0:1.6" EnableDependentAnimation="True">
+                    <PointAnimation.EasingFunction>
+                        <QuinticEase />
+                    </PointAnimation.EasingFunction>
+                </PointAnimation>
+                <PointAnimation Storyboard.TargetName="BezierControl3" Storyboard.TargetProperty="Point1" 
+                                To="{x:Bind Context.TempraturePath1,Mode=OneWay, Converter={StaticResource TempraturePathConverter},ConverterParameter=7}" 
+                                Duration="0:0:0.96" BeginTime="0:0:1.6" EnableDependentAnimation="True">
+                    <PointAnimation.EasingFunction>
+                        <QuinticEase />
+                    </PointAnimation.EasingFunction>
+                </PointAnimation>
+                <PointAnimation Storyboard.TargetName="BezierControl3" Storyboard.TargetProperty="Point2" 
+                                To="{x:Bind Context.TempraturePath2,Mode=OneWay, Converter={StaticResource TempraturePathConverter},ConverterParameter=8}" 
+                                Duration="0:0:0.96" BeginTime="0:0:1.6" EnableDependentAnimation="True">
+                    <PointAnimation.EasingFunction>
+                        <QuinticEase />
+                    </PointAnimation.EasingFunction>
+                </PointAnimation>
+                <PointAnimation Storyboard.TargetName="BezierControl3" Storyboard.TargetProperty="Point3" 
+                                To="{x:Bind Context.TempraturePath2,Mode=OneWay, Converter={StaticResource TempraturePathConverter},ConverterParameter=9}" 
+                                Duration="0:0:0.96" BeginTime="0:0:1.6" EnableDependentAnimation="True">
+                    <PointAnimation.EasingFunction>
+                        <QuinticEase />
+                    </PointAnimation.EasingFunction>
+                </PointAnimation>
+                <PointAnimation Storyboard.TargetName="BezierControl4" Storyboard.TargetProperty="Point1" 
+                                To="{x:Bind Context.TempraturePath2,Mode=OneWay, Converter={StaticResource TempraturePathConverter},ConverterParameter=10}" 
+                                Duration="0:0:0.96" BeginTime="0:0:1.6" EnableDependentAnimation="True">
+                    <PointAnimation.EasingFunction>
+                        <QuinticEase />
+                    </PointAnimation.EasingFunction>
+                </PointAnimation>
+                <PointAnimation Storyboard.TargetName="BezierControl4" Storyboard.TargetProperty="Point2" 
+                                To="{x:Bind Context.TempraturePath3,Mode=OneWay, Converter={StaticResource TempraturePathConverter},ConverterParameter=11}" 
+                                Duration="0:0:0.96" BeginTime="0:0:1.6" EnableDependentAnimation="True">
+                    <PointAnimation.EasingFunction>
+                        <QuinticEase />
+                    </PointAnimation.EasingFunction>
+                </PointAnimation>
+                <PointAnimation Storyboard.TargetName="BezierControl4" Storyboard.TargetProperty="Point3" 
+                                To="{x:Bind Context.TempraturePath3,Mode=OneWay, Converter={StaticResource TempraturePathConverter},ConverterParameter=12}" 
+                                Duration="0:0:0.96" BeginTime="0:0:1.6" EnableDependentAnimation="True">
+                    <PointAnimation.EasingFunction>
+                        <QuinticEase />
+                    </PointAnimation.EasingFunction>
+                </PointAnimation>
+                <PointAnimation Storyboard.TargetName="BezierControl5" Storyboard.TargetProperty="Point1" 
+                                To="{x:Bind Context.TempraturePath3,Mode=OneWay, Converter={StaticResource TempraturePathConverter},ConverterParameter=13}" 
+                                Duration="0:0:0.96" BeginTime="0:0:1.6" EnableDependentAnimation="True">
+                    <PointAnimation.EasingFunction>
+                        <QuinticEase />
+                    </PointAnimation.EasingFunction>
+                </PointAnimation>
+                <PointAnimation Storyboard.TargetName="BezierControl5" Storyboard.TargetProperty="Point2" 
+                                To="{x:Bind Context.TempraturePath4,Mode=OneWay, Converter={StaticResource TempraturePathConverter},ConverterParameter=14}" 
+                                Duration="0:0:0.96" BeginTime="0:0:1.6" EnableDependentAnimation="True">
+                    <PointAnimation.EasingFunction>
+                        <QuinticEase />
+                    </PointAnimation.EasingFunction>
+                </PointAnimation>
+                <PointAnimation Storyboard.TargetName="BezierControl5" Storyboard.TargetProperty="Point3" 
+                                To="{x:Bind Context.TempraturePath4,Mode=OneWay, Converter={StaticResource TempraturePathConverter},ConverterParameter=15}" 
+                                Duration="0:0:0.96" BeginTime="0:0:1.6" EnableDependentAnimation="True">
+                    <PointAnimation.EasingFunction>
+                        <QuinticEase />
+                    </PointAnimation.EasingFunction>
+                </PointAnimation>
+                <PointAnimation Storyboard.TargetName="BezierControl6" Storyboard.TargetProperty="Point1" 
+                                To="{x:Bind Context.TempraturePath4,Mode=OneWay, Converter={StaticResource TempraturePathConverter},ConverterParameter=16}" 
+                                Duration="0:0:0.96" BeginTime="0:0:1.6" EnableDependentAnimation="True">
+                    <PointAnimation.EasingFunction>
+                        <QuinticEase />
+                    </PointAnimation.EasingFunction>
+                </PointAnimation>
+                <PointAnimation Storyboard.TargetName="BezierControl6" Storyboard.TargetProperty="Point2" 
+                                To="{x:Bind Context.TempraturePath5,Mode=OneWay, Converter={StaticResource TempraturePathConverter},ConverterParameter=17}" 
+                                Duration="0:0:0.96" BeginTime="0:0:1.6" EnableDependentAnimation="True">
+                    <PointAnimation.EasingFunction>
+                        <QuinticEase />
+                    </PointAnimation.EasingFunction>
+                </PointAnimation>
+                <PointAnimation Storyboard.TargetName="BezierControl6" Storyboard.TargetProperty="Point3" 
+                                To="{x:Bind Context.TempraturePath5,Mode=OneWay, Converter={StaticResource TempraturePathConverter},ConverterParameter=18}" 
+                                Duration="0:0:0.96" BeginTime="0:0:1.6" EnableDependentAnimation="True">
+                    <PointAnimation.EasingFunction>
+                        <QuinticEase />
+                    </PointAnimation.EasingFunction>
+                </PointAnimation>
+                <PointAnimation Storyboard.TargetName="BezierControl7" Storyboard.TargetProperty="Point1" 
+                                To="{x:Bind Context.TempraturePath5,Mode=OneWay, Converter={StaticResource TempraturePathConverter},ConverterParameter=19}" 
+                                Duration="0:0:0.96" BeginTime="0:0:1.6" EnableDependentAnimation="True">
+                    <PointAnimation.EasingFunction>
+                        <QuinticEase />
+                    </PointAnimation.EasingFunction>
+                </PointAnimation>
+                <PointAnimation Storyboard.TargetName="BezierControl7" Storyboard.TargetProperty="Point2" 
+                                To="{x:Bind Context.TempraturePath5,Mode=OneWay, Converter={StaticResource TempraturePathConverter},ConverterParameter=20}" 
+                                Duration="0:0:0.96" BeginTime="0:0:1.6" EnableDependentAnimation="True">
+                    <PointAnimation.EasingFunction>
+                        <QuinticEase />
+                    </PointAnimation.EasingFunction>
+                </PointAnimation>
+                <PointAnimation Storyboard.TargetName="BezierControl7" Storyboard.TargetProperty="Point3" 
+                                To="{x:Bind Context.TempraturePath5,Mode=OneWay, Converter={StaticResource TempraturePathConverter},ConverterParameter=21}" 
+                                Duration="0:0:0.96" BeginTime="0:0:1.6" EnableDependentAnimation="True">
+                    <PointAnimation.EasingFunction>
+                        <QuinticEase />
+                    </PointAnimation.EasingFunction>
+                </PointAnimation>
+                <DoubleAnimation Storyboard.TargetName="HourlyTemp0" Storyboard.TargetProperty="Opacity" 
+                                 To="1" EnableDependentAnimation="False">
+                    <DoubleAnimation.EasingFunction>
+                        <QuinticEase />
+                    </DoubleAnimation.EasingFunction>
+                </DoubleAnimation>
+                <DoubleAnimation Storyboard.TargetName="HourGrid0" Storyboard.TargetProperty="Opacity" 
+                                 To="1" BeginTime="0:0:0.08" EnableDependentAnimation="False">
+                    <DoubleAnimation.EasingFunction>
+                        <QuinticEase />
+                    </DoubleAnimation.EasingFunction>
+                </DoubleAnimation>
+                <DoubleAnimation Storyboard.TargetName="HourGrid1" Storyboard.TargetProperty="Opacity" 
+                                 To="1" BeginTime="0:0:0.16" EnableDependentAnimation="False">
+                    <DoubleAnimation.EasingFunction>
+                        <QuinticEase />
+                    </DoubleAnimation.EasingFunction>
+                </DoubleAnimation>
+                <DoubleAnimation Storyboard.TargetName="HourGrid2" Storyboard.TargetProperty="Opacity" 
+                                 To="1" BeginTime="0:0:0.24" EnableDependentAnimation="False">
+                    <DoubleAnimation.EasingFunction>
+                        <QuinticEase />
+                    </DoubleAnimation.EasingFunction>
+                </DoubleAnimation>
+                <DoubleAnimation Storyboard.TargetName="HourGrid3" Storyboard.TargetProperty="Opacity" 
+                                 To="1" BeginTime="0:0:0.32" EnableDependentAnimation="False">
+                    <DoubleAnimation.EasingFunction>
+                        <QuinticEase />
+                    </DoubleAnimation.EasingFunction>
+                </DoubleAnimation>
+                <DoubleAnimation Storyboard.TargetName="HourGrid4" Storyboard.TargetProperty="Opacity" 
+                                 To="1" BeginTime="0:0:0.4" EnableDependentAnimation="False">
+                    <DoubleAnimation.EasingFunction>
+                        <QuinticEase />
+                    </DoubleAnimation.EasingFunction>
+                </DoubleAnimation>
+                <DoubleAnimation Storyboard.TargetName="HourGrid5" Storyboard.TargetProperty="Opacity" 
+                                 To="1" BeginTime="0:0:0.48" EnableDependentAnimation="False">
+                    <DoubleAnimation.EasingFunction>
+                        <QuinticEase />
+                    </DoubleAnimation.EasingFunction>
+                </DoubleAnimation>
+                <DoubleAnimation Storyboard.TargetName="HourGrid0" Storyboard.TargetProperty="Height" 
+                                 To="64" BeginTime="0:0:0.08" EnableDependentAnimation="True">
+                    <DoubleAnimation.EasingFunction>
+                        <QuinticEase />
+                    </DoubleAnimation.EasingFunction>
+                </DoubleAnimation>
+                <DoubleAnimation Storyboard.TargetName="HourGrid1" Storyboard.TargetProperty="Height" 
+                                 To="64" BeginTime="0:0:0.16" EnableDependentAnimation="True">
+                    <DoubleAnimation.EasingFunction>
+                        <QuinticEase />
+                    </DoubleAnimation.EasingFunction>
+                </DoubleAnimation>
+                <DoubleAnimation Storyboard.TargetName="HourGrid2" Storyboard.TargetProperty="Height" 
+                                 To="64" BeginTime="0:0:0.24" EnableDependentAnimation="True">
+                    <DoubleAnimation.EasingFunction>
+                        <QuinticEase />
+                    </DoubleAnimation.EasingFunction>
+                </DoubleAnimation>
+                <DoubleAnimation Storyboard.TargetName="HourGrid3" Storyboard.TargetProperty="Height" 
+                                 To="64" BeginTime="0:0:0.32" EnableDependentAnimation="True">
+                    <DoubleAnimation.EasingFunction>
+                        <QuinticEase />
+                    </DoubleAnimation.EasingFunction>
+                </DoubleAnimation>
+                <DoubleAnimation Storyboard.TargetName="HourGrid4" Storyboard.TargetProperty="Height" 
+                                 To="64" BeginTime="0:0:0.40" EnableDependentAnimation="True">
+                    <DoubleAnimation.EasingFunction>
+                        <QuinticEase />
+                    </DoubleAnimation.EasingFunction>
+                </DoubleAnimation>
+                <DoubleAnimation Storyboard.TargetName="HourGrid5" Storyboard.TargetProperty="Height" 
+                                 To="64" BeginTime="0:0:0.48" EnableDependentAnimation="True">
+                    <DoubleAnimation.EasingFunction>
+                        <QuinticEase />
+                    </DoubleAnimation.EasingFunction>
+                </DoubleAnimation>
+                <DoubleAnimation Storyboard.TargetName="TitleAniTrans" Storyboard.TargetProperty="Y" 
+                                 To="0" Duration="0:0:1.6" EnableDependentAnimation="False">
+                    <DoubleAnimation.EasingFunction>
+                        <QuinticEase />
+                    </DoubleAnimation.EasingFunction>
+                </DoubleAnimation>
+                <DoubleAnimation Storyboard.TargetName="ConditionAniTrans" Storyboard.TargetProperty="Y" 
+                                 To="0" BeginTime="0:0:0.16" Duration="0:0:1.6" EnableDependentAnimation="False">
+                    <DoubleAnimation.EasingFunction>
+                        <QuinticEase />
+                    </DoubleAnimation.EasingFunction>
+                </DoubleAnimation>
+                <DoubleAnimation Storyboard.TargetName="ConditionLowAniTrans" Storyboard.TargetProperty="Y" 
+                                 To="0" BeginTime="0:0:0.16" Duration="0:0:1.6" EnableDependentAnimation="False">
+                    <DoubleAnimation.EasingFunction>
+                        <QuinticEase />
+                    </DoubleAnimation.EasingFunction>
+                </DoubleAnimation>
+                <DoubleAnimation Storyboard.TargetName="TempAniTrans" Storyboard.TargetProperty="Y"
+                                 To="0" BeginTime="0:0:0.16" Duration="0:0:1.6" EnableDependentAnimation="False">
+                    <DoubleAnimation.EasingFunction>
+                        <QuinticEase />
+                    </DoubleAnimation.EasingFunction>
+                </DoubleAnimation>
+                <DoubleAnimation Storyboard.TargetName="TempDegAniTrans" Storyboard.TargetProperty="Y"
+                                 To="0" BeginTime="0:0:0.16" Duration="0:0:1.6" EnableDependentAnimation="False">
+                    <DoubleAnimation.EasingFunction>
+                        <QuinticEase />
+                    </DoubleAnimation.EasingFunction>
+                </DoubleAnimation>
+                <DoubleAnimation Storyboard.TargetName="NowHAniTrans" Storyboard.TargetProperty="Y"
+                                 To="0" BeginTime="0:0:0.16" Duration="0:0:1.6" EnableDependentAnimation="False">
+                    <DoubleAnimation.EasingFunction>
+                        <QuinticEase />
+                    </DoubleAnimation.EasingFunction>
+                </DoubleAnimation>
+                <DoubleAnimation Storyboard.TargetName="NowLAniTrans" Storyboard.TargetProperty="Y"
+                                 To="0" BeginTime="0:0:0.16" Duration="0:0:1.6" EnableDependentAnimation="False">
+                    <DoubleAnimation.EasingFunction>
+                        <QuinticEase />
+                    </DoubleAnimation.EasingFunction>
+                </DoubleAnimation>
+                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="TempDeg" Storyboard.TargetProperty="Visibility" >
+                    <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Bind Context.IsNowPanelLow,Mode=OneWay,Converter={StaticResource BoolNottoVisibilityConverter}}" />
+                </ObjectAnimationUsingKeyFrames>
+                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="CurrentCity" Storyboard.TargetProperty="Visibility" >
+                    <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Bind Context.IsNowPanelLow,Mode=OneWay,Converter={StaticResource BoolNottoVisibilityConverter}}" />
+                </ObjectAnimationUsingKeyFrames>
+                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="UpdateIndicator" Storyboard.TargetProperty="Visibility" >
+                    <DiscreteObjectKeyFrame KeyTime="0" Value="Visible" />
+                </ObjectAnimationUsingKeyFrames>
+                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="NowCondition" Storyboard.TargetProperty="Visibility" >
+                    <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Bind Context.IsNowPanelLow,Mode=OneWay,Converter={StaticResource BoolNottoVisibilityConverter}}" />
+                </ObjectAnimationUsingKeyFrames>
+                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="NowConditionLow" Storyboard.TargetProperty="Visibility" >
+                    <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Bind Context.IsNowPanelLow,Mode=OneWay,Converter={StaticResource BooltoVisibilityConverter}}" />
+                </ObjectAnimationUsingKeyFrames>
+                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="NowTemp" Storyboard.TargetProperty="Visibility" >
+                    <DiscreteObjectKeyFrame KeyTime="0" Value="Visible" />
+                </ObjectAnimationUsingKeyFrames>
+                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="HighLowPanel" Storyboard.TargetProperty="Visibility" >
+                    <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Bind Context.IsNowPanelLow,Mode=OneWay,Converter={StaticResource BoolNottoVisibilityConverter}}" />
+                </ObjectAnimationUsingKeyFrames>
+                <DoubleAnimation Storyboard.TargetName="CurrentCity" Storyboard.TargetProperty="Opacity" To="1" Duration="0:0:1.6" EnableDependentAnimation="False">
+                    <DoubleAnimation.EasingFunction>
+                        <QuinticEase />
+                    </DoubleAnimation.EasingFunction>
+                </DoubleAnimation>
+                <DoubleAnimation Storyboard.TargetName="AlarmButton" Storyboard.TargetProperty="Opacity" BeginTime="0:0:1.6" To="1" Duration="0:0:1.6" EnableDependentAnimation="False">
+                    <DoubleAnimation.EasingFunction>
+                        <QuinticEase />
+                    </DoubleAnimation.EasingFunction>
+                </DoubleAnimation>
+                <DoubleAnimation Storyboard.TargetName="UpdateIndicator" Storyboard.TargetProperty="Opacity" To="1" Duration="0:0:1.6" EnableDependentAnimation="False">
+                    <DoubleAnimation.EasingFunction>
+                        <QuinticEase />
+                    </DoubleAnimation.EasingFunction>
+                </DoubleAnimation>
+                <DoubleAnimation Storyboard.TargetName="NowCondition" Storyboard.TargetProperty="Opacity" To="1" BeginTime="0:0:0.16" Duration="0:0:1.6" EnableDependentAnimation="False">
+                    <DoubleAnimation.EasingFunction>
+                        <QuinticEase />
+                    </DoubleAnimation.EasingFunction>
+                </DoubleAnimation>
+                <DoubleAnimation Storyboard.TargetName="NowConditionLow" Storyboard.TargetProperty="Opacity" To="1" BeginTime="0:0:0.16" Duration="0:0:1.6" EnableDependentAnimation="False">
+                    <DoubleAnimation.EasingFunction>
+                        <QuinticEase />
+                    </DoubleAnimation.EasingFunction>
+                </DoubleAnimation>
+                <DoubleAnimation Storyboard.TargetName="NowTemp" Storyboard.TargetProperty="Opacity" To="1" BeginTime="0:0:0.24" Duration="0:0:1.6" EnableDependentAnimation="False">
+                    <DoubleAnimation.EasingFunction>
+                        <QuinticEase />
+                    </DoubleAnimation.EasingFunction>
+                </DoubleAnimation>
+                <DoubleAnimation Storyboard.TargetName="TempDeg" Storyboard.TargetProperty="Opacity" To="1" BeginTime="0:0:0.24" Duration="0:0:1.6" EnableDependentAnimation="False">
+                    <DoubleAnimation.EasingFunction>
+                        <QuinticEase />
+                    </DoubleAnimation.EasingFunction>
+                </DoubleAnimation>
+                <DoubleAnimation Storyboard.TargetName="HighLowPanel" Storyboard.TargetProperty="Opacity" To="1" BeginTime="0:0:0.24" Duration="0:0:1.6" EnableDependentAnimation="False">
+                    <DoubleAnimation.EasingFunction>
+                        <QuinticEase />
+                    </DoubleAnimation.EasingFunction>
+                </DoubleAnimation>
+                <DoubleAnimation Storyboard.TargetName="TempratureEllipse0" Storyboard.TargetProperty="StrokeThickness" Duration="0:0:0.96" BeginTime="0:0:1.6"
+                                 EnableDependentAnimation="True" To="{x:Bind Context.Pop0,Mode=OneWay, Converter={StaticResource PopConverter}}">
+                    <DoubleAnimation.EasingFunction>
+                        <QuinticEase />
+                    </DoubleAnimation.EasingFunction>
+                </DoubleAnimation>
+                <DoubleAnimation Storyboard.TargetName="TempratureEllipse1" Storyboard.TargetProperty="StrokeThickness" Duration="0:0:0.96" BeginTime="0:0:1.6"
+                                 EnableDependentAnimation="True" To="{x:Bind Context.Pop1,Mode=OneWay, Converter={StaticResource PopConverter}}">
+                    <DoubleAnimation.EasingFunction>
+                        <QuinticEase />
+                    </DoubleAnimation.EasingFunction>
+                </DoubleAnimation>
+                <DoubleAnimation Storyboard.TargetName="TempratureEllipse2" Storyboard.TargetProperty="StrokeThickness" Duration="0:0:0.96" BeginTime="0:0:1.6"
+                                 EnableDependentAnimation="True" To="{x:Bind Context.Pop2,Mode=OneWay, Converter={StaticResource PopConverter}}">
+                    <DoubleAnimation.EasingFunction>
+                        <QuinticEase />
+                    </DoubleAnimation.EasingFunction>
+                </DoubleAnimation>
+                <DoubleAnimation Storyboard.TargetName="TempratureEllipse3" Storyboard.TargetProperty="StrokeThickness" Duration="0:0:0.96" BeginTime="0:0:1.6"
+                                 EnableDependentAnimation="True" To="{x:Bind Context.Pop3,Mode=OneWay, Converter={StaticResource PopConverter}}">
+                    <DoubleAnimation.EasingFunction>
+                        <QuinticEase />
+                    </DoubleAnimation.EasingFunction>
+                </DoubleAnimation>
+                <DoubleAnimation Storyboard.TargetName="TempratureEllipse4" Storyboard.TargetProperty="StrokeThickness" Duration="0:0:0.96" BeginTime="0:0:1.6"
+                                 EnableDependentAnimation="True" To="{x:Bind Context.Pop4,Mode=OneWay, Converter={StaticResource PopConverter}}">
+                    <DoubleAnimation.EasingFunction>
+                        <QuinticEase />
+                    </DoubleAnimation.EasingFunction>
+                </DoubleAnimation>
+                <DoubleAnimation Storyboard.TargetName="TempratureEllipse5" Storyboard.TargetProperty="StrokeThickness" Duration="0:0:0.96" BeginTime="0:0:1.6"
+                                 EnableDependentAnimation="True" To="{x:Bind Context.Pop5,Mode=OneWay, Converter={StaticResource PopConverter}}">
+                    <DoubleAnimation.EasingFunction>
+                        <QuinticEase />
+                    </DoubleAnimation.EasingFunction>
+                </DoubleAnimation>
+            </Storyboard>
+            <Storyboard x:Name="TempratureOut">
+                <FadeOutThemeAnimation Storyboard.TargetName="NowCondition" />
+                <FadeOutThemeAnimation Storyboard.TargetName="CurrentCity" />
+                <FadeOutThemeAnimation Storyboard.TargetName="AlarmButton" />
+                <FadeOutThemeAnimation Storyboard.TargetName="TempDeg" />
+                <FadeOutThemeAnimation Storyboard.TargetName="HighLowPanel" />
+                <FadeOutThemeAnimation Storyboard.TargetName="UpdateIndicator" />
+            </Storyboard>
+            <Storyboard x:Name="TempratureIn">
+                <FadeInThemeAnimation Storyboard.TargetName="NowCondition" />
+                <FadeInThemeAnimation Storyboard.TargetName="CurrentCity" />
+                <FadeInThemeAnimation Storyboard.TargetName="AlarmButton" />
+                <FadeInThemeAnimation Storyboard.TargetName="TempDeg" />
+                <FadeInThemeAnimation Storyboard.TargetName="HighLowPanel" />
+                <FadeInThemeAnimation Storyboard.TargetName="UpdateIndicator" />
+            </Storyboard>
+            <Storyboard x:Name="DetailTempratureIn">
+                <DoubleAnimation Storyboard.TargetName="ClipTransAni" Storyboard.TargetProperty="Y" To="{x:Bind Context.BodyTemprature,Mode=OneWay, Converter={StaticResource BodyTempratureAniConverter}}" EnableDependentAnimation="False" >
+                    <DoubleAnimation.EasingFunction>
+                        <QuinticEase />
+                    </DoubleAnimation.EasingFunction>
+                </DoubleAnimation>
+            </Storyboard>
+            <Storyboard x:Name="WaterDropTransAni">
+                <DoubleAnimation Storyboard.TargetName="WaterDropTrans" Storyboard.TargetProperty="Y" To="{x:Bind Context.Humidity,Mode=OneWay, Converter={StaticResource HumidityAniConverter}}" EnableDependentAnimation="False" >
+                    <DoubleAnimation.EasingFunction>
+                        <QuinticEase />
+                    </DoubleAnimation.EasingFunction>
+                </DoubleAnimation>
+            </Storyboard>
+            <Storyboard x:Name="PcpnTransAni">
+                <DoubleAnimation Storyboard.TargetName="PcpnTrans" Storyboard.TargetProperty="Y" To="{x:Bind Context.Precipitation,Mode=OneWay, Converter={StaticResource PcpnTransAniConverter}}" EnableDependentAnimation="False" >
+                    <DoubleAnimation.EasingFunction>
+                        <QuinticEase />
+                    </DoubleAnimation.EasingFunction>
+                </DoubleAnimation>
+            </Storyboard>
+            <Storyboard x:Name="SunRiseAni">
+                <DoubleAnimation Storyboard.TargetName="Page" Storyboard.TargetProperty="SunRiseStrokeLength" To="{x:Bind Context.SunProgress,Mode=OneWay}" EnableDependentAnimation="True" >
+                    <DoubleAnimation.EasingFunction>
+                        <QuinticEase />
+                    </DoubleAnimation.EasingFunction>
+                </DoubleAnimation>
+            </Storyboard>
+            <Storyboard x:Name="AQIAni">
+                <DoubleAnimation Storyboard.TargetName="Page" Storyboard.TargetProperty="AqiCircleStorkeLength" To="{x:Bind Context.Aqi,Mode=OneWay, Converter={StaticResource AqiProgressConverter}}" EnableDependentAnimation="True">
+                    <DoubleAnimation.EasingFunction>
+                        <QuinticEase />
+                    </DoubleAnimation.EasingFunction>
+                </DoubleAnimation>
+                <DoubleAnimation Storyboard.TargetName="PM25Bar" Storyboard.TargetProperty="Value" To="{x:Bind Context.Aqi,Mode=OneWay, Converter={StaticResource PM25ProgressConverter}}" EnableDependentAnimation="True">
+                    <DoubleAnimation.EasingFunction>
+                        <QuinticEase />
+                    </DoubleAnimation.EasingFunction>
+                </DoubleAnimation>
+                <DoubleAnimation Storyboard.TargetName="PM10Bar" Storyboard.TargetProperty="Value" To="{x:Bind Context.Aqi,Mode=OneWay, Converter={StaticResource PM10ProgressConverter}}" EnableDependentAnimation="True">
+                    <DoubleAnimation.EasingFunction>
+                        <QuinticEase />
+                    </DoubleAnimation.EasingFunction>
+                </DoubleAnimation>
+                <DoubleAnimation Storyboard.TargetName="SO2Bar" Storyboard.TargetProperty="Value" To="{x:Bind Context.Aqi,Mode=OneWay, Converter={StaticResource SO2ProgressConverter}}" EnableDependentAnimation="True">
+                    <DoubleAnimation.EasingFunction>
+                        <QuinticEase />
+                    </DoubleAnimation.EasingFunction>
+                </DoubleAnimation>
+                <ColorAnimation Storyboard.TargetName="AQICircleColor" Storyboard.TargetProperty="Color" To="{x:Bind Context.Aqi,Mode=OneWay, Converter={StaticResource AqiCircleColorConverter}}" EnableDependentAnimation="True">
+                    <ColorAnimation.EasingFunction>
+                        <QuinticEase />
+                    </ColorAnimation.EasingFunction>
+                </ColorAnimation>
+            </Storyboard>
+            <Storyboard x:Name="PressureTransAni">
+                <DoubleAnimation Storyboard.TargetName="PressureTrans" Storyboard.TargetProperty="Angle" To="{x:Bind Context.Pressure,Mode=OneWay, Converter={StaticResource PressureAniConverter}}" EnableDependentAnimation="False">
+                    <DoubleAnimation.EasingFunction>
+                        <QuinticEase />
+                    </DoubleAnimation.EasingFunction>
+                </DoubleAnimation>
+            </Storyboard>
+            <Storyboard x:Name="VisTransAni">
+                <DoubleAnimation Storyboard.TargetName="vissubellipse0" Storyboard.TargetProperty="ScaleX" From="0" To="{x:Bind Context.Visibility,Mode=OneWay, Converter={StaticResource VisibilityAniConverter}}" Duration="0:0:0.16" EnableDependentAnimation="False">
+                    <DoubleAnimation.EasingFunction>
+                        <QuinticEase />
+                    </DoubleAnimation.EasingFunction>
+                </DoubleAnimation>
+                <DoubleAnimation Storyboard.TargetName="vissubellipse0" Storyboard.TargetProperty="ScaleY" From="0" To="{x:Bind Context.Visibility,Mode=OneWay, Converter={StaticResource VisibilityAniConverter}}" Duration="0:0:0.16" EnableDependentAnimation="False">
+                    <DoubleAnimation.EasingFunction>
+                        <QuinticEase />
+                    </DoubleAnimation.EasingFunction>
+                </DoubleAnimation>
+                <DoubleAnimation Storyboard.TargetName="vissubellipse1" Storyboard.TargetProperty="ScaleX" From="0" To="{x:Bind Context.Visibility,Mode=OneWay, Converter={StaticResource VisibilityAniConverter}}" Duration="0:0:0.32" EnableDependentAnimation="False">
+                    <DoubleAnimation.EasingFunction>
+                        <QuinticEase />
+                    </DoubleAnimation.EasingFunction>
+                </DoubleAnimation>
+                <DoubleAnimation Storyboard.TargetName="vissubellipse1" Storyboard.TargetProperty="ScaleY" From="0" To="{x:Bind Context.Visibility,Mode=OneWay, Converter={StaticResource VisibilityAniConverter}}" Duration="0:0:0.32" EnableDependentAnimation="False">
+                    <DoubleAnimation.EasingFunction>
+                        <QuinticEase />
+                    </DoubleAnimation.EasingFunction>
+                </DoubleAnimation>
+                <DoubleAnimation Storyboard.TargetName="vissubellipse2" Storyboard.TargetProperty="ScaleX" From="0" To="{x:Bind Context.Visibility,Mode=OneWay, Converter={StaticResource VisibilityAniConverter}}" Duration="0:0:0.48" EnableDependentAnimation="False">
+                    <DoubleAnimation.EasingFunction>
+                        <QuinticEase />
+                    </DoubleAnimation.EasingFunction>
+                </DoubleAnimation>
+                <DoubleAnimation Storyboard.TargetName="vissubellipse2" Storyboard.TargetProperty="ScaleY" From="0" To="{x:Bind Context.Visibility,Mode=OneWay, Converter={StaticResource VisibilityAniConverter}}" Duration="0:0:0.48" EnableDependentAnimation="False">
+                    <DoubleAnimation.EasingFunction>
+                        <QuinticEase />
+                    </DoubleAnimation.EasingFunction>
+                </DoubleAnimation>
+                <DoubleAnimation Storyboard.TargetName="vissubellipse3" Storyboard.TargetProperty="ScaleX" From="0" To="{x:Bind Context.Visibility,Mode=OneWay, Converter={StaticResource VisibilityAniConverter}}" Duration="0:0:0.8" EnableDependentAnimation="False">
+                    <DoubleAnimation.EasingFunction>
+                        <QuinticEase />
+                    </DoubleAnimation.EasingFunction>
+                </DoubleAnimation>
+                <DoubleAnimation Storyboard.TargetName="vissubellipse3" Storyboard.TargetProperty="ScaleY" From="0" To="{x:Bind Context.Visibility,Mode=OneWay, Converter={StaticResource VisibilityAniConverter}}" Duration="0:0:0.8" EnableDependentAnimation="False">
+                    <DoubleAnimation.EasingFunction>
+                        <QuinticEase />
+                    </DoubleAnimation.EasingFunction>
+                </DoubleAnimation>
+            </Storyboard>
+            <Storyboard x:Name="ImmersiveTransAni">
+                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="MainCanvas" Storyboard.TargetProperty="(Grid.ColumnSpan)" >
+                    <DiscreteObjectKeyFrame KeyTime="0:0:0.64" Value="2" />
+                </ObjectAnimationUsingKeyFrames>
+                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="MainCanvas" Storyboard.TargetProperty="HorizontalAlignment" >
+                    <DiscreteObjectKeyFrame KeyTime="0:0:0.64" Value="Left" />
+                    <DiscreteObjectKeyFrame KeyTime="0:0:1.8" Value="Stretch" />
+                </ObjectAnimationUsingKeyFrames>
+                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="MainCanvas" Storyboard.TargetProperty="VerticalAlignment" >
+                    <DiscreteObjectKeyFrame KeyTime="0:0:1.8" Value="Stretch" />
+                </ObjectAnimationUsingKeyFrames>
+                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ScrollableRoot" Storyboard.TargetProperty="Visibility" >
+                    <DiscreteObjectKeyFrame KeyTime="0:0:0.64" Value="Collapsed" />
+                </ObjectAnimationUsingKeyFrames>
+                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="CurrentCity" Storyboard.TargetProperty="Visibility" >
+                    <DiscreteObjectKeyFrame KeyTime="0:0:0.64" Value="Collapsed" />
+                </ObjectAnimationUsingKeyFrames>
+                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="UpdateIndicator" Storyboard.TargetProperty="Visibility" >
+                    <DiscreteObjectKeyFrame KeyTime="0:0:0.64" Value="Collapsed" />
+                </ObjectAnimationUsingKeyFrames>
+                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="HighLowPanel" Storyboard.TargetProperty="Visibility" >
+                    <DiscreteObjectKeyFrame KeyTime="0:0:0.64" Value="Collapsed" />
+                </ObjectAnimationUsingKeyFrames>
+                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="NowCondition" Storyboard.TargetProperty="Visibility" >
+                    <DiscreteObjectKeyFrame KeyTime="0:0:0.64" Value="Collapsed" />
+                </ObjectAnimationUsingKeyFrames>
+                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="NowConditionLow" Storyboard.TargetProperty="Visibility" >
+                    <DiscreteObjectKeyFrame KeyTime="0:0:0.64" Value="Collapsed" />
+                </ObjectAnimationUsingKeyFrames>
+                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="TempDeg" Storyboard.TargetProperty="Visibility" >
+                    <DiscreteObjectKeyFrame KeyTime="0:0:0.64" Value="Collapsed" />
+                </ObjectAnimationUsingKeyFrames>
+                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="NowTemp" Storyboard.TargetProperty="Visibility" >
+                    <DiscreteObjectKeyFrame KeyTime="0:0:0.64" Value="Collapsed" />
+                </ObjectAnimationUsingKeyFrames>
+                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="LargeModeSubPanel" Storyboard.TargetProperty="Visibility" >
+                    <DiscreteObjectKeyFrame KeyTime="0:0:0.64" Value="Collapsed" />
+                </ObjectAnimationUsingKeyFrames>
+                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ImmersiveDetailsPanel" Storyboard.TargetProperty="Visibility" >
+                    <DiscreteObjectKeyFrame KeyTime="0:0:0.64" Value="Visible" />
+                </ObjectAnimationUsingKeyFrames>
+                <FadeOutThemeAnimation Storyboard.TargetName="ScrollableRoot" />
+                <FadeOutThemeAnimation Storyboard.TargetName="LargeModeSubPanel" />
+                <FadeOutThemeAnimation Storyboard.TargetName="MoreButton" />
+                <FadeOutThemeAnimation Storyboard.TargetName="ImmersiveButton" />
+                <FadeOutThemeAnimation Storyboard.TargetName="RefreshButton" />
+                <FadeOutThemeAnimation Storyboard.TargetName="CurrentCity" />
+                <FadeOutThemeAnimation Storyboard.TargetName="AlarmButton" />
+                <FadeOutThemeAnimation Storyboard.TargetName="UpdateIndicator" />
+                <FadeOutThemeAnimation Storyboard.TargetName="HighLowPanel" />
+                <FadeOutThemeAnimation Storyboard.TargetName="NowCondition" />
+                <FadeOutThemeAnimation Storyboard.TargetName="NowConditionLow" />
+                <FadeOutThemeAnimation Storyboard.TargetName="NowTemp" />
+                <FadeOutThemeAnimation Storyboard.TargetName="TempDeg" />
+                <DoubleAnimation Storyboard.TargetName="ImmersiveDetailsPanel" Storyboard.TargetProperty="Opacity" To="1" EnableDependentAnimation="False" BeginTime="0:0:1.8" >
+                    <DoubleAnimation.EasingFunction>
+                        <QuinticEase />
+                    </DoubleAnimation.EasingFunction>
+                </DoubleAnimation>
+                <DoubleAnimation x:Name="ImmersiveWidthIn" BeginTime="0:0:0.64" Storyboard.TargetName="MainCanvas" Storyboard.TargetProperty="Width" EnableDependentAnimation="True">
+                    <DoubleAnimation.EasingFunction>
+                        <QuinticEase />
+                    </DoubleAnimation.EasingFunction>
+                </DoubleAnimation>
+                <DoubleAnimation x:Name="ImmersiveHeightIn" BeginTime="0:0:0.64" Storyboard.TargetName="MainCanvas" Storyboard.TargetProperty="Height" EnableDependentAnimation="True">
+                    <DoubleAnimation.EasingFunction>
+                        <QuinticEase />
+                    </DoubleAnimation.EasingFunction>
+                </DoubleAnimation>
+            </Storyboard>
+            <Storyboard x:Name="ImmersiveBackAni">
+                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="MainCanvas" Storyboard.TargetProperty="(Grid.ColumnSpan)" >
+                    <DiscreteObjectKeyFrame KeyTime="0:0:1.8" Value="1" />
+                </ObjectAnimationUsingKeyFrames>
+                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="MainCanvas" Storyboard.TargetProperty="HorizontalAlignment" >
+                    <DiscreteObjectKeyFrame KeyTime="0:0:0.64" Value="Left" />
+                    <DiscreteObjectKeyFrame KeyTime="0:0:1.8" Value="Stretch" />
+                </ObjectAnimationUsingKeyFrames>
+                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="MainCanvas" Storyboard.TargetProperty="VerticalAlignment" >
+                    <DiscreteObjectKeyFrame KeyTime="0:0:0.64" Value="Top" />
+                </ObjectAnimationUsingKeyFrames>
+                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ScrollableRoot" Storyboard.TargetProperty="Visibility" >
+                    <DiscreteObjectKeyFrame KeyTime="0:0:1.8" Value="Visible" />
+                </ObjectAnimationUsingKeyFrames>
+                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="CurrentCity" Storyboard.TargetProperty="Visibility" >
+                    <DiscreteObjectKeyFrame KeyTime="0:0:1.8" Value="{x:Bind Context.IsNowPanelLow,Mode=OneWay,Converter={StaticResource BoolNottoVisibilityConverter}}" />
+                </ObjectAnimationUsingKeyFrames>
+                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="UpdateIndicator" Storyboard.TargetProperty="Visibility" >
+                    <DiscreteObjectKeyFrame KeyTime="0:0:1.8" Value="Visible" />
+                </ObjectAnimationUsingKeyFrames>
+                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="HighLowPanel" Storyboard.TargetProperty="Visibility" >
+                    <DiscreteObjectKeyFrame KeyTime="0:0:1.8" Value="{x:Bind Context.IsNowPanelLow,Mode=OneWay,Converter={StaticResource BoolNottoVisibilityConverter}}" />
+                </ObjectAnimationUsingKeyFrames>
+                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="NowCondition" Storyboard.TargetProperty="Visibility" >
+                    <DiscreteObjectKeyFrame KeyTime="0:0:1.8" Value="{x:Bind Context.IsNowPanelLow,Mode=OneWay,Converter={StaticResource BoolNottoVisibilityConverter}}" />
+                </ObjectAnimationUsingKeyFrames>
+                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="NowConditionLow" Storyboard.TargetProperty="Visibility" >
+                    <DiscreteObjectKeyFrame KeyTime="0:0:1.8" Value="{x:Bind Context.IsNowPanelLow,Mode=OneWay,Converter={StaticResource BooltoVisibilityConverter}}" />
+                </ObjectAnimationUsingKeyFrames>
+                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="TempDeg" Storyboard.TargetProperty="Visibility" >
+                    <DiscreteObjectKeyFrame KeyTime="0:0:1.8" Value="{x:Bind Context.IsNowPanelLow,Mode=OneWay,Converter={StaticResource BoolNottoVisibilityConverter}}" />
+                </ObjectAnimationUsingKeyFrames>
+                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="NowTemp" Storyboard.TargetProperty="Visibility" >
+                    <DiscreteObjectKeyFrame KeyTime="0:0:1.8" Value="Visible" />
+                </ObjectAnimationUsingKeyFrames>
+                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="LargeModeSubPanel" Storyboard.TargetProperty="Visibility" >
+                    <DiscreteObjectKeyFrame KeyTime="0:0:1.8" Value="Visible" />
+                </ObjectAnimationUsingKeyFrames>
+                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ImmersiveDetailsPanel" Storyboard.TargetProperty="Visibility" >
+                    <DiscreteObjectKeyFrame KeyTime="0:0:0.64" Value="Collapsed" />
+                </ObjectAnimationUsingKeyFrames>
+                <DoubleAnimation Storyboard.TargetName="ImmersiveDetailsPanel" Storyboard.TargetProperty="Opacity" To="0" Duration="0:0:0.64" EnableDependentAnimation="False" >
+                    <DoubleAnimation.EasingFunction>
+                        <QuinticEase />
+                    </DoubleAnimation.EasingFunction>
+                </DoubleAnimation>
+                <FadeInThemeAnimation BeginTime="0:0:1.8" Storyboard.TargetName="ScrollableRoot" />
+                <FadeInThemeAnimation BeginTime="0:0:1.8" Storyboard.TargetName="LargeModeSubPanel" />
+                <FadeInThemeAnimation BeginTime="0:0:1.8" Storyboard.TargetName="MoreButton" />
+                <FadeInThemeAnimation BeginTime="0:0:1.8" Storyboard.TargetName="ImmersiveButton" />
+                <FadeInThemeAnimation BeginTime="0:0:1.8" Storyboard.TargetName="RefreshButton" />
+                <FadeInThemeAnimation BeginTime="0:0:1.8" Storyboard.TargetName="CurrentCity" />
+                <FadeInThemeAnimation BeginTime="0:0:1.8" Storyboard.TargetName="AlarmButton" />
+                <FadeInThemeAnimation BeginTime="0:0:1.8" Storyboard.TargetName="UpdateIndicator" />
+                <FadeInThemeAnimation BeginTime="0:0:1.8" Storyboard.TargetName="HighLowPanel" />
+                <FadeInThemeAnimation BeginTime="0:0:1.8" Storyboard.TargetName="NowCondition" />
+                <FadeInThemeAnimation BeginTime="0:0:1.8" Storyboard.TargetName="NowConditionLow" />
+                <FadeInThemeAnimation BeginTime="0:0:1.8" Storyboard.TargetName="NowTemp" />
+                <FadeInThemeAnimation BeginTime="0:0:1.8" Storyboard.TargetName="TempDeg" />
+                <DoubleAnimation x:Name="ImmersiveWidthBack" BeginTime="0:0:0.64" Storyboard.TargetName="MainCanvas" Storyboard.TargetProperty="Width" EnableDependentAnimation="True">
+                    <DoubleAnimation.EasingFunction>
+                        <QuinticEase />
+                    </DoubleAnimation.EasingFunction>
+                </DoubleAnimation>
+                <DoubleAnimation x:Name="ImmersiveHeightBack" BeginTime="0:0:0.64" Storyboard.TargetName="MainCanvas" Storyboard.TargetProperty="Height" EnableDependentAnimation="True">
+                    <DoubleAnimation.EasingFunction>
+                        <QuinticEase />
+                    </DoubleAnimation.EasingFunction>
+                </DoubleAnimation>
+            </Storyboard>
+            <Storyboard x:Name="ImmersiveAllIn">
+                <FadeOutThemeAnimation Storyboard.TargetName="ImmersiveTemp" />
+                <FadeOutThemeAnimation Storyboard.TargetName="ImmersiveGlance" />
+                <FadeOutThemeAnimation Storyboard.TargetName="ImmersiveMoreButton" />
+                <FadeOutThemeAnimation Storyboard.TargetName="ImmersiveBackButton" />
+                <FadeOutThemeAnimation Storyboard.TargetName="ImmersiveRefreshButton" />
+            </Storyboard>
+            <Storyboard x:Name="ImmersiveAllBack">
+                <FadeInThemeAnimation Storyboard.TargetName="ImmersiveTemp" />
+                <FadeInThemeAnimation Storyboard.TargetName="ImmersiveGlance" />
+                <FadeInThemeAnimation Storyboard.TargetName="ImmersiveMoreButton" />
+                <FadeInThemeAnimation Storyboard.TargetName="ImmersiveBackButton" />
+                <FadeInThemeAnimation Storyboard.TargetName="ImmersiveRefreshButton" />
+            </Storyboard>
+            <Storyboard x:Name="RefreshCompleteAni">
+                <DoubleAnimationUsingKeyFrames Storyboard.TargetName="UpdateIndicator" Storyboard.TargetProperty="Opacity" EnableDependentAnimation="False">
+                    <DiscreteDoubleKeyFrame KeyTime="0" Value="1" >
+                    </DiscreteDoubleKeyFrame>
+                    <EasingDoubleKeyFrame KeyTime="0:0:0.64" Value="0" >
+                        <EasingDoubleKeyFrame.EasingFunction>
+                            <QuinticEase />
+                        </EasingDoubleKeyFrame.EasingFunction>
+                    </EasingDoubleKeyFrame>
+                    <DiscreteDoubleKeyFrame KeyTime="0:0:0.72" Value="0" >
+                    </DiscreteDoubleKeyFrame>
+                    <EasingDoubleKeyFrame KeyTime="0:0:1.36" Value="1" >
+                        <EasingDoubleKeyFrame.EasingFunction>
+                            <QuinticEase />
+                        </EasingDoubleKeyFrame.EasingFunction>
+                    </EasingDoubleKeyFrame>
+                </DoubleAnimationUsingKeyFrames>
+                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="UpdateIndText" Storyboard.TargetProperty="Text">
+                    <DiscreteObjectKeyFrame KeyTime="0:0:0.64" Value="{x:Bind Context.UpdateTime,Mode=OneWay,Converter={StaticResource RefreshCompleteConverter}}" />
+                </ObjectAnimationUsingKeyFrames>
+            </Storyboard>
+            <Storyboard x:Name="AQIDetailButtonIn">
+                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="AQIDetailButton" Storyboard.TargetProperty="Background">
+                    <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource SystemControlTranslucentHighBrush}" />
+                </ObjectAnimationUsingKeyFrames>
+            </Storyboard>
+            <Storyboard x:Name="AQIDetailButtonNormal">
+                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="AQIDetailButton" Storyboard.TargetProperty="Background">
+                    <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource SystemControlAltHighBrush}" />
+                </ObjectAnimationUsingKeyFrames>
+            </Storyboard>
+            <Storyboard x:Name="AQIDetailButtonPress">
+                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="AQIDetailButton" Storyboard.TargetProperty="Background">
+                    <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource SystemTranslucentAltHighBrush}" />
+                </ObjectAnimationUsingKeyFrames>
+            </Storyboard>
+        </Grid.Resources>
+        <ScrollViewer x:Name="LargeModeSubPanel" VerticalScrollBarVisibility="Hidden" VerticalScrollMode="Enabled" Grid.Column="1" Visibility="Collapsed">
+
+        </ScrollViewer>
+        <RelativePanel PointerMoved="MainCanvas_PointerMoved" PointerReleased="MainCanvas_PointerReleased" x:Name="MainCanvas" Height="{x:Bind ScrollableRoot.VerticalOffset,Mode=OneWay, Converter={StaticResource ScrollViewerConverter}}"
+                HorizontalAlignment="Stretch" VerticalAlignment="Top">
+            <RelativePanel.ChildrenTransitions>
+                <TransitionCollection>
+                    <EntranceThemeTransition/>
+                </TransitionCollection>
+            </RelativePanel.ChildrenTransitions>
+            <CustomControls:WeatherCanvas x:Name="WeatherCanvas" EnableDynamic="{x:Bind Context.EnableDynamic,Mode=OneWay}" EnableBGBlur="{x:Bind Context.AlwaysBlur,Mode=OneWay}"
+                                          RelativePanel.AlignBottomWithPanel="True" RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignRightWithPanel="True" RelativePanel.AlignTopWithPanel="True" />
+            <Grid Visibility="Collapsed" x:Name="ButtonOffset" RelativePanel.AlignBottomWithPanel="True" RelativePanel.AlignLeftWithPanel="True"
+                  RelativePanel.AlignTopWithPanel="True" />
+            <Grid Opacity="1" x:Name="UpdateIndicator" Height="32" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignTopWithPanel="True" >
+                <TextBlock x:Name="UpdateIndText" Foreground="White" FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Center" />
+            </Grid>
+            <TextBlock Visibility="Collapsed" Opacity="0" RelativePanel.Above="NowCondition" Margin="0,0,0,12" Foreground="White" x:Name="CurrentCity"  Style="{StaticResource HeaderTextBlockStyle}" FontWeight="ExtraLight"
+                       RelativePanel.AlignHorizontalCenterWithPanel="True" FontSize="32" >
+                <Run FontFamily="Segoe MDL2 Assets" Text="  " FontSize="24" />
+                <Run Text="{x:Bind Context.City,Mode=OneWay}" />
+                <Run FontFamily="Segoe MDL2 Assets" Text="{x:Bind Context.Locate,Mode=OneWay}" FontSize="24" />
+                <TextBlock.RenderTransform>
+                    <TranslateTransform x:Name="TitleAniTrans" Y="480" />
+                </TextBlock.RenderTransform>
+            </TextBlock>
+            <TextBlock Visibility="Collapsed" x:Name="NowCondition" Opacity="0" RelativePanel.Above="NowTempLowPanel" 
+                       RelativePanel.AlignHorizontalCenterWithPanel="True" Foreground="White" 
+                       Text="{x:Bind Context.Condition,Mode=OneWay, Converter={StaticResource ConditiontoTextConverter}}" 
+                           HorizontalAlignment="Center" Style="{StaticResource TitleTextBlockStyle}" FontWeight="ExtraLight">
+                <TextBlock.RenderTransform>
+                    <TranslateTransform x:Name="ConditionLowAniTrans" Y="480" />
+                </TextBlock.RenderTransform>
+            </TextBlock>
+            <StackPanel Visibility="Collapsed" Margin="12" x:Name="HighLowPanel" Orientation="Vertical" Opacity="0" RelativePanel.RightOf="NowCondition" RelativePanel.AlignVerticalCenterWith="NowCondition">
+                <TextBlock x:Name="NowH" Text="{x:Bind Context.NowH,Mode=OneWay,Converter={StaticResource TempratureConverterWithDegree}}" FontWeight="ExtraLight" Style="{ThemeResource NormalTextBlockStyle}" Foreground="White">
+                    <TextBlock.RenderTransform >
+                        <TranslateTransform x:Name="NowHAniTrans" Y="480" />
+                    </TextBlock.RenderTransform>
+                </TextBlock>
+                <TextBlock x:Name="NowL" Text="{x:Bind Context.NowL,Mode=OneWay,Converter={StaticResource TempratureConverterWithDegree}}" FontWeight="ExtraLight" Style="{ThemeResource NormalTextBlockStyle}" Foreground="#CCF0F0F0}">
+                    <TextBlock.RenderTransform >
+                        <TranslateTransform x:Name="NowLAniTrans" Y="480" />
+                    </TextBlock.RenderTransform>
+                </TextBlock>
+            </StackPanel>
+            <StackPanel x:Name="NowTempLowPanel" Orientation="Horizontal" RelativePanel.AlignVerticalCenterWithPanel="True" RelativePanel.AlignHorizontalCenterWithPanel="True">
+                <TextBlock Margin="0,0,12,0" Visibility="Collapsed" x:Name="NowConditionLow" Opacity="0" Foreground="White" FontSize="{x:Bind ScrollableRoot.VerticalOffset,Mode=OneWay,FallbackValue=96,Converter={StaticResource FontSizeConverter}}"
+                       Text="{x:Bind Context.Condition,Mode=OneWay, Converter={StaticResource ConditiontoTextConverter}}" 
+                           HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource TitleTextBlockStyle}" FontWeight="ExtraLight">
+                    <TextBlock.RenderTransform>
+                        <TranslateTransform x:Name="ConditionAniTrans" Y="480" />
+                    </TextBlock.RenderTransform>
+                </TextBlock>
+                <TextBlock  Margin="12,0,0,0" Opacity="0" x:Name="NowTemp" Visibility="Collapsed" Foreground="White" FontSize="{x:Bind ScrollableRoot.VerticalOffset,Mode=OneWay,FallbackValue=96,Converter={StaticResource FontSizeConverter}}" Text="{x:Bind Context.Temprature,Mode=OneWay, Converter={StaticResource TempratureConverterWithoutDegree}}"
+                        FontWeight="ExtraLight" Style="{ThemeResource HeaderTextBlockStyle}" >
+                    <TextBlock.RenderTransform>
+                        <TranslateTransform x:Name="TempAniTrans" Y="480" X="0" />
+                    </TextBlock.RenderTransform>
+                </TextBlock>
+            </StackPanel>
+            <TextBlock Visibility="Collapsed" x:Name="TempDeg" Opacity="0" FontSize="48" RelativePanel.RightOf="NowTempLowPanel" RelativePanel.AlignVerticalCenterWith="NowTempLowPanel" Margin="0"
+                       Text="{x:Bind Context.Temprature,Mode=OneWay, Converter={StaticResource TempratureConverter}}" FontWeight="ExtraLight" Style="{ThemeResource HeaderTextBlockStyle}"
+                       Foreground="#CCF0F0F0">
+                <TextBlock.RenderTransform>
+                    <TranslateTransform x:Name="TempDegAniTrans" Y="480" />
+                </TextBlock.RenderTransform>
+            </TextBlock>
+            <Button x:Name="MoreButton" Visibility="Collapsed" Style="{StaticResource SymbolButton}" Width="48" Foreground="White" Height="48" RelativePanel.AlignRightWithPanel="True" RelativePanel.AlignTopWithPanel="True" Margin="0,32,0,0">
+                <ToolTipService.ToolTip>
+                    <TextBlock x:Uid="MoreText" />
+                </ToolTipService.ToolTip>
+                <Button.Content>
+                    <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE712;" />
+                </Button.Content>
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel Orientation="Vertical">
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                                <TextBlock x:Uid="DynamicText" Margin="8" HorizontalAlignment="Left" VerticalAlignment="Center" />
+                                <ToggleSwitch IsOn="{x:Bind Context.EnableDynamic,Mode=TwoWay}" Style="{ThemeResource NarrowSwitch}" Margin="8" HorizontalAlignment="Left" VerticalAlignment="Center" />
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                                <TextBlock x:Uid="BlurBGText" Margin="8" HorizontalAlignment="Left" VerticalAlignment="Center" />
+                                <ToggleSwitch x:Name="BlurSwitch" IsOn="{x:Bind Context.AlwaysBlur,Mode=TwoWay}" Style="{ThemeResource NarrowSwitch}" Margin="8" HorizontalAlignment="Left" VerticalAlignment="Center" />
+                            </StackPanel>
+                            <Button Click="Button_Click" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Style="{ThemeResource PivotTitleContentControlStyle}" Background="{ThemeResource SystemControlTranslucentHighBrush}" >
+                                <Button.Content>
+                                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                                        <SymbolIcon VerticalAlignment="Center" Margin="8,0,8,0" Symbol="Find" />
+                                        <TextBlock x:Uid="CitiesManageText" VerticalAlignment="Center" Style="{ThemeResource HeaderTextBlockStyle}" FontSize="16" Margin="0,0,8,0" />
+                                    </StackPanel>
+                                </Button.Content>
+                            </Button>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+            </Button>
+            <Button x:Name="ImmersiveButton" Click="ImmersiveButton_Click" Visibility="Collapsed" Style="{StaticResource SymbolButton}" Width="48" Foreground="White" Height="48" RelativePanel.AlignRightWithPanel="True" RelativePanel.Below="MoreButton">
+                <ToolTipService.ToolTip>
+                    <TextBlock x:Uid="ImmersiveText" />
+                </ToolTipService.ToolTip>
+                <Button.Content>
+                    <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE740;" />
+                </Button.Content>
+            </Button>
+            <Button x:Name="RefreshButton" Visibility="Collapsed" Click="RefreshButton_Click" Command="{x:Bind Context.RefreshCommand,Mode=OneWay}" Style="{StaticResource SymbolButton}" Width="48" Foreground="White" Height="48" RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignTopWithPanel="True" Margin="0,80,0,0">
+                <ToolTipService.ToolTip>
+                    <TextBlock x:Uid="RefreshText" />
+                </ToolTipService.ToolTip>
+                <Button.Content>
+                    <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE72C;" />
+                </Button.Content>
+            </Button>
+            <Button x:Name="AlarmButton" x:Uid="AlarmButton" Opacity="0" Visibility="{x:Bind Context.HadNoAlarms,Mode=OneWay,Converter={StaticResource BoolNottoVisibilityConverter}}" Margin="64" Padding="8" Foreground="White" Background="{x:Bind Context.AlarmColor,Mode=OneWay}" RelativePanel.AlignTopWithPanel="True" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.Above="CurrentCity">
+                <Button.Flyout>
+                    <Flyout>
+                        <ListView MaxWidth="400" SelectionMode="None" ItemsSource="{x:Bind AlarmsSource.View, Mode=OneWay}" ItemContainerStyle="{ThemeResource NoneSelectionListStyle}" IsItemClickEnabled="False" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                            <ListView.ItemTemplate>
+                                <DataTemplate x:DataType="ViewModels:WeatherAlarmViewModel">
+                                    <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                        <Grid Margin="4" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="auto" />
+                                                <ColumnDefinition Width="280" />
+                                            </Grid.ColumnDefinitions>
+                                            <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="{x:Bind Level,Mode=OneWay,Converter={StaticResource AlarmLeveltoColorConverter}}">
+                                                <TextBlock Margin="16" FontWeight="Light" HorizontalAlignment="Center" VerticalAlignment="Center" Text="{x:Bind Level,Mode=OneWay,Converter={StaticResource AlarmLeveltoTextConverter}}" Foreground="{x:Bind Level,Mode=OneWay,Converter={StaticResource AlarmLeveltoForegroundConverter}}" FontSize="16" />
+                                            </Grid>
+                                            <Grid Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="{ThemeResource SystemControlForegroundHighBrush}">
+                                                <TextBlock Margin="16" FontWeight="Light" HorizontalAlignment="Center" TextTrimming="CharacterEllipsis" VerticalAlignment="Center" Text="{x:Bind Title,Mode=OneWay}" FontSize="16" />
+                                            </Grid>
+                                        </Grid>
+                                        <TextBlock Margin="8" Text="{x:Bind Description,Mode=OneWay}" TextWrapping="WrapWholeWords"/>
+                                    </StackPanel>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </Flyout>
+                </Button.Flyout>
+            </Button>
+            <Grid Visibility="Collapsed" Opacity="0" x:Name="ImmersiveDetailsPanel" RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignRightWithPanel="True" RelativePanel.AlignBottomWithPanel="True" RelativePanel.AlignTopWithPanel="True">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <RelativePanel Grid.RowSpan="3" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <TextBlock Margin="8" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True" x:Name="Separator0" FontSize="156" Text=":" FontWeight="ExtraLight" Style="{ThemeResource HeaderTextBlockStyle}" Foreground="White" />
+                    <TextBlock Margin="8" RelativePanel.LeftOf="Separator0" RelativePanel.AlignVerticalCenterWithPanel="True" x:Name="CurrentTimeHour" FontSize="156" Text="{x:Bind Context.CurrentTime, Mode=OneWay, Converter={StaticResource ImmersiveHourConverter}}" FontWeight="ExtraLight" Style="{ThemeResource HeaderTextBlockStyle}" Foreground="White" />
+                    <TextBlock Margin="0,8,8,8" Width="172" RelativePanel.RightOf="Separator0" RelativePanel.AlignVerticalCenterWithPanel="True" x:Name="CurrentTimeMin" FontSize="156" Text="{x:Bind Context.CurrentTime, Mode=OneWay, Converter={StaticResource ImmersiveMinConverter}}" FontWeight="ExtraLight" Style="{ThemeResource HeaderTextBlockStyle}" Foreground="White" />
+                    <TextBlock RelativePanel.RightOf="CurrentTimeMin" Margin="0,0,0,32" Opacity="0.6" RelativePanel.AlignBottomWith="CurrentTimeMin" x:Name="Separator1" FontSize="72" Text=":" FontWeight="ExtraLight" Style="{ThemeResource HeaderTextBlockStyle}" Visibility="{x:Bind Context.DisableSecond,Mode=OneWay,Converter={StaticResource BoolNottoVisibilityConverter}}" Foreground="White" />
+                    <TextBlock RelativePanel.RightOf="Separator1" Margin="8,0,0,32" Opacity="0.6" RelativePanel.AlignBottomWith="CurrentTimeMin" x:Name="CurrentTimeSec" FontSize="72" Text="{x:Bind Context.CurrentTime, Mode=OneWay, Converter={StaticResource ImmersiveSecConverter}}" Visibility="{x:Bind Context.DisableSecond,Mode=OneWay,Converter={StaticResource BoolNottoVisibilityConverter}}" FontWeight="ExtraLight" Style="{ThemeResource HeaderTextBlockStyle}" Foreground="White" />
+                </RelativePanel>
+                <TextBlock x:Name="ImmersiveTemp" FontSize="96" FontWeight="ExtraLight" Style="{ThemeResource HeaderTextBlockStyle}" Foreground="White" Grid.Row="2" Grid.RowSpan="3" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Run Text="{x:Bind Context.Temprature,Mode=OneWay, Converter={StaticResource TempratureConverterWithDegree}}"/>
+                </TextBlock>
+                <TextBlock x:Name="ImmersiveGlance" Text="{x:Bind Context.Glance,Mode=OneWay}" FontWeight="ExtraLight" Height="40" Style="{ThemeResource TitleTextBlockStyle}" Foreground="White" Grid.Row="4" HorizontalAlignment="Center" VerticalAlignment="Bottom" />
+                <Button x:Name="ImmersiveMoreButton" Grid.RowSpan="5" HorizontalAlignment="Right" VerticalAlignment="Bottom" Style="{StaticResource SymbolButton}" Width="48" Height="48" Foreground="White" Margin="0,0,48,0">
+                    <ToolTipService.ToolTip>
+                        <TextBlock x:Uid="MoreText" />
+                    </ToolTipService.ToolTip>
+                    <Button.Content>
+                        <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE712;" />
+                    </Button.Content>
+                    <Button.Flyout>
+                        <Flyout Opened="Flyout_Opened" Closed="Flyout_Closed">
+                            <StackPanel HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                                    <TextBlock x:Uid="DynamicText" Margin="8" HorizontalAlignment="Left" VerticalAlignment="Center" />
+                                    <ToggleSwitch IsOn="{x:Bind Context.EnableDynamic,Mode=TwoWay}" Style="{ThemeResource NarrowSwitch}" Margin="8" HorizontalAlignment="Left" VerticalAlignment="Center" />
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                                    <TextBlock x:Uid="BlurBGText" Margin="8" HorizontalAlignment="Left" VerticalAlignment="Center" />
+                                    <ToggleSwitch IsOn="{x:Bind Context.AlwaysBlur,Mode=TwoWay}" Style="{ThemeResource NarrowSwitch}" Margin="8" HorizontalAlignment="Left" VerticalAlignment="Center" />
+                                </StackPanel>
+                            </StackPanel>
+                        </Flyout>
+                    </Button.Flyout>
+                </Button>
+                <Button x:Name="ImmersiveBackButton" Click="ImmersiveBackButton_Click" Grid.RowSpan="5" HorizontalAlignment="Right" VerticalAlignment="Bottom" Style="{StaticResource SymbolButton}" Width="48" Height="48" Foreground="White" Margin="0,0,0,0">
+                    <ToolTipService.ToolTip>
+                        <TextBlock x:Uid="BackText" />
+                    </ToolTipService.ToolTip>
+                    <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE73F;" />
+                </Button>
+                <Button x:Name="ImmersiveRefreshButton" Click="RefreshButton_Click" Grid.RowSpan="5" Command="{x:Bind Context.RefreshCommand,Mode=OneWay}" HorizontalAlignment="Left" VerticalAlignment="Bottom" Style="{StaticResource SymbolButton}" Width="48" Height="48" Foreground="White">
+                    <ToolTipService.ToolTip>
+                        <TextBlock x:Uid="RefreshText" />
+                    </ToolTipService.ToolTip>
+                    <Button.Content>
+                        <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE72C;" />
+                    </Button.Content>
+                </Button>
+            </Grid>
+            <controls:LoadingDot x:Name="LoadingDot" Foreground="White" IsActive="True" DotFinish="LoadingDot_DotFinish" DotHeight="16" DotWidth="16" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True"/>
+        </RelativePanel>
+
+        <ptr:PulltoRefresh x:Name="ScrollableRoot" ForceEnabled="{x:Bind Context.EnablePulltoRefresh, Mode=OneWay}" RefreshStart="ScrollableRoot_RefreshStart" Padding="0,128,0,0" IndicatorBackground="#44F0F0F0" IndicatorForeground="White" IndicatorDisplayMode="Overlay"
+                      HorizontalAlignment="Stretch" VerticalAlignment="Top" >
+            <RelativePanel>
+                <Grid Height="{x:Bind Context.ScrollableRootPaddingHeader,Mode=OneWay,FallbackValue=492}" x:Name="Header" />
+                <Viewbox x:Name="TempraturePathBox" RelativePanel.Below="Header" Stretch="Fill"
+                          RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignRightWithPanel="True" Height="32">
+                    <Path x:Name="TempraturePath" Height="32" Width="210"
+                          Stroke="Transparent" StrokeThickness="0"
+                          Fill="{ThemeResource SystemControlForegroundHighBrush}">
+                        <Path.Data>
+                            <GeometryGroup>
+                                <PathGeometry>
+                                    <PathGeometry.Figures>
+                                        <PathFigureCollection>
+                                            <PathFigure x:Name="PathFigure" IsClosed="true" StartPoint="0,0">
+                                                <PathFigure.Segments>
+                                                    <PathSegmentCollection>
+                                                        <BezierSegment x:Name="BezierControl1" Point1="10,0" Point2="20,0" Point3="30,0" />
+                                                        <BezierSegment x:Name="BezierControl2" Point1="40,0" Point2="50,0" Point3="60,0" />
+                                                        <BezierSegment x:Name="BezierControl3" Point1="70,0" Point2="80,0" Point3="90,0" />
+                                                        <BezierSegment x:Name="BezierControl4" Point1="100,0" Point2="110,0" Point3="120,0" />
+                                                        <BezierSegment x:Name="BezierControl5" Point1="130,0" Point2="140,0" Point3="150,0" />
+                                                        <BezierSegment x:Name="BezierControl6" Point1="160,0" Point2="170,0" Point3="180,0" />
+                                                        <BezierSegment x:Name="BezierControl7" Point1="190,0" Point2="200,0" Point3="210,0" />
+                                                        <LineSegment x:Name="endPoint1" Point="210,32" />
+                                                        <LineSegment Point="0,32" />
+                                                    </PathSegmentCollection>
+                                                </PathFigure.Segments>
+                                            </PathFigure>
+                                        </PathFigureCollection>
+                                    </PathGeometry.Figures>
+                                </PathGeometry>
+                            </GeometryGroup>
+                        </Path.Data>
+                    </Path>
+                </Viewbox>
+                <Grid RelativePanel.AlignLeftWithPanel="True" 
+              RelativePanel.AlignRightWithPanel="True" 
+              RelativePanel.AlignVerticalCenterWith="TempraturePathBox"  Canvas.ZIndex="3" Margin="0,-32,0,0" >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid x:Name="HourGrid0" Opacity="0" Height="36" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Center" >
+                        <Grid.RenderTransform>
+                            <TranslateTransform Y="{x:Bind BezierControl1.Point2.Y,Mode=OneWay}" />
+                        </Grid.RenderTransform>
+                        <TextBlock x:Name="Hour0" Margin="0,-12,0,0" VerticalAlignment="Top" HorizontalAlignment="Center" Style="{ThemeResource NormalTextBlockStyle}"
+                                       Foreground="White" Text="{x:Bind Context.Hour0,Mode=OneWay, Converter={StaticResource HourMinuteConverter}}" FontSize="12"/>
+                        <Ellipse x:Name="TempratureEllipse0" Height="12" Width="12" Stroke="{ThemeResource SystemControlHighlightAccentBrush}" Fill="{ThemeResource SystemControlForegroundHighBrush}" StrokeThickness="2" VerticalAlignment="Center" HorizontalAlignment="Center" >
+                        </Ellipse>
+                        <TextBlock x:Name="HourlyTemp0" Style="{ThemeResource NormalTextBlockStyle}"
+                           VerticalAlignment="Bottom" HorizontalAlignment="Center" 
+                           Text="{x:Bind Context.HourlyTemp0,Mode=OneWay, Converter={StaticResource TempratureConverterWithDegree}}" />
+                    </Grid>
+
+                    <Grid x:Name="HourGrid1" Opacity="0" Height="36" Grid.Column="3" Grid.ColumnSpan="2" HorizontalAlignment="Center" >
+                        <Grid.RenderTransform>
+                            <TranslateTransform Y="{x:Bind BezierControl2.Point2.Y,Mode=OneWay}" />
+                        </Grid.RenderTransform>
+                        <TextBlock x:Name="Hour1" Margin="0,-12,0,0" VerticalAlignment="Top" HorizontalAlignment="Center" Style="{ThemeResource NormalTextBlockStyle}"
+                                       Foreground="White" Text="{x:Bind Context.Hour1,Mode=OneWay, Converter={StaticResource HourMinuteConverter}}" FontSize="12"/>
+                        <Ellipse x:Name="TempratureEllipse1" Height="12" Width="12" Stroke="{ThemeResource SystemControlHighlightAccentBrush}" Fill="{ThemeResource SystemControlForegroundHighBrush}" StrokeThickness="2" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                        <TextBlock x:Name="HourlyTemp1" Style="{ThemeResource NormalTextBlockStyle}"
+                           VerticalAlignment="Bottom" HorizontalAlignment="Center" 
+                           Text="{x:Bind Context.HourlyTemp1,Mode=OneWay, Converter={StaticResource TempratureConverterWithDegree}}" />
+                    </Grid>
+
+                    <Grid x:Name="HourGrid2" Opacity="0" Height="36" Grid.Column="5" Grid.ColumnSpan="2" HorizontalAlignment="Center" >
+                        <Grid.RenderTransform>
+                            <TranslateTransform Y="{x:Bind BezierControl3.Point2.Y,Mode=OneWay}" />
+                        </Grid.RenderTransform>
+                        <TextBlock x:Name="Hour2" Margin="0,-12,0,0" VerticalAlignment="Top" HorizontalAlignment="Center" Style="{ThemeResource NormalTextBlockStyle}"
+                                       Foreground="White" Text="{x:Bind Context.Hour2,Mode=OneWay, Converter={StaticResource HourMinuteConverter}}" FontSize="12"/>
+                        <Ellipse x:Name="TempratureEllipse2" Height="12" Width="12" Stroke="{ThemeResource SystemControlHighlightAccentBrush}" Fill="{ThemeResource SystemControlForegroundHighBrush}" StrokeThickness="2" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                        <TextBlock x:Name="HourlyTemp2" Style="{ThemeResource NormalTextBlockStyle}"
+                           VerticalAlignment="Bottom" HorizontalAlignment="Center" 
+                           Text="{x:Bind Context.HourlyTemp2,Mode=OneWay, Converter={StaticResource TempratureConverterWithDegree}}" />
+                    </Grid>
+
+                    <Grid x:Name="HourGrid3" Opacity="0" Height="36" Grid.Column="7" Grid.ColumnSpan="2" HorizontalAlignment="Center" >
+                        <Grid.RenderTransform>
+                            <TranslateTransform Y="{x:Bind BezierControl4.Point2.Y,Mode=OneWay}" />
+                        </Grid.RenderTransform>
+                        <TextBlock x:Name="Hour3" Margin="0,-12,0,0" VerticalAlignment="Top" HorizontalAlignment="Center" Style="{ThemeResource NormalTextBlockStyle}"
+                                       Foreground="White" Text="{x:Bind Context.Hour3,Mode=OneWay, Converter={StaticResource HourMinuteConverter}}" FontSize="12"/>
+                        <Ellipse x:Name="TempratureEllipse3" Height="12" Width="12" Stroke="{ThemeResource SystemControlHighlightAccentBrush}" Fill="{ThemeResource SystemControlForegroundHighBrush}" StrokeThickness="2" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                        <TextBlock x:Name="HourlyTemp3" Style="{ThemeResource NormalTextBlockStyle}"
+                           VerticalAlignment="Bottom" HorizontalAlignment="Center" 
+                           Text="{x:Bind Context.HourlyTemp3,Mode=OneWay, Converter={StaticResource TempratureConverterWithDegree}}" />
+                    </Grid>
+
+                    <Grid x:Name="HourGrid4" Opacity="0" Height="36" Grid.Column="9" Grid.ColumnSpan="2" HorizontalAlignment="Center" >
+                        <Grid.RenderTransform>
+                            <TranslateTransform Y="{x:Bind BezierControl5.Point2.Y,Mode=OneWay}" />
+                        </Grid.RenderTransform>
+                        <TextBlock x:Name="Hour4" Margin="0,-12,0,0" VerticalAlignment="Top" HorizontalAlignment="Center" Style="{ThemeResource NormalTextBlockStyle}"
+                                       Foreground="White" Text="{x:Bind Context.Hour4,Mode=OneWay, Converter={StaticResource HourMinuteConverter}}" FontSize="12"/>
+                        <Ellipse x:Name="TempratureEllipse4" Height="12" Width="12" Stroke="{ThemeResource SystemControlHighlightAccentBrush}" Fill="{ThemeResource SystemControlForegroundHighBrush}" StrokeThickness="2" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                        <TextBlock x:Name="HourlyTemp4" Style="{ThemeResource NormalTextBlockStyle}"
+                           VerticalAlignment="Bottom" HorizontalAlignment="Center" 
+                           Text="{x:Bind Context.HourlyTemp4,Mode=OneWay, Converter={StaticResource TempratureConverterWithDegree}}" />
+                    </Grid>
+
+                    <Grid x:Name="HourGrid5" Opacity="0" Height="36" Grid.Column="11" Grid.ColumnSpan="2" HorizontalAlignment="Center" >
+                        <Grid.RenderTransform>
+                            <TranslateTransform Y="{x:Bind BezierControl6.Point2.Y,Mode=OneWay}" />
+                        </Grid.RenderTransform>
+                        <TextBlock x:Name="Hour5" Margin="0,-12,0,0" VerticalAlignment="Top" HorizontalAlignment="Center" Style="{ThemeResource NormalTextBlockStyle}"
+                                       Foreground="White" Text="{x:Bind Context.Hour5,Mode=OneWay, Converter={StaticResource HourMinuteConverter}}" FontSize="12"/>
+                        <Ellipse x:Name="TempratureEllipse5" Height="12" Width="12" Stroke="{ThemeResource SystemControlHighlightAccentBrush}" Fill="{ThemeResource SystemControlForegroundHighBrush}" StrokeThickness="2" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                        <TextBlock x:Name="HourlyTemp5" Style="{ThemeResource NormalTextBlockStyle}"
+                           VerticalAlignment="Bottom" HorizontalAlignment="Center" 
+                           Text="{x:Bind Context.HourlyTemp5,Mode=OneWay, Converter={StaticResource TempratureConverterWithDegree}}" />
+                    </Grid>
+                </Grid>
+
+                <RelativePanel Background="{ThemeResource SystemControlForegroundHighBrush}" x:Name="WeatherPanel" RelativePanel.Below="TempraturePathBox" RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignRightWithPanel="True" 
+                               Margin="0,-4,0,0" Padding="0,0,0,96">
+                    <RelativePanel.ChildrenTransitions>
+                        <TransitionCollection>
+                            <EntranceThemeTransition/>
+                        </TransitionCollection>
+                    </RelativePanel.ChildrenTransitions>
+                    <Grid x:Name="ForecastPanel" Visibility="{x:Bind Context.ForecastHide,Mode=OneWay,Converter={StaticResource BoolNottoVisibilityConverter}}" RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignRightWithPanel="True" RelativePanel.AlignTopWithPanel="True"
+                              Margin="0,32,0,48">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <RelativePanel Grid.Column="0">
+                            <TextBlock x:Uid="TomorrowText" x:Name="ForecastDate0" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignTopWithPanel="True" 
+                                           Margin="0,0,0,12" Style="{ThemeResource NormalTextBlockStyle}"/>
+                            <Viewbox x:Name="Forecastillu0" Stretch="Uniform" MaxWidth="36" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.Below="ForecastDate0" Margin="0,0,0,12">
+                                <CustomControls:ConditionPath x:Name="Forecast0" />
+                            </Viewbox>
+                            <TextBlock x:Name="ForecastCondition0" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.Below="Forecastillu0" 
+                                           Text="{x:Bind Context.Forecast0H,Mode=OneWay, Converter={StaticResource TempratureConverterWithDegree}}" Style="{ThemeResource NormalTextBlockStyle}" />
+                            <TextBlock x:Name="ForecastCondition01" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.Below="ForecastCondition0" Foreground="{ThemeResource SystemControlAltLowBrush}" 
+                                           Text="{x:Bind Context.Forecast0L,Mode=OneWay, Converter={StaticResource TempratureConverterWithDegree}}" Margin="0,0,0,12" Style="{ThemeResource NormalTextBlockStyle}" />
+                        </RelativePanel>
+                        <RelativePanel Grid.Column="1">
+                            <TextBlock x:Name="ForecastDate1" Text="{x:Bind Context.ForecastDate1,Mode=OneWay, Converter={StaticResource DateTimeConverter}}" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignTopWithPanel="True" 
+                                           Margin="0,0,0,12" Style="{ThemeResource NormalTextBlockStyle}"/>
+                            <Viewbox x:Name="Forecastillu1" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.Below="ForecastDate1" MaxWidth="36" Stretch="Uniform" Margin="0,0,0,12">
+                                <CustomControls:ConditionPath x:Name="Forecast1" />
+                            </Viewbox>
+                            <TextBlock x:Name="ForecastCondition1" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.Below="Forecastillu1" 
+                                           Text="{x:Bind Context.Forecast1H,Mode=OneWay, Converter={StaticResource TempratureConverterWithDegree}}" Style="{ThemeResource NormalTextBlockStyle}"/>
+                            <TextBlock x:Name="ForecastCondition11" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.Below="ForecastCondition1" Foreground="{ThemeResource SystemControlAltLowBrush}" 
+                                           Text="{x:Bind Context.Forecast1L,Mode=OneWay, Converter={StaticResource TempratureConverterWithDegree}}" Margin="0,0,0,12" Style="{ThemeResource NormalTextBlockStyle}" />
+                        </RelativePanel>
+                        <RelativePanel Grid.Column="2" >
+                            <TextBlock x:Name="ForecastDate2" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignTopWithPanel="True" 
+                                           Margin="0,0,0,12" Text="{x:Bind Context.ForecastDate2,Mode=OneWay, Converter={StaticResource DateTimeConverter}}" Style="{ThemeResource NormalTextBlockStyle}">
+                            </TextBlock>
+                            <Viewbox x:Name="Forecastillu2" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.Below="ForecastDate2" MaxWidth="36" Stretch="Uniform" Margin="0,0,0,12">
+                                <CustomControls:ConditionPath x:Name="Forecast2" />
+                            </Viewbox>
+                            <TextBlock x:Name="ForecastCondition2" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.Below="Forecastillu2" 
+                                           Text="{x:Bind Context.Forecast2H,Mode=OneWay, Converter={StaticResource TempratureConverterWithDegree}}" Style="{ThemeResource NormalTextBlockStyle}"/>
+                            <TextBlock x:Name="ForecastCondition21" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.Below="ForecastCondition2" Foreground="{ThemeResource SystemControlAltLowBrush}" 
+                                           Text="{x:Bind Context.Forecast2L,Mode=OneWay, Converter={StaticResource TempratureConverterWithDegree}}" Margin="0,0,0,12" Style="{ThemeResource NormalTextBlockStyle}" />
+                        </RelativePanel>
+                        <RelativePanel Grid.Column="3">
+                            <TextBlock x:Name="ForecastDate3" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignTopWithPanel="True" 
+                                           Text="{x:Bind Context.ForecastDate3,Mode=OneWay, Converter={StaticResource DateTimeConverter}}" Margin="0,0,0,12" Style="{ThemeResource NormalTextBlockStyle}"/>
+                            <Viewbox x:Name="Forecastillu3" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.Below="ForecastDate3" MaxWidth="36" Stretch="Uniform" Margin="0,0,0,12">
+                                <CustomControls:ConditionPath x:Name="Forecast3" />
+                            </Viewbox>
+                            <TextBlock x:Name="ForecastCondition3" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.Below="Forecastillu3" 
+                                           Text="{x:Bind Context.Forecast3H,Mode=OneWay, Converter={StaticResource TempratureConverterWithDegree}}" Style="{ThemeResource NormalTextBlockStyle}"/>
+                            <TextBlock x:Name="ForecastCondition31" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.Below="ForecastCondition3" Foreground="{ThemeResource SystemControlAltLowBrush}" 
+                                           Text="{x:Bind Context.Forecast3L,Mode=OneWay, Converter={StaticResource TempratureConverterWithDegree}}" Margin="0,0,0,12" Style="{ThemeResource NormalTextBlockStyle}" />
+                        </RelativePanel>
+                        <RelativePanel Grid.Column="4">
+                            <TextBlock x:Name="ForecastDate4" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignTopWithPanel="True" 
+                                           Text="{x:Bind Context.ForecastDate4,Mode=OneWay, Converter={StaticResource DateTimeConverter}}" Margin="0,0,0,12" Style="{ThemeResource NormalTextBlockStyle}"/>
+                            <Viewbox x:Name="Forecastillu4" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.Below="ForecastDate4" MaxWidth="36" Stretch="Uniform" Margin="0,0,0,12">
+                                <CustomControls:ConditionPath x:Name="Forecast4" />
+                            </Viewbox>
+                            <TextBlock x:Name="ForecastCondition4" Style="{ThemeResource NormalTextBlockStyle}"  RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.Below="Forecastillu4"
+                                           Text="{x:Bind Context.Forecast4H,Mode=OneWay, Converter={StaticResource TempratureConverterWithDegree}}" />
+                            <TextBlock x:Name="ForecastCondition41" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.Below="ForecastCondition4" Foreground="{ThemeResource SystemControlAltLowBrush}" 
+                                           Text="{x:Bind Context.Forecast4L,Mode=OneWay, Converter={StaticResource TempratureConverterWithDegree}}" Margin="0,0,0,12" Style="{ThemeResource NormalTextBlockStyle}" />
+                        </RelativePanel>
+                    </Grid>
+                    <RelativePanel x:Name="AQIPanel" Visibility="{x:Bind Context.AQIHide,Mode=OneWay,Converter={StaticResource BoolNottoVisibilityConverter}}" RelativePanel.Below="ForecastPanel" Margin="24,0,0,24" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignRightWithPanel="True">
+                        <Ellipse Stroke="{ThemeResource SystemControlTranslucentHighLightBrush}" StrokeThickness="2" Height="72" Width="72" RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignBottomWithPanel="True" RelativePanel.AlignTopWithPanel="True" />
+                        <Ellipse x:Name="AQICircle" StrokeThickness="2" Height="72" Width="72" StrokeDashArray="{x:Bind AqiCircleStorkeLength, Converter={StaticResource AqiCircleAniConverter},Mode=OneWay}" RenderTransformOrigin="0.5,0.5" RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignBottomWithPanel="True" RelativePanel.AlignTopWithPanel="True" >
+                            <Ellipse.RenderTransform>
+                                <RotateTransform Angle="-90"/>
+                            </Ellipse.RenderTransform>
+                            <Ellipse.Stroke>
+                                <SolidColorBrush x:Name="AQICircleColor" Color="#fff0f0f0" />
+                            </Ellipse.Stroke>
+                        </Ellipse>
+                        <Grid RelativePanel.AlignHorizontalCenterWith="AQICircle" RelativePanel.AlignVerticalCenterWith="AQICircle" Height="36" Margin="0,8,0,0">
+                            <TextBlock Style="{ThemeResource SubheaderTextBlockStyle}" Text="{x:Bind Context.Aqi,Mode=OneWay,Converter={StaticResource AQIQualityConverter}}" FontSize="12" VerticalAlignment="Top" HorizontalAlignment="Center" />
+                            <TextBlock Style="{ThemeResource SubheaderTextBlockStyle}" Text="{x:Bind Context.Aqi,Mode=OneWay,Converter={StaticResource AQIValueConverter}}" FontSize="16" VerticalAlignment="Bottom" HorizontalAlignment="Center" />
+                        </Grid>
+                        <StackPanel x:Name="AQIDetailGrid" RelativePanel.RightOf="AQICircle" Margin="12,0,0,0" RelativePanel.AlignTopWithPanel="True" RelativePanel.AlignRightWithPanel="True">
+                            <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch" >
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="56" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="56" />
+                                </Grid.ColumnDefinitions>
+                                <TextBlock Text="PM2.5" Margin="0" Style="{ThemeResource NormalTextBlockStyle}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                <ProgressBar Grid.Column="1" x:Name="PM25Bar" IsIndeterminate="False" Background="{ThemeResource SystemControlAltHighBrush}" Margin="12" Height="6" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Foreground="{x:Bind AQICircle.Stroke,Mode=OneWay}" />
+                                <TextBlock Grid.Column="2" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" Text="{x:Bind Context.Aqi,Mode=OneWay, Converter={StaticResource PM25Converter}}" />
+                            </Grid>
+                            <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch" >
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="56" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="56" />
+                                </Grid.ColumnDefinitions>
+                                <TextBlock Text="PM10" Style="{ThemeResource NormalTextBlockStyle}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                <TextBlock Margin="0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Text="{x:Bind Context.Aqi,Mode=OneWay, Converter={StaticResource PM10Converter}}" />
+                                <ProgressBar x:Name="PM10Bar" Grid.Column="1" IsIndeterminate="False" Background="{ThemeResource SystemControlAltHighBrush}" Margin="12" Height="6" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Foreground="{x:Bind AQICircle.Stroke,Mode=OneWay}" />
+                            </Grid>
+                            <Grid HorizontalAlignment="Stretch">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="56" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="56" />
+                                </Grid.ColumnDefinitions>
+                                <TextBlock Text="SO" Style="{ThemeResource NormalTextBlockStyle}" HorizontalAlignment="Center" VerticalAlignment="Center" >
+                                    <Run Typography.Variants="Subscript" Text="2" />
+                                </TextBlock>
+                                <TextBlock x:Name="SO2Text" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Text="{x:Bind Context.Aqi,Mode=OneWay, Converter={StaticResource SO2Converter}}" />
+                                <ProgressBar x:Name="SO2Bar" Grid.Column="1" IsIndeterminate="False" Background="{ThemeResource SystemControlAltHighBrush}" Margin="12" Height="6" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Foreground="{x:Bind AQICircle.Stroke,Mode=OneWay}" />
+                            </Grid>
+                            <Grid x:Name="COGrid" Visibility="Collapsed" HorizontalAlignment="Stretch">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="56" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="56" />
+                                </Grid.ColumnDefinitions>
+                                <TextBlock Text="CO" Style="{ThemeResource NormalTextBlockStyle}" HorizontalAlignment="Center" VerticalAlignment="Center" >
+                                </TextBlock>
+                                <TextBlock x:Name="COText" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Text="{x:Bind Context.Aqi,Mode=OneWay, Converter={StaticResource COConverter}}" />
+                                <ProgressBar x:Name="COBar" Grid.Column="1" Value="{x:Bind Context.Aqi,Mode=OneWay, Converter={StaticResource COProgressConverter}}" IsIndeterminate="False" Background="{ThemeResource SystemControlAltHighBrush}" Margin="12" Height="6" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Foreground="{x:Bind AQICircle.Stroke,Mode=OneWay}" />
+                            </Grid>
+                            <Grid x:Name="NO2Grid" Visibility="Collapsed" HorizontalAlignment="Stretch">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="56" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="56" />
+                                </Grid.ColumnDefinitions>
+                                <TextBlock Text="NO" Style="{ThemeResource NormalTextBlockStyle}" HorizontalAlignment="Center" VerticalAlignment="Center" >
+                                <Run Typography.Variants="Subscript" Text="2" />
+                                </TextBlock>
+                                <TextBlock x:Name="NO2Text" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Text="{x:Bind Context.Aqi,Mode=OneWay, Converter={StaticResource NO2Converter}}" />
+                                <ProgressBar x:Name="NO2Bar" Grid.Column="1" Value="{x:Bind Context.Aqi,Mode=OneWay, Converter={StaticResource NO2ProgressConverter}}" IsIndeterminate="False" Background="{ThemeResource SystemControlAltHighBrush}" Margin="12" Height="6" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Foreground="{x:Bind AQICircle.Stroke,Mode=OneWay}" />
+                            </Grid>
+                            <Grid x:Name="O3Grid" Visibility="Collapsed" HorizontalAlignment="Stretch">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="56" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="56" />
+                                </Grid.ColumnDefinitions>
+                                <TextBlock Text="O" Style="{ThemeResource NormalTextBlockStyle}" HorizontalAlignment="Center" VerticalAlignment="Center" >
+                                <Run Typography.Variants="Subscript" Text="3" />
+                                </TextBlock>
+                                <TextBlock x:Name="O3Text" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Text="{x:Bind Context.Aqi,Mode=OneWay, Converter={StaticResource O3Converter}}" />
+                                <ProgressBar x:Name="O3Bar" Grid.Column="1" Value="{x:Bind Context.Aqi,Mode=OneWay, Converter={StaticResource O3ProgressConverter}}" IsIndeterminate="False" Background="{ThemeResource SystemControlAltHighBrush}" Margin="12" Height="6" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Foreground="{x:Bind AQICircle.Stroke,Mode=OneWay}" />
+                            </Grid>
+                        </StackPanel>
+                        <Grid x:Name="AQIDetailButton" Margin="8" Background="{ThemeResource SystemControlAltHighBrush}" PointerReleased="AQIDetailButton_PointerReleased" PointerPressed="AQIDetailButton_PointerPressed" PointerEntered="AQIDetailButton_PointerEntered" PointerExited="AQIDetailButton_PointerExited" RelativePanel.AlignHorizontalCenterWith="AQIDetailGrid" RelativePanel.AlignLeftWith="AQIDetailGrid" RelativePanel.AlignRightWith="AQIDetailGrid" RelativePanel.AlignBottomWithPanel="True" RelativePanel.Below="AQIDetailGrid">
+                            <TextBlock x:Uid="DetailsPanelText" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{ThemeResource HeaderTextBlockStyle}" FontSize="16" Margin="8,2,8,2"/>
+                        </Grid>
+                    </RelativePanel>
+                    <Grid x:Name="DetailsPanel" SizeChanged="Grid_SizeChanged" RelativePanel.Below="AQIPanel" RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignRightWithPanel="True">
+                        <Grid.ChildrenTransitions>
+                            <TransitionCollection>
+                                <EntranceThemeTransition/>
+                            </TransitionCollection>
+                        </Grid.ChildrenTransitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto" />
+                            <RowDefinition Height="auto" />
+                            <RowDefinition Height="auto" />
+                            <RowDefinition Height="auto" />
+                            <RowDefinition Height="auto" />
+                            <RowDefinition Height="auto" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition x:Name="Column2" Width="auto" />
+                        </Grid.ColumnDefinitions>
+                        <RelativePanel x:Name="DetailGrid0" Visibility="{x:Bind Context.DetailsHide,Mode=OneWay,Converter={StaticResource BoolNottoVisibilityConverter}}" Grid.Row="0" Height="240" >
+                            <TextBlock x:Uid="BodyTempText" Style="{ThemeResource HeaderTextBlockStyle}" Foreground="{ThemeResource SystemControlForegroundAccentBrush}" Margin="0,32,0,0" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignTopWithPanel="True" FontSize="15" />
+                            <Viewbox Stretch="Uniform" RelativePanel.AlignVerticalCenterWithPanel="True" RelativePanel.AlignHorizontalCenterWithPanel="True" Margin="12,64,12,64" >
+                                <Grid>
+                                    <Path Width="64" Height="64" StrokeLineJoin="Round" StrokeEndLineCap="Round" StrokeStartLineCap="Round" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                        <Path.Fill>
+                                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                                <GradientStop Color="#FFF44336" Offset="1"/>
+                                                <GradientStop Color="#FFFFEB3B"/>
+                                            </LinearGradientBrush>
+                                        </Path.Fill>
+                                        <Path.Data>
+                                            M 26.8059,30.1399L 29.4076,30.1399M 26.8059,19.7329L 30.7085,19.7329M 26.6095,9.20353C 26.6095,6.32956 28.939,4 31.813,4C 34.687,4 37.0165,6.32956 37.0165,9.20353L 37.0503,9.32582L 37.0503,40.547L 37.0819,40.5206C 40.2482,42.3051 42.4015,45.6994 42.4015,49.593C 42.4015,55.3406 37.7496,60 32.0019,60C 26.2543,60 21.5985,55.3406 21.5985,49.593C 21.5985,45.7837 23.6168,42.4524 26.6706,40.6387L 26.6433,40.547L 26.6433,9.32582L 26.6726,9.41753
+                                        </Path.Data>
+                                        <Path.Clip>
+                                            <RectangleGeometry Rect="0,0,64,64" >
+                                                <RectangleGeometry.Transform>
+                                                    <TranslateTransform x:Name="ClipTransAni" Y="64" />
+                                                </RectangleGeometry.Transform>
+                                            </RectangleGeometry>
+                                        </Path.Clip>
+                                    </Path>
+                                    <Path Width="64" Height="64" Stroke="{ThemeResource SystemControlTranslucentHighBrush}" StrokeLineJoin="Round" StrokeEndLineCap="Round" StrokeStartLineCap="Round" StrokeThickness="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                        <Path.Data>
+                                            M 26.8059,30.1399L 29.4076,30.1399M 26.8059,19.7329L 30.7085,19.7329M 26.6095,9.20353C 26.6095,6.32956 28.939,4 31.813,4C 34.687,4 37.0165,6.32956 37.0165,9.20353L 37.0503,9.32582L 37.0503,40.547L 37.0819,40.5206C 40.2482,42.3051 42.4015,45.6994 42.4015,49.593C 42.4015,55.3406 37.7496,60 32.0019,60C 26.2543,60 21.5985,55.3406 21.5985,49.593C 21.5985,45.7837 23.6168,42.4524 26.6706,40.6387L 26.6433,40.547L 26.6433,9.32582L 26.6726,9.41753
+                                        </Path.Data>
+                                    </Path>
+                                </Grid>
+                            </Viewbox>
+                            <TextBlock Text="{x:Bind Context.BodyTemprature,Mode=OneWay, Converter={StaticResource TempratureConverterWithDegree}}" Style="{ThemeResource NormalTextBlockStyle}" Margin="0,0,0,32" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignBottomWithPanel="True" />
+                        </RelativePanel>
+                        <RelativePanel x:Name="DetailGrid1" Visibility="{x:Bind Context.DetailsHide,Mode=OneWay,Converter={StaticResource BoolNottoVisibilityConverter}}" Grid.Row="0" Grid.Column="1" Height="240" >
+                            <TextBlock x:Uid="WindText" Style="{ThemeResource HeaderTextBlockStyle}" Foreground="{ThemeResource SystemControlForegroundAccentBrush}" FontSize="15" Margin="0,32,0,0" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignTopWithPanel="True" />
+                            <Viewbox Stretch="Uniform" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True" Margin="12,64,12,64">
+                                <Grid>
+                                    <Rectangle StrokeThickness="0" Width="4" Height="34" RadiusX="2" RadiusY="2" Fill="{ThemeResource SystemControlAltMediumBrush}" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,30,0,0" />
+                                    <Path VerticalAlignment="Center" HorizontalAlignment="Center" Width="64" Height="64" Fill="{ThemeResource SystemBackgroundHighBrush}" StrokeLineJoin="Round" StrokeEndLineCap="Round" StrokeStartLineCap="Round" StrokeThickness="0">
+                                        <Path.Data>
+                                            M 30.5597,31.177L 30.5597,4.15459L 33.4405,7.06972L 33.4403,7.03515L 33.4403,31.177L 56.7236,44.6196L 52.7544,45.6739L 31.9314,33.6717L 31.9314,33.646L 8.68241,47.0886L 9.75397,43.1538L 30.5512,31.1513L 30.5597,31.177 Z M 33.646,32C 33.646,32.909 32.909,33.646 32,33.646C 31.091,33.646 30.354,32.909 30.354,32C 30.354,31.091 31.091,30.354 32,30.354C 32.909,30.354 33.646,31.091 33.646,32 Z
+                                        </Path.Data>
+                                        <Path.RenderTransform>
+                                            <RotateTransform x:Name="fengchezhuan" CenterX="32" CenterY="32" Angle="0" />
+                                        </Path.RenderTransform>
+                                    </Path>
+                                </Grid>
+                            </Viewbox>
+                            <TextBlock Text="{x:Bind Context.Wind,Mode=OneWay, Converter={StaticResource WindSpeedConverter}}" Style="{ThemeResource NormalTextBlockStyle}" Margin="0,0,4,32" RelativePanel.AlignBottomWithPanel="True" RelativePanel.LeftOf="DetailGrid1Separator" />
+                            <TextBlock x:Name="DetailGrid1Separator" Text="|" Style="{ThemeResource NormalTextBlockStyle}" Margin="0,0,0,32" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignBottomWithPanel="True" />
+                            <TextBlock Text="{x:Bind Context.Wind,Mode=OneWay, Converter={StaticResource WindDirectionConverter}}" Style="{ThemeResource NormalTextBlockStyle}" Margin="4,0,0,32" RelativePanel.AlignBottomWithPanel="True" RelativePanel.RightOf="DetailGrid1Separator" />
+                        </RelativePanel>
+                        <RelativePanel x:Name="DetailGrid2" Visibility="{x:Bind Context.DetailsHide,Mode=OneWay,Converter={StaticResource BoolNottoVisibilityConverter}}" Grid.Row="1" Height="240" >
+                            <TextBlock x:Uid="HumidityText" Style="{ThemeResource HeaderTextBlockStyle}" Foreground="{ThemeResource SystemControlForegroundAccentBrush}" FontSize="15" Margin="0,32,0,0" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignTopWithPanel="True" />
+                            <Viewbox Stretch="Uniform" RelativePanel.AlignVerticalCenterWithPanel="True" RelativePanel.AlignHorizontalCenterWithPanel="True" Margin="12,64,12,64" >
+                                <Grid>
+                                    <Path Width="64" Height="64" StrokeLineJoin="Round" StrokeEndLineCap="Round" StrokeStartLineCap="Round" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                        <Path.Fill>
+                                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                                <GradientStop Color="#FF2196F3" Offset="1"/>
+                                                <GradientStop Color="#FFBBDEFB"/>
+                                            </LinearGradientBrush>
+                                        </Path.Fill>
+                                        <Path.Data>
+                                            F1 M 32.0287,4.03049C 32.0287,14.3843 49.5188,28.3964 49.5188,41.9719C 49.5188,51.9702 41.6961,60 32.0287,60L 31.9714,60C 22.304,60 14.4812,51.9702 14.4812,41.9719C 14.4812,28.3964 31.9714,14.3538 31.9714,4
+                                        </Path.Data>
+                                        <Path.Clip>
+                                            <RectangleGeometry Rect="0,0,64,64" >
+                                                <RectangleGeometry.Transform>
+                                                    <TranslateTransform x:Name="WaterDropTrans" Y="64" />
+                                                </RectangleGeometry.Transform>
+                                            </RectangleGeometry>
+                                        </Path.Clip>
+                                    </Path>
+                                    <Path Width="64" Height="64" Stroke="{ThemeResource SystemControlTranslucentHighBrush}" StrokeLineJoin="Round" StrokeEndLineCap="Round" StrokeStartLineCap="Round" StrokeThickness="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                        <Path.Data>
+                                            F1 M 32.0287,4.03049C 32.0287,14.3843 49.5188,28.3964 49.5188,41.9719C 49.5188,51.9702 41.6961,60 32.0287,60L 31.9714,60C 22.304,60 14.4812,51.9702 14.4812,41.9719C 14.4812,28.3964 31.9714,14.3538 31.9714,4
+                                        </Path.Data>
+                                    </Path>
+                                </Grid>
+                            </Viewbox>
+                            <TextBlock Text="{x:Bind Context.Humidity,Mode=OneWay, Converter={StaticResource PercentageConverter}}" Style="{ThemeResource NormalTextBlockStyle}" Margin="0,0,0,32" RelativePanel.AlignBottomWithPanel="True" RelativePanel.AlignHorizontalCenterWithPanel="True" />
+                        </RelativePanel>
+                        <RelativePanel x:Name="DetailGrid3" Visibility="{x:Bind Context.DetailsHide,Mode=OneWay,Converter={StaticResource BoolNottoVisibilityConverter}}" Grid.Row="1" Grid.Column="1" Height="240" >
+                            <TextBlock x:Uid="PrecipitationText" Style="{ThemeResource HeaderTextBlockStyle}" Foreground="{ThemeResource SystemControlForegroundAccentBrush}" FontSize="15" Margin="0,32,0,0" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignTopWithPanel="True" />
+                            <Viewbox Stretch="Uniform" RelativePanel.AlignVerticalCenterWithPanel="True" RelativePanel.AlignHorizontalCenterWithPanel="True" Margin="12,64,12,64" >
+                                <Grid>
+                                    <Path Width="64" Height="64" StrokeLineJoin="Round" StrokeEndLineCap="Round" StrokeStartLineCap="Round" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                        <Path.Fill>
+                                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                                <GradientStop Color="#FF2196F3" Offset="1"/>
+                                                <GradientStop Color="#FFBBDEFB"/>
+                                            </LinearGradientBrush>
+                                        </Path.Fill>
+                                        <Path.Data>
+                                            M 32,60L 32,60C 28.1341,60 25,56.8659 25,53L 25,11C 25,7.13408 28.1341,4 32,4L 32,4C 35.8659,4 39,7.13408 39,11L 39,53C 39,56.8659 35.8659,60 32,60 Z M 25,32L 28.5,32M 25,46L 28.5,46M 25,39L 32,39M 25,25L 32,25M 25,18L 28.5,18
+                                        </Path.Data>
+                                        <Path.Clip>
+                                            <RectangleGeometry Rect="0,0,64,64" >
+                                                <RectangleGeometry.Transform>
+                                                    <TranslateTransform x:Name="PcpnTrans" Y="64" />
+                                                </RectangleGeometry.Transform>
+                                            </RectangleGeometry>
+                                        </Path.Clip>
+                                    </Path>
+
+                                    <Path Width="64" Height="64" Stroke="{ThemeResource SystemControlTranslucentHighBrush}" StrokeLineJoin="Round" StrokeEndLineCap="Round" StrokeStartLineCap="Round" StrokeThickness="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                        <Path.Data>
+                                            M 32,60L 32,60C 28.1341,60 25,56.8659 25,53L 25,11C 25,7.13408 28.1341,4 32,4L 32,4C 35.8659,4 39,7.13408 39,11L 39,53C 39,56.8659 35.8659,60 32,60 Z M 25,32L 28.5,32M 25,46L 28.5,46M 25,39L 32,39M 25,25L 32,25M 25,18L 28.5,18
+                                        </Path.Data>
+                                    </Path>
+                                </Grid>
+                            </Viewbox>
+                            <TextBlock Text="{x:Bind Context.Precipitation,Mode=OneWay, Converter={StaticResource PrecipitationConverter}}" Style="{ThemeResource NormalTextBlockStyle}" Margin="0,0,4,32" RelativePanel.AlignBottomWithPanel="True" RelativePanel.LeftOf="DetailGrid3Separator" />
+                            <TextBlock x:Name="DetailGrid3Separator" Text="|" Style="{ThemeResource NormalTextBlockStyle}" Margin="0,0,0,32" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignBottomWithPanel="True" />
+                            <TextBlock Text="{x:Bind Context.Proportion,Mode=OneWay, Converter={StaticResource PercentageConverter}}" Style="{ThemeResource NormalTextBlockStyle}" Margin="4,0,0,32" RelativePanel.AlignBottomWithPanel="True" RelativePanel.RightOf="DetailGrid3Separator" />
+                        </RelativePanel>
+                        <RelativePanel x:Name="DetailGrid4" Visibility="{x:Bind Context.DetailsHide,Mode=OneWay,Converter={StaticResource BoolNottoVisibilityConverter}}" Grid.Row="2" Height="240" >
+                            <TextBlock x:Uid="SunProgressText" Style="{ThemeResource HeaderTextBlockStyle}" Foreground="{ThemeResource SystemControlForegroundAccentBrush}" FontSize="15" Margin="0,32,0,0" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignTopWithPanel="True" />
+                            <Viewbox Stretch="Uniform" x:Name="SunProgressBox" RelativePanel.AlignVerticalCenterWithPanel="True" RelativePanel.AlignHorizontalCenterWithPanel="True" Margin="4,64,4,64">
+                                <Grid Height="320" Width="640" >
+                                    <Ellipse Height="512" Width="512" VerticalAlignment="Top" Stroke="{ThemeResource SystemControlTranslucentHighLightBrush}" StrokeThickness="8">
+                                        <Ellipse.Clip>
+                                            <RectangleGeometry Rect="0,0 512,256" />
+                                        </Ellipse.Clip>
+                                    </Ellipse>
+                                    <Ellipse x:Name="FillLine" Height="512" Width="512" VerticalAlignment="Top" Stroke="{ThemeResource SystemControlHighlightAccentBrush}" StrokeDashArray="{x:Bind SunRiseStrokeLength, Converter={StaticResource SunRiseAniConverter},Mode=OneWay}" StrokeThickness="8">
+                                        <Ellipse.Clip>
+                                            <RectangleGeometry Rect="0,0 512,256" />
+                                        </Ellipse.Clip>
+                                    </Ellipse>
+                                    <Path x:Name="SunriseIcon" HorizontalAlignment="{x:Bind Context.IsNight,Mode=OneWay, Converter={StaticResource SunRiseAlignmentConverter}}" VerticalAlignment="Bottom" Height="64" Width="128" StrokeEndLineCap="Round" StrokeLineJoin="Round" StrokeStartLineCap="Round" Fill="#FFEB3B" >
+                                        <Path.Data>
+                                            M 64,19.6522L 64,19.6522C 61.1187,19.6522 58.7826,17.3161 58.7826,14.4348L 58.7826,9.2174C 58.7826,6.33609 61.1187,4 64,4L 64,4C 66.8813,4 69.2174,6.33609 69.2174,9.2174L 69.2174,14.4348C 69.2174,17.3161 66.8813,19.6522 64,19.6522 Z M 30.087,24.8696C 30.087,27.7509 27.7509,30.087 24.8696,30.087C 21.9883,30.087 19.6522,27.7509 19.6522,24.8696C 19.6522,21.9883 21.9883,19.6522 24.8696,19.6522C 27.7509,19.6522 30.087,21.9883 30.087,24.8696 Z M 103.13,30.087C 100.249,30.087 97.913,27.7509 97.913,24.8696C 97.913,21.9883 100.249,19.6522 103.13,19.6522C 106.012,19.6522 108.348,21.9883 108.348,24.8696C 108.348,27.7509 106.012,30.087 103.13,30.087 Z M 4.00001,64L 19.6522,64L 19.6522,64C 19.6522,61.1187 17.3161,58.7826 14.4348,58.7826L 9.2174,58.7826C 6.3361,58.7826 4.00001,61.1187 4.00001,64 Z M 24.8696,64L 103.13,64C 103.13,42.3887 85.6113,24.8696 64,24.8696C 42.3887,24.8696 24.8696,42.3887 24.8696,64 Z M 108.348,64L 124,64L 124,64C 124,61.1187 121.664,58.7826 118.783,58.7826L 113.565,58.7826C 110.684,58.7826 108.348,61.1187 108.348,64 Z
+                                        </Path.Data>
+                                    </Path>
+                                    <Path x:Name="SunsetIcon" HorizontalAlignment="{x:Bind Context.IsNight,Mode=OneWay, Converter={StaticResource SunSetAlignmentConverter}}" VerticalAlignment="Bottom" Height="64" Width="128" StrokeEndLineCap="Round" StrokeLineJoin="Round" StrokeStartLineCap="Round" Fill="#FF5722" >
+                                        <Path.Data>
+                                            F1 M 24.8696,64L 103.13,64C 103.13,42.3887 85.6113,24.8696 64,24.8696C 42.3887,24.8696 24.8696,42.3887 24.8696,64 Z
+                                        </Path.Data>
+                                    </Path>
+                                </Grid>
+                            </Viewbox>
+                            <TextBlock Text="{x:Bind Context.SunRiseText,Mode=OneWay, Converter={StaticResource TimeSpanConverter}}" Style="{ThemeResource NormalTextBlockStyle}" Margin="8,0,8,32" RelativePanel.AlignBottomWithPanel="True" RelativePanel.AlignLeftWith="SunProgressBox" >
+                            </TextBlock>
+                            <TextBlock Text="{x:Bind Context.SunSetText,Mode=OneWay, Converter={StaticResource TimeSpanConverter}}" Style="{ThemeResource NormalTextBlockStyle}" Margin="4,0,4,32" RelativePanel.AlignBottomWithPanel="True" RelativePanel.AlignRightWith="SunProgressBox" >
+                            </TextBlock>
+                        </RelativePanel>
+                        <RelativePanel x:Name="DetailGrid5" Visibility="{x:Bind Context.DetailsHide,Mode=OneWay,Converter={StaticResource BoolNottoVisibilityConverter}}" Grid.Row="2" Grid.Column="1" Height="240" >
+                            <TextBlock x:Uid="MoonPhaseText" Style="{ThemeResource HeaderTextBlockStyle}" Foreground="{ThemeResource SystemControlForegroundAccentBrush}" FontSize="15" Margin="0,32,0,0" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignTopWithPanel="True" />
+                            <Image Stretch="Uniform" Source="{x:Bind Context.Calendar,Mode=OneWay, Converter={StaticResource MoonPhaseProgressConverter}}" RelativePanel.AlignVerticalCenterWithPanel="True" RelativePanel.AlignHorizontalCenterWithPanel="True" Margin="12,64,12,64">
+                            </Image>
+                            <TextBlock Text="{x:Bind Context.Calendar,Mode=OneWay, Converter={StaticResource MoonPhaseTextConverter}}" Style="{ThemeResource NormalTextBlockStyle}" Margin="0,0,0,32" RelativePanel.AlignBottomWithPanel="True" RelativePanel.AlignHorizontalCenterWithPanel="True" />
+                        </RelativePanel>
+                        <RelativePanel x:Name="DetailGrid6" Visibility="{x:Bind Context.DetailsHide,Mode=OneWay,Converter={StaticResource BoolNottoVisibilityConverter}}" Grid.Row="3" Height="240" >
+                            <TextBlock x:Uid="VisibilityText" Style="{ThemeResource HeaderTextBlockStyle}" Foreground="{ThemeResource SystemControlForegroundAccentBrush}" FontSize="15" Margin="0,32,0,0" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignTopWithPanel="True" />
+                            <Viewbox Stretch="Uniform" RelativePanel.AlignVerticalCenterWithPanel="True" RelativePanel.AlignHorizontalCenterWithPanel="True" Margin="12,64,12,64" >
+                                <Grid>
+                                    <Ellipse Height="60" Width="60" Fill="#80BBBBBB">
+                                        <Ellipse.RenderTransform>
+                                            <ScaleTransform x:Name="vissubellipse3" CenterX="30" CenterY="30" ScaleX="0" ScaleY="0" />
+                                        </Ellipse.RenderTransform>
+                                    </Ellipse>
+                                    <Ellipse Height="36" Width="36" Fill="#80AAAAAA" >
+                                        <Ellipse.RenderTransform>
+                                            <ScaleTransform x:Name="vissubellipse2" CenterX="18" CenterY="18" ScaleX="0" ScaleY="0" />
+                                        </Ellipse.RenderTransform>
+                                    </Ellipse>
+                                    <Ellipse Height="24" Width="24" Fill="#80999999" >
+                                        <Ellipse.RenderTransform>
+                                            <ScaleTransform x:Name="vissubellipse1" CenterX="12" CenterY="12" ScaleX="0" ScaleY="0" />
+                                        </Ellipse.RenderTransform>
+                                    </Ellipse>
+                                    <Ellipse Height="12" Width="12" Fill="#80888888" >
+                                        <Ellipse.RenderTransform>
+                                            <ScaleTransform x:Name="vissubellipse0" CenterX="6" CenterY="6" ScaleX="0" ScaleY="0" />
+                                        </Ellipse.RenderTransform>
+                                    </Ellipse>
+                                </Grid>
+                            </Viewbox>
+                            <TextBlock Text="{x:Bind Context.Visibility,Mode=OneWay, Converter={StaticResource VisibilityConverter}}" Style="{ThemeResource NormalTextBlockStyle}" Margin="0,0,0,32" RelativePanel.AlignBottomWithPanel="True" RelativePanel.AlignHorizontalCenterWithPanel="True" />
+                        </RelativePanel>
+                        <RelativePanel x:Name="DetailGrid7" Visibility="{x:Bind Context.DetailsHide,Mode=OneWay,Converter={StaticResource BoolNottoVisibilityConverter}}" Grid.Row="3" Grid.Column="1" Height="240" >
+                            <TextBlock x:Uid="PressureText" Style="{ThemeResource HeaderTextBlockStyle}" Foreground="{ThemeResource SystemControlForegroundAccentBrush}" FontSize="15" Margin="0,32,0,0" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignTopWithPanel="True" />
+                            <Viewbox Stretch="Uniform" RelativePanel.AlignVerticalCenterWithPanel="True" RelativePanel.AlignHorizontalCenterWithPanel="True" Margin="12,64,12,64" >
+                                <Grid>
+                                    <Path Width="64" Height="64" Stroke="{ThemeResource SystemControlAltMediumBrush}" StrokeThickness="1" StrokeLineJoin="Round" StrokeEndLineCap="Round" StrokeStartLineCap="Round" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                        <Path.Data>
+                                            M 12.2012,51.7992C 7.13408,46.7322 4.00004,39.732 4.00004,32C 4.00004,16.536 16.5361,4 32,4C 47.464,4 60,16.536 60,32C 60,39.7319 56.866,46.7319 51.7989,51.7989M 32,8.2L 32,4M 60,32L 53,32M 51.7977,12.2023L 47.8379,16.1621M 12.201,12.201L 14.1809,14.1809M 5.4,32L 4,32
+                                        </Path.Data>
+                                    </Path>
+                                    <Path Width="64" Height="64" Fill="{ThemeResource SystemControlAltMediumBrush}" StrokeLineJoin="Round" StrokeEndLineCap="Round" StrokeStartLineCap="Round" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                        <Path.Data>
+                                            F1 M 32.7,11C 32.7,10.6135 32.3865,10.3 32,10.3C 31.6134,10.3 31.3,10.6135 31.3,11L 30.6,32C 30.6,32.7732 31.2268,33.4 32,33.4C 32.7732,33.4 33.4,32.7732 33.4,32L 32.7,11 Z
+                                        </Path.Data>
+                                        <Path.RenderTransform>
+                                            <RotateTransform CenterX="32" CenterY="32" x:Name="PressureTrans" Angle="0" />
+                                        </Path.RenderTransform>
+                                    </Path>
+                                </Grid>
+                            </Viewbox>
+                            <TextBlock Text="{x:Bind Context.Pressure,Mode=OneWay, Converter={StaticResource PressureConverter}}" Style="{ThemeResource NormalTextBlockStyle}" Margin="0,0,0,32" RelativePanel.AlignBottomWithPanel="True" RelativePanel.AlignHorizontalCenterWithPanel="True" />
+                        </RelativePanel>
+                        <RelativePanel x:Name="DetailGrid8" Grid.Row="3" Grid.Column="2" Visibility="Collapsed" Height="240" />
+                        <Grid x:Name="SuggestionPanel" Visibility="{x:Bind Context.SuggestsHide,Mode=OneWay,Converter={StaticResource BoolNottoVisibilityConverter}}" Grid.Row="4" Grid.ColumnSpan="3">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="auto" />
+                                <RowDefinition Height="auto" />
+                                <RowDefinition Height="auto" />
+                                <RowDefinition Height="auto" />
+                                <RowDefinition Height="auto" />
+                                <RowDefinition Height="auto" />
+                                <RowDefinition Height="auto" />
+                            </Grid.RowDefinitions>
+                            <StackPanel Orientation="Vertical" Margin="24,12,24,12">
+                                <StackPanel Orientation="Horizontal" Margin="0,0,0,4">
+                                    <TextBlock x:Uid="ComfortableText" Style="{ThemeResource HeaderTextBlockStyle}" FontSize="16" />
+                                    <TextBlock Text="{x:Bind Context.Comf,Mode=OneWay,Converter={StaticResource SuggestionBrfConverter}}" Foreground="{ThemeResource SystemControlForegroundAccentBrush}" Style="{ThemeResource HeaderTextBlockStyle}" FontSize="16" />
+                                </StackPanel>
+                                <TextBlock Text="{x:Bind Context.Comf,Mode=OneWay,Converter={StaticResource SuggestionTxtConverter}}" Foreground="{ThemeResource SystemControlAltLowBrush}" Style="{ThemeResource NormalTextBlockStyle}" />
+                            </StackPanel>
+                            <StackPanel Orientation="Vertical" Grid.Row="1" Margin="24,12,24,12">
+                                <StackPanel Orientation="Horizontal" Margin="0,0,0,4">
+                                    <TextBlock x:Uid="DressingText" Style="{ThemeResource HeaderTextBlockStyle}" FontSize="16" />
+                                    <TextBlock Text="{x:Bind Context.Drsg,Mode=OneWay,Converter={StaticResource SuggestionBrfConverter}}" Foreground="{ThemeResource SystemControlForegroundAccentBrush}" Style="{ThemeResource HeaderTextBlockStyle}" FontSize="16" />
+                                </StackPanel>
+                                <TextBlock Text="{x:Bind Context.Drsg,Mode=OneWay,Converter={StaticResource SuggestionTxtConverter}}" Foreground="{ThemeResource SystemControlAltLowBrush}" Style="{ThemeResource NormalTextBlockStyle}" />
+                            </StackPanel>
+                            <StackPanel Orientation="Vertical" Grid.Row="2" Margin="24,12,24,12">
+                                <StackPanel Orientation="Horizontal" Margin="0,0,0,4">
+                                    <TextBlock x:Uid="CWText" Style="{ThemeResource HeaderTextBlockStyle}" FontSize="16" />
+                                    <TextBlock Text="{x:Bind Context.Cw,Mode=OneWay,Converter={StaticResource SuggestionBrfConverter}}" Foreground="{ThemeResource SystemControlForegroundAccentBrush}" Style="{ThemeResource HeaderTextBlockStyle}" FontSize="16" />
+                                </StackPanel>
+                                <TextBlock Text="{x:Bind Context.Cw,Mode=OneWay,Converter={StaticResource SuggestionTxtConverter}}" Foreground="{ThemeResource SystemControlAltLowBrush}" Style="{ThemeResource NormalTextBlockStyle}" />
+                            </StackPanel>
+                            <StackPanel Orientation="Vertical" Grid.Row="3" Margin="24,12,24,12">
+                                <StackPanel Orientation="Horizontal" Margin="0,0,0,4">
+                                    <TextBlock x:Uid="SportText" Style="{ThemeResource HeaderTextBlockStyle}" FontSize="16" />
+                                    <TextBlock Text="{x:Bind Context.Sport,Mode=OneWay,Converter={StaticResource SuggestionBrfConverter}}" Foreground="{ThemeResource SystemControlForegroundAccentBrush}" Style="{ThemeResource HeaderTextBlockStyle}" FontSize="16" />
+                                </StackPanel>
+                                <TextBlock Text="{x:Bind Context.Sport,Mode=OneWay,Converter={StaticResource SuggestionTxtConverter}}" Foreground="{ThemeResource SystemControlAltLowBrush}" Style="{ThemeResource NormalTextBlockStyle}" />
+                            </StackPanel>
+                            <StackPanel Orientation="Vertical" Grid.Row="4" Margin="24,12,24,12">
+                                <StackPanel Orientation="Horizontal" Margin="0,0,0,4">
+                                    <TextBlock x:Uid="FluText" Style="{ThemeResource HeaderTextBlockStyle}" FontSize="16" />
+                                    <TextBlock Text="{x:Bind Context.Flu,Mode=OneWay,Converter={StaticResource SuggestionBrfConverter}}" Foreground="{ThemeResource SystemControlForegroundAccentBrush}" Style="{ThemeResource HeaderTextBlockStyle}" FontSize="16" />
+                                </StackPanel>
+                                <TextBlock Text="{x:Bind Context.Flu,Mode=OneWay,Converter={StaticResource SuggestionTxtConverter}}" Foreground="{ThemeResource SystemControlAltLowBrush}" Style="{ThemeResource NormalTextBlockStyle}" />
+                            </StackPanel>
+                            <StackPanel Orientation="Vertical" Grid.Row="5" Margin="24,12,24,12">
+                                <StackPanel Orientation="Horizontal" Margin="0,0,0,4">
+                                    <TextBlock x:Uid="TravelText" Style="{ThemeResource HeaderTextBlockStyle}" FontSize="16" />
+                                    <TextBlock Text="{x:Bind Context.Trav,Mode=OneWay,Converter={StaticResource SuggestionBrfConverter}}" Foreground="{ThemeResource SystemControlForegroundAccentBrush}" Style="{ThemeResource HeaderTextBlockStyle}" FontSize="16" />
+                                </StackPanel>
+                                <TextBlock Text="{x:Bind Context.Trav,Mode=OneWay,Converter={StaticResource SuggestionTxtConverter}}" Foreground="{ThemeResource SystemControlAltLowBrush}" Style="{ThemeResource NormalTextBlockStyle}" />
+                            </StackPanel>
+                            <StackPanel Orientation="Vertical" Grid.Row="6" Margin="24,12,24,12">
+                                <StackPanel Orientation="Horizontal" Margin="0,0,0,4">
+                                    <TextBlock x:Uid="UVText" Style="{ThemeResource HeaderTextBlockStyle}" FontSize="16" />
+                                    <TextBlock Text="{x:Bind Context.Uv,Mode=OneWay,Converter={StaticResource SuggestionBrfConverter}}" Foreground="{ThemeResource SystemControlForegroundAccentBrush}" Style="{ThemeResource HeaderTextBlockStyle}" FontSize="16" />
+                                </StackPanel>
+                                <TextBlock Text="{x:Bind Context.Uv,Mode=OneWay,Converter={StaticResource SuggestionTxtConverter}}" Foreground="{ThemeResource SystemControlAltLowBrush}" Style="{ThemeResource NormalTextBlockStyle}" />
+                            </StackPanel>
+                        </Grid>
+                        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Stretch" Grid.Row="5" Grid.ColumnSpan="3" Orientation="Horizontal" Margin="0,64,0,0">
+                            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Margin="8" x:Uid="DataSourceText" Style="{ThemeResource BodyTextBlockStyle}" FontSize="13.333" />
+                            <Image x:Name="DataSourceImage" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="8,8,0,8" Height="32" Stretch="Uniform" />
+                            <TextBlock x:Name="DataSourceContent" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="8" Foreground="{ThemeResource SystemControlAltLowBrush}" Style="{ThemeResource NormalTextBlockStyle}" FontSize="13.333" />
+                        </StackPanel>
+                    </Grid>
+                </RelativePanel>
+            </RelativePanel>
+        </ptr:PulltoRefresh>
+
+    </Grid>
+
+</Page>

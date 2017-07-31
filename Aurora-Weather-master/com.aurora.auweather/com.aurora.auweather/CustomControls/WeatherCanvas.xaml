@@ -1,0 +1,58 @@
+﻿<!-- Copyright (c) Aurora Studio. All rights reserved.
+    
+     Licensed under the MIT License. See LICENSE in the project root for license information.-->
+
+<UserControl
+    x:Class="Com.Aurora.AuWeather.CustomControls.WeatherCanvas"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Com.Aurora.AuWeather.CustomControls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:canvas="using:Microsoft.Graphics.Canvas.UI.Xaml"
+    mc:Ignorable="d"
+    d:DesignHeight="300"
+    d:DesignWidth="400"
+    Unloaded="WeatherCanvas_Unloaded">
+
+    <RelativePanel x:Name="Root">
+        <RelativePanel.Resources>
+            <Storyboard x:Name="SunAnimation">
+                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="Overlay" Storyboard.TargetProperty="Source">
+
+                </ObjectAnimationUsingKeyFrames>
+            </Storyboard>
+            <Storyboard x:Name="BGAnimation">
+                <ColorAnimation x:Name="GradientAni0" Duration="0:0:2" EnableDependentAnimation="True" Storyboard.TargetName="Gradient0" Storyboard.TargetProperty="Color" >
+                    <ColorAnimation.EasingFunction>
+                        <QuinticEase />
+                    </ColorAnimation.EasingFunction>
+                </ColorAnimation>
+                <ColorAnimation x:Name="GradientAni1" Duration="0:0:2" EnableDependentAnimation="True" Storyboard.TargetName="Gradient1" Storyboard.TargetProperty="Color" >
+                    <ColorAnimation.EasingFunction>
+                        <QuinticEase />
+                    </ColorAnimation.EasingFunction>
+                </ColorAnimation>
+                <PointAnimation x:Name="BGPointAni0" Duration="0:0:2" EnableDependentAnimation="True" Storyboard.TargetName="BGGradient" Storyboard.TargetProperty="StartPoint">
+                    <PointAnimation.EasingFunction>
+                        <QuinticEase />
+                    </PointAnimation.EasingFunction>
+                </PointAnimation>
+                <PointAnimation x:Name="BGPointAni1" Duration="0:0:2" EnableDependentAnimation="True" Storyboard.TargetName="BGGradient" Storyboard.TargetProperty="EndPoint">
+                    <PointAnimation.EasingFunction>
+                        <QuinticEase />
+                    </PointAnimation.EasingFunction>
+                </PointAnimation>
+            </Storyboard>
+        </RelativePanel.Resources>
+        <RelativePanel.Background>
+            <LinearGradientBrush x:Name="BGGradient" EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop x:Name="Gradient0" Color="#FF4090E0" Offset="0"/>
+                <GradientStop x:Name="Gradient1" Color="#FF3060A0" Offset="1"/>
+            </LinearGradientBrush>
+        </RelativePanel.Background>
+        <canvas:CanvasAnimatedControl x:Name="Canvas" RelativePanel.AlignBottomWithPanel="True"
+                                                      RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignRightWithPanel="True"
+                                                      RelativePanel.AlignTopWithPanel="True" Draw="Canvas_Draw" Update="Canvas_Update"/>
+    </RelativePanel>
+</UserControl>

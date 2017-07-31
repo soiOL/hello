@@ -1,0 +1,2028 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="ko-KR" original="COM.AURORA.AUWEATHER/STRINGS/EN-US/RESOURCES.RESW" tool-id="MultilingualAppToolkit" product-name="n/a" product-version="n/a" build-num="n/a">
+    <header>
+      <tool tool-id="MultilingualAppToolkit" tool-name="Multilingual App Toolkit" tool-version="4.0.1605.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group id="COM.AURORA.AUWEATHER/STRINGS/EN-US/RESOURCES.RESW" datatype="resx">
+        <trans-unit id="About" translate="yes" xml:space="preserve">
+          <source>About</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">정보</target>
+        </trans-unit>
+        <trans-unit id="AddButton.Label" translate="yes" xml:space="preserve">
+          <source>Search Cities</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">검색 도시</target>
+        </trans-unit>
+        <trans-unit id="Add_Image" translate="yes" xml:space="preserve">
+          <source>Customize</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">사용자 지정</target>
+        </trans-unit>
+        <trans-unit id="BlurBGText.Text" translate="yes" xml:space="preserve">
+          <source>Enable Blur</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">흐림 효과 사용</target>
+        </trans-unit>
+        <trans-unit id="BodyTempText.Text" translate="yes" xml:space="preserve">
+          <source>Body temperature</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">체온</target>
+        </trans-unit>
+        <trans-unit id="CheckLocateAccessButton.Content" translate="yes" xml:space="preserve">
+          <source>Go to settings</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">설정으로 이동</target>
+        </trans-unit>
+        <trans-unit id="Cities" translate="yes" xml:space="preserve">
+          <source>Cities overview</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">도시 개요</target>
+        </trans-unit>
+        <trans-unit id="CitiesButton.Label" translate="yes" xml:space="preserve">
+          <source>Cities overview</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">도시 개요</target>
+        </trans-unit>
+        <trans-unit id="CitiesText.Text" translate="yes" xml:space="preserve">
+          <source>Cities overview</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">도시 개요</target>
+        </trans-unit>
+        <trans-unit id="Cities_Management" translate="yes" xml:space="preserve">
+          <source>Locating Managment</source>
+          <target state="translated">관리 위치</target>
+        </trans-unit>
+        <trans-unit id="Cloudy.Header" translate="yes" xml:space="preserve">
+          <source>Cloud</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">클라우드</target>
+        </trans-unit>
+        <trans-unit id="ComfortableText.Text" translate="yes" xml:space="preserve">
+          <source>Comfort index:  </source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">컴 포트 인덱스:  </target>
+        </trans-unit>
+        <trans-unit id="CWText.Text" translate="yes" xml:space="preserve">
+          <source>car wash Index:  </source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">세차 지 수:  </target>
+        </trans-unit>
+        <trans-unit id="DanweiText.Text" translate="yes" xml:space="preserve">
+          <source>Conversion</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">변환</target>
+        </trans-unit>
+        <trans-unit id="DescripButton.Content" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">설명</target>
+        </trans-unit>
+        <trans-unit id="DisableDynamicDescripText.Text" translate="yes" xml:space="preserve">
+          <source>Reduce memory usage</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">메모리 사용</target>
+        </trans-unit>
+        <trans-unit id="DisableDynamicText.Text" translate="yes" xml:space="preserve">
+          <source>Disable dynamic</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">동적 비활성화</target>
+        </trans-unit>
+        <trans-unit id="DonateButton.Content" translate="yes" xml:space="preserve">
+          <source>Donate it!</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">그것을 기부!</target>
+        </trans-unit>
+        <trans-unit id="DonateOption0.Text" translate="yes" xml:space="preserve">
+          <source>· Daily Alarms</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">· 매일 알람</target>
+        </trans-unit>
+        <trans-unit id="DonateOption1.Text" translate="yes" xml:space="preserve">
+          <source>· Disaster alerts</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">· 재해 경고</target>
+        </trans-unit>
+        <trans-unit id="DonateOption2.Text" translate="yes" xml:space="preserve">
+          <source>· Shorter weather refresh rate</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">· 짧은 날씨 새로 고침 빈도</target>
+        </trans-unit>
+        <trans-unit id="DonateOption3.Text" translate="yes" xml:space="preserve">
+          <source>· Pin selected cities in tile and automatically update</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">· 핀 선택 된 도시에서 타일 하 고 자동으로 업데이트</target>
+        </trans-unit>
+        <trans-unit id="DonateRun0.Text" translate="yes" xml:space="preserve">
+          <source>Need your help ...</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">당신의 도움이 필요...</target>
+        </trans-unit>
+        <trans-unit id="DonateRun1.Text" translate="yes" xml:space="preserve">
+          <source>Application development requires a lot of energy and time; Moreover, this application using the weather API which need some money to work properly. If you think it's great, wish to support it ~</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">응용 프로그램 개발 요구는 많은 에너지와 시간; 또한, 날씨 제대로 작동 하려면 일부 돈이 필요로 하는 API를 사용 하 여이 응용 프로그램. 만약 당신이 좋은 생각, 그것을 지원 하고자 ~</target>
+        </trans-unit>
+        <trans-unit id="DonateRun2.Text" translate="yes" xml:space="preserve">
+          <source>Help us, and you will unlock the donate version of additional features:</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">우리를 도와 하 고 기부 버전의 추가 기능을 자물쇠로 열 것 이다.</target>
+        </trans-unit>
+        <trans-unit id="DressingText.Text" translate="yes" xml:space="preserve">
+          <source>Clothing index:  </source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">옷 인덱스:  </target>
+        </trans-unit>
+        <trans-unit id="DynamicText.Text" translate="yes" xml:space="preserve">
+          <source>Dynamic weather</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">동적 날씨</target>
+        </trans-unit>
+        <trans-unit id="EnableEveryText.Text" translate="yes" xml:space="preserve">
+          <source>Weather alarms</source>
+          <target state="translated">날씨 경보</target>
+        </trans-unit>
+        <trans-unit id="ExperimentalText.Text" translate="yes" xml:space="preserve">
+          <source>Experimental features</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">실험적 기능</target>
+        </trans-unit>
+        <trans-unit id="FeedbackButton.Label" translate="yes" xml:space="preserve">
+          <source>Rate</source>
+          <target state="translated">비율</target>
+        </trans-unit>
+        <trans-unit id="FluText.Text" translate="yes" xml:space="preserve">
+          <source>Flu index:  </source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">독감 인덱스:  </target>
+        </trans-unit>
+        <trans-unit id="Foggy.Header" translate="yes" xml:space="preserve">
+          <source>Fog</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">안개</target>
+        </trans-unit>
+        <trans-unit id="ForceRefreshText.Text" translate="yes" xml:space="preserve">
+          <source>Force pull to refresh</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">새로 고침을 강제로합니다</target>
+        </trans-unit>
+        <trans-unit id="FormatText.Text" translate="yes" xml:space="preserve">
+          <source>Date and Time</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">날짜 및 시간</target>
+        </trans-unit>
+        <trans-unit id="Haze.Header" translate="yes" xml:space="preserve">
+          <source>Sand and haze</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">모래와 안개</target>
+        </trans-unit>
+        <trans-unit id="HumidityText.Text" translate="yes" xml:space="preserve">
+          <source>Hummidity</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Hummidity</target>
+        </trans-unit>
+        <trans-unit id="ImmersiveText.Text" translate="yes" xml:space="preserve">
+          <source>Immersive mode</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">몰입 모드</target>
+        </trans-unit>
+        <trans-unit id="Immersive_Background" translate="yes" xml:space="preserve">
+          <source>Immersive background</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">몰입 형 배경</target>
+        </trans-unit>
+        <trans-unit id="LengthParameter_KM" translate="yes" xml:space="preserve">
+          <source>km</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">km</target>
+        </trans-unit>
+        <trans-unit id="LengthParameter_M" translate="yes" xml:space="preserve">
+          <source>m</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">m</target>
+        </trans-unit>
+        <trans-unit id="LengthParameter_Mile" translate="yes" xml:space="preserve">
+          <source>mile</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">마일</target>
+        </trans-unit>
+        <trans-unit id="LengthParameter_NM" translate="yes" xml:space="preserve">
+          <source>nm</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">NM</target>
+        </trans-unit>
+        <trans-unit id="LengthParText.Text" translate="yes" xml:space="preserve">
+          <source>Visibility</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">표시 유형</target>
+        </trans-unit>
+        <trans-unit id="LoadingDataText.Text" translate="yes" xml:space="preserve">
+          <source>Loading</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">로드</target>
+        </trans-unit>
+        <trans-unit id="LocateDeniedButton.Content" translate="yes" xml:space="preserve">
+          <source>Location permissions are denied</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">위치 권한이 거부 되었습니다.</target>
+        </trans-unit>
+        <trans-unit id="LocateOnText.Text" translate="yes" xml:space="preserve">
+          <source>Location</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Location</target>
+        </trans-unit>
+        <trans-unit id="LocatingText.Text" translate="yes" xml:space="preserve">
+          <source>Locating</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">찾는 중</target>
+        </trans-unit>
+        <trans-unit id="MoonPhaseText.Text" translate="yes" xml:space="preserve">
+          <source>Moon phase</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">달 단계</target>
+        </trans-unit>
+        <trans-unit id="NextTomorrowText.Text" translate="yes" xml:space="preserve">
+          <source>Next Tom.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">다음 톰입니다.</target>
+        </trans-unit>
+        <trans-unit id="NoBGText.Text" translate="yes" xml:space="preserve">
+          <source>Don't show</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">표시 안 함</target>
+        </trans-unit>
+        <trans-unit id="Now" translate="yes" xml:space="preserve">
+          <source>Current weather</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">현재 날씨</target>
+        </trans-unit>
+        <trans-unit id="NowButton.Label" translate="yes" xml:space="preserve">
+          <source>Details</source>
+          <target state="translated">세부 정보</target>
+        </trans-unit>
+        <trans-unit id="Obtain" translate="yes" xml:space="preserve">
+          <source>Pay what you want</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">당신이 원하는 지불</target>
+        </trans-unit>
+        <trans-unit id="PrecipitationText.Text" translate="yes" xml:space="preserve">
+          <source>Precipitation</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">강 수</target>
+        </trans-unit>
+        <trans-unit id="Preferences" translate="yes" xml:space="preserve">
+          <source>Preferences</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">기본 설정</target>
+        </trans-unit>
+        <trans-unit id="PressureParameter_Atm" translate="yes" xml:space="preserve">
+          <source>Atm</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">현금 지급기</target>
+        </trans-unit>
+        <trans-unit id="PressureParameter_CmHg" translate="yes" xml:space="preserve">
+          <source>CmHg</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">CmHg</target>
+        </trans-unit>
+        <trans-unit id="PressureParameter_Hpa" translate="yes" xml:space="preserve">
+          <source>MB</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">MB</target>
+        </trans-unit>
+        <trans-unit id="PressureParameter_Torr" translate="yes" xml:space="preserve">
+          <source>Torr</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">토르</target>
+        </trans-unit>
+        <trans-unit id="PressureParText.Text" translate="yes" xml:space="preserve">
+          <source>Pneumatic</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">공기압</target>
+        </trans-unit>
+        <trans-unit id="PressureText.Text" translate="yes" xml:space="preserve">
+          <source>Pneumatic</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">공기압</target>
+        </trans-unit>
+        <trans-unit id="PurchaseButton.Content" translate="yes" xml:space="preserve">
+          <source>Rock it!</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">그것은 바위!</target>
+        </trans-unit>
+        <trans-unit id="Rainny.Header" translate="yes" xml:space="preserve">
+          <source>Rain</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">비</target>
+        </trans-unit>
+        <trans-unit id="RefreshButton.Label" translate="yes" xml:space="preserve">
+          <source>Refresh</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">새로 고침</target>
+        </trans-unit>
+        <trans-unit id="RefreshFreqText.Text" translate="yes" xml:space="preserve">
+          <source>Refresh interval</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">새로 고침 간격</target>
+        </trans-unit>
+        <trans-unit id="RefreshState_four" translate="yes" xml:space="preserve">
+          <source>Four hours</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">4시간</target>
+        </trans-unit>
+        <trans-unit id="RefreshState_one" translate="yes" xml:space="preserve">
+          <source>Don't auto-refresh</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">자동 새로 고침을 하지</target>
+        </trans-unit>
+        <trans-unit id="RefreshState_three" translate="yes" xml:space="preserve">
+          <source>One hour</source>
+          <target state="translated">1시간</target>
+        </trans-unit>
+        <trans-unit id="RefreshState_two" translate="yes" xml:space="preserve">
+          <source>30 Minutes</source>
+          <target state="translated">30분</target>
+        </trans-unit>
+        <trans-unit id="Replace_Image" translate="yes" xml:space="preserve">
+          <source>Replace</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">바꾸기</target>
+        </trans-unit>
+        <trans-unit id="RequestedTheme_Auto" translate="yes" xml:space="preserve">
+          <source>Auto</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">자동</target>
+        </trans-unit>
+        <trans-unit id="RequestedTheme_Dark" translate="yes" xml:space="preserve">
+          <source>Dark</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">어둡게</target>
+        </trans-unit>
+        <trans-unit id="RequestedTheme_Light" translate="yes" xml:space="preserve">
+          <source>Light</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">조명</target>
+        </trans-unit>
+        <trans-unit id="SearchText.Text" translate="yes" xml:space="preserve">
+          <source>Search and add</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">검색 및 추가</target>
+        </trans-unit>
+        <trans-unit id="Settings" translate="yes" xml:space="preserve">
+          <source>Settings</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">설정</target>
+        </trans-unit>
+        <trans-unit id="SettingsButton.Label" translate="yes" xml:space="preserve">
+          <source>Settings</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">설정</target>
+        </trans-unit>
+        <trans-unit id="SettingsText.Text" translate="yes" xml:space="preserve">
+          <source>Settings</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">설정</target>
+        </trans-unit>
+        <trans-unit id="ShowSecondText.Text" translate="yes" xml:space="preserve">
+          <source>Show second</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">두 번째 보기</target>
+        </trans-unit>
+        <trans-unit id="ShowttText.Text" translate="yes" xml:space="preserve">
+          <source>Display am/pm</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">오전/오후 표시</target>
+        </trans-unit>
+        <trans-unit id="Snowy.Header" translate="yes" xml:space="preserve">
+          <source>Winter snow</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">겨울 눈</target>
+        </trans-unit>
+        <trans-unit id="SpeedParameter_KMPH" translate="yes" xml:space="preserve">
+          <source>km/h</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">km/h</target>
+        </trans-unit>
+        <trans-unit id="SpeedParameter_Knot" translate="yes" xml:space="preserve">
+          <source>knot</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">매듭</target>
+        </trans-unit>
+        <trans-unit id="SpeedParameter_MPS" translate="yes" xml:space="preserve">
+          <source>m/s</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">m/s</target>
+        </trans-unit>
+        <trans-unit id="SpeedParText.Text" translate="yes" xml:space="preserve">
+          <source>Wind Speed</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">풍속</target>
+        </trans-unit>
+        <trans-unit id="SplashText.Text" translate="yes" xml:space="preserve">
+          <source>Preparing data ...</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">데이터를 준비...</target>
+        </trans-unit>
+        <trans-unit id="SportText.Text" translate="yes" xml:space="preserve">
+          <source>Sport index:  </source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">스포츠 인덱스:  </target>
+        </trans-unit>
+        <trans-unit id="Starry.Header" translate="yes" xml:space="preserve">
+          <source>Starry sky</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">별이 빛나는 하늘</target>
+        </trans-unit>
+        <trans-unit id="Sunny.Header" translate="yes" xml:space="preserve">
+          <source>Sunlight</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">햇빛</target>
+        </trans-unit>
+        <trans-unit id="SunProgressText.Text" translate="yes" xml:space="preserve">
+          <source>Sun position</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">태양 위치</target>
+        </trans-unit>
+        <trans-unit id="TemperatureParameter_Celsius" translate="yes" xml:space="preserve">
+          <source>Celsius</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">섭씨</target>
+        </trans-unit>
+        <trans-unit id="TemperatureParameter_Fahrenheit" translate="yes" xml:space="preserve">
+          <source>Fahrenheit</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">화씨</target>
+        </trans-unit>
+        <trans-unit id="TemperatureParameter_Kelvin" translate="yes" xml:space="preserve">
+          <source>Kelvin</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">절대 온도</target>
+        </trans-unit>
+        <trans-unit id="TempParText.Text" translate="yes" xml:space="preserve">
+          <source>Temperature</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">온도</target>
+        </trans-unit>
+        <trans-unit id="ThemeText.Text" translate="yes" xml:space="preserve">
+          <source>Theme</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">테마</target>
+        </trans-unit>
+        <trans-unit id="TitleBlock.Text" translate="yes" xml:space="preserve">
+          <source>Aurora Weather</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">오로라 날씨</target>
+        </trans-unit>
+        <trans-unit id="ToastText.Text" translate="yes" xml:space="preserve">
+          <source>Weather reminder</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">날씨 알림</target>
+        </trans-unit>
+        <trans-unit id="TomorrowText.Text" translate="yes" xml:space="preserve">
+          <source>Tomorrow</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">내일</target>
+        </trans-unit>
+        <trans-unit id="TravelText.Text" translate="yes" xml:space="preserve">
+          <source>Travel index:  </source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">여행 인덱스:  </target>
+        </trans-unit>
+        <trans-unit id="UseWeekText.Text" translate="yes" xml:space="preserve">
+          <source>Use weekdays</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">평일 사용</target>
+        </trans-unit>
+        <trans-unit id="UVText.Text" translate="yes" xml:space="preserve">
+          <source>UV index:  </source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">자외선 지 수:  </target>
+        </trans-unit>
+        <trans-unit id="VisibilityText.Text" translate="yes" xml:space="preserve">
+          <source>Visibility</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">표시 유형</target>
+        </trans-unit>
+        <trans-unit id="WelcomeText.Text" translate="yes" xml:space="preserve">
+          <source>Welcome!</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">환영 합니다!</target>
+        </trans-unit>
+        <trans-unit id="WindParameter_BeaufortandDegree" translate="yes" xml:space="preserve">
+          <source>Scale + angle</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">규모 + 각도</target>
+        </trans-unit>
+        <trans-unit id="WindParameter_BeaufortandText" translate="yes" xml:space="preserve">
+          <source>Scale + direction</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">규모 + 방향</target>
+        </trans-unit>
+        <trans-unit id="WindParameter_SpeedandDegree" translate="yes" xml:space="preserve">
+          <source>Speed + angle</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">속도 + 각도</target>
+        </trans-unit>
+        <trans-unit id="WindParameter_SpeedandText" translate="yes" xml:space="preserve">
+          <source>Speed + direction</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">속도 + 방향</target>
+        </trans-unit>
+        <trans-unit id="WindParText.Text" translate="yes" xml:space="preserve">
+          <source>Wind</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Wind</target>
+        </trans-unit>
+        <trans-unit id="WindText.Text" translate="yes" xml:space="preserve">
+          <source>Wind</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Wind</target>
+        </trans-unit>
+        <trans-unit id="DonationTitle.Text" translate="yes" xml:space="preserve">
+          <source>Get donation pack</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">기부금 팩</target>
+        </trans-unit>
+        <trans-unit id="First_quarter" translate="yes" xml:space="preserve">
+          <source>First Quarter</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">상현달</target>
+        </trans-unit>
+        <trans-unit id="Full_moon" translate="yes" xml:space="preserve">
+          <source>Full Moon</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">보름달</target>
+        </trans-unit>
+        <trans-unit id="New_Moon" translate="yes" xml:space="preserve">
+          <source>New Moon</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">그믐달</target>
+        </trans-unit>
+        <trans-unit id="Third_quarter" translate="yes" xml:space="preserve">
+          <source>Third Quarter</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">3 분기</target>
+        </trans-unit>
+        <trans-unit id="Waning_crescent" translate="yes" xml:space="preserve">
+          <source>Waning Crescent</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">약해지는 초승달</target>
+        </trans-unit>
+        <trans-unit id="Waning_gibbous" translate="yes" xml:space="preserve">
+          <source>Waning gibbous</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">초승달 말기</target>
+        </trans-unit>
+        <trans-unit id="Waxing_crescent" translate="yes" xml:space="preserve">
+          <source>Waxing Crescent</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">왁 싱 초승달</target>
+        </trans-unit>
+        <trans-unit id="Waxing_gibbous" translate="yes" xml:space="preserve">
+          <source>Waxing Gibbous</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">망간의</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_calm" translate="yes" xml:space="preserve">
+          <source>Calm</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">차분</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_cloudy" translate="yes" xml:space="preserve">
+          <source>Cloudy</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">흐림</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_cold" translate="yes" xml:space="preserve">
+          <source>Getting cold</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">추 워지고</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_drizzle_rain" translate="yes" xml:space="preserve">
+          <source>Drizzle</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">이슬비</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_dust" translate="yes" xml:space="preserve">
+          <source>Dust</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">먼지</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_duststorm" translate="yes" xml:space="preserve">
+          <source>Dust storm</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">먼지 폭풍</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_extreme_rain" translate="yes" xml:space="preserve">
+          <source>Extreme rain</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">극단적인 비</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_few_clouds" translate="yes" xml:space="preserve">
+          <source>Few clouds</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">맑음</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_foggy" translate="yes" xml:space="preserve">
+          <source>Fog</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">안개</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_freezing_rain" translate="yes" xml:space="preserve">
+          <source>Freezing rain</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">진눈깨비</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_fresh_breeze" translate="yes" xml:space="preserve">
+          <source>Fresh breeze</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">신선한 바람</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_gale" translate="yes" xml:space="preserve">
+          <source>Gale</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Gale</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_hail" translate="yes" xml:space="preserve">
+          <source>Hail</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">만 세</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_haze" translate="yes" xml:space="preserve">
+          <source>Haze</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">옅은 안개</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_heavy_rain" translate="yes" xml:space="preserve">
+          <source>Heavy rain</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">무거운 비</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_heavy_shower_rain" translate="yes" xml:space="preserve">
+          <source>Heavy shower</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">무거운 샤워</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_heavy_snow" translate="yes" xml:space="preserve">
+          <source>Heavy snow</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Heavy snow</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_heavy_storm_rain" translate="yes" xml:space="preserve">
+          <source>Heavy storm</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">무거운 폭풍우</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_heavy_thunderstorm" translate="yes" xml:space="preserve">
+          <source>Thunderstorm</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Thunderstorm</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_high_wind" translate="yes" xml:space="preserve">
+          <source>High wind</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">높은 바람</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_hot" translate="yes" xml:space="preserve">
+          <source>Getting hot</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">더 워지고</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_hurricane" translate="yes" xml:space="preserve">
+          <source>Hurricane</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">허리케인</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_light_breeze" translate="yes" xml:space="preserve">
+          <source>Light breeze</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">빛 바람</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_light_rain" translate="yes" xml:space="preserve">
+          <source>Light rain</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">빛 비</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_light_snow" translate="yes" xml:space="preserve">
+          <source>Light snow</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Light snow</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_mist" translate="yes" xml:space="preserve">
+          <source>Mist</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">안개</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_moderate" translate="yes" xml:space="preserve">
+          <source>Moderate</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">중재</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_moderate_rain" translate="yes" xml:space="preserve">
+          <source>Moderate rain</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">적당 한 비</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_moderate_snow" translate="yes" xml:space="preserve">
+          <source>Moderate snow</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">적당 한 눈</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_overcast" translate="yes" xml:space="preserve">
+          <source>Overcast</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">흐림</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_partly_cloudy" translate="yes" xml:space="preserve">
+          <source>Partly cloudy</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">부분적으로 흐림</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_rain_snow" translate="yes" xml:space="preserve">
+          <source>Rain snow</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">비 눈</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_sand" translate="yes" xml:space="preserve">
+          <source>Sand</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">모래색</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_sandstorm" translate="yes" xml:space="preserve">
+          <source>Sand storm</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">모래 폭풍</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_severe_storm_rain" translate="yes" xml:space="preserve">
+          <source>Severe storm</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">심한 폭풍</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_shower_rain" translate="yes" xml:space="preserve">
+          <source>Shower</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">샤워</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_shower_snow" translate="yes" xml:space="preserve">
+          <source>Shower snow</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">샤워 눈</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_sleet" translate="yes" xml:space="preserve">
+          <source>Sleet</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">진눈깨비</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_snowstorm" translate="yes" xml:space="preserve">
+          <source>Snow storm</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">눈 폭풍</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_snow_flurry" translate="yes" xml:space="preserve">
+          <source>Flurry snow</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">단말 마 눈</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_storm" translate="yes" xml:space="preserve">
+          <source>Storm</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">폭풍</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_storm_rain" translate="yes" xml:space="preserve">
+          <source>Storm rain</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">폭풍 비</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_strong_breeze" translate="yes" xml:space="preserve">
+          <source>Strong breeze</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">강한 바람이</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_strong_gale" translate="yes" xml:space="preserve">
+          <source>Strong gale</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">강한 강풍</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_sunny" translate="yes" xml:space="preserve">
+          <source>Sunny</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">맑음</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_thundershower" translate="yes" xml:space="preserve">
+          <source>Thunder shower</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">천둥 샤워</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_tornado" translate="yes" xml:space="preserve">
+          <source>Tornado</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">토네이도</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_tropical_storm" translate="yes" xml:space="preserve">
+          <source>Tropical storm</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">열 대 폭풍</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_unknown" translate="yes" xml:space="preserve">
+          <source>...</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">...</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_violent_storm" translate="yes" xml:space="preserve">
+          <source>Violent storm</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">폭풍</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_volcanic_ash" translate="yes" xml:space="preserve">
+          <source>Volcanic ash</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">화산재</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_windy" translate="yes" xml:space="preserve">
+          <source>Windy</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">바람</target>
+        </trans-unit>
+        <trans-unit id="WindDirection_east" translate="yes" xml:space="preserve">
+          <source>E</source>
+          <target state="translated" state-qualifier="mt-suggestion">이스트 </target>
+        </trans-unit>
+        <trans-unit id="WindDirection_north" translate="yes" xml:space="preserve">
+          <source>N</source>
+          <target state="translated" state-qualifier="mt-suggestion">북 </target>
+        </trans-unit>
+        <trans-unit id="WindDirection_northeast" translate="yes" xml:space="preserve">
+          <source>NE</source>
+          <target state="translated" state-qualifier="tm-suggestion">북동부</target>
+        </trans-unit>
+        <trans-unit id="WindDirection_northwest" translate="yes" xml:space="preserve">
+          <source>NW</source>
+          <target state="translated" state-qualifier="tm-suggestion">북서부</target>
+        </trans-unit>
+        <trans-unit id="WindDirection_south" translate="yes" xml:space="preserve">
+          <source>S</source>
+          <target state="translated" state-qualifier="mt-suggestion">남쪽 </target>
+        </trans-unit>
+        <trans-unit id="WindDirection_southeast" translate="yes" xml:space="preserve">
+          <source>SE</source>
+          <target state="translated" state-qualifier="tm-suggestion">남동부</target>
+        </trans-unit>
+        <trans-unit id="WindDirection_southwest" translate="yes" xml:space="preserve">
+          <source>SW</source>
+          <target state="translated" state-qualifier="tm-suggestion">남서부</target>
+        </trans-unit>
+        <trans-unit id="WindDirection_unknown" translate="yes" xml:space="preserve">
+          <source>...</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">...</target>
+        </trans-unit>
+        <trans-unit id="WindDirection_west" translate="yes" xml:space="preserve">
+          <source>W</source>
+          <target state="translated" state-qualifier="mt-suggestion">웨스트 </target>
+        </trans-unit>
+        <trans-unit id="WindScale_eight" translate="yes" xml:space="preserve">
+          <source>Gale</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Gale</target>
+        </trans-unit>
+        <trans-unit id="WindScale_eighteen" translate="yes" xml:space="preserve">
+          <source>Strong hurricanes</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">강력한 허리케인</target>
+        </trans-unit>
+        <trans-unit id="WindScale_eleven" translate="yes" xml:space="preserve">
+          <source>Storm</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">폭풍</target>
+        </trans-unit>
+        <trans-unit id="WindScale_fifteen" translate="yes" xml:space="preserve">
+          <source>Stronger hurricanes</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">더 강한 태풍</target>
+        </trans-unit>
+        <trans-unit id="WindScale_five" translate="yes" xml:space="preserve">
+          <source>Light breeze</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">빛 바람</target>
+        </trans-unit>
+        <trans-unit id="WindScale_four" translate="yes" xml:space="preserve">
+          <source>Moderate</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">중재</target>
+        </trans-unit>
+        <trans-unit id="WindScale_fourteen" translate="yes" xml:space="preserve">
+          <source>Stronger hurricanes</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">더 강한 태풍</target>
+        </trans-unit>
+        <trans-unit id="WindScale_nine" translate="yes" xml:space="preserve">
+          <source>Gale</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Gale</target>
+        </trans-unit>
+        <trans-unit id="WindScale_one" translate="yes" xml:space="preserve">
+          <source>Calm</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">차분</target>
+        </trans-unit>
+        <trans-unit id="WindScale_seven" translate="yes" xml:space="preserve">
+          <source>Strong breeze</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">강한 바람이</target>
+        </trans-unit>
+        <trans-unit id="WindScale_seventeen" translate="yes" xml:space="preserve">
+          <source>Super Hurricane</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">슈퍼 태풍</target>
+        </trans-unit>
+        <trans-unit id="WindScale_six" translate="yes" xml:space="preserve">
+          <source>Strong gale</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">강한 강풍</target>
+        </trans-unit>
+        <trans-unit id="WindScale_sixteen" translate="yes" xml:space="preserve">
+          <source>Super Hurricane</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">슈퍼 태풍</target>
+        </trans-unit>
+        <trans-unit id="WindScale_ten" translate="yes" xml:space="preserve">
+          <source>High wind</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">높은 바람</target>
+        </trans-unit>
+        <trans-unit id="WindScale_thirteen" translate="yes" xml:space="preserve">
+          <source>Hurricane</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">허리케인</target>
+        </trans-unit>
+        <trans-unit id="WindScale_three" translate="yes" xml:space="preserve">
+          <source>Breeze</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">미풍</target>
+        </trans-unit>
+        <trans-unit id="WindScale_twelve" translate="yes" xml:space="preserve">
+          <source>Cyclone</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">사이클론</target>
+        </trans-unit>
+        <trans-unit id="WindScale_two" translate="yes" xml:space="preserve">
+          <source>Breeze</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">미풍</target>
+        </trans-unit>
+        <trans-unit id="WindScale_unknown" translate="yes" xml:space="preserve">
+          <source>...</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">...</target>
+        </trans-unit>
+        <trans-unit id="WindScale_zero" translate="yes" xml:space="preserve">
+          <source>No wind</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">바람</target>
+        </trans-unit>
+        <trans-unit id="AboutText.Text" translate="yes" xml:space="preserve">
+          <source>About</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">정보</target>
+        </trans-unit>
+        <trans-unit id="AppName" translate="yes" xml:space="preserve">
+          <source>Aurora Weather</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">오로라 날씨</target>
+        </trans-unit>
+        <trans-unit id="AppNameText.Text" translate="yes" xml:space="preserve">
+          <source>Aurora Weather</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">오로라 날씨</target>
+        </trans-unit>
+        <trans-unit id="buchaoguoshi.Text" translate="yes" xml:space="preserve">
+          <source>If no more than ten, ten digits won't be displayed</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">경우 10 개 이상, 10 자리 표시 되지 않습니다.</target>
+        </trans-unit>
+        <trans-unit id="chaoguoshi.Text" translate="yes" xml:space="preserve">
+          <source>If no more than ten, shows zero</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">더 이상 10 0 표시</target>
+        </trans-unit>
+        <trans-unit id="DateDes.Text" translate="yes" xml:space="preserve">
+          <source>Day:</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">주:</target>
+        </trans-unit>
+        <trans-unit id="Description" translate="yes" xml:space="preserve">
+          <source>Aurora Weather</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">오로라 날씨</target>
+        </trans-unit>
+        <trans-unit id="FeedbackText.Content" translate="yes" xml:space="preserve">
+          <source>Feedback</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">피드백</target>
+        </trans-unit>
+        <trans-unit id="HourDes.Text" translate="yes" xml:space="preserve">
+          <source>Hour:</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">시간:</target>
+        </trans-unit>
+        <trans-unit id="MonthDes.Text" translate="yes" xml:space="preserve">
+          <source>Month:</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">달:</target>
+        </trans-unit>
+        <trans-unit id="OpenSourceText.Content" translate="yes" xml:space="preserve">
+          <source>Open source license</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">오픈 소스 라이선스</target>
+        </trans-unit>
+        <trans-unit id="ProviderText.Content" translate="yes" xml:space="preserve">
+          <source>Data providers</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">데이터 공급자</target>
+        </trans-unit>
+        <trans-unit id="ShortName" translate="yes" xml:space="preserve">
+          <source>Weather</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">날씨</target>
+        </trans-unit>
+        <trans-unit id="TimeFormatDescrip.Text" translate="yes" xml:space="preserve">
+          <source>Date-time examples</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">날짜-시간 예제</target>
+        </trans-unit>
+        <trans-unit id="YearDes.Text" translate="yes" xml:space="preserve">
+          <source>Year:</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">년:</target>
+        </trans-unit>
+        <trans-unit id="bianleng" translate="yes" xml:space="preserve">
+          <source>Will get cold</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">감기를 얻을 것 이다</target>
+        </trans-unit>
+        <trans-unit id="bianre" translate="yes" xml:space="preserve">
+          <source>Will get hot</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">뜨거운 얻을 것 이다</target>
+        </trans-unit>
+        <trans-unit id="breeze0" translate="yes" xml:space="preserve">
+          <source>Breeze</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">미풍</target>
+        </trans-unit>
+        <trans-unit id="breeze1" translate="yes" xml:space="preserve">
+          <source>Zephyr</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">산들바람</target>
+        </trans-unit>
+        <trans-unit id="dust0" translate="yes" xml:space="preserve">
+          <source>Dust</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">먼지</target>
+        </trans-unit>
+        <trans-unit id="duststorm0" translate="yes" xml:space="preserve">
+          <source>Bad dust</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">나쁜 먼지</target>
+        </trans-unit>
+        <trans-unit id="few_clouds0" translate="yes" xml:space="preserve">
+          <source>Few clouds</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">맑음</target>
+        </trans-unit>
+        <trans-unit id="few_clouds1" translate="yes" xml:space="preserve">
+          <source>Floating clouds</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">떠 있는 구름</target>
+        </trans-unit>
+        <trans-unit id="foggy0" translate="yes" xml:space="preserve">
+          <source>Foggy</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">안개</target>
+        </trans-unit>
+        <trans-unit id="freezing_rain0" translate="yes" xml:space="preserve">
+          <source>Freezing rain</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">진눈깨비</target>
+        </trans-unit>
+        <trans-unit id="gale0" translate="yes" xml:space="preserve">
+          <source>There were strong winds</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">강한 바람이 있었습니다.</target>
+        </trans-unit>
+        <trans-unit id="gale1" translate="yes" xml:space="preserve">
+          <source>Windy day</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">바람이 부는 날</target>
+        </trans-unit>
+        <trans-unit id="Glance" translate="yes" xml:space="preserve">
+          <source>{0} {1} {2}.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">{0} {1} {2}.</target>
+        </trans-unit>
+        <trans-unit id="Glancecloudy0" translate="yes" xml:space="preserve">
+          <source>Cloudy</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">흐림</target>
+        </trans-unit>
+        <trans-unit id="Glancecloudy1" translate="yes" xml:space="preserve">
+          <source>Cloud</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">클라우드</target>
+        </trans-unit>
+        <trans-unit id="GlanceFull" translate="yes" xml:space="preserve">
+          <source>{0} {1}, {2}{3}. Tomorrow: {4}, {5}.</source>
+          <target state="translated" state-qualifier="mt-suggestion">{0} {1}, {2} {3}. 내일: {4}, {5}.</target>
+        </trans-unit>
+        <trans-unit id="GlanceSunny0" translate="yes" xml:space="preserve">
+          <source>Clear</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">지우기</target>
+        </trans-unit>
+        <trans-unit id="GlanceSunny1" translate="yes" xml:space="preserve">
+          <source>Cloud-free</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">클라우드-무료</target>
+        </trans-unit>
+        <trans-unit id="hail0" translate="yes" xml:space="preserve">
+          <source>Hail</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">만 세</target>
+        </trans-unit>
+        <trans-unit id="haotianqi0" translate="yes" xml:space="preserve">
+          <source>Fit out</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">밖으로 적합</target>
+        </trans-unit>
+        <trans-unit id="haotianqi1" translate="yes" xml:space="preserve">
+          <source>Good weather</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">좋은 날씨</target>
+        </trans-unit>
+        <trans-unit id="haze0" translate="yes" xml:space="preserve">
+          <source>Haze</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">옅은 안개</target>
+        </trans-unit>
+        <trans-unit id="heavy_rain0" translate="yes" xml:space="preserve">
+          <source>Heavy rain</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">무거운 비</target>
+        </trans-unit>
+        <trans-unit id="heavy_rain1" translate="yes" xml:space="preserve">
+          <source>Out attention to heavy rain</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">폭우에 관심 밖으로</target>
+        </trans-unit>
+        <trans-unit id="heavy_snow0" translate="yes" xml:space="preserve">
+          <source>Heavy snow</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Heavy snow</target>
+        </trans-unit>
+        <trans-unit id="heavy_snow1" translate="yes" xml:space="preserve">
+          <source>Snow</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">순백색</target>
+        </trans-unit>
+        <trans-unit id="heavy_storm_rain0" translate="yes" xml:space="preserve">
+          <source>The storm</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">폭풍</target>
+        </trans-unit>
+        <trans-unit id="heavy_storm_rain1" translate="yes" xml:space="preserve">
+          <source>Not going out</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">외출 하지</target>
+        </trans-unit>
+        <trans-unit id="huaitianqi0" translate="yes" xml:space="preserve">
+          <source>Bad weather</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">나쁜 날씨</target>
+        </trans-unit>
+        <trans-unit id="huaitianqi1" translate="yes" xml:space="preserve">
+          <source>Poor weather</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">불 쌍 한 날씨</target>
+        </trans-unit>
+        <trans-unit id="jintian" translate="yes" xml:space="preserve">
+          <source>Today</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">오늘</target>
+        </trans-unit>
+        <trans-unit id="mist0" translate="yes" xml:space="preserve">
+          <source>Misty</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">미스 티</target>
+        </trans-unit>
+        <trans-unit id="moderate_rain0" translate="yes" xml:space="preserve">
+          <source>Light rain</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">빛 비</target>
+        </trans-unit>
+        <trans-unit id="moderate_rain1" translate="yes" xml:space="preserve">
+          <source>Rain</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">비</target>
+        </trans-unit>
+        <trans-unit id="moderate_rain2" translate="yes" xml:space="preserve">
+          <source>Rainy Day</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">비오는 날</target>
+        </trans-unit>
+        <trans-unit id="moderate_rain3" translate="yes" xml:space="preserve">
+          <source>Need to bring an umbrella</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">우산을가지고 필요</target>
+        </trans-unit>
+        <trans-unit id="moderate_snow0" translate="yes" xml:space="preserve">
+          <source>There was snow</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">저기 눈이 되었다</target>
+        </trans-unit>
+        <trans-unit id="moderate_snow1" translate="yes" xml:space="preserve">
+          <source>Snow day</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">눈의 날</target>
+        </trans-unit>
+        <trans-unit id="moderate_snow2" translate="yes" xml:space="preserve">
+          <source>Will snow</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">눈은</target>
+        </trans-unit>
+        <trans-unit id="nengjiandudi0" translate="yes" xml:space="preserve">
+          <source>Low visibility</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">낮은 시정</target>
+        </trans-unit>
+        <trans-unit id="nengjiandudi1" translate="yes" xml:space="preserve">
+          <source>Low visibility</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">낮은 시정</target>
+        </trans-unit>
+        <trans-unit id="overcast0" translate="yes" xml:space="preserve">
+          <source>Overcast</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">흐림</target>
+        </trans-unit>
+        <trans-unit id="overcast1" translate="yes" xml:space="preserve">
+          <source>No sun</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">아니 일</target>
+        </trans-unit>
+        <trans-unit id="partly_cloudy0" translate="yes" xml:space="preserve">
+          <source>Partly cloudy</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">부분적으로 흐림</target>
+        </trans-unit>
+        <trans-unit id="shiduda0" translate="yes" xml:space="preserve">
+          <source>High humidity</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">높은 습도</target>
+        </trans-unit>
+        <trans-unit id="shiduda1" translate="yes" xml:space="preserve">
+          <source>Moist air</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">습 한 공기</target>
+        </trans-unit>
+        <trans-unit id="shower0" translate="yes" xml:space="preserve">
+          <source>There are showers</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">샤워는</target>
+        </trans-unit>
+        <trans-unit id="shower1" translate="yes" xml:space="preserve">
+          <source>Intermittent rain</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">간헐적으로 비가</target>
+        </trans-unit>
+        <trans-unit id="shower_snow0" translate="yes" xml:space="preserve">
+          <source>Snow showers</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">소 낙 눈</target>
+        </trans-unit>
+        <trans-unit id="shower_snow1" translate="yes" xml:space="preserve">
+          <source>Short-time snowfall</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">짧은 시간 눈</target>
+        </trans-unit>
+        <trans-unit id="sleet0" translate="yes" xml:space="preserve">
+          <source>The sleet</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">진눈깨비</target>
+        </trans-unit>
+        <trans-unit id="sleet1" translate="yes" xml:space="preserve">
+          <source>Rain and snow</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">비와 눈</target>
+        </trans-unit>
+        <trans-unit id="snowstorm0" translate="yes" xml:space="preserve">
+          <source>A storm</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">폭풍</target>
+        </trans-unit>
+        <trans-unit id="snowstorm1" translate="yes" xml:space="preserve">
+          <source>Poor snowfall</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">불 쌍 한 눈</target>
+        </trans-unit>
+        <trans-unit id="storm0" translate="yes" xml:space="preserve">
+          <source>Pay attention to storm</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">폭풍에 주의</target>
+        </trans-unit>
+        <trans-unit id="thundershower0" translate="yes" xml:space="preserve">
+          <source>Thunder</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">천둥</target>
+        </trans-unit>
+        <trans-unit id="unknown_weather" translate="yes" xml:space="preserve">
+          <source>Unknown weather</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">알 수 없는 날씨</target>
+        </trans-unit>
+        <trans-unit id="wanjian" translate="yes" xml:space="preserve">
+          <source>Evening</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">저녁</target>
+        </trans-unit>
+        <trans-unit id="wendudi0" translate="yes" xml:space="preserve">
+          <source>Low temperature</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">낮은 온도</target>
+        </trans-unit>
+        <trans-unit id="wendudi1" translate="yes" xml:space="preserve">
+          <source>Continuous cooling</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">연속 냉각</target>
+        </trans-unit>
+        <trans-unit id="wendugao0" translate="yes" xml:space="preserve">
+          <source>High temperature</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">높은 온도</target>
+        </trans-unit>
+        <trans-unit id="wendugao1" translate="yes" xml:space="preserve">
+          <source>Continues to heat up</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">계속가 열 하</target>
+        </trans-unit>
+        <trans-unit id="windy0" translate="yes" xml:space="preserve">
+          <source>Windy</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">바람</target>
+        </trans-unit>
+        <trans-unit id="xianzai" translate="yes" xml:space="preserve">
+          <source>Now</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">지금</target>
+        </trans-unit>
+        <trans-unit id="MinDes.Text" translate="yes" xml:space="preserve">
+          <source>Minute:</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">분:</target>
+        </trans-unit>
+        <trans-unit id="OtherDes.Text" translate="yes" xml:space="preserve">
+          <source>Other:</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">기타:</target>
+        </trans-unit>
+        <trans-unit id="Add" translate="yes" xml:space="preserve">
+          <source>Search Cities</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">검색 도시</target>
+        </trans-unit>
+        <trans-unit id="Cacel" translate="yes" xml:space="preserve">
+          <source>Cancel</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">취소</target>
+        </trans-unit>
+        <trans-unit id="Delete" translate="yes" xml:space="preserve">
+          <source>Delete</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">삭제</target>
+        </trans-unit>
+        <trans-unit id="Edit" translate="yes" xml:space="preserve">
+          <source>Edit</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">편집</target>
+        </trans-unit>
+        <trans-unit id="Pin" translate="yes" xml:space="preserve">
+          <source>Pin</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">pin</target>
+        </trans-unit>
+        <trans-unit id="Refresh" translate="yes" xml:space="preserve">
+          <source>Refresh</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">새로 고침</target>
+        </trans-unit>
+        <trans-unit id="EditButton.Label" translate="yes" xml:space="preserve">
+          <source>Edit</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">편집</target>
+        </trans-unit>
+        <trans-unit id="AutoSuggestbox.PlaceholderText" translate="yes" xml:space="preserve">
+          <source>When search Chinese cities, using chinese or pinyin</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">때 중국 도시, 중국어 또는 병음을 사용 하 여 검색</target>
+        </trans-unit>
+        <trans-unit id="Thankyou" translate="yes" xml:space="preserve">
+          <source>Insane mode!</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">미친 모드!</target>
+        </trans-unit>
+        <trans-unit id="ThankyouTitle" translate="yes" xml:space="preserve">
+          <source>Thank you!</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Thank you!</target>
+        </trans-unit>
+        <trans-unit id="Cities_Null" translate="yes" xml:space="preserve">
+          <source>No Cities here...</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">여기 도시...</target>
+        </trans-unit>
+        <trans-unit id="Error" translate="yes" xml:space="preserve">
+          <source>There is a small error ...</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">작은 오류가입니다...</target>
+        </trans-unit>
+        <trans-unit id="Network_Error" translate="yes" xml:space="preserve">
+          <source>Network connection failed ...</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">네트워크 연결 실패...</target>
+        </trans-unit>
+        <trans-unit id="Quit" translate="yes" xml:space="preserve">
+          <source>Quit</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">끝내기</target>
+        </trans-unit>
+        <trans-unit id="Service_Unavailable" translate="yes" xml:space="preserve">
+          <source>The weather service is currently unavailable ...</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">날씨 서비스는 현재 사용할 수 없습니다...</target>
+        </trans-unit>
+        <trans-unit id="Setting" translate="yes" xml:space="preserve">
+          <source>Settings</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">설정</target>
+        </trans-unit>
+        <trans-unit id="DataSourceText.Text" translate="yes" xml:space="preserve">
+          <source>Data providers:</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">데이터 공급자:</target>
+        </trans-unit>
+        <trans-unit id="Retry" translate="yes" xml:space="preserve">
+          <source>Try again?</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">다시 시도?</target>
+        </trans-unit>
+        <trans-unit id="LongTime" translate="yes" xml:space="preserve">
+          <source>Waiting longer than expected...</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">예상 보다 더 이상 대기...</target>
+        </trans-unit>
+        <trans-unit id="Welcome0Detail.Text" translate="yes" xml:space="preserve">
+          <source>Easy to reach, easy to see</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">보고, 쉽게 도달 하기 쉬운</target>
+        </trans-unit>
+        <trans-unit id="Welcome0Text.Text" translate="yes" xml:space="preserve">
+          <source>Dynamic</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">동적</target>
+        </trans-unit>
+        <trans-unit id="Welcome1Detail.Text" translate="yes" xml:space="preserve">
+          <source>Pin it on the Start</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">시작에 핀</target>
+        </trans-unit>
+        <trans-unit id="Welcome1Text.Text" translate="yes" xml:space="preserve">
+          <source>Tile</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">바둑판식 배열</target>
+        </trans-unit>
+        <trans-unit id="Welcome2Detail.Text" translate="yes" xml:space="preserve">
+          <source>Go to Settings-&gt;Personalization-&gt;Lockscreen and set lockscreen notifications!</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">설정-&gt;개인 설정-&gt;Lockscreen 및 설정된 lockscreen 알림으로 이동!</target>
+        </trans-unit>
+        <trans-unit id="Welcome2Text.Text" translate="yes" xml:space="preserve">
+          <source>Notification</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">알림</target>
+        </trans-unit>
+        <trans-unit id="BackText.Text" translate="yes" xml:space="preserve">
+          <source>Back</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">뒤로</target>
+        </trans-unit>
+        <trans-unit id="HamCloseText.Text" translate="yes" xml:space="preserve">
+          <source>Close</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">닫다</target>
+        </trans-unit>
+        <trans-unit id="HamOpenText.Text" translate="yes" xml:space="preserve">
+          <source>Open</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">열기</target>
+        </trans-unit>
+        <trans-unit id="MoreText.Text" translate="yes" xml:space="preserve">
+          <source>More</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">자세히</target>
+        </trans-unit>
+        <trans-unit id="RefreshText.Text" translate="yes" xml:space="preserve">
+          <source>Refresh</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">새로 고침</target>
+        </trans-unit>
+        <trans-unit id="NowText.Text" translate="yes" xml:space="preserve">
+          <source>Details</source>
+          <target state="translated">세부 정보</target>
+        </trans-unit>
+        <trans-unit id="CitiesManageText.Text" translate="yes" xml:space="preserve">
+          <source>Locating Managment</source>
+          <target state="translated">관리 위치</target>
+        </trans-unit>
+        <trans-unit id="Locating" translate="yes" xml:space="preserve">
+          <source>Locating...</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">찾기...</target>
+        </trans-unit>
+        <trans-unit id="DataSourceDetailText.Text" translate="yes" xml:space="preserve">
+          <source>Use Donation Pack to enable "Weather Underground"</source>
+          <target state="translated">기부금 팩 "날씨 지 하"를 사용 하 여</target>
+        </trans-unit>
+        <trans-unit id="EndTimeText.Text" translate="yes" xml:space="preserve">
+          <source>End Time:</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">종료 시간:</target>
+        </trans-unit>
+        <trans-unit id="MinutesIn" translate="yes" xml:space="preserve">
+          <source>Before {0} min</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">{0} 분 전에</target>
+        </trans-unit>
+        <trans-unit id="StartTimeText.Text" translate="yes" xml:space="preserve">
+          <source>Begin Time:</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">시작 시간:</target>
+        </trans-unit>
+        <trans-unit id="ThemeasDetailText.Text" translate="yes" xml:space="preserve">
+          <source>Need Location, or use default value: 19:30~7:30</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">위치, 필요 하거나 기본값을 사용 하 여: 19시 30분 ~ 7시 30분</target>
+        </trans-unit>
+        <trans-unit id="ThemeasRiseSetText.Text" translate="yes" xml:space="preserve">
+          <source>Enable dark mode when sun set</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">어두운 모드를 사용 하면 태양 설정</target>
+        </trans-unit>
+        <trans-unit id="Update" translate="yes" xml:space="preserve">
+          <source>Updated</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">업데이트됨</target>
+        </trans-unit>
+        <trans-unit id="UpdateFailedText.Text" translate="yes" xml:space="preserve">
+          <source>Couldn't update</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">업데이트할 수 없음</target>
+        </trans-unit>
+        <trans-unit id="RefreshComplete" translate="yes" xml:space="preserve">
+          <source>Update Completed</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">업데이트 완료</target>
+        </trans-unit>
+        <trans-unit id="RefreshStamp" translate="yes" xml:space="preserve">
+          <source>Timestamp: {0}</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">타임 스탬프: {0}</target>
+        </trans-unit>
+        <trans-unit id="RefreshStart" translate="yes" xml:space="preserve">
+          <source>Updating...</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">업데이트 중...</target>
+        </trans-unit>
+        <trans-unit id="RequestedTheme_Default" translate="yes" xml:space="preserve">
+          <source>Follow system</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">시스템에 따라</target>
+        </trans-unit>
+        <trans-unit id="Today_Weather" translate="yes" xml:space="preserve">
+          <source>Today for {0}</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">{0}에 대 한 오늘</target>
+        </trans-unit>
+        <trans-unit id="CaiyunRadio.Content" translate="yes" xml:space="preserve">
+          <source>Caiyun Weather</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Caiyun 날씨</target>
+        </trans-unit>
+        <trans-unit id="HeWeatherRadio.Content" translate="yes" xml:space="preserve">
+          <source>HeWeather</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">HeWeather</target>
+        </trans-unit>
+        <trans-unit id="CaiyunWeather" translate="yes" xml:space="preserve">
+          <source>The China Meteorological Administration, Caiyun Weather</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">중국 기상청, Caiyun 날씨</target>
+        </trans-unit>
+        <trans-unit id="DataSourceAlertText.Text" translate="yes" xml:space="preserve">
+          <source>May not provide all meteorological information</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">모든 기상 정보를 제공 하지 않을 수 있습니다.</target>
+        </trans-unit>
+        <trans-unit id="HeWeather" translate="yes" xml:space="preserve">
+          <source>HeWeather</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">HeWeather</target>
+        </trans-unit>
+        <trans-unit id="PhotoCopyright.Content" translate="yes" xml:space="preserve">
+          <source>Photo Copyright</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">사진 저작권</target>
+        </trans-unit>
+        <trans-unit id="MeetNewDataSource" translate="yes" xml:space="preserve">
+          <source>New data source "{0}" is avaliable, have a look at preferences settings!</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">새 데이터 원본 "{0}"은 유효한, 환경 설정을 봐!</target>
+        </trans-unit>
+        <trans-unit id="MeetNewDataSourceTitle" translate="yes" xml:space="preserve">
+          <source>See what you find!</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">당신이 무엇을 찾는 참조!</target>
+        </trans-unit>
+        <trans-unit id="LockText.Text" translate="yes" xml:space="preserve">
+          <source>Use Donation Pack to unlock some features</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">기부 팩을 사용 하 여 일부 기능을 잠금 해제</target>
+        </trans-unit>
+        <trans-unit id="FullScreenText.Text" translate="yes" xml:space="preserve">
+          <source>Full Screen</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">전체 화면</target>
+        </trans-unit>
+        <trans-unit id="UpdateDetailText.Text" translate="yes" xml:space="preserve">
+          <source>· Added Locating management
+· Minor bugs fixed</source>
+          <target state="translated">· 찾기 관리
+를 추가 · 사소한 버그 수정</target>
+        </trans-unit>
+        <trans-unit id="UpdateTitle.Text" translate="yes" xml:space="preserve">
+          <source>Welcome to new version</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">새로운 오신 버전</target>
+        </trans-unit>
+        <trans-unit id="Calculator" translate="yes" xml:space="preserve">
+          <source>Unit Converter</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">단위 변환기</target>
+        </trans-unit>
+        <trans-unit id="YouKnow" translate="yes" xml:space="preserve">
+          <source>Hey guy</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Hey 사람</target>
+        </trans-unit>
+        <trans-unit id="AlwaysShowText.Text" translate="yes" xml:space="preserve">
+          <source>Background always visible</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">항상 보이는 배경</target>
+        </trans-unit>
+        <trans-unit id="ShuffleText.Text" translate="yes" xml:space="preserve">
+          <source>Shuffle background</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">셔플 배경</target>
+        </trans-unit>
+        <trans-unit id="Overcast.Header" translate="yes" xml:space="preserve">
+          <source>Overcast</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">흐림</target>
+        </trans-unit>
+        <trans-unit id="UpdateLogButton.Content" translate="yes" xml:space="preserve">
+          <source>Update Log</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">업데이트 로그</target>
+        </trans-unit>
+        <trans-unit id="UpdateLogText.Text" translate="yes" xml:space="preserve">
+          <source>1.6.16111
+· Added Locating management
+· Minor bugs fixed
+
+1.6.16110
+· Fixed an issue caused mobile version's startup to be too slow
+· Changed Locating method
+· Integrate the Cities Overview page with the Cities Management page
+
+1.6.16101
+· Minor Fixes
+· Now you can set the immersive mode time out in the custom layout panel
+
+1.6.16100
+· Fixed an issue that secondary tiles don't update
+· Fixed an issue that secondary tiles' layout to be incorrect
+· Welcome Page Re-designed
+
+1.6.16086
+· Fixed an issue that swipe on touch screen is to slow
+· Fixed an issue that some devices can't load image resources
+· Fixed UI dislocation
+
+1.6.16085
+· Added Privacy Policy
+
+1.6.16080
+· Minor fixes
+
+1.6.16062
+· Fixed a small display issue in details page
+· Added wind speed graph
+
+1.6.16058
+· UI Tweaks
+
+1.6.16056
+· Fixed a bug that caused background task can't start
+· Cortana commands will be soon avaliable
+
+1.6.16054
+· Improved weather alarm toasts
+
+1.6.16050
+· Now you can choose translucent tiles
+· Tile layout adjustment
+
+1.5.16059
+· Fixed issues in settings page
+· Try to set current BG as lockscreen wallpaper
+
+1.5.16055
+· You can customize accent color now(only when the theme setting is "Follow system")
+· Added refresh animation
+· You can customize layout now
+· Details page improved
+
+1.5.16054
+· Adjusted preference settings
+
+1.5.16052
+· fixed the issue caused by region formats
+
+1.5.16050
+· Details page added
+
+1.5.16045
+· Shorten the automatic background refresh interval
+· UI and layout enhancement
+· Tile's layout will be updated in next version
+
+1.5.16040
+· Compatible with Windows 10 Build 14328, we have updated toast and tile
+· "Weather Underground" now avaliable!
+· (may) Fixed a catastrophic failure
+· (may) Fixed an issue occurs on mobile devices that don't display lockscreen notifications
+
+1.4.16047:
+· UI tuning
+· Little bug fixed
+      
+1.4.16046:
+· Update log Added
+· You can swipe to delete the update details
+· Particle System's Surfaces updated
+· Particle System improvement
+· Lightning generator enhancement
+  </source>
+          <target state="translated">1.6.16111
+· 찾기 관리
+를 추가 · 마이너 버그 고정된
+
+1.6.16110
+· 모바일 버전의 시작 되도록 너무 느린
+· 발생 문제 해결 찾기 메서드
+를 변경 · 도시 관리 페이지
+
+1.6.16101
+와 도시 개요 페이지를 통합 · 마이너 수정
+· 이제 사용자 지정 레이아웃 패널
+
+1.6.16100
+에에서 몰입 모드 시간 초과 설정할 수 있습니다 · 문제 해결 보조 타일
+· 업데이트 되지 않습니다 잘못 된
+· 수는 보조 타일의 레이아웃 문제 해결 시작 페이지 다시 디자인 된
+
+1.6.16086
+· 문제는 터치 스크린에 슬쩍
+· 감속 하는 것은 고정 고정 문제는 일부 장치 이미지 리소스
+를 로드할 수 없습니다 · UI 전위
+
+1.6.16085
+고정 · 추가 개인 정보 보호 정책
+
+1.6.16080
+· 마이너 수정
+
+1.6.16062
+· 세부 사항에 작은 디스플레이 문제를 해결 페이지
+· 추가 바람 속도 그래프
+
+1.6.16058
+· UI 조작
+
+1.6.16056
+· 고정 버그 발생된 배경 작업
+· 시작할 수 없습니다. Cortana 명령 곧 유효한
+
+1.6.16054
+· 날씨 경보 개선
+
+1.6.16050
+· 토스트 반투명 타일
+를 선택할 수 있습니다 이제 · 바둑판식 배열 레이아웃 조정
+
+1.5.16059
+· 설정에서 고정된 문제 페이지
+· 현재 BG lockscreen 설정 하려고 벽지
+
+1.5.16055
+· 사용자 지정할 수 있습니다 강조 색 지금 (경우에 테마 설정 "에 따라 시스템")
+· 새로 고침 애니메이션
+를 추가 · 레이아웃을 사용자 지정할 수 있습니다 지금은
+· 세부 정보 페이지 향상 된
+
+1.5.16054
+· 기본 설정
+
+1.5.16052
+조정 지역 형식
+
+1.5.16050
+에 의해 발생 하는 문제를 해결 하는 · · 세부 내용 페이지 추가
+
+1.5.16045
+· 
+는 자동 백그라운드 새로 고침 간격을 단축 · UI 및 레이아웃 향상
+· 타일의 레이아웃 다음 버전
+
+1.5.16040
+에서에서 업데이트 될 것입니다 · 윈도우 10 빌드 14328, 우리 토스트 업데이 트와
+· 타일 "지 하 날씨" 지금 유효한! 
+· (5 월) 고정 오류가
+· (5 월) Lockscreen 알림을
+
+1.4.16047 표시 하지 않는 모바일 장치에서 발생 하는 문제가 고정:
+· UI 튜닝
+· 작은 버그 수정
+ 
+1.4.16046:
+· 업데이트 로그 추가
+· 하실 수 있습니다 슬쩍 삭제 업데이트 내용을
+· 입자 시스템의 표면 업데이트
+· 입자 시스템 개선
+· 번개 생성기 향상
+  </target>
+        </trans-unit>
+        <trans-unit id="ContactButton.Content" translate="yes" xml:space="preserve">
+          <source>Contact with me</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">저 접촉</target>
+        </trans-unit>
+        <trans-unit id="ImproveButton.Content" translate="yes" xml:space="preserve">
+          <source>Improve this app</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">이 응용 프로그램을 개선</target>
+        </trans-unit>
+        <trans-unit id="ImproveDetail.Text" translate="yes" xml:space="preserve">
+          <source>Together with me, make this app more perfect!
+
+Including but not limited to:
+
+· UI and layout improvement
+· Add more accurate data providers
+· Draw/provide more weather icon or background
+· Coding
+                                
+Thanks!</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">나, 함께 완벽 하 게 애플 리 케이이 션이 더! 제한 된 
+ 
+포함 한 아니지만:
+
+· UI 및 레이아웃 개선
+· 보다 정확한 데이터 공급자
+를 추가 · 더 많은 날씨 아이콘을 그리기 제공 또는
+· 배경 코딩
+ 
+감사!</target>
+        </trans-unit>
+        <trans-unit id="Today" translate="yes" xml:space="preserve">
+          <source>Today</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">오늘</target>
+        </trans-unit>
+        <trans-unit id="Tomorrow" translate="yes" xml:space="preserve">
+          <source>Tomorrow</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">내일</target>
+        </trans-unit>
+        <trans-unit id="DonateOption4.Text" translate="yes" xml:space="preserve">
+          <source>· Enable the "Weather Underground" data source</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">· "날씨 지 하" 데이터 소스 사용</target>
+        </trans-unit>
+        <trans-unit id="CrashDialog.Title" translate="yes" xml:space="preserve">
+          <source>Oops!</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">죄송합니다.</target>
+        </trans-unit>
+        <trans-unit id="CrashDialog.SecondaryButtonText" translate="yes" xml:space="preserve">
+          <source>Quit</source>
+          <target state="translated">끝내기</target>
+        </trans-unit>
+        <trans-unit id="CrashDialog.PrimaryButtonText" translate="yes" xml:space="preserve">
+          <source>Send</source>
+          <target state="translated">보내기</target>
+        </trans-unit>
+        <trans-unit id="CrashText0.Text" translate="yes" xml:space="preserve">
+          <source>Something went wrong!( ×ω× )
+Now you can send crash report to developer, and totally help this app get better...
+</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">뭔가 잘못! (Ω ×) 
+지금 당신은 개발자, 충돌 보고서를 보낼 수 있고 완전히이 애플 리 케이이 션을 좀 더 도움이... 
+</target>
+        </trans-unit>
+        <trans-unit id="CrashText1.Text" translate="yes" xml:space="preserve">
+          <source>May be these info could help you:</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">이 정보는 당신을 도울 수 있을 수 있습니다.</target>
+        </trans-unit>
+        <trans-unit id="PrivacyText0.Text" translate="yes" xml:space="preserve">
+          <source>We will NEVER upload your personal infomation</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">우리 절대 귀하의 개인 정보를 업로드 합니다.</target>
+        </trans-unit>
+        <trans-unit id="PrivacyText1.Text" translate="yes" xml:space="preserve">
+          <source>In crash reports, we will log current time, current language, and some environment information, then we will send these strings to server, we WON't log any of your personal information. If you don't want to send reports, just click quit button and nothing happens.</source>
+          <target state="translated">충돌 보고서에 우리 현재 시간, 현재 언어, 그리고 몇 가지 환경 정보를 로그 다음 이러한 문자열을 보낼 것입니다 우리가 서버, 우리는 귀하의 개인 정보 로그 하지 않습니다. 보고서를 전송 하지 않으려는 경우 그냥 버튼을 클릭 종료 하 고 아무것도 발생 합니다.</target>
+        </trans-unit>
+        <trans-unit id="WhyButton.Content" translate="yes" xml:space="preserve">
+          <source>What will be sent?</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">무엇 전송 됩니다?</target>
+        </trans-unit>
+        <trans-unit id="GeneralText.Text" translate="yes" xml:space="preserve">
+          <source>General</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">일반</target>
+        </trans-unit>
+        <trans-unit id="LanguageText.Text" translate="yes" xml:space="preserve">
+          <source>Language</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">언어</target>
+        </trans-unit>
+        <trans-unit id="LanguageChangeText.Text" translate="yes" xml:space="preserve">
+          <source>Refresh or restart to apply</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">새로 고침 또는 다시 적용</target>
+        </trans-unit>
+        <trans-unit id="ReportBox.PlaceholderText" translate="yes" xml:space="preserve">
+          <source>Write your opinion!</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">귀하의 의견 쓰기!</target>
+        </trans-unit>
+        <trans-unit id="AppProblemButton.Content" translate="yes" xml:space="preserve">
+          <source>Have problems?</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">문제가 있나요?</target>
+        </trans-unit>
+        <trans-unit id="AppProblemText.Text" translate="yes" xml:space="preserve">
+          <source>You can try clearing all app data to solve some problems</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">몇 가지 문제를 해결 하기 위해 모든 응용 프로그램 데이터를 삭제를 시도할 수 있습니다.</target>
+        </trans-unit>
+        <trans-unit id="ConfirmDeleteText.Text" translate="yes" xml:space="preserve">
+          <source>Confirm? you need to restart this</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">확인? 이 다시 시작 해야</target>
+        </trans-unit>
+        <trans-unit id="AppDeleteButton.Content" translate="yes" xml:space="preserve">
+          <source>Clear all data</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">모든 데이터 삭제</target>
+        </trans-unit>
+        <trans-unit id="LockDetail" translate="yes" xml:space="preserve">
+          <source>{0} {1}, {2}{3}
+Tomorrow: {4}, {5}.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">{0} {1}, {2} {3}
+내일: {4}, {5}.</target>
+        </trans-unit>
+        <trans-unit id="RateText.Content" translate="yes" xml:space="preserve">
+          <source>Rate in Windows Store</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Windows 스토어에서</target>
+        </trans-unit>
+        <trans-unit id="FeedbackDialog.Title" translate="yes" xml:space="preserve">
+          <source>Feedback</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">피드백</target>
+        </trans-unit>
+        <trans-unit id="FeedbackDialog.SecondaryButtonText" translate="yes" xml:space="preserve">
+          <source>Back</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">뒤로</target>
+        </trans-unit>
+        <trans-unit id="FeedbackDialog.PrimaryButtonText" translate="yes" xml:space="preserve">
+          <source>Send</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">보내기</target>
+        </trans-unit>
+        <trans-unit id="DailyDetailsPop" translate="yes" xml:space="preserve">
+          <source>Pcpn. Probability for {0} days</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">{0} 일에 대 한 확률 Pcpn입니다.</target>
+        </trans-unit>
+        <trans-unit id="DailyDetailsPrep" translate="yes" xml:space="preserve">
+          <source>Precipitation for {0} days</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">{0} 일 강수량</target>
+        </trans-unit>
+        <trans-unit id="DailyDetailsTemp" translate="yes" xml:space="preserve">
+          <source>Temperature for {0} days</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">{0} 일에 대 한 온도</target>
+        </trans-unit>
+        <trans-unit id="DailyDetailsVis" translate="yes" xml:space="preserve">
+          <source>Visibility for {0} days</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">{0} 일에 대 한 가시성</target>
+        </trans-unit>
+        <trans-unit id="Details" translate="yes" xml:space="preserve">
+          <source>Details</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">세부 정보</target>
+        </trans-unit>
+        <trans-unit id="HourlyDetailsPop" translate="yes" xml:space="preserve">
+          <source>Pcpn. Probability for {0} hours</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">{0} 시간에 대 한 확률 Pcpn입니다.</target>
+        </trans-unit>
+        <trans-unit id="HourlyDetailsTemperature" translate="yes" xml:space="preserve">
+          <source>Temperature for {0} hours</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">{0} 시간에 대 한 온도</target>
+        </trans-unit>
+        <trans-unit id="DrawerText.Text" translate="yes" xml:space="preserve">
+          <source>Custom Drawer Background</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">사용자 지정 서랍 배경</target>
+        </trans-unit>
+        <trans-unit id="MainColorText.Text" translate="yes" xml:space="preserve">
+          <source>Accent Color</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">강조 색</target>
+        </trans-unit>
+        <trans-unit id="CustomLayoutButton.Content" translate="yes" xml:space="preserve">
+          <source>Custom Layout</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">사용자 지정 레이아웃</target>
+        </trans-unit>
+        <trans-unit id="PickImageButton.Content" translate="yes" xml:space="preserve">
+          <source>Pick Image</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">이미지 선택</target>
+        </trans-unit>
+        <trans-unit id="LayoutText.Text" translate="yes" xml:space="preserve">
+          <source>Layout</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">레이아웃</target>
+        </trans-unit>
+        <trans-unit id="ColorPicker.Title" translate="yes" xml:space="preserve">
+          <source>Pick a color</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">색 선택</target>
+        </trans-unit>
+        <trans-unit id="ColorPicker.AccentColorTitle" translate="yes" xml:space="preserve">
+          <source>System accent color</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">시스템 테마 컬러</target>
+        </trans-unit>
+        <trans-unit id="SetTimeText.Text" translate="yes" xml:space="preserve">
+          <source>Set alarm time</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">설정된 알람 시간</target>
+        </trans-unit>
+        <trans-unit id="AlarmButton.Content" translate="yes" xml:space="preserve">
+          <source>Meteorological disaster warning</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">기상 재해 경고</target>
+        </trans-unit>
+        <trans-unit id="LunarText.Text" translate="yes" xml:space="preserve">
+          <source>Show Lunar Calendar</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">음력 달력 보기</target>
+        </trans-unit>
+        <trans-unit id="LowNowPanelText.Text" translate="yes" xml:space="preserve">
+          <source>Compact layout</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">컴팩트한 레이아웃</target>
+        </trans-unit>
+        <trans-unit id="ToggleVisibilityText.Text" translate="yes" xml:space="preserve">
+          <source>Choose what to show</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">표시 선택</target>
+        </trans-unit>
+        <trans-unit id="ForecastPanelText.Text" translate="yes" xml:space="preserve">
+          <source>Forecast</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">예측</target>
+        </trans-unit>
+        <trans-unit id="AQIPanelText.Text" translate="yes" xml:space="preserve">
+          <source>AQI</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">AQI</target>
+        </trans-unit>
+        <trans-unit id="DetailsPanelText.Text" translate="yes" xml:space="preserve">
+          <source>Details</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">세부 정보</target>
+        </trans-unit>
+        <trans-unit id="SuggestsPanelText.Text" translate="yes" xml:space="preserve">
+          <source>Suggestions</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">추천</target>
+        </trans-unit>
+        <trans-unit id="ToggleNowPanelText.Text" translate="yes" xml:space="preserve">
+          <source>Now weather panel tweak</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">이제 날씨 패널 조정</target>
+        </trans-unit>
+        <trans-unit id="HeightText.Text" translate="yes" xml:space="preserve">
+          <source>Height</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">height</target>
+        </trans-unit>
+        <trans-unit id="LanguageAlarmText.Text" translate="yes" xml:space="preserve">
+          <source>Some language requires you to install language pack</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">일부 언어에서는 언어 팩을 설치 해야</target>
+        </trans-unit>
+        <trans-unit id="DonateOption5.Text" translate="yes" xml:space="preserve">
+          <source>· Customize layout</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">· 레이아웃 사용자 지정</target>
+        </trans-unit>
+        <trans-unit id="SetWallPaperText.Text" translate="yes" xml:space="preserve">
+          <source>Auto set current BG as lockscreen wallpaper</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">자동 설정 현재 BG lockscreen 벽지</target>
+        </trans-unit>
+        <trans-unit id="SetWallPaperFalseText.Text" translate="yes" xml:space="preserve">
+          <source>Experimental and may not take effect</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">실험 및 적용 되지 않을 수 있습니다</target>
+        </trans-unit>
+        <trans-unit id="TransparentTileText.Text" translate="yes" xml:space="preserve">
+          <source>Enable translucent tile</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">반투명 타일 사용</target>
+        </trans-unit>
+        <trans-unit id="TransparentTileFalseText.Text" translate="yes" xml:space="preserve">
+          <source>Not enabled on the desktop platform</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">데스크톱 플랫폼에서 사용할 수 없습니다.</target>
+        </trans-unit>
+        <trans-unit id="EnableAlarm.Content" translate="yes" xml:space="preserve">
+          <source>Severe weather alarm</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">악천후 경보</target>
+        </trans-unit>
+        <trans-unit id="MorningAlarm.Content" translate="yes" xml:space="preserve">
+          <source>Morning alarm</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">아침 알람</target>
+        </trans-unit>
+        <trans-unit id="EveningAlarm.Content" translate="yes" xml:space="preserve">
+          <source>Evening alarm</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">저녁 알람</target>
+        </trans-unit>
+        <trans-unit id="ToastGale" translate="yes" xml:space="preserve">
+          <source>will be gale tomorrow</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">게 일을 내일 있을 것입니다.</target>
+        </trans-unit>
+        <trans-unit id="ToastRain" translate="yes" xml:space="preserve">
+          <source>will be heavy rain tomorrow</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">폭우를 내일 있을 것입니다.</target>
+        </trans-unit>
+        <trans-unit id="ToastThunder" translate="yes" xml:space="preserve">
+          <source>will be thunder tomorrow</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">천둥을 내일 있을 것입니다.</target>
+        </trans-unit>
+        <trans-unit id="ToastHail" translate="yes" xml:space="preserve">
+          <source>will be hail tomorrow</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">우박을 내일 있을 것입니다.</target>
+        </trans-unit>
+        <trans-unit id="ToastSnow" translate="yes" xml:space="preserve">
+          <source>will be heavy snow tomorrow</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">내일 눈을 될 것입니다.</target>
+        </trans-unit>
+        <trans-unit id="ToastFreeze" translate="yes" xml:space="preserve">
+          <source>will be Freezing rain tomorrow</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">내일 비 동결 것 이다</target>
+        </trans-unit>
+        <trans-unit id="ToastSand" translate="yes" xml:space="preserve">
+          <source>will be sand tomorrow</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">내일 모래 있을 것입니다.</target>
+        </trans-unit>
+        <trans-unit id="ToastHot" translate="yes" xml:space="preserve">
+          <source>will be hot tomorrow</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">내일 뜨거운 될 것 이다</target>
+        </trans-unit>
+        <trans-unit id="ToastCold" translate="yes" xml:space="preserve">
+          <source>will be cold tomorrow</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">내일 차가운 것</target>
+        </trans-unit>
+        <trans-unit id="Known" translate="yes" xml:space="preserve">
+          <source>I know</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">알아요</target>
+        </trans-unit>
+        <trans-unit id="Dismiss" translate="yes" xml:space="preserve">
+          <source>Dismiss</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">해제</target>
+        </trans-unit>
+        <trans-unit id="DailyDetailsWind" translate="yes" xml:space="preserve">
+          <source>Wind speed for {0} days</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">{0} 일에 대 한 풍속</target>
+        </trans-unit>
+        <trans-unit id="HourlyDetailsWind" translate="yes" xml:space="preserve">
+          <source>Wind speed for {0} hours</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">{0} 시간에 대 한 풍속</target>
+        </trans-unit>
+        <trans-unit id="ThanksButton.Content" translate="yes" xml:space="preserve">
+          <source>Developers and Credits</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">개발자와 크레딧</target>
+        </trans-unit>
+        <trans-unit id="EnableCrash.Text" translate="yes" xml:space="preserve">
+          <source>When crash, send report</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">때, 충돌 보고서를 보낼</target>
+        </trans-unit>
+        <trans-unit id="EnableCrashDetail.Text" translate="yes" xml:space="preserve">
+          <source>May affect the user experience</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">사용자 경험에 영향을 미칠 수 있습니다.</target>
+        </trans-unit>
+        <trans-unit id="MadebyText.Text" translate="yes" xml:space="preserve">
+          <source>Made by</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">에 의해</target>
+        </trans-unit>
+        <trans-unit id="BrandText.Text" translate="yes" xml:space="preserve">
+          <source>Night with full of light.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">전체 빛의 밤입니다.</target>
+        </trans-unit>
+        <trans-unit id="DevText.Text" translate="yes" xml:space="preserve">
+          <source>All the codes and UI/UX design are created by </source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">모든 코드와 UI/UX 디자인으로 만들어집니다. </target>
+        </trans-unit>
+        <trans-unit id="DevAfterText.Text" translate="yes" xml:space="preserve">
+          <source>.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">.</target>
+        </trans-unit>
+        <trans-unit id="DavidBiancoText.Text" translate="yes" xml:space="preserve">
+          <source>Spanish Translation and some UI improvements.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">스페인어 번역 및 일부 UI 개선</target>
+        </trans-unit>
+        <trans-unit id="DevTitle.Text" translate="yes" xml:space="preserve">
+          <source>Developer</source>
+          <target state="translated">디벨로퍼</target>
+        </trans-unit>
+        <trans-unit id="ThanksTitle.Text" translate="yes" xml:space="preserve">
+          <source>Special Thanks</source>
+          <target state="translated">특별히 감사드리는 분</target>
+        </trans-unit>
+        <trans-unit id="CortanaSup.Text" translate="yes" xml:space="preserve">
+          <source>Only support Chinese</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">중국어 지원</target>
+        </trans-unit>
+        <trans-unit id="CortanaCommandsText.Content" translate="yes" xml:space="preserve">
+          <source>Cortana Commands</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Cortana 명령</target>
+        </trans-unit>
+        <trans-unit id="PrivacyButton.Content" translate="yes" xml:space="preserve">
+          <source>Privacy Policy</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">개인 정보 보호 정책</target>
+        </trans-unit>
+        <trans-unit id="Hum.Text" translate="yes" xml:space="preserve">
+          <source>Humidity</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">습도</target>
+        </trans-unit>
+        <trans-unit id="Pop.Text" translate="yes" xml:space="preserve">
+          <source>Probability of precipitation</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">강 수 확률</target>
+        </trans-unit>
+        <trans-unit id="Pcpn.Text" translate="yes" xml:space="preserve">
+          <source>Precipitation</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">강 수</target>
+        </trans-unit>
+        <trans-unit id="Vis.Text" translate="yes" xml:space="preserve">
+          <source>Visibility</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">표시 유형</target>
+        </trans-unit>
+        <trans-unit id="Scale.Text" translate="yes" xml:space="preserve">
+          <source>Wind Scale</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">바람 규모</target>
+        </trans-unit>
+        <trans-unit id="Dir.Text" translate="yes" xml:space="preserve">
+          <source>Wind Direction</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">바람의 방향</target>
+        </trans-unit>
+        <trans-unit id="Pres.Text" translate="yes" xml:space="preserve">
+          <source>Atom Pressure</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">원자 압력</target>
+        </trans-unit>
+        <trans-unit id="SunRise.Text" translate="yes" xml:space="preserve">
+          <source>Sun rise</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">일출</target>
+        </trans-unit>
+        <trans-unit id="SunSet.Text" translate="yes" xml:space="preserve">
+          <source>Sun set</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">태양이 세트</target>
+        </trans-unit>
+        <trans-unit id="Location.Text" translate="yes" xml:space="preserve">
+          <source>Location</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Location</target>
+        </trans-unit>
+        <trans-unit id="UtcOffset.Text" translate="yes" xml:space="preserve">
+          <source>Utc offset</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Utc 오프셋</target>
+        </trans-unit>
+        <trans-unit id="HumText" translate="yes" xml:space="preserve">
+          <source>Humidity</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">습도</target>
+        </trans-unit>
+        <trans-unit id="ScaleText" translate="yes" xml:space="preserve">
+          <source>Wind Scale</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">바람 규모</target>
+        </trans-unit>
+        <trans-unit id="ImmersiveTimeOutText.Text" translate="yes" xml:space="preserve">
+          <source>Immersive mode time out, set to 0 will display forever</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">몰입 모드 시간 초과, 0로 설정 표시 영원히</target>
+        </trans-unit>
+        <trans-unit id="ChangeCityManage.Text" translate="yes" xml:space="preserve">
+          <source>Drag to change priority</source>
+          <target state="translated">우선 순위를 변경 하려면 드래그</target>
+        </trans-unit>
+        <trans-unit id="GotoCitiesPage.Text" translate="yes" xml:space="preserve">
+          <source>Please go to Cities Page and check out</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">도시 페이지로 이동 하 고 체크 아웃 하십시오</target>
+        </trans-unit>
+        <trans-unit id="LocateRoute_Amap" translate="yes" xml:space="preserve">
+          <source>Gaode Map reverse-geocoding（China only）</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Gaode 지도 역-geocoding(China only)</target>
+        </trans-unit>
+        <trans-unit id="LocateRoute_Omap" translate="yes" xml:space="preserve">
+          <source>OpenStreetMap reverse-geocoding</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">OpenStreetMap 리버스 지 오 코딩</target>
+        </trans-unit>
+        <trans-unit id="LocateRoute_IP" translate="yes" xml:space="preserve">
+          <source>IP geo-location query</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">IP 지리적 위치 쿼리</target>
+        </trans-unit>
+        <trans-unit id="LocateRoute_unknown" translate="yes" xml:space="preserve">
+          <source>Built-in reverse-geocoding</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">내장 역 지 오 코딩</target>
+        </trans-unit>
+        <trans-unit id="ConfirmButton.Content" translate="yes" xml:space="preserve">
+          <source>Confirm</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">확인</target>
+        </trans-unit>
+        <trans-unit id="ConfirmDialog.PrimaryButtonText" translate="yes" xml:space="preserve">
+          <source>Confirm</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">확인</target>
+        </trans-unit>
+        <trans-unit id="LocaterText.Content" translate="yes" xml:space="preserve">
+          <source>Location Service Provider</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">위치 서비스 공급자</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

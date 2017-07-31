@@ -1,0 +1,380 @@
+﻿<!-- Copyright (c) Aurora Studio. All rights reserved.
+    
+     Licensed under the MIT License. See LICENSE in the project root for license information.-->
+
+<Page
+    x:Class="Com.Aurora.AuWeather.SettingOptions.AboutSetting"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Com.Aurora.AuWeather.SettingOptions"
+    xmlns:ViewModels="using:Com.Aurora.AuWeather.ViewModels"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    RequestedTheme="{x:Bind Theme,Mode=OneWay}">
+
+    <Page.DataContext>
+        <ViewModels:PreferencesSettingViewModel x:Name="Context"/>
+    </Page.DataContext>
+
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.ThemeDictionaries>
+                <ResourceDictionary Source="../Themes/LightThemeDictionary.xaml" x:Key="Light"/>
+                <ResourceDictionary Source="../Themes/DarkThemeDictionary.xaml" x:Key="Dark"/>
+            </ResourceDictionary.ThemeDictionaries>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="../Themes/Styles.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Page.Resources>
+    <ScrollViewer Background="{ThemeResource SystemControlForegroundHighBrush}">
+        <Grid>
+            <StackPanel Padding="0,0,0,96">
+                <Grid HorizontalAlignment="Stretch" Height="512" >
+                    <Grid.Background>
+                        <ImageBrush ImageSource="/Assets/Header.png" Stretch="UniformToFill" AlignmentX="Center" AlignmentY="Center" />
+                    </Grid.Background>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Image Source="/Assets/Square310x310Logo.png" Height="310" Width="310" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="Uniform" />
+                    <StackPanel Orientation="Vertical" HorizontalAlignment="Stretch" VerticalAlignment="Top" Grid.Row="1">
+                        <TextBlock x:Uid="AppNameText" Foreground="White" Style="{ThemeResource TitleTextBlockStyle}" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="12" />
+                        <TextBlock x:Name="Version" Loaded="Version_Loaded" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="12" />
+                    </StackPanel>
+                    <TextBlock Text="Aurora Studio © 2016" Grid.Row="1" Foreground="White" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="12" />
+                </Grid>
+
+                <Button Content="Github" Style="{ThemeResource TextBlockButtonStyle}" HorizontalAlignment="Center" Margin="12" Click="Button_Click_1" />
+                <Button x:Uid="OpenSourceText" Style="{ThemeResource TextBlockButtonStyle}" HorizontalAlignment="Center" Margin="12" >
+                    <Button.Flyout>
+                        <Flyout Placement="Full">
+                            <TextBlock MaxWidth="320" TextWrapping="WrapWholeWords" Style="{ThemeResource BodyTextBlockStyle}" HorizontalAlignment="Center" VerticalAlignment="Center" Text="                   Com.Aurora.AuWeather&#x000A;&#x000A;The MIT License&#x000A;&#x000A;Copyright(C) 2016 Aurora Studio&#x000A;&#x000A; 
+  Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &quot;Software&quot;), 
+to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, 
+and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.&#x000A;
+  THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, 
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.&#x000A;----------------------------------------------------&#x000A;
+                       Com.Aurora.Shared&#x000A;&#x000A;The MIT License&#x000A;&#x000A;Copyright(C) 2016 Aurora Studio&#x000A;&#x000A; 
+  Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &quot;Software&quot;), 
+to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, 
+and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.&#x000A;
+  THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, 
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.&#x000A;----------------------------------------------------&#x000A;
+                          Com.Aurora.Core&#x000A;&#x000A;The MIT License&#x000A;&#x000A;Copyright(C) 2016 Aurora Studio&#x000A;&#x000A; 
+  Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &quot;Software&quot;), 
+to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, 
+and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.&#x000A;
+  THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, 
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.&#x000A;">
+                            </TextBlock>
+                        </Flyout>
+                    </Button.Flyout>
+                </Button>
+                <Button x:Uid="ImproveButton" Style="{ThemeResource TextBlockButtonStyle}" HorizontalAlignment="Center" Margin="12" >
+                    <Button.Flyout>
+                        <Flyout>
+                            <StackPanel Orientation="Vertical" Margin="12">
+                                <TextBlock Margin="8" x:Uid="ImproveDetail" MaxWidth="320" TextWrapping="WrapWholeWords" Style="{ThemeResource BodyTextBlockStyle}" HorizontalAlignment="Left" VerticalAlignment="Center" />
+                                <Button x:Uid="ContactButton" Click="Button_Click" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="12" Style="{ThemeResource TextBlockButtonStyle}" />
+                            </StackPanel>
+                        </Flyout>
+                    </Button.Flyout>
+                </Button>
+                <Button x:Uid="ThanksButton" Style="{ThemeResource TextBlockButtonStyle}" HorizontalAlignment="Center" Margin="12" >
+                    <Button.Flyout>
+                        <Flyout Placement="Full">
+                            <StackPanel Orientation="Vertical" Margin="12">
+                                <TextBlock x:Uid="MadebyText" Margin="8" Style="{ThemeResource BodyTextBlockStyle}" HorizontalAlignment="Left" VerticalAlignment="Center" />
+                                <TextBlock Margin="8" Text="Aurora Studio" Style="{ThemeResource HeaderTextBlockStyle}" HorizontalAlignment="Left" VerticalAlignment="Center" >
+                                    <LineBreak />
+                                    <Run x:Uid="BrandText" FontSize="15" />
+                                </TextBlock>
+                                <Grid Margin="8" Height="8"/>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                                    <Button Style="{ThemeResource TextBlockButtonStyle}" Margin="12" Click="Button_Click_2">
+                                        <StackPanel Orientation="Vertical" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                                            <Grid Margin="8" Height="50" Width="50" Background="{ThemeResource SystemControlBackgroundAccentBrush}">
+                                                <Image Height="50" Width="50" Source="/Assets/2048.png" />
+                                            </Grid>
+                                            <TextBlock Margin="8" Text="2048" HorizontalAlignment="Center" />
+                                        </StackPanel>
+                                    </Button>
+                                    <Button Style="{ThemeResource TextBlockButtonStyle}" Margin="12" Click="Button_Click_2">
+                                        <StackPanel Orientation="Vertical" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                                            <Grid Margin="8" Height="50" Width="50" Background="{ThemeResource SystemControlBackgroundAccentBrush}">
+                                                <Image Height="50" Width="50" Source="/Assets/Music.png" />
+                                            </Grid>
+                                            <TextBlock Margin="8" Text="Music" HorizontalAlignment="Center" />
+                                        </StackPanel>
+                                    </Button>
+                                </StackPanel>
+                                <Grid Height="1" HorizontalAlignment="Stretch" Background="{ThemeResource SystemControlBackgroundAltHighBrush}"/>
+                                <TextBlock x:Uid="DevTitle" Margin="8" MaxWidth="320" TextWrapping="WrapWholeWords" Style="{ThemeResource SubtitleTextBlockStyle}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                <TextBlock Margin="8" MaxWidth="320" TextWrapping="WrapWholeWords" Style="{ThemeResource BodyTextBlockStyle}" HorizontalAlignment="Left" VerticalAlignment="Center" >
+                                    <Run Text="· " />
+                                    <Run x:Uid="DevText"/>
+                                    <Bold>Aurora-ZXS</Bold>
+                                    <Run x:Uid="DevAfterText"></Run>
+                                </TextBlock>
+                                <Grid Height="1" HorizontalAlignment="Stretch" Background="{ThemeResource SystemControlBackgroundAltHighBrush}"/>
+                                <TextBlock x:Uid="ThanksTitle" Margin="8" MaxWidth="320" TextWrapping="WrapWholeWords" Style="{ThemeResource SubtitleTextBlockStyle}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                <TextBlock Margin="8" MaxWidth="320" TextWrapping="WrapWholeWords" Style="{ThemeResource BodyTextBlockStyle}" HorizontalAlignment="Left" VerticalAlignment="Center" >
+                                    <Run Text="· " />
+                                    <Bold>David Bianco: </Bold>
+                                    <Run x:Uid="DavidBiancoText" />
+                                </TextBlock>
+                            </StackPanel>
+                        </Flyout>
+                    </Button.Flyout>
+                </Button>
+                <Button x:Uid="PrivacyButton" Style="{ThemeResource TextBlockButtonStyle}" HorizontalAlignment="Center" Margin="12">
+                    <Button.Flyout>
+                        <Flyout Placement="Full">
+                            <RichTextBlock MaxWidth="360" IsTextSelectionEnabled="False" Foreground="#ff808080" Style="{ThemeResource BodyRichTextBlockStyle}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" >
+                                <Paragraph TextAlignment="Center">
+                                    <Bold>
+                                        <Span Foreground="#ff000000" FontSize="40">隐私政策</Span>
+                                    </Bold>
+                                </Paragraph>
+                                <Paragraph TextAlignment="Right" FontSize="12" Margin="0,5,0,5">
+                                    <Run Text="更新日期  " />
+                                    <Underline FontWeight="Light" >2016 年 8 月</Underline>
+                                </Paragraph>
+                                <Paragraph Margin="0,5,0,5" TextIndent="30">
+                                    <Run FontWeight="Light" Text="Aurora Studio 非常重视你的隐私。此隐私权政策旨在帮助你了解我们会收集哪些数据、为什么收集这些数据以及会利用这些数据做些什么。了解这些内容至关重要，因此我们希望你能抽出时间仔细阅读此政策。"/>
+                                </Paragraph>
+                                <Paragraph Foreground="#ff000000" Margin="5" FontSize="18">
+                                    <Bold>简要</Bold>
+                                </Paragraph>
+                                <Paragraph Margin="0,5,0,5" TextIndent="30">
+                                    <Run Text="感谢你使用 Aurora Studio（下称 &quot;极光工作室&quot;）开发的一系列软件。&quot;极光天气&quot;、&quot;极光音乐&quot;、&quot;Aurora Studio's 2048&quot; 均为极光工作室开发并拥有版权的应用软件，在使用上述软件（下称 &quot;应用&quot;）的过程中，我们可能会收集某些用户信息并使用收集到的信息，下面将会对我们的隐私政策作出说明。" />
+                                </Paragraph>
+                                <Paragraph Foreground="#ff000000" Margin="5" FontSize="18">
+                                    <Bold>我们收集的信息</Bold>
+                                </Paragraph>
+                                <Paragraph Margin="0,5,0,5" TextIndent="30">
+                                    <Run Text="我们收集信息是为了向所有用户提供更好的服务，在使用应用的过程中，我们会收集以下信息：" />
+                                </Paragraph>
+                                <Paragraph Margin="0,5,0,5" TextIndent="15">
+                                    <Run Foreground="#ff000000" Text="· 你的设备信息。" />
+                                    <Run Text="我们会收集你的操作系统及版本号，你的设备名称，你当前的区域语言设置以及设备的制造商信息，并会记录应用本身的运行状况。" />
+                                    <Run Foreground="#ff000000" Text="注意：这些信息仅当应用需要发送崩溃报告时才会收集。" />
+                                    <Run FontWeight="Light" Text="有关我们何时发送报告的说明，请见附录。" />
+                                </Paragraph>
+                                <Paragraph Margin="0,5,0,5" TextIndent="15">
+                                    <Run Foreground="#ff000000" Text="· 你的个人图片。" />
+                                    <Run Text="我们会收集存储于你当前设备中的某些图片。" />
+                                    <Run Foreground="#ff000000" Text="注意：我们会首先向你征求许可，并由你自己选择要被使用的图片，且可以随时删除收集的副本。" />
+                                </Paragraph>
+                                <Paragraph Margin="0,5,0,5" TextIndent="15">
+                                    <Run Foreground="#ff000000" Text="· 你的个人音频文件。" />
+                                    <Run Text="我们会收集存储于你当前设备中的某些音频文件。" />
+                                    <Run Foreground="#ff000000" Text="注意：我们会首先向你征求许可，并由你自己选择要被使用的音频文件，且可以随时删除收集的副本。" />
+                                </Paragraph>
+                                <Paragraph Margin="0,5,0,5" TextIndent="15">
+                                    <Run Foreground="#ff000000" Text="· 你的位置信息。" />
+                                    <Run Text="我们会收集你当前的位置信息，并在未来不定的时间间隔中持续收集。" />
+                                    <Run Foreground="#ff000000" Text="注意：我们会首先向你征求许可，且可以随时停止位置信息的收集。" />
+                                </Paragraph>
+                                <Paragraph Foreground="#ff000000" Margin="5" FontSize="18">
+                                    <Bold>我们如何使用收集到的信息</Bold>
+                                </Paragraph>
+                                <Paragraph Margin="0,5,0,5" TextIndent="30">
+                                    <Run Text="我们将会使用收集到的信息来完善你的用户体验，包括但不限于：改善应用质量、提供基础服务以及提升视觉效果。我们还会使用此类信息为你提供个性化内容。" />
+                                </Paragraph>
+                                <Paragraph Margin="0,5,0,5" TextIndent="15">
+                                    <Run Text="· 我们将会使用收集的" />
+                                    <Run Foreground="#ff000000" Text="设备信息" />
+                                    <Run Text="对应用运行状况进行分析，包括但不限于：跟踪应用使用情况、收集调试信息以及修复应用缺陷。" />
+                                </Paragraph>
+                                <Paragraph Margin="0,5,0,5" TextIndent="15">
+                                    <Run Text="· 我们将会使用收集的" />
+                                    <Run Foreground="#ff000000" Text="图片" />
+                                    <Run Text="对应用的视觉效果进行变更，例如更换背景、更换个性化素材等。" />
+                                </Paragraph>
+                                <Paragraph Margin="0,5,0,5" TextIndent="15">
+                                    <Run Text="· 我们将会使用收集的" />
+                                    <Run Foreground="#ff000000" Text="音频" />
+                                    <Run Text="为应用提供基础支持，例如在应用内展示音频信息，并提供播放功能。" />
+                                </Paragraph>
+                                <Paragraph Margin="0,5,0,5" TextIndent="15">
+                                    <Run Text="· 我们将会使用收集的" />
+                                    <Run Foreground="#ff000000" Text="位置信息" />
+                                    <Run Text="为应用提供基础支持，例如在应用内根据位置信息获取基于位置的天气服务。" />
+                                </Paragraph>
+                                <Paragraph Foreground="#ff000000" Margin="5" FontSize="18">
+                                    <Bold>选择权</Bold>
+                                </Paragraph>
+                                <Paragraph Margin="0,5,0,5" TextIndent="30">
+                                    <Run Text="在应用运行期间，我们会持续进行数据收集，" />
+                                    <Run Foreground="#ff000000" Text="但你可以随时终止" />
+                                    <Run Text="。我们已经向你说明了我们意图收集的数据，而你也有权选择去禁止这些行为。" />
+                                </Paragraph>
+                                <Paragraph Margin="0,5,0,5" TextIndent="15">
+                                    <Run Text="· 我们会在特定的时刻向你说明我们将会收集并发送你的" />
+                                    <Run Foreground="#ff000000" Text="设备信息" />
+                                    <Run Text="，这些说明是清晰的，并在显著位置标明，你可以选择 &quot;不发送&quot; 以禁止收集并发送这些信息。" />
+                                </Paragraph>
+                                <Paragraph Margin="0,5,0,5" TextIndent="15">
+                                    <Run Text="· 我们会在收集" />
+                                    <Run Foreground="#ff000000" Text="图片" />
+                                    <Run Text="时在显著位置标明这一情况，例如，我们会在 &quot;更换背景&quot; 功能中提供 &quot;自定义&quot; 按钮，点击该按钮，并选择你的个人图片，即表示你已同意向我们提供该图片以供使用，我们对此图片进行的操作包括但不限于：制作副本、修改图片和文件操作。随后你可以进行 &quot;不再使用这个图片&quot; 操作以阻止我们对这张图片的使用。" />
+                                </Paragraph>
+                                <Paragraph Margin="0,5,0,5" TextIndent="15">
+                                    <Run Text="· 我们会在收集" />
+                                    <Run Foreground="#ff000000" Text="音频文件" />
+                                    <Run Text="时在显著位置标明这一情况，例如，我们会在 &quot;扫描歌曲&quot; 功能中提供 &quot;添加扫描位置&quot; 按钮，点击该按钮，并选择你的个人文件夹，即表示你已同意向我们提供该位置的所有音频文件，我们对这些音频文件进行的操作包括但不限于：制作副本、修改音频信息和文件操作。随后你可以进行 &quot;不再查找这个文件夹&quot; 操作以阻止我们对这个位置所有音频文件的使用。" />
+                                </Paragraph>
+                                <Paragraph Margin="0,5,0,5" TextIndent="15">
+                                    <Run Text="· 我们会在特定的时刻向你说明我们将会收集你的" />
+                                    <Run Foreground="#ff000000" Text="位置信息" />
+                                    <Run Text="，你会收到操作系统本身提供的位置权限弹出窗口，并能够选择是否对应用授予位置权限。在应用内，我们已于显著位置标明，你可以进行 &quot;禁止使用当前位置&quot; 操作，以阻止我们对位置信息的收集。" />
+                                </Paragraph>
+                                <Paragraph Foreground="#ff000000" Margin="5" FontSize="18">
+                                    <Bold>分享的信息</Bold>
+                                </Paragraph>
+                                <Paragraph Margin="0,5,0,5" TextIndent="30">
+                                    <Run Text="在应用运行期间，我们会偶尔挑选一些数据并发送至我们的数据服务器，" />
+                                    <Run Foreground="#ff000000" Text="但你可以随时禁止这一行为" />
+                                    <Run Text="。" />
+                                </Paragraph>
+                                <Paragraph Margin="0,5,0,5" TextIndent="15">
+                                    <Run Text="· 我们会在特定的时刻向你说明我们将会收集并发送你的" />
+                                    <Run Foreground="#ff000000" Text="设备信息" />
+                                    <Run Text="，这些说明是清晰的，并在显著位置标明，你可以选择 &quot;不发送&quot; 以禁止收集并发送这些信息。" />
+                                </Paragraph>
+                                <Paragraph Foreground="#ff000000" Margin="5" FontSize="18">
+                                    <Bold>隐私权政策适用范围</Bold>
+                                </Paragraph>
+                                <Paragraph Margin="0,5,0,5" TextIndent="30">
+                                    <Run Text="我们的隐私权政策适用于由极光工作室提供的所有应用，但另外设定隐私权政策且未纳入本隐私权政策的服务不在此列。 
+我们的隐私权政策不适用于由其他公司或个人提供的服务，例如在提供天气信息的同时，由于使用了第三方天气服务，而可能访问的其他公司或个人。" />
+                                </Paragraph>
+                                <Paragraph Foreground="#ff000000" Margin="5" FontSize="18">
+                                    <Bold>政策的遵守</Bold>
+                                </Paragraph>
+                                <Paragraph Margin="0,5,0,5" TextIndent="30">
+                                    <Run Text="我们会定期检查自己遵守隐私权政策的情况。同时，由于我们在微软应用商店中发布了这些应用，因此我们也处于微软公司的监管之下。如果你认为你的隐私权因我们的应用或服务而受到侵犯，或者你认为我们并未严格遵守本隐私政策，你可以进行投诉。你可以向微软提出投诉，我们在收到投诉后，会尽己所能维护你的隐私权并挽回可能因此受到的损失。" />
+                                </Paragraph>
+                                <Paragraph Foreground="#ff000000" Margin="5" FontSize="18">
+                                    <Bold>变更</Bold>
+                                </Paragraph>
+                                <Paragraph Margin="0,5,0,5" TextIndent="30">
+                                    <Run Text="我们的隐私权政策随时都可能变更。未经你明确同意，我们不会削减你按照本隐私权政策所应享有的权利。我们会在本页面上发布对隐私权政策所做的任何变更。对于重大变更，我们还会提供更为显著的通知。我们还会将本隐私权政策的旧版本存档，供你查阅。 " />
+                                </Paragraph>
+                                <Paragraph Foreground="#ff000000" Margin="5,10,5,5" FontSize="18">
+                                    <Bold FontWeight="Light">附录</Bold>
+                                </Paragraph>
+                                <Paragraph FontWeight="Light" Margin="0,5,0,5" TextIndent="15">
+                                    <Run Text="1. " />
+                                    <Run Foreground="#ff000000" Text="对应用反馈以及崩溃情况的处理：" />
+                                    <Run Text="我们始终向你提供反馈通道，以便你可以向我们提出改进意见与建议；而应用因自身缺陷等原因造成崩溃时，你也有权利向我们提供改进信息。我们在应用内已提供明确入口以供反馈，例如，你可以进入应用的 &quot;关于&quot; 页面，点击 &quot;反馈&quot; 以进行反馈；而在应用发生崩溃时，我们会向你展示崩溃报告，并提供发送报告的操作，你有权发送这些信息，同时也有权彻底禁用这些操作" />
+                                </Paragraph>
+                            </RichTextBlock>
+                        </Flyout>
+                    </Button.Flyout>
+                </Button>
+                <Button x:Uid="ProviderText" Style="{ThemeResource TextBlockButtonStyle}" HorizontalAlignment="Center" Margin="12" >
+                    <Button.Flyout>
+                        <Flyout>
+                            <StackPanel MaxWidth="320">
+                                <TextBlock Margin="12,8,12,12" Text="百度 APIStore" TextWrapping="WrapWholeWords"/>
+                                <HyperlinkButton VerticalAlignment="Center" Style="{ThemeResource TextBlockButtonStyle}" Content="Baidu Api Store" NavigateUri="http://apistore.baidu.com/" Margin="12,8,12,12" />
+                                <Grid Height="1" HorizontalAlignment="Stretch" Background="{ThemeResource SystemControlBackgroundAltHighBrush}"/>
+                                <TextBlock Margin="12,8,12,12" Text="和风天气" TextWrapping="WrapWholeWords"/>
+                                <StackPanel Margin="12,8,12,12" Orientation="Horizontal">
+                                    <Image Width="32" Height="32" Stretch="UniformToFill" Source="http://heweather.com/weather/images/logo.jpg" Margin="4" HorizontalAlignment="Left" VerticalAlignment="Center" />
+                                    <HyperlinkButton VerticalAlignment="Center" Style="{ThemeResource TextBlockButtonStyle}" Content="HeWeather" NavigateUri="http://heweather.com/" Margin="4" />
+                                </StackPanel>
+                                <Grid Height="1" HorizontalAlignment="Stretch" Background="{ThemeResource SystemControlBackgroundAltHighBrush}"/>
+                                <TextBlock Margin="12,8,12,12" Text="分钟降雨预报由中国气象局和彩云数据联合出品" TextWrapping="WrapWholeWords"/>
+                                <StackPanel Margin="12,8,12,12" Orientation="Horizontal">
+                                    <Image Width="32" Height="32" Stretch="UniformToFill" Source="/Assets/Logos/Caiyun.png" Margin="4" HorizontalAlignment="Left" VerticalAlignment="Center" />
+                                    <HyperlinkButton VerticalAlignment="Center" Style="{ThemeResource TextBlockButtonStyle}" Content="CaiyunApp" NavigateUri="http://caiyunapp.com/" Margin="4" />
+                                </StackPanel>
+                                <Grid Height="1" HorizontalAlignment="Stretch" Background="{ThemeResource SystemControlBackgroundAltHighBrush}"/>
+                                <TextBlock Margin="12,8,12,12" Text="Weather Underground" TextWrapping="WrapWholeWords"/>
+                                <StackPanel Margin="12,8,12,12" Orientation="Horizontal">
+                                    <Image Height="32" Stretch="Uniform" Source="/Assets/Logos/Wunder.png" Margin="4" HorizontalAlignment="Left" VerticalAlignment="Center" />
+                                    <HyperlinkButton VerticalAlignment="Center" Style="{ThemeResource TextBlockButtonStyle}" Content="WunderGround" NavigateUri="https://www.wunderground.com" Margin="4" />
+                                </StackPanel>
+                            </StackPanel>
+                        </Flyout>
+                    </Button.Flyout>
+                </Button>
+                <Button x:Uid="LocaterText" Style="{ThemeResource TextBlockButtonStyle}" HorizontalAlignment="Center" Margin="12" >
+                    <Button.Flyout>
+                        <Flyout>
+                            <StackPanel MaxWidth="320">
+                                <TextBlock Margin="12,8,12,12" Text="高德地图" TextWrapping="WrapWholeWords"/>
+                                <StackPanel Margin="12,8,12,12" Orientation="Vertical">
+                                    <Image Height="32" Stretch="Uniform" Source="http://lbs.amap.com/wp-content/themes/apiwebsite/images//logo.png" Margin="4" HorizontalAlignment="Left" VerticalAlignment="Center" />
+                                    <HyperlinkButton VerticalAlignment="Center" Style="{ThemeResource TextBlockButtonStyle}" Content="Amap Reverse Geocoding" NavigateUri="http://lbs.amap.com/" Margin="4" />
+                                </StackPanel>
+                                <Grid Height="1" HorizontalAlignment="Stretch" Background="{ThemeResource SystemControlBackgroundAltHighBrush}"/>
+                                <TextBlock Margin="12,8,12,12" Text="OpenCage Data" TextWrapping="WrapWholeWords"/>
+                                <StackPanel Margin="12,8,12,12" Orientation="Vertical">
+                                    <Image Height="32" Stretch="Uniform" Source="https://geocoder.opencagedata.com/assets/silver-on-dark-transparent-a40712b4fc9f50d8e91cae2a7a5258df76cf1e8aa6d736451f44587c1ab652e5.png" Margin="4" HorizontalAlignment="Left" VerticalAlignment="Center" />
+                                    <HyperlinkButton VerticalAlignment="Center" Style="{ThemeResource TextBlockButtonStyle}" Content="OpenCage Data Web API" NavigateUri="https://geocoder.opencagedata.com/credits" Margin="4" />
+                                </StackPanel>
+
+                            </StackPanel>
+                        </Flyout>
+                    </Button.Flyout>
+                </Button>
+                <Button x:Uid="PhotoCopyright" Style="{ThemeResource TextBlockButtonStyle}" HorizontalAlignment="Center" Margin="12" >
+                    <Button.Flyout>
+                        <Flyout>
+                            <StackPanel MaxWidth="320">
+                                <TextBlock HorizontalAlignment="Center" Margin="12,8,12,12" Text="We're using Images from" TextWrapping="WrapWholeWords"/>
+                                <HyperlinkButton Content="Unsplash" Style="{ThemeResource TextBlockButtonStyle}" HorizontalAlignment="Center" Margin="12" NavigateUri="https://unsplash.com/" />
+                                <TextBlock HorizontalAlignment="Center" Margin="12,8,12,12" Text="They are licensed under" TextWrapping="WrapWholeWords"/>
+                                <HyperlinkButton Content="CC0 1.0" Style="{ThemeResource TextBlockButtonStyle}" HorizontalAlignment="Center" Margin="12" NavigateUri="http://creativecommons.org/publicdomain/zero/1.0/" />
+                            </StackPanel>
+                        </Flyout>
+                    </Button.Flyout>
+                </Button>
+                <Button x:Name="RateButton" x:Uid="RateText" Style="{ThemeResource TextBlockButtonStyle}" Click="RateButton_Click" HorizontalAlignment="Center" Margin="12" />
+                <Button x:Name="FeedbackButton" x:Uid="FeedbackText" Style="{ThemeResource TextBlockButtonStyle}" Click="FeedbackButton_Click" HorizontalAlignment="Center" Margin="12" />
+                <Button Margin="12" x:Uid="UpdateLogButton" x:Name="UpdateLogButton" Style="{ThemeResource TextBlockButtonStyle}" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Button.Flyout>
+                        <Flyout Placement="Full">
+                            <TextBlock x:Uid="UpdateLogText" x:Name="UpdateLog" Style="{ThemeResource BodyTextBlockStyle}" Margin="12" TextWrapping="WrapWholeWords" MaxWidth="320" />
+                        </Flyout>
+                    </Button.Flyout>
+                </Button>
+                <Button x:Uid="AppProblemButton" Margin="12" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#ff4040" Style="{ThemeResource TextBlockButtonStyle}" >
+                    <Button.Flyout>
+                        <Flyout>
+                            <StackPanel Margin="12" Orientation="Vertical">
+                                <TextBlock MaxWidth="320" x:Uid="AppProblemText" TextWrapping="WrapWholeWords" Margin="4" Style="{ThemeResource BodyTextBlockStyle}" />
+                                <TextBlock MaxWidth="320" x:Uid="ConfirmDeleteText" TextWrapping="WrapWholeWords" x:Name="ConfirmDelete" HorizontalAlignment="Center" Visibility="Collapsed" Foreground="#ff4040" Margin="4" Style="{ThemeResource BodyTextBlockStyle}" />
+                                <Button HorizontalAlignment="Center" Foreground="White" x:Uid="AppDeleteButton" x:Name="DeleteButton" Click="DeleteButton_Click" Margin="8" Background="#ff4040" BorderBrush="Transparent" BorderThickness="0" />
+                            </StackPanel>
+                        </Flyout>
+                    </Button.Flyout>
+                </Button>
+                <HyperlinkButton MaxWidth="250" NavigateUri="https://embracez.xyz/aurora-studio/" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="12">
+                    <Image Source="/Assets/QQ_group.png" Stretch="Uniform"/>
+                </HyperlinkButton>
+            </StackPanel>
+            <ContentDialog Margin="12,32,12,96" PrimaryButtonClick="FeedbackDialog_PrimaryButtonClick" SecondaryButtonClick="FeedbackDialog_SecondaryButtonClick"
+    x:Name="FeedbackDialog" IsPrimaryButtonEnabled="True" x:Uid="FeedbackDialog">
+                <StackPanel>
+                    <TextBox x:Name="EmailBox" Width="312" PlaceholderText="Email here" AcceptsReturn="False" Margin="4,16,4,4" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+                    <TextBox x:Uid="FeedbackBox" Width="312" x:Name="ReportBox" AcceptsReturn="True" Margin="4" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="96" />
+                </StackPanel>
+            </ContentDialog>
+        </Grid>
+
+    </ScrollViewer>
+</Page>

@@ -1,0 +1,27 @@
+﻿<!-- Copyright (c) Aurora Studio. All rights reserved.
+    
+     Licensed under the MIT License. See LICENSE in the project root for license information.-->
+
+<UserControl
+    x:Class="Com.Aurora.AuWeather.CustomControls.ConditionPath"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Com.Aurora.AuWeather.CustomControls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:ViewModels="using:Com.Aurora.AuWeather.ViewModels"
+    xmlns:Converters="using:Com.Aurora.Shared.Converters"
+    mc:Ignorable="d">
+    <UserControl.DataContext>
+        <ViewModels:ConditionPathViewModel x:Name="Context"/>
+    </UserControl.DataContext>
+
+    <UserControl.Resources>
+        <Converters:StringtoPathConverter x:Key="StringtoPathConverter" />
+        <Converters:ColortoSolidColorBrushConverter x:Key="ColortoBrushConverter" />
+    </UserControl.Resources>
+
+    <Image x:Name="Root" Width="54" Height="54" VerticalAlignment="Center" HorizontalAlignment="Center" Stretch="Uniform" Source="{x:Bind Context.Source,Mode=OneWay}">
+    </Image>
+
+</UserControl>

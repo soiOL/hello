@@ -1,0 +1,1477 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="About" xml:space="preserve">
+    <value>정보</value>
+  </data>
+  <data name="AddButton.Label" xml:space="preserve">
+    <value>검색 도시</value>
+  </data>
+  <data name="Add_Image" xml:space="preserve">
+    <value>사용자 지정</value>
+  </data>
+  <data name="BlurBGText.Text" xml:space="preserve">
+    <value>흐림 효과 사용</value>
+  </data>
+  <data name="BodyTempText.Text" xml:space="preserve">
+    <value>체온</value>
+  </data>
+  <data name="CheckLocateAccessButton.Content" xml:space="preserve">
+    <value>설정으로 이동</value>
+  </data>
+  <data name="Cities" xml:space="preserve">
+    <value>도시 개요</value>
+  </data>
+  <data name="CitiesButton.Label" xml:space="preserve">
+    <value>도시 개요</value>
+  </data>
+  <data name="CitiesText.Text" xml:space="preserve">
+    <value>도시 개요</value>
+  </data>
+  <data name="Cities_Management" xml:space="preserve">
+    <value>관리 위치</value>
+  </data>
+  <data name="Cloudy.Header" xml:space="preserve">
+    <value>클라우드</value>
+  </data>
+  <data name="ComfortableText.Text" xml:space="preserve">
+    <value>컴 포트 인덱스:  </value>
+  </data>
+  <data name="CWText.Text" xml:space="preserve">
+    <value>세차 지 수:  </value>
+  </data>
+  <data name="DanweiText.Text" xml:space="preserve">
+    <value>변환</value>
+  </data>
+  <data name="DescripButton.Content" xml:space="preserve">
+    <value>설명</value>
+  </data>
+  <data name="DisableDynamicDescripText.Text" xml:space="preserve">
+    <value>메모리 사용</value>
+  </data>
+  <data name="DisableDynamicText.Text" xml:space="preserve">
+    <value>동적 비활성화</value>
+  </data>
+  <data name="DonateButton.Content" xml:space="preserve">
+    <value>그것을 기부!</value>
+  </data>
+  <data name="DonateOption0.Text" xml:space="preserve">
+    <value>· 매일 알람</value>
+  </data>
+  <data name="DonateOption1.Text" xml:space="preserve">
+    <value>· 재해 경고</value>
+  </data>
+  <data name="DonateOption2.Text" xml:space="preserve">
+    <value>· 짧은 날씨 새로 고침 빈도</value>
+  </data>
+  <data name="DonateOption3.Text" xml:space="preserve">
+    <value>· 핀 선택 된 도시에서 타일 하 고 자동으로 업데이트</value>
+  </data>
+  <data name="DonateRun0.Text" xml:space="preserve">
+    <value>당신의 도움이 필요...</value>
+  </data>
+  <data name="DonateRun1.Text" xml:space="preserve">
+    <value>응용 프로그램 개발 요구는 많은 에너지와 시간; 또한, 날씨 제대로 작동 하려면 일부 돈이 필요로 하는 API를 사용 하 여이 응용 프로그램. 만약 당신이 좋은 생각, 그것을 지원 하고자 ~</value>
+  </data>
+  <data name="DonateRun2.Text" xml:space="preserve">
+    <value>우리를 도와 하 고 기부 버전의 추가 기능을 자물쇠로 열 것 이다.</value>
+  </data>
+  <data name="DressingText.Text" xml:space="preserve">
+    <value>옷 인덱스:  </value>
+  </data>
+  <data name="DynamicText.Text" xml:space="preserve">
+    <value>동적 날씨</value>
+  </data>
+  <data name="EnableEveryText.Text" xml:space="preserve">
+    <value>날씨 경보</value>
+  </data>
+  <data name="ExperimentalText.Text" xml:space="preserve">
+    <value>실험적 기능</value>
+  </data>
+  <data name="FeedbackButton.Label" xml:space="preserve">
+    <value>비율</value>
+  </data>
+  <data name="FluText.Text" xml:space="preserve">
+    <value>독감 인덱스:  </value>
+  </data>
+  <data name="Foggy.Header" xml:space="preserve">
+    <value>안개</value>
+  </data>
+  <data name="ForceRefreshText.Text" xml:space="preserve">
+    <value>새로 고침을 강제로합니다</value>
+  </data>
+  <data name="FormatText.Text" xml:space="preserve">
+    <value>날짜 및 시간</value>
+  </data>
+  <data name="Haze.Header" xml:space="preserve">
+    <value>모래와 안개</value>
+  </data>
+  <data name="HumidityText.Text" xml:space="preserve">
+    <value>Hummidity</value>
+  </data>
+  <data name="ImmersiveText.Text" xml:space="preserve">
+    <value>몰입 모드</value>
+  </data>
+  <data name="Immersive_Background" xml:space="preserve">
+    <value>몰입 형 배경</value>
+  </data>
+  <data name="LengthParameter_KM" xml:space="preserve">
+    <value>km</value>
+  </data>
+  <data name="LengthParameter_M" xml:space="preserve">
+    <value>m</value>
+  </data>
+  <data name="LengthParameter_Mile" xml:space="preserve">
+    <value>마일</value>
+  </data>
+  <data name="LengthParameter_NM" xml:space="preserve">
+    <value>NM</value>
+  </data>
+  <data name="LengthParText.Text" xml:space="preserve">
+    <value>표시 유형</value>
+  </data>
+  <data name="LoadingDataText.Text" xml:space="preserve">
+    <value>로드</value>
+  </data>
+  <data name="LocateDeniedButton.Content" xml:space="preserve">
+    <value>위치 권한이 거부 되었습니다.</value>
+  </data>
+  <data name="LocateOnText.Text" xml:space="preserve">
+    <value>Location</value>
+  </data>
+  <data name="LocatingText.Text" xml:space="preserve">
+    <value>찾는 중</value>
+  </data>
+  <data name="MoonPhaseText.Text" xml:space="preserve">
+    <value>달 단계</value>
+  </data>
+  <data name="NextTomorrowText.Text" xml:space="preserve">
+    <value>다음 톰입니다.</value>
+  </data>
+  <data name="NoBGText.Text" xml:space="preserve">
+    <value>표시 안 함</value>
+  </data>
+  <data name="Now" xml:space="preserve">
+    <value>현재 날씨</value>
+  </data>
+  <data name="NowButton.Label" xml:space="preserve">
+    <value>세부 정보</value>
+  </data>
+  <data name="Obtain" xml:space="preserve">
+    <value>당신이 원하는 지불</value>
+  </data>
+  <data name="PrecipitationText.Text" xml:space="preserve">
+    <value>강 수</value>
+  </data>
+  <data name="Preferences" xml:space="preserve">
+    <value>기본 설정</value>
+  </data>
+  <data name="PressureParameter_Atm" xml:space="preserve">
+    <value>현금 지급기</value>
+  </data>
+  <data name="PressureParameter_CmHg" xml:space="preserve">
+    <value>CmHg</value>
+  </data>
+  <data name="PressureParameter_Hpa" xml:space="preserve">
+    <value>MB</value>
+  </data>
+  <data name="PressureParameter_Torr" xml:space="preserve">
+    <value>토르</value>
+  </data>
+  <data name="PressureParText.Text" xml:space="preserve">
+    <value>공기압</value>
+  </data>
+  <data name="PressureText.Text" xml:space="preserve">
+    <value>공기압</value>
+  </data>
+  <data name="PurchaseButton.Content" xml:space="preserve">
+    <value>그것은 바위!</value>
+  </data>
+  <data name="Rainny.Header" xml:space="preserve">
+    <value>비</value>
+  </data>
+  <data name="RefreshButton.Label" xml:space="preserve">
+    <value>새로 고침</value>
+  </data>
+  <data name="RefreshFreqText.Text" xml:space="preserve">
+    <value>새로 고침 간격</value>
+  </data>
+  <data name="RefreshState_four" xml:space="preserve">
+    <value>4시간</value>
+  </data>
+  <data name="RefreshState_one" xml:space="preserve">
+    <value>자동 새로 고침을 하지</value>
+  </data>
+  <data name="RefreshState_three" xml:space="preserve">
+    <value>1시간</value>
+  </data>
+  <data name="RefreshState_two" xml:space="preserve">
+    <value>30분</value>
+  </data>
+  <data name="Replace_Image" xml:space="preserve">
+    <value>바꾸기</value>
+  </data>
+  <data name="RequestedTheme_Auto" xml:space="preserve">
+    <value>자동</value>
+  </data>
+  <data name="RequestedTheme_Dark" xml:space="preserve">
+    <value>어둡게</value>
+  </data>
+  <data name="RequestedTheme_Light" xml:space="preserve">
+    <value>조명</value>
+  </data>
+  <data name="SearchText.Text" xml:space="preserve">
+    <value>검색 및 추가</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>설정</value>
+  </data>
+  <data name="SettingsButton.Label" xml:space="preserve">
+    <value>설정</value>
+  </data>
+  <data name="SettingsText.Text" xml:space="preserve">
+    <value>설정</value>
+  </data>
+  <data name="ShowSecondText.Text" xml:space="preserve">
+    <value>두 번째 보기</value>
+  </data>
+  <data name="ShowttText.Text" xml:space="preserve">
+    <value>오전/오후 표시</value>
+  </data>
+  <data name="Snowy.Header" xml:space="preserve">
+    <value>겨울 눈</value>
+  </data>
+  <data name="SpeedParameter_KMPH" xml:space="preserve">
+    <value>km/h</value>
+  </data>
+  <data name="SpeedParameter_Knot" xml:space="preserve">
+    <value>매듭</value>
+  </data>
+  <data name="SpeedParameter_MPS" xml:space="preserve">
+    <value>m/s</value>
+  </data>
+  <data name="SpeedParText.Text" xml:space="preserve">
+    <value>풍속</value>
+  </data>
+  <data name="SplashText.Text" xml:space="preserve">
+    <value>데이터를 준비...</value>
+  </data>
+  <data name="SportText.Text" xml:space="preserve">
+    <value>스포츠 인덱스:  </value>
+  </data>
+  <data name="Starry.Header" xml:space="preserve">
+    <value>별이 빛나는 하늘</value>
+  </data>
+  <data name="Sunny.Header" xml:space="preserve">
+    <value>햇빛</value>
+  </data>
+  <data name="SunProgressText.Text" xml:space="preserve">
+    <value>태양 위치</value>
+  </data>
+  <data name="TemperatureParameter_Celsius" xml:space="preserve">
+    <value>섭씨</value>
+  </data>
+  <data name="TemperatureParameter_Fahrenheit" xml:space="preserve">
+    <value>화씨</value>
+  </data>
+  <data name="TemperatureParameter_Kelvin" xml:space="preserve">
+    <value>절대 온도</value>
+  </data>
+  <data name="TempParText.Text" xml:space="preserve">
+    <value>온도</value>
+  </data>
+  <data name="ThemeText.Text" xml:space="preserve">
+    <value>테마</value>
+  </data>
+  <data name="TitleBlock.Text" xml:space="preserve">
+    <value>오로라 날씨</value>
+  </data>
+  <data name="ToastText.Text" xml:space="preserve">
+    <value>날씨 알림</value>
+  </data>
+  <data name="TomorrowText.Text" xml:space="preserve">
+    <value>내일</value>
+  </data>
+  <data name="TravelText.Text" xml:space="preserve">
+    <value>여행 인덱스:  </value>
+  </data>
+  <data name="UseWeekText.Text" xml:space="preserve">
+    <value>평일 사용</value>
+  </data>
+  <data name="UVText.Text" xml:space="preserve">
+    <value>자외선 지 수:  </value>
+  </data>
+  <data name="VisibilityText.Text" xml:space="preserve">
+    <value>표시 유형</value>
+  </data>
+  <data name="WelcomeText.Text" xml:space="preserve">
+    <value>환영 합니다!</value>
+  </data>
+  <data name="WindParameter_BeaufortandDegree" xml:space="preserve">
+    <value>규모 + 각도</value>
+  </data>
+  <data name="WindParameter_BeaufortandText" xml:space="preserve">
+    <value>규모 + 방향</value>
+  </data>
+  <data name="WindParameter_SpeedandDegree" xml:space="preserve">
+    <value>속도 + 각도</value>
+  </data>
+  <data name="WindParameter_SpeedandText" xml:space="preserve">
+    <value>속도 + 방향</value>
+  </data>
+  <data name="WindParText.Text" xml:space="preserve">
+    <value>Wind</value>
+  </data>
+  <data name="WindText.Text" xml:space="preserve">
+    <value>Wind</value>
+  </data>
+  <data name="DonationTitle.Text" xml:space="preserve">
+    <value>기부금 팩</value>
+  </data>
+  <data name="First_quarter" xml:space="preserve">
+    <value>상현달</value>
+  </data>
+  <data name="Full_moon" xml:space="preserve">
+    <value>보름달</value>
+  </data>
+  <data name="New_Moon" xml:space="preserve">
+    <value>그믐달</value>
+  </data>
+  <data name="Third_quarter" xml:space="preserve">
+    <value>3 분기</value>
+  </data>
+  <data name="Waning_crescent" xml:space="preserve">
+    <value>약해지는 초승달</value>
+  </data>
+  <data name="Waning_gibbous" xml:space="preserve">
+    <value>초승달 말기</value>
+  </data>
+  <data name="Waxing_crescent" xml:space="preserve">
+    <value>왁 싱 초승달</value>
+  </data>
+  <data name="Waxing_gibbous" xml:space="preserve">
+    <value>망간의</value>
+  </data>
+  <data name="WeatherCondition_calm" xml:space="preserve">
+    <value>차분</value>
+  </data>
+  <data name="WeatherCondition_cloudy" xml:space="preserve">
+    <value>흐림</value>
+  </data>
+  <data name="WeatherCondition_cold" xml:space="preserve">
+    <value>추 워지고</value>
+  </data>
+  <data name="WeatherCondition_drizzle_rain" xml:space="preserve">
+    <value>이슬비</value>
+  </data>
+  <data name="WeatherCondition_dust" xml:space="preserve">
+    <value>먼지</value>
+  </data>
+  <data name="WeatherCondition_duststorm" xml:space="preserve">
+    <value>먼지 폭풍</value>
+  </data>
+  <data name="WeatherCondition_extreme_rain" xml:space="preserve">
+    <value>극단적인 비</value>
+  </data>
+  <data name="WeatherCondition_few_clouds" xml:space="preserve">
+    <value>맑음</value>
+  </data>
+  <data name="WeatherCondition_foggy" xml:space="preserve">
+    <value>안개</value>
+  </data>
+  <data name="WeatherCondition_freezing_rain" xml:space="preserve">
+    <value>진눈깨비</value>
+  </data>
+  <data name="WeatherCondition_fresh_breeze" xml:space="preserve">
+    <value>신선한 바람</value>
+  </data>
+  <data name="WeatherCondition_gale" xml:space="preserve">
+    <value>Gale</value>
+  </data>
+  <data name="WeatherCondition_hail" xml:space="preserve">
+    <value>만 세</value>
+  </data>
+  <data name="WeatherCondition_haze" xml:space="preserve">
+    <value>옅은 안개</value>
+  </data>
+  <data name="WeatherCondition_heavy_rain" xml:space="preserve">
+    <value>무거운 비</value>
+  </data>
+  <data name="WeatherCondition_heavy_shower_rain" xml:space="preserve">
+    <value>무거운 샤워</value>
+  </data>
+  <data name="WeatherCondition_heavy_snow" xml:space="preserve">
+    <value>Heavy snow</value>
+  </data>
+  <data name="WeatherCondition_heavy_storm_rain" xml:space="preserve">
+    <value>무거운 폭풍우</value>
+  </data>
+  <data name="WeatherCondition_heavy_thunderstorm" xml:space="preserve">
+    <value>Thunderstorm</value>
+  </data>
+  <data name="WeatherCondition_high_wind" xml:space="preserve">
+    <value>높은 바람</value>
+  </data>
+  <data name="WeatherCondition_hot" xml:space="preserve">
+    <value>더 워지고</value>
+  </data>
+  <data name="WeatherCondition_hurricane" xml:space="preserve">
+    <value>허리케인</value>
+  </data>
+  <data name="WeatherCondition_light_breeze" xml:space="preserve">
+    <value>빛 바람</value>
+  </data>
+  <data name="WeatherCondition_light_rain" xml:space="preserve">
+    <value>빛 비</value>
+  </data>
+  <data name="WeatherCondition_light_snow" xml:space="preserve">
+    <value>Light snow</value>
+  </data>
+  <data name="WeatherCondition_mist" xml:space="preserve">
+    <value>안개</value>
+  </data>
+  <data name="WeatherCondition_moderate" xml:space="preserve">
+    <value>중재</value>
+  </data>
+  <data name="WeatherCondition_moderate_rain" xml:space="preserve">
+    <value>적당 한 비</value>
+  </data>
+  <data name="WeatherCondition_moderate_snow" xml:space="preserve">
+    <value>적당 한 눈</value>
+  </data>
+  <data name="WeatherCondition_overcast" xml:space="preserve">
+    <value>흐림</value>
+  </data>
+  <data name="WeatherCondition_partly_cloudy" xml:space="preserve">
+    <value>부분적으로 흐림</value>
+  </data>
+  <data name="WeatherCondition_rain_snow" xml:space="preserve">
+    <value>비 눈</value>
+  </data>
+  <data name="WeatherCondition_sand" xml:space="preserve">
+    <value>모래색</value>
+  </data>
+  <data name="WeatherCondition_sandstorm" xml:space="preserve">
+    <value>모래 폭풍</value>
+  </data>
+  <data name="WeatherCondition_severe_storm_rain" xml:space="preserve">
+    <value>심한 폭풍</value>
+  </data>
+  <data name="WeatherCondition_shower_rain" xml:space="preserve">
+    <value>샤워</value>
+  </data>
+  <data name="WeatherCondition_shower_snow" xml:space="preserve">
+    <value>샤워 눈</value>
+  </data>
+  <data name="WeatherCondition_sleet" xml:space="preserve">
+    <value>진눈깨비</value>
+  </data>
+  <data name="WeatherCondition_snowstorm" xml:space="preserve">
+    <value>눈 폭풍</value>
+  </data>
+  <data name="WeatherCondition_snow_flurry" xml:space="preserve">
+    <value>단말 마 눈</value>
+  </data>
+  <data name="WeatherCondition_storm" xml:space="preserve">
+    <value>폭풍</value>
+  </data>
+  <data name="WeatherCondition_storm_rain" xml:space="preserve">
+    <value>폭풍 비</value>
+  </data>
+  <data name="WeatherCondition_strong_breeze" xml:space="preserve">
+    <value>강한 바람이</value>
+  </data>
+  <data name="WeatherCondition_strong_gale" xml:space="preserve">
+    <value>강한 강풍</value>
+  </data>
+  <data name="WeatherCondition_sunny" xml:space="preserve">
+    <value>맑음</value>
+  </data>
+  <data name="WeatherCondition_thundershower" xml:space="preserve">
+    <value>천둥 샤워</value>
+  </data>
+  <data name="WeatherCondition_tornado" xml:space="preserve">
+    <value>토네이도</value>
+  </data>
+  <data name="WeatherCondition_tropical_storm" xml:space="preserve">
+    <value>열 대 폭풍</value>
+  </data>
+  <data name="WeatherCondition_unknown" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="WeatherCondition_violent_storm" xml:space="preserve">
+    <value>폭풍</value>
+  </data>
+  <data name="WeatherCondition_volcanic_ash" xml:space="preserve">
+    <value>화산재</value>
+  </data>
+  <data name="WeatherCondition_windy" xml:space="preserve">
+    <value>바람</value>
+  </data>
+  <data name="WindDirection_east" xml:space="preserve">
+    <value>이스트 </value>
+  </data>
+  <data name="WindDirection_north" xml:space="preserve">
+    <value>북 </value>
+  </data>
+  <data name="WindDirection_northeast" xml:space="preserve">
+    <value>북동부</value>
+  </data>
+  <data name="WindDirection_northwest" xml:space="preserve">
+    <value>북서부</value>
+  </data>
+  <data name="WindDirection_south" xml:space="preserve">
+    <value>남쪽 </value>
+  </data>
+  <data name="WindDirection_southeast" xml:space="preserve">
+    <value>남동부</value>
+  </data>
+  <data name="WindDirection_southwest" xml:space="preserve">
+    <value>남서부</value>
+  </data>
+  <data name="WindDirection_unknown" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="WindDirection_west" xml:space="preserve">
+    <value>웨스트 </value>
+  </data>
+  <data name="WindScale_eight" xml:space="preserve">
+    <value>Gale</value>
+  </data>
+  <data name="WindScale_eighteen" xml:space="preserve">
+    <value>강력한 허리케인</value>
+  </data>
+  <data name="WindScale_eleven" xml:space="preserve">
+    <value>폭풍</value>
+  </data>
+  <data name="WindScale_fifteen" xml:space="preserve">
+    <value>더 강한 태풍</value>
+  </data>
+  <data name="WindScale_five" xml:space="preserve">
+    <value>빛 바람</value>
+  </data>
+  <data name="WindScale_four" xml:space="preserve">
+    <value>중재</value>
+  </data>
+  <data name="WindScale_fourteen" xml:space="preserve">
+    <value>더 강한 태풍</value>
+  </data>
+  <data name="WindScale_nine" xml:space="preserve">
+    <value>Gale</value>
+  </data>
+  <data name="WindScale_one" xml:space="preserve">
+    <value>차분</value>
+  </data>
+  <data name="WindScale_seven" xml:space="preserve">
+    <value>강한 바람이</value>
+  </data>
+  <data name="WindScale_seventeen" xml:space="preserve">
+    <value>슈퍼 태풍</value>
+  </data>
+  <data name="WindScale_six" xml:space="preserve">
+    <value>강한 강풍</value>
+  </data>
+  <data name="WindScale_sixteen" xml:space="preserve">
+    <value>슈퍼 태풍</value>
+  </data>
+  <data name="WindScale_ten" xml:space="preserve">
+    <value>높은 바람</value>
+  </data>
+  <data name="WindScale_thirteen" xml:space="preserve">
+    <value>허리케인</value>
+  </data>
+  <data name="WindScale_three" xml:space="preserve">
+    <value>미풍</value>
+  </data>
+  <data name="WindScale_twelve" xml:space="preserve">
+    <value>사이클론</value>
+  </data>
+  <data name="WindScale_two" xml:space="preserve">
+    <value>미풍</value>
+  </data>
+  <data name="WindScale_unknown" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="WindScale_zero" xml:space="preserve">
+    <value>바람</value>
+  </data>
+  <data name="AboutText.Text" xml:space="preserve">
+    <value>정보</value>
+  </data>
+  <data name="AppName" xml:space="preserve">
+    <value>오로라 날씨</value>
+  </data>
+  <data name="AppNameText.Text" xml:space="preserve">
+    <value>오로라 날씨</value>
+  </data>
+  <data name="buchaoguoshi.Text" xml:space="preserve">
+    <value>경우 10 개 이상, 10 자리 표시 되지 않습니다.</value>
+  </data>
+  <data name="chaoguoshi.Text" xml:space="preserve">
+    <value>더 이상 10 0 표시</value>
+  </data>
+  <data name="DateDes.Text" xml:space="preserve">
+    <value>주:</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>오로라 날씨</value>
+  </data>
+  <data name="FeedbackText.Content" xml:space="preserve">
+    <value>피드백</value>
+  </data>
+  <data name="HourDes.Text" xml:space="preserve">
+    <value>시간:</value>
+  </data>
+  <data name="MonthDes.Text" xml:space="preserve">
+    <value>달:</value>
+  </data>
+  <data name="OpenSourceText.Content" xml:space="preserve">
+    <value>오픈 소스 라이선스</value>
+  </data>
+  <data name="ProviderText.Content" xml:space="preserve">
+    <value>데이터 공급자</value>
+  </data>
+  <data name="ShortName" xml:space="preserve">
+    <value>날씨</value>
+  </data>
+  <data name="TimeFormatDescrip.Text" xml:space="preserve">
+    <value>날짜-시간 예제</value>
+  </data>
+  <data name="YearDes.Text" xml:space="preserve">
+    <value>년:</value>
+  </data>
+  <data name="bianleng" xml:space="preserve">
+    <value>감기를 얻을 것 이다</value>
+  </data>
+  <data name="bianre" xml:space="preserve">
+    <value>뜨거운 얻을 것 이다</value>
+  </data>
+  <data name="breeze0" xml:space="preserve">
+    <value>미풍</value>
+  </data>
+  <data name="breeze1" xml:space="preserve">
+    <value>산들바람</value>
+  </data>
+  <data name="dust0" xml:space="preserve">
+    <value>먼지</value>
+  </data>
+  <data name="duststorm0" xml:space="preserve">
+    <value>나쁜 먼지</value>
+  </data>
+  <data name="few_clouds0" xml:space="preserve">
+    <value>맑음</value>
+  </data>
+  <data name="few_clouds1" xml:space="preserve">
+    <value>떠 있는 구름</value>
+  </data>
+  <data name="foggy0" xml:space="preserve">
+    <value>안개</value>
+  </data>
+  <data name="freezing_rain0" xml:space="preserve">
+    <value>진눈깨비</value>
+  </data>
+  <data name="gale0" xml:space="preserve">
+    <value>강한 바람이 있었습니다.</value>
+  </data>
+  <data name="gale1" xml:space="preserve">
+    <value>바람이 부는 날</value>
+  </data>
+  <data name="Glance" xml:space="preserve">
+    <value>{0} {1} {2}.</value>
+  </data>
+  <data name="Glancecloudy0" xml:space="preserve">
+    <value>흐림</value>
+  </data>
+  <data name="Glancecloudy1" xml:space="preserve">
+    <value>클라우드</value>
+  </data>
+  <data name="GlanceFull" xml:space="preserve">
+    <value>{0} {1}, {2} {3}. 내일: {4}, {5}.</value>
+  </data>
+  <data name="GlanceSunny0" xml:space="preserve">
+    <value>지우기</value>
+  </data>
+  <data name="GlanceSunny1" xml:space="preserve">
+    <value>클라우드-무료</value>
+  </data>
+  <data name="hail0" xml:space="preserve">
+    <value>만 세</value>
+  </data>
+  <data name="haotianqi0" xml:space="preserve">
+    <value>밖으로 적합</value>
+  </data>
+  <data name="haotianqi1" xml:space="preserve">
+    <value>좋은 날씨</value>
+  </data>
+  <data name="haze0" xml:space="preserve">
+    <value>옅은 안개</value>
+  </data>
+  <data name="heavy_rain0" xml:space="preserve">
+    <value>무거운 비</value>
+  </data>
+  <data name="heavy_rain1" xml:space="preserve">
+    <value>폭우에 관심 밖으로</value>
+  </data>
+  <data name="heavy_snow0" xml:space="preserve">
+    <value>Heavy snow</value>
+  </data>
+  <data name="heavy_snow1" xml:space="preserve">
+    <value>순백색</value>
+  </data>
+  <data name="heavy_storm_rain0" xml:space="preserve">
+    <value>폭풍</value>
+  </data>
+  <data name="heavy_storm_rain1" xml:space="preserve">
+    <value>외출 하지</value>
+  </data>
+  <data name="huaitianqi0" xml:space="preserve">
+    <value>나쁜 날씨</value>
+  </data>
+  <data name="huaitianqi1" xml:space="preserve">
+    <value>불 쌍 한 날씨</value>
+  </data>
+  <data name="jintian" xml:space="preserve">
+    <value>오늘</value>
+  </data>
+  <data name="mist0" xml:space="preserve">
+    <value>미스 티</value>
+  </data>
+  <data name="moderate_rain0" xml:space="preserve">
+    <value>빛 비</value>
+  </data>
+  <data name="moderate_rain1" xml:space="preserve">
+    <value>비</value>
+  </data>
+  <data name="moderate_rain2" xml:space="preserve">
+    <value>비오는 날</value>
+  </data>
+  <data name="moderate_rain3" xml:space="preserve">
+    <value>우산을가지고 필요</value>
+  </data>
+  <data name="moderate_snow0" xml:space="preserve">
+    <value>저기 눈이 되었다</value>
+  </data>
+  <data name="moderate_snow1" xml:space="preserve">
+    <value>눈의 날</value>
+  </data>
+  <data name="moderate_snow2" xml:space="preserve">
+    <value>눈은</value>
+  </data>
+  <data name="nengjiandudi0" xml:space="preserve">
+    <value>낮은 시정</value>
+  </data>
+  <data name="nengjiandudi1" xml:space="preserve">
+    <value>낮은 시정</value>
+  </data>
+  <data name="overcast0" xml:space="preserve">
+    <value>흐림</value>
+  </data>
+  <data name="overcast1" xml:space="preserve">
+    <value>아니 일</value>
+  </data>
+  <data name="partly_cloudy0" xml:space="preserve">
+    <value>부분적으로 흐림</value>
+  </data>
+  <data name="shiduda0" xml:space="preserve">
+    <value>높은 습도</value>
+  </data>
+  <data name="shiduda1" xml:space="preserve">
+    <value>습 한 공기</value>
+  </data>
+  <data name="shower0" xml:space="preserve">
+    <value>샤워는</value>
+  </data>
+  <data name="shower1" xml:space="preserve">
+    <value>간헐적으로 비가</value>
+  </data>
+  <data name="shower_snow0" xml:space="preserve">
+    <value>소 낙 눈</value>
+  </data>
+  <data name="shower_snow1" xml:space="preserve">
+    <value>짧은 시간 눈</value>
+  </data>
+  <data name="sleet0" xml:space="preserve">
+    <value>진눈깨비</value>
+  </data>
+  <data name="sleet1" xml:space="preserve">
+    <value>비와 눈</value>
+  </data>
+  <data name="snowstorm0" xml:space="preserve">
+    <value>폭풍</value>
+  </data>
+  <data name="snowstorm1" xml:space="preserve">
+    <value>불 쌍 한 눈</value>
+  </data>
+  <data name="storm0" xml:space="preserve">
+    <value>폭풍에 주의</value>
+  </data>
+  <data name="thundershower0" xml:space="preserve">
+    <value>천둥</value>
+  </data>
+  <data name="unknown_weather" xml:space="preserve">
+    <value>알 수 없는 날씨</value>
+  </data>
+  <data name="wanjian" xml:space="preserve">
+    <value>저녁</value>
+  </data>
+  <data name="wendudi0" xml:space="preserve">
+    <value>낮은 온도</value>
+  </data>
+  <data name="wendudi1" xml:space="preserve">
+    <value>연속 냉각</value>
+  </data>
+  <data name="wendugao0" xml:space="preserve">
+    <value>높은 온도</value>
+  </data>
+  <data name="wendugao1" xml:space="preserve">
+    <value>계속가 열 하</value>
+  </data>
+  <data name="windy0" xml:space="preserve">
+    <value>바람</value>
+  </data>
+  <data name="xianzai" xml:space="preserve">
+    <value>지금</value>
+  </data>
+  <data name="MinDes.Text" xml:space="preserve">
+    <value>분:</value>
+  </data>
+  <data name="OtherDes.Text" xml:space="preserve">
+    <value>기타:</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>검색 도시</value>
+  </data>
+  <data name="Cacel" xml:space="preserve">
+    <value>취소</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>삭제</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>편집</value>
+  </data>
+  <data name="Pin" xml:space="preserve">
+    <value>pin</value>
+  </data>
+  <data name="Refresh" xml:space="preserve">
+    <value>새로 고침</value>
+  </data>
+  <data name="EditButton.Label" xml:space="preserve">
+    <value>편집</value>
+  </data>
+  <data name="AutoSuggestbox.PlaceholderText" xml:space="preserve">
+    <value>때 중국 도시, 중국어 또는 병음을 사용 하 여 검색</value>
+  </data>
+  <data name="Thankyou" xml:space="preserve">
+    <value>미친 모드!</value>
+  </data>
+  <data name="ThankyouTitle" xml:space="preserve">
+    <value>Thank you!</value>
+  </data>
+  <data name="Cities_Null" xml:space="preserve">
+    <value>여기 도시...</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>작은 오류가입니다...</value>
+  </data>
+  <data name="Network_Error" xml:space="preserve">
+    <value>네트워크 연결 실패...</value>
+  </data>
+  <data name="Quit" xml:space="preserve">
+    <value>끝내기</value>
+  </data>
+  <data name="Service_Unavailable" xml:space="preserve">
+    <value>날씨 서비스는 현재 사용할 수 없습니다...</value>
+  </data>
+  <data name="Setting" xml:space="preserve">
+    <value>설정</value>
+  </data>
+  <data name="DataSourceText.Text" xml:space="preserve">
+    <value>데이터 공급자:</value>
+  </data>
+  <data name="Retry" xml:space="preserve">
+    <value>다시 시도?</value>
+  </data>
+  <data name="LongTime" xml:space="preserve">
+    <value>예상 보다 더 이상 대기...</value>
+  </data>
+  <data name="Welcome0Detail.Text" xml:space="preserve">
+    <value>보고, 쉽게 도달 하기 쉬운</value>
+  </data>
+  <data name="Welcome0Text.Text" xml:space="preserve">
+    <value>동적</value>
+  </data>
+  <data name="Welcome1Detail.Text" xml:space="preserve">
+    <value>시작에 핀</value>
+  </data>
+  <data name="Welcome1Text.Text" xml:space="preserve">
+    <value>바둑판식 배열</value>
+  </data>
+  <data name="Welcome2Detail.Text" xml:space="preserve">
+    <value>설정-&gt;개인 설정-&gt;Lockscreen 및 설정된 lockscreen 알림으로 이동!</value>
+  </data>
+  <data name="Welcome2Text.Text" xml:space="preserve">
+    <value>알림</value>
+  </data>
+  <data name="BackText.Text" xml:space="preserve">
+    <value>뒤로</value>
+  </data>
+  <data name="HamCloseText.Text" xml:space="preserve">
+    <value>닫다</value>
+  </data>
+  <data name="HamOpenText.Text" xml:space="preserve">
+    <value>열기</value>
+  </data>
+  <data name="MoreText.Text" xml:space="preserve">
+    <value>자세히</value>
+  </data>
+  <data name="RefreshText.Text" xml:space="preserve">
+    <value>새로 고침</value>
+  </data>
+  <data name="NowText.Text" xml:space="preserve">
+    <value>세부 정보</value>
+  </data>
+  <data name="CitiesManageText.Text" xml:space="preserve">
+    <value>관리 위치</value>
+  </data>
+  <data name="Locating" xml:space="preserve">
+    <value>찾기...</value>
+  </data>
+  <data name="DataSourceDetailText.Text" xml:space="preserve">
+    <value>기부금 팩 "날씨 지 하"를 사용 하 여</value>
+  </data>
+  <data name="EndTimeText.Text" xml:space="preserve">
+    <value>종료 시간:</value>
+  </data>
+  <data name="MinutesIn" xml:space="preserve">
+    <value>{0} 분 전에</value>
+  </data>
+  <data name="StartTimeText.Text" xml:space="preserve">
+    <value>시작 시간:</value>
+  </data>
+  <data name="ThemeasDetailText.Text" xml:space="preserve">
+    <value>위치, 필요 하거나 기본값을 사용 하 여: 19시 30분 ~ 7시 30분</value>
+  </data>
+  <data name="ThemeasRiseSetText.Text" xml:space="preserve">
+    <value>어두운 모드를 사용 하면 태양 설정</value>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value>업데이트됨</value>
+  </data>
+  <data name="UpdateFailedText.Text" xml:space="preserve">
+    <value>업데이트할 수 없음</value>
+  </data>
+  <data name="RefreshComplete" xml:space="preserve">
+    <value>업데이트 완료</value>
+  </data>
+  <data name="RefreshStamp" xml:space="preserve">
+    <value>타임 스탬프: {0}</value>
+  </data>
+  <data name="RefreshStart" xml:space="preserve">
+    <value>업데이트 중...</value>
+  </data>
+  <data name="RequestedTheme_Default" xml:space="preserve">
+    <value>시스템에 따라</value>
+  </data>
+  <data name="Today_Weather" xml:space="preserve">
+    <value>{0}에 대 한 오늘</value>
+  </data>
+  <data name="CaiyunRadio.Content" xml:space="preserve">
+    <value>Caiyun 날씨</value>
+  </data>
+  <data name="HeWeatherRadio.Content" xml:space="preserve">
+    <value>HeWeather</value>
+  </data>
+  <data name="CaiyunWeather" xml:space="preserve">
+    <value>중국 기상청, Caiyun 날씨</value>
+  </data>
+  <data name="DataSourceAlertText.Text" xml:space="preserve">
+    <value>모든 기상 정보를 제공 하지 않을 수 있습니다.</value>
+  </data>
+  <data name="HeWeather" xml:space="preserve">
+    <value>HeWeather</value>
+  </data>
+  <data name="PhotoCopyright.Content" xml:space="preserve">
+    <value>사진 저작권</value>
+  </data>
+  <data name="MeetNewDataSource" xml:space="preserve">
+    <value>새 데이터 원본 "{0}"은 유효한, 환경 설정을 봐!</value>
+  </data>
+  <data name="MeetNewDataSourceTitle" xml:space="preserve">
+    <value>당신이 무엇을 찾는 참조!</value>
+  </data>
+  <data name="LockText.Text" xml:space="preserve">
+    <value>기부 팩을 사용 하 여 일부 기능을 잠금 해제</value>
+  </data>
+  <data name="FullScreenText.Text" xml:space="preserve">
+    <value>전체 화면</value>
+  </data>
+  <data name="UpdateDetailText.Text" xml:space="preserve">
+    <value>· 찾기 관리
+를 추가 · 사소한 버그 수정</value>
+  </data>
+  <data name="UpdateTitle.Text" xml:space="preserve">
+    <value>새로운 오신 버전</value>
+  </data>
+  <data name="Calculator" xml:space="preserve">
+    <value>단위 변환기</value>
+  </data>
+  <data name="YouKnow" xml:space="preserve">
+    <value>Hey 사람</value>
+  </data>
+  <data name="AlwaysShowText.Text" xml:space="preserve">
+    <value>항상 보이는 배경</value>
+  </data>
+  <data name="ShuffleText.Text" xml:space="preserve">
+    <value>셔플 배경</value>
+  </data>
+  <data name="Overcast.Header" xml:space="preserve">
+    <value>흐림</value>
+  </data>
+  <data name="UpdateLogButton.Content" xml:space="preserve">
+    <value>업데이트 로그</value>
+  </data>
+  <data name="UpdateLogText.Text" xml:space="preserve">
+    <value>1.6.16111
+· 찾기 관리
+를 추가 · 마이너 버그 고정된
+
+1.6.16110
+· 모바일 버전의 시작 되도록 너무 느린
+· 발생 문제 해결 찾기 메서드
+를 변경 · 도시 관리 페이지
+
+1.6.16101
+와 도시 개요 페이지를 통합 · 마이너 수정
+· 이제 사용자 지정 레이아웃 패널
+
+1.6.16100
+에에서 몰입 모드 시간 초과 설정할 수 있습니다 · 문제 해결 보조 타일
+· 업데이트 되지 않습니다 잘못 된
+· 수는 보조 타일의 레이아웃 문제 해결 시작 페이지 다시 디자인 된
+
+1.6.16086
+· 문제는 터치 스크린에 슬쩍
+· 감속 하는 것은 고정 고정 문제는 일부 장치 이미지 리소스
+를 로드할 수 없습니다 · UI 전위
+
+1.6.16085
+고정 · 추가 개인 정보 보호 정책
+
+1.6.16080
+· 마이너 수정
+
+1.6.16062
+· 세부 사항에 작은 디스플레이 문제를 해결 페이지
+· 추가 바람 속도 그래프
+
+1.6.16058
+· UI 조작
+
+1.6.16056
+· 고정 버그 발생된 배경 작업
+· 시작할 수 없습니다. Cortana 명령 곧 유효한
+
+1.6.16054
+· 날씨 경보 개선
+
+1.6.16050
+· 토스트 반투명 타일
+를 선택할 수 있습니다 이제 · 바둑판식 배열 레이아웃 조정
+
+1.5.16059
+· 설정에서 고정된 문제 페이지
+· 현재 BG lockscreen 설정 하려고 벽지
+
+1.5.16055
+· 사용자 지정할 수 있습니다 강조 색 지금 (경우에 테마 설정 "에 따라 시스템")
+· 새로 고침 애니메이션
+를 추가 · 레이아웃을 사용자 지정할 수 있습니다 지금은
+· 세부 정보 페이지 향상 된
+
+1.5.16054
+· 기본 설정
+
+1.5.16052
+조정 지역 형식
+
+1.5.16050
+에 의해 발생 하는 문제를 해결 하는 · · 세부 내용 페이지 추가
+
+1.5.16045
+· 
+는 자동 백그라운드 새로 고침 간격을 단축 · UI 및 레이아웃 향상
+· 타일의 레이아웃 다음 버전
+
+1.5.16040
+에서에서 업데이트 될 것입니다 · 윈도우 10 빌드 14328, 우리 토스트 업데이 트와
+· 타일 "지 하 날씨" 지금 유효한! 
+· (5 월) 고정 오류가
+· (5 월) Lockscreen 알림을
+
+1.4.16047 표시 하지 않는 모바일 장치에서 발생 하는 문제가 고정:
+· UI 튜닝
+· 작은 버그 수정
+ 
+1.4.16046:
+· 업데이트 로그 추가
+· 하실 수 있습니다 슬쩍 삭제 업데이트 내용을
+· 입자 시스템의 표면 업데이트
+· 입자 시스템 개선
+· 번개 생성기 향상
+  </value>
+  </data>
+  <data name="ContactButton.Content" xml:space="preserve">
+    <value>저 접촉</value>
+  </data>
+  <data name="ImproveButton.Content" xml:space="preserve">
+    <value>이 응용 프로그램을 개선</value>
+  </data>
+  <data name="ImproveDetail.Text" xml:space="preserve">
+    <value>나, 함께 완벽 하 게 애플 리 케이이 션이 더! 제한 된 
+ 
+포함 한 아니지만:
+
+· UI 및 레이아웃 개선
+· 보다 정확한 데이터 공급자
+를 추가 · 더 많은 날씨 아이콘을 그리기 제공 또는
+· 배경 코딩
+ 
+감사!</value>
+  </data>
+  <data name="Today" xml:space="preserve">
+    <value>오늘</value>
+  </data>
+  <data name="Tomorrow" xml:space="preserve">
+    <value>내일</value>
+  </data>
+  <data name="DonateOption4.Text" xml:space="preserve">
+    <value>· "날씨 지 하" 데이터 소스 사용</value>
+  </data>
+  <data name="CrashDialog.Title" xml:space="preserve">
+    <value>죄송합니다.</value>
+  </data>
+  <data name="CrashDialog.SecondaryButtonText" xml:space="preserve">
+    <value>끝내기</value>
+  </data>
+  <data name="CrashDialog.PrimaryButtonText" xml:space="preserve">
+    <value>보내기</value>
+  </data>
+  <data name="CrashText0.Text" xml:space="preserve">
+    <value>뭔가 잘못! (Ω ×) 
+지금 당신은 개발자, 충돌 보고서를 보낼 수 있고 완전히이 애플 리 케이이 션을 좀 더 도움이... 
+</value>
+  </data>
+  <data name="CrashText1.Text" xml:space="preserve">
+    <value>이 정보는 당신을 도울 수 있을 수 있습니다.</value>
+  </data>
+  <data name="PrivacyText0.Text" xml:space="preserve">
+    <value>우리 절대 귀하의 개인 정보를 업로드 합니다.</value>
+  </data>
+  <data name="PrivacyText1.Text" xml:space="preserve">
+    <value>충돌 보고서에 우리 현재 시간, 현재 언어, 그리고 몇 가지 환경 정보를 로그 다음 이러한 문자열을 보낼 것입니다 우리가 서버, 우리는 귀하의 개인 정보 로그 하지 않습니다. 보고서를 전송 하지 않으려는 경우 그냥 버튼을 클릭 종료 하 고 아무것도 발생 합니다.</value>
+  </data>
+  <data name="WhyButton.Content" xml:space="preserve">
+    <value>무엇 전송 됩니다?</value>
+  </data>
+  <data name="GeneralText.Text" xml:space="preserve">
+    <value>일반</value>
+  </data>
+  <data name="LanguageText.Text" xml:space="preserve">
+    <value>언어</value>
+  </data>
+  <data name="LanguageChangeText.Text" xml:space="preserve">
+    <value>새로 고침 또는 다시 적용</value>
+  </data>
+  <data name="ReportBox.PlaceholderText" xml:space="preserve">
+    <value>귀하의 의견 쓰기!</value>
+  </data>
+  <data name="AppProblemButton.Content" xml:space="preserve">
+    <value>문제가 있나요?</value>
+  </data>
+  <data name="AppProblemText.Text" xml:space="preserve">
+    <value>몇 가지 문제를 해결 하기 위해 모든 응용 프로그램 데이터를 삭제를 시도할 수 있습니다.</value>
+  </data>
+  <data name="ConfirmDeleteText.Text" xml:space="preserve">
+    <value>확인? 이 다시 시작 해야</value>
+  </data>
+  <data name="AppDeleteButton.Content" xml:space="preserve">
+    <value>모든 데이터 삭제</value>
+  </data>
+  <data name="LockDetail" xml:space="preserve">
+    <value>{0} {1}, {2} {3}
+내일: {4}, {5}.</value>
+  </data>
+  <data name="RateText.Content" xml:space="preserve">
+    <value>Windows 스토어에서</value>
+  </data>
+  <data name="FeedbackDialog.Title" xml:space="preserve">
+    <value>피드백</value>
+  </data>
+  <data name="FeedbackDialog.SecondaryButtonText" xml:space="preserve">
+    <value>뒤로</value>
+  </data>
+  <data name="FeedbackDialog.PrimaryButtonText" xml:space="preserve">
+    <value>보내기</value>
+  </data>
+  <data name="DailyDetailsPop" xml:space="preserve">
+    <value>{0} 일에 대 한 확률 Pcpn입니다.</value>
+  </data>
+  <data name="DailyDetailsPrep" xml:space="preserve">
+    <value>{0} 일 강수량</value>
+  </data>
+  <data name="DailyDetailsTemp" xml:space="preserve">
+    <value>{0} 일에 대 한 온도</value>
+  </data>
+  <data name="DailyDetailsVis" xml:space="preserve">
+    <value>{0} 일에 대 한 가시성</value>
+  </data>
+  <data name="Details" xml:space="preserve">
+    <value>세부 정보</value>
+  </data>
+  <data name="HourlyDetailsPop" xml:space="preserve">
+    <value>{0} 시간에 대 한 확률 Pcpn입니다.</value>
+  </data>
+  <data name="HourlyDetailsTemperature" xml:space="preserve">
+    <value>{0} 시간에 대 한 온도</value>
+  </data>
+  <data name="DrawerText.Text" xml:space="preserve">
+    <value>사용자 지정 서랍 배경</value>
+  </data>
+  <data name="MainColorText.Text" xml:space="preserve">
+    <value>강조 색</value>
+  </data>
+  <data name="CustomLayoutButton.Content" xml:space="preserve">
+    <value>사용자 지정 레이아웃</value>
+  </data>
+  <data name="PickImageButton.Content" xml:space="preserve">
+    <value>이미지 선택</value>
+  </data>
+  <data name="LayoutText.Text" xml:space="preserve">
+    <value>레이아웃</value>
+  </data>
+  <data name="ColorPicker.Title" xml:space="preserve">
+    <value>색 선택</value>
+  </data>
+  <data name="ColorPicker.AccentColorTitle" xml:space="preserve">
+    <value>시스템 테마 컬러</value>
+  </data>
+  <data name="SetTimeText.Text" xml:space="preserve">
+    <value>설정된 알람 시간</value>
+  </data>
+  <data name="AlarmButton.Content" xml:space="preserve">
+    <value>기상 재해 경고</value>
+  </data>
+  <data name="LunarText.Text" xml:space="preserve">
+    <value>음력 달력 보기</value>
+  </data>
+  <data name="LowNowPanelText.Text" xml:space="preserve">
+    <value>컴팩트한 레이아웃</value>
+  </data>
+  <data name="ToggleVisibilityText.Text" xml:space="preserve">
+    <value>표시 선택</value>
+  </data>
+  <data name="ForecastPanelText.Text" xml:space="preserve">
+    <value>예측</value>
+  </data>
+  <data name="AQIPanelText.Text" xml:space="preserve">
+    <value>AQI</value>
+  </data>
+  <data name="DetailsPanelText.Text" xml:space="preserve">
+    <value>세부 정보</value>
+  </data>
+  <data name="SuggestsPanelText.Text" xml:space="preserve">
+    <value>추천</value>
+  </data>
+  <data name="ToggleNowPanelText.Text" xml:space="preserve">
+    <value>이제 날씨 패널 조정</value>
+  </data>
+  <data name="HeightText.Text" xml:space="preserve">
+    <value>height</value>
+  </data>
+  <data name="LanguageAlarmText.Text" xml:space="preserve">
+    <value>일부 언어에서는 언어 팩을 설치 해야</value>
+  </data>
+  <data name="DonateOption5.Text" xml:space="preserve">
+    <value>· 레이아웃 사용자 지정</value>
+  </data>
+  <data name="SetWallPaperText.Text" xml:space="preserve">
+    <value>자동 설정 현재 BG lockscreen 벽지</value>
+  </data>
+  <data name="SetWallPaperFalseText.Text" xml:space="preserve">
+    <value>실험 및 적용 되지 않을 수 있습니다</value>
+  </data>
+  <data name="TransparentTileText.Text" xml:space="preserve">
+    <value>반투명 타일 사용</value>
+  </data>
+  <data name="TransparentTileFalseText.Text" xml:space="preserve">
+    <value>데스크톱 플랫폼에서 사용할 수 없습니다.</value>
+  </data>
+  <data name="EnableAlarm.Content" xml:space="preserve">
+    <value>악천후 경보</value>
+  </data>
+  <data name="MorningAlarm.Content" xml:space="preserve">
+    <value>아침 알람</value>
+  </data>
+  <data name="EveningAlarm.Content" xml:space="preserve">
+    <value>저녁 알람</value>
+  </data>
+  <data name="ToastGale" xml:space="preserve">
+    <value>게 일을 내일 있을 것입니다.</value>
+  </data>
+  <data name="ToastRain" xml:space="preserve">
+    <value>폭우를 내일 있을 것입니다.</value>
+  </data>
+  <data name="ToastThunder" xml:space="preserve">
+    <value>천둥을 내일 있을 것입니다.</value>
+  </data>
+  <data name="ToastHail" xml:space="preserve">
+    <value>우박을 내일 있을 것입니다.</value>
+  </data>
+  <data name="ToastSnow" xml:space="preserve">
+    <value>내일 눈을 될 것입니다.</value>
+  </data>
+  <data name="ToastFreeze" xml:space="preserve">
+    <value>내일 비 동결 것 이다</value>
+  </data>
+  <data name="ToastSand" xml:space="preserve">
+    <value>내일 모래 있을 것입니다.</value>
+  </data>
+  <data name="ToastHot" xml:space="preserve">
+    <value>내일 뜨거운 될 것 이다</value>
+  </data>
+  <data name="ToastCold" xml:space="preserve">
+    <value>내일 차가운 것</value>
+  </data>
+  <data name="Known" xml:space="preserve">
+    <value>알아요</value>
+  </data>
+  <data name="Dismiss" xml:space="preserve">
+    <value>해제</value>
+  </data>
+  <data name="DailyDetailsWind" xml:space="preserve">
+    <value>{0} 일에 대 한 풍속</value>
+  </data>
+  <data name="HourlyDetailsWind" xml:space="preserve">
+    <value>{0} 시간에 대 한 풍속</value>
+  </data>
+  <data name="ThanksButton.Content" xml:space="preserve">
+    <value>개발자와 크레딧</value>
+  </data>
+  <data name="EnableCrash.Text" xml:space="preserve">
+    <value>때, 충돌 보고서를 보낼</value>
+  </data>
+  <data name="EnableCrashDetail.Text" xml:space="preserve">
+    <value>사용자 경험에 영향을 미칠 수 있습니다.</value>
+  </data>
+  <data name="MadebyText.Text" xml:space="preserve">
+    <value>에 의해</value>
+  </data>
+  <data name="BrandText.Text" xml:space="preserve">
+    <value>전체 빛의 밤입니다.</value>
+  </data>
+  <data name="DevText.Text" xml:space="preserve">
+    <value>모든 코드와 UI/UX 디자인으로 만들어집니다. </value>
+  </data>
+  <data name="DevAfterText.Text" xml:space="preserve">
+    <value>.</value>
+  </data>
+  <data name="DavidBiancoText.Text" xml:space="preserve">
+    <value>스페인어 번역 및 일부 UI 개선</value>
+  </data>
+  <data name="DevTitle.Text" xml:space="preserve">
+    <value>디벨로퍼</value>
+  </data>
+  <data name="ThanksTitle.Text" xml:space="preserve">
+    <value>특별히 감사드리는 분</value>
+  </data>
+  <data name="CortanaSup.Text" xml:space="preserve">
+    <value>중국어 지원</value>
+  </data>
+  <data name="CortanaCommandsText.Content" xml:space="preserve">
+    <value>Cortana 명령</value>
+  </data>
+  <data name="PrivacyButton.Content" xml:space="preserve">
+    <value>개인 정보 보호 정책</value>
+  </data>
+  <data name="Hum.Text" xml:space="preserve">
+    <value>습도</value>
+  </data>
+  <data name="Pop.Text" xml:space="preserve">
+    <value>강 수 확률</value>
+  </data>
+  <data name="Pcpn.Text" xml:space="preserve">
+    <value>강 수</value>
+  </data>
+  <data name="Vis.Text" xml:space="preserve">
+    <value>표시 유형</value>
+  </data>
+  <data name="Scale.Text" xml:space="preserve">
+    <value>바람 규모</value>
+  </data>
+  <data name="Dir.Text" xml:space="preserve">
+    <value>바람의 방향</value>
+  </data>
+  <data name="Pres.Text" xml:space="preserve">
+    <value>원자 압력</value>
+  </data>
+  <data name="SunRise.Text" xml:space="preserve">
+    <value>일출</value>
+  </data>
+  <data name="SunSet.Text" xml:space="preserve">
+    <value>태양이 세트</value>
+  </data>
+  <data name="Location.Text" xml:space="preserve">
+    <value>Location</value>
+  </data>
+  <data name="UtcOffset.Text" xml:space="preserve">
+    <value>Utc 오프셋</value>
+  </data>
+  <data name="HumText" xml:space="preserve">
+    <value>습도</value>
+  </data>
+  <data name="ScaleText" xml:space="preserve">
+    <value>바람 규모</value>
+  </data>
+  <data name="ImmersiveTimeOutText.Text" xml:space="preserve">
+    <value>몰입 모드 시간 초과, 0로 설정 표시 영원히</value>
+  </data>
+  <data name="ChangeCityManage.Text" xml:space="preserve">
+    <value>우선 순위를 변경 하려면 드래그</value>
+  </data>
+  <data name="GotoCitiesPage.Text" xml:space="preserve">
+    <value>도시 페이지로 이동 하 고 체크 아웃 하십시오</value>
+  </data>
+  <data name="LocateRoute_Amap" xml:space="preserve">
+    <value>Gaode 지도 역-geocoding(China only)</value>
+  </data>
+  <data name="LocateRoute_Omap" xml:space="preserve">
+    <value>OpenStreetMap 리버스 지 오 코딩</value>
+  </data>
+  <data name="LocateRoute_IP" xml:space="preserve">
+    <value>IP 지리적 위치 쿼리</value>
+  </data>
+  <data name="LocateRoute_unknown" xml:space="preserve">
+    <value>내장 역 지 오 코딩</value>
+  </data>
+  <data name="ConfirmButton.Content" xml:space="preserve">
+    <value>확인</value>
+  </data>
+  <data name="ConfirmDialog.PrimaryButtonText" xml:space="preserve">
+    <value>확인</value>
+  </data>
+  <data name="LocaterText.Content" xml:space="preserve">
+    <value>위치 서비스 공급자</value>
+  </data>
+</root>

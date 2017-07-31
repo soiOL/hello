@@ -1,0 +1,1477 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="About" xml:space="preserve">
+    <value>о программе</value>
+  </data>
+  <data name="AddButton.Label" xml:space="preserve">
+    <value>Поиск городов</value>
+  </data>
+  <data name="Add_Image" xml:space="preserve">
+    <value>Настроить</value>
+  </data>
+  <data name="BlurBGText.Text" xml:space="preserve">
+    <value>Включить размытия</value>
+  </data>
+  <data name="BodyTempText.Text" xml:space="preserve">
+    <value>Температура тела</value>
+  </data>
+  <data name="CheckLocateAccessButton.Content" xml:space="preserve">
+    <value>Перейти к настройкам</value>
+  </data>
+  <data name="Cities" xml:space="preserve">
+    <value>Обзор городов</value>
+  </data>
+  <data name="CitiesButton.Label" xml:space="preserve">
+    <value>Обзор городов</value>
+  </data>
+  <data name="CitiesText.Text" xml:space="preserve">
+    <value>Обзор городов</value>
+  </data>
+  <data name="Cities_Management" xml:space="preserve">
+    <value>Поиск менеджмент</value>
+  </data>
+  <data name="Cloudy.Header" xml:space="preserve">
+    <value>Облако</value>
+  </data>
+  <data name="ComfortableText.Text" xml:space="preserve">
+    <value>Индекс комфорт:  </value>
+  </data>
+  <data name="CWText.Text" xml:space="preserve">
+    <value>Автомойка индекс:  </value>
+  </data>
+  <data name="DanweiText.Text" xml:space="preserve">
+    <value>Преобразование</value>
+  </data>
+  <data name="DescripButton.Content" xml:space="preserve">
+    <value>Описание</value>
+  </data>
+  <data name="DisableDynamicDescripText.Text" xml:space="preserve">
+    <value>Уменьшить использование памяти</value>
+  </data>
+  <data name="DisableDynamicText.Text" xml:space="preserve">
+    <value>Отключить динамическое</value>
+  </data>
+  <data name="DonateButton.Content" xml:space="preserve">
+    <value>Пожертвования это!</value>
+  </data>
+  <data name="DonateOption0.Text" xml:space="preserve">
+    <value>· Ежедневных будильников</value>
+  </data>
+  <data name="DonateOption1.Text" xml:space="preserve">
+    <value>· Сигналы бедствия</value>
+  </data>
+  <data name="DonateOption2.Text" xml:space="preserve">
+    <value>· Короче, частота обновления Погода</value>
+  </data>
+  <data name="DonateOption3.Text" xml:space="preserve">
+    <value>· Закрепление отдельных городов в плитки и автоматически обновлять</value>
+  </data>
+  <data name="DonateRun0.Text" xml:space="preserve">
+    <value>Нужна ваша помощь...</value>
+  </data>
+  <data name="DonateRun1.Text" xml:space="preserve">
+    <value>Разработка приложений требует много энергии и времени; Кроме того, это приложение с помощью Погода API, которые нужны деньги для правильной работы. Если вы думаете, это здорово, хотел бы поддержать его ~</value>
+  </data>
+  <data name="DonateRun2.Text" xml:space="preserve">
+    <value>Помогите нам, и вы будете разблокировать версию пожертвовать дополнительных функций:</value>
+  </data>
+  <data name="DressingText.Text" xml:space="preserve">
+    <value>Одежда индекс:  </value>
+  </data>
+  <data name="DynamicText.Text" xml:space="preserve">
+    <value>Динамическая Погода</value>
+  </data>
+  <data name="EnableEveryText.Text" xml:space="preserve">
+    <value>Сигнализация Погода</value>
+  </data>
+  <data name="ExperimentalText.Text" xml:space="preserve">
+    <value>Экспериментальные функции</value>
+  </data>
+  <data name="FeedbackButton.Label" xml:space="preserve">
+    <value>Оценка                         </value>
+  </data>
+  <data name="FluText.Text" xml:space="preserve">
+    <value>Индекс гриппа:  </value>
+  </data>
+  <data name="Foggy.Header" xml:space="preserve">
+    <value>Туман</value>
+  </data>
+  <data name="ForceRefreshText.Text" xml:space="preserve">
+    <value>Сила тяги для обновления</value>
+  </data>
+  <data name="FormatText.Text" xml:space="preserve">
+    <value>Дата и время</value>
+  </data>
+  <data name="Haze.Header" xml:space="preserve">
+    <value>Песок и дымка</value>
+  </data>
+  <data name="HumidityText.Text" xml:space="preserve">
+    <value>Влажность</value>
+  </data>
+  <data name="ImmersiveText.Text" xml:space="preserve">
+    <value>Захватывающий режим</value>
+  </data>
+  <data name="Immersive_Background" xml:space="preserve">
+    <value>Захватывающий фон</value>
+  </data>
+  <data name="LengthParameter_KM" xml:space="preserve">
+    <value>км</value>
+  </data>
+  <data name="LengthParameter_M" xml:space="preserve">
+    <value>м</value>
+  </data>
+  <data name="LengthParameter_Mile" xml:space="preserve">
+    <value>миля</value>
+  </data>
+  <data name="LengthParameter_NM" xml:space="preserve">
+    <value>мми</value>
+  </data>
+  <data name="LengthParText.Text" xml:space="preserve">
+    <value>Видимость</value>
+  </data>
+  <data name="LoadingDataText.Text" xml:space="preserve">
+    <value>Загрузка</value>
+  </data>
+  <data name="LocateDeniedButton.Content" xml:space="preserve">
+    <value>Разрешения для расположения отказано</value>
+  </data>
+  <data name="LocateOnText.Text" xml:space="preserve">
+    <value>Расположение</value>
+  </data>
+  <data name="LocatingText.Text" xml:space="preserve">
+    <value>Поиск</value>
+  </data>
+  <data name="MoonPhaseText.Text" xml:space="preserve">
+    <value>Фазы Луны</value>
+  </data>
+  <data name="NextTomorrowText.Text" xml:space="preserve">
+    <value>Следующего тома.</value>
+  </data>
+  <data name="NoBGText.Text" xml:space="preserve">
+    <value>Не показывать</value>
+  </data>
+  <data name="Now" xml:space="preserve">
+    <value>Текущая погода</value>
+  </data>
+  <data name="NowButton.Label" xml:space="preserve">
+    <value>Сведения</value>
+  </data>
+  <data name="Obtain" xml:space="preserve">
+    <value>Оплатить что вы хотите</value>
+  </data>
+  <data name="PrecipitationText.Text" xml:space="preserve">
+    <value>Осадки</value>
+  </data>
+  <data name="Preferences" xml:space="preserve">
+    <value>Настройки</value>
+  </data>
+  <data name="PressureParameter_Atm" xml:space="preserve">
+    <value>Банкомат на территории отеля</value>
+  </data>
+  <data name="PressureParameter_CmHg" xml:space="preserve">
+    <value>См рт.ст.</value>
+  </data>
+  <data name="PressureParameter_Hpa" xml:space="preserve">
+    <value>МБ</value>
+  </data>
+  <data name="PressureParameter_Torr" xml:space="preserve">
+    <value>Торр</value>
+  </data>
+  <data name="PressureParText.Text" xml:space="preserve">
+    <value>Пневматический</value>
+  </data>
+  <data name="PressureText.Text" xml:space="preserve">
+    <value>Пневматический</value>
+  </data>
+  <data name="PurchaseButton.Content" xml:space="preserve">
+    <value>Это рок!</value>
+  </data>
+  <data name="Rainny.Header" xml:space="preserve">
+    <value>Дождь</value>
+  </data>
+  <data name="RefreshButton.Label" xml:space="preserve">
+    <value>Обновление</value>
+  </data>
+  <data name="RefreshFreqText.Text" xml:space="preserve">
+    <value>Интервал обновления</value>
+  </data>
+  <data name="RefreshState_four" xml:space="preserve">
+    <value>Четыре часа</value>
+  </data>
+  <data name="RefreshState_one" xml:space="preserve">
+    <value>Не авто обновления</value>
+  </data>
+  <data name="RefreshState_three" xml:space="preserve">
+    <value>Один час</value>
+  </data>
+  <data name="RefreshState_two" xml:space="preserve">
+    <value>30 минут</value>
+  </data>
+  <data name="Replace_Image" xml:space="preserve">
+    <value>Заменить</value>
+  </data>
+  <data name="RequestedTheme_Auto" xml:space="preserve">
+    <value>Авто</value>
+  </data>
+  <data name="RequestedTheme_Dark" xml:space="preserve">
+    <value>Темный</value>
+  </data>
+  <data name="RequestedTheme_Light" xml:space="preserve">
+    <value>Светлый</value>
+  </data>
+  <data name="SearchText.Text" xml:space="preserve">
+    <value>Поиск и добавление</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>параметры</value>
+  </data>
+  <data name="SettingsButton.Label" xml:space="preserve">
+    <value>параметры</value>
+  </data>
+  <data name="SettingsText.Text" xml:space="preserve">
+    <value>параметры</value>
+  </data>
+  <data name="ShowSecondText.Text" xml:space="preserve">
+    <value>Показать второй</value>
+  </data>
+  <data name="ShowttText.Text" xml:space="preserve">
+    <value>Дисплей am/pm</value>
+  </data>
+  <data name="Snowy.Header" xml:space="preserve">
+    <value>Зимний снег</value>
+  </data>
+  <data name="SpeedParameter_KMPH" xml:space="preserve">
+    <value>км/ч</value>
+  </data>
+  <data name="SpeedParameter_Knot" xml:space="preserve">
+    <value>узел</value>
+  </data>
+  <data name="SpeedParameter_MPS" xml:space="preserve">
+    <value>м/с</value>
+  </data>
+  <data name="SpeedParText.Text" xml:space="preserve">
+    <value>Скорость ветра</value>
+  </data>
+  <data name="SplashText.Text" xml:space="preserve">
+    <value>Подготовка данных...</value>
+  </data>
+  <data name="SportText.Text" xml:space="preserve">
+    <value>Спортивные Индекс:  </value>
+  </data>
+  <data name="Starry.Header" xml:space="preserve">
+    <value>Звездное небо</value>
+  </data>
+  <data name="Sunny.Header" xml:space="preserve">
+    <value>Солнечный свет</value>
+  </data>
+  <data name="SunProgressText.Text" xml:space="preserve">
+    <value>Положение солнца</value>
+  </data>
+  <data name="TemperatureParameter_Celsius" xml:space="preserve">
+    <value>По Цельсию</value>
+  </data>
+  <data name="TemperatureParameter_Fahrenheit" xml:space="preserve">
+    <value>по Фаренгейту</value>
+  </data>
+  <data name="TemperatureParameter_Kelvin" xml:space="preserve">
+    <value>Градус Кельвина</value>
+  </data>
+  <data name="TempParText.Text" xml:space="preserve">
+    <value>Температура</value>
+  </data>
+  <data name="ThemeText.Text" xml:space="preserve">
+    <value>Тема</value>
+  </data>
+  <data name="TitleBlock.Text" xml:space="preserve">
+    <value>Погода в Авроре</value>
+  </data>
+  <data name="ToastText.Text" xml:space="preserve">
+    <value>Погода напоминание</value>
+  </data>
+  <data name="TomorrowText.Text" xml:space="preserve">
+    <value>Завтра</value>
+  </data>
+  <data name="TravelText.Text" xml:space="preserve">
+    <value>Индекс путешествия:  </value>
+  </data>
+  <data name="UseWeekText.Text" xml:space="preserve">
+    <value>Использовать рабочие дни</value>
+  </data>
+  <data name="UVText.Text" xml:space="preserve">
+    <value>УФ индекс:  </value>
+  </data>
+  <data name="VisibilityText.Text" xml:space="preserve">
+    <value>Видимость</value>
+  </data>
+  <data name="WelcomeText.Text" xml:space="preserve">
+    <value>Добро пожаловать!</value>
+  </data>
+  <data name="WindParameter_BeaufortandDegree" xml:space="preserve">
+    <value>Шкала + угол</value>
+  </data>
+  <data name="WindParameter_BeaufortandText" xml:space="preserve">
+    <value>Шкала + направление</value>
+  </data>
+  <data name="WindParameter_SpeedandDegree" xml:space="preserve">
+    <value>Скорость + угол</value>
+  </data>
+  <data name="WindParameter_SpeedandText" xml:space="preserve">
+    <value>Скорость + направление</value>
+  </data>
+  <data name="WindParText.Text" xml:space="preserve">
+    <value>Ветер</value>
+  </data>
+  <data name="WindText.Text" xml:space="preserve">
+    <value>Ветер</value>
+  </data>
+  <data name="DonationTitle.Text" xml:space="preserve">
+    <value>Получить пакет пожертвование</value>
+  </data>
+  <data name="First_quarter" xml:space="preserve">
+    <value>Первая четверть</value>
+  </data>
+  <data name="Full_moon" xml:space="preserve">
+    <value>Полнолуние</value>
+  </data>
+  <data name="New_Moon" xml:space="preserve">
+    <value>Новолуние</value>
+  </data>
+  <data name="Third_quarter" xml:space="preserve">
+    <value>Третий квартал</value>
+  </data>
+  <data name="Waning_crescent" xml:space="preserve">
+    <value>Растущая Луна</value>
+  </data>
+  <data name="Waning_gibbous" xml:space="preserve">
+    <value>Убывающая луна</value>
+  </data>
+  <data name="Waxing_crescent" xml:space="preserve">
+    <value>Ваксинг Полумесяца</value>
+  </data>
+  <data name="Waxing_gibbous" xml:space="preserve">
+    <value>Растущая Луна</value>
+  </data>
+  <data name="WeatherCondition_calm" xml:space="preserve">
+    <value>Спокойствие</value>
+  </data>
+  <data name="WeatherCondition_cloudy" xml:space="preserve">
+    <value>Облачность</value>
+  </data>
+  <data name="WeatherCondition_cold" xml:space="preserve">
+    <value>Наступают холода</value>
+  </data>
+  <data name="WeatherCondition_drizzle_rain" xml:space="preserve">
+    <value>Мелкий дождь</value>
+  </data>
+  <data name="WeatherCondition_dust" xml:space="preserve">
+    <value>Пыль</value>
+  </data>
+  <data name="WeatherCondition_duststorm" xml:space="preserve">
+    <value>Пыльная буря</value>
+  </data>
+  <data name="WeatherCondition_extreme_rain" xml:space="preserve">
+    <value>Экстремальные дожди</value>
+  </data>
+  <data name="WeatherCondition_few_clouds" xml:space="preserve">
+    <value>Немного облаков</value>
+  </data>
+  <data name="WeatherCondition_foggy" xml:space="preserve">
+    <value>Туман</value>
+  </data>
+  <data name="WeatherCondition_freezing_rain" xml:space="preserve">
+    <value>Гололёд</value>
+  </data>
+  <data name="WeatherCondition_fresh_breeze" xml:space="preserve">
+    <value>Свежий бриз</value>
+  </data>
+  <data name="WeatherCondition_gale" xml:space="preserve">
+    <value>Gale</value>
+  </data>
+  <data name="WeatherCondition_hail" xml:space="preserve">
+    <value>Град</value>
+  </data>
+  <data name="WeatherCondition_haze" xml:space="preserve">
+    <value>Туман</value>
+  </data>
+  <data name="WeatherCondition_heavy_rain" xml:space="preserve">
+    <value>Сильный дождь</value>
+  </data>
+  <data name="WeatherCondition_heavy_shower_rain" xml:space="preserve">
+    <value>Ливень</value>
+  </data>
+  <data name="WeatherCondition_heavy_snow" xml:space="preserve">
+    <value>Большие снега</value>
+  </data>
+  <data name="WeatherCondition_heavy_storm_rain" xml:space="preserve">
+    <value>Тяжелый шторм</value>
+  </data>
+  <data name="WeatherCondition_heavy_thunderstorm" xml:space="preserve">
+    <value>Thunderstorm</value>
+  </data>
+  <data name="WeatherCondition_high_wind" xml:space="preserve">
+    <value>Сильный ветер</value>
+  </data>
+  <data name="WeatherCondition_hot" xml:space="preserve">
+    <value>Становится жарко</value>
+  </data>
+  <data name="WeatherCondition_hurricane" xml:space="preserve">
+    <value>Ураган</value>
+  </data>
+  <data name="WeatherCondition_light_breeze" xml:space="preserve">
+    <value>Легкий ветерок</value>
+  </data>
+  <data name="WeatherCondition_light_rain" xml:space="preserve">
+    <value>Небольшой дождь</value>
+  </data>
+  <data name="WeatherCondition_light_snow" xml:space="preserve">
+    <value>Малые снега</value>
+  </data>
+  <data name="WeatherCondition_mist" xml:space="preserve">
+    <value>Туман</value>
+  </data>
+  <data name="WeatherCondition_moderate" xml:space="preserve">
+    <value>Среднее</value>
+  </data>
+  <data name="WeatherCondition_moderate_rain" xml:space="preserve">
+    <value>Умеренные дождь</value>
+  </data>
+  <data name="WeatherCondition_moderate_snow" xml:space="preserve">
+    <value>Умеренные снег</value>
+  </data>
+  <data name="WeatherCondition_overcast" xml:space="preserve">
+    <value>облака</value>
+  </data>
+  <data name="WeatherCondition_partly_cloudy" xml:space="preserve">
+    <value>Переменная облачность</value>
+  </data>
+  <data name="WeatherCondition_rain_snow" xml:space="preserve">
+    <value>Дождь</value>
+  </data>
+  <data name="WeatherCondition_sand" xml:space="preserve">
+    <value>Песок</value>
+  </data>
+  <data name="WeatherCondition_sandstorm" xml:space="preserve">
+    <value>Песчаная буря</value>
+  </data>
+  <data name="WeatherCondition_severe_storm_rain" xml:space="preserve">
+    <value>Сильный шторм</value>
+  </data>
+  <data name="WeatherCondition_shower_rain" xml:space="preserve">
+    <value>Душ</value>
+  </data>
+  <data name="WeatherCondition_shower_snow" xml:space="preserve">
+    <value>Снег душ</value>
+  </data>
+  <data name="WeatherCondition_sleet" xml:space="preserve">
+    <value>Мерзлый дождь</value>
+  </data>
+  <data name="WeatherCondition_snowstorm" xml:space="preserve">
+    <value>Шторм снега</value>
+  </data>
+  <data name="WeatherCondition_snow_flurry" xml:space="preserve">
+    <value>Шквал снег</value>
+  </data>
+  <data name="WeatherCondition_storm" xml:space="preserve">
+    <value>буря</value>
+  </data>
+  <data name="WeatherCondition_storm_rain" xml:space="preserve">
+    <value>Тропический шторм</value>
+  </data>
+  <data name="WeatherCondition_strong_breeze" xml:space="preserve">
+    <value>Сильный ветер</value>
+  </data>
+  <data name="WeatherCondition_strong_gale" xml:space="preserve">
+    <value>Шторм</value>
+  </data>
+  <data name="WeatherCondition_sunny" xml:space="preserve">
+    <value>Солнечно</value>
+  </data>
+  <data name="WeatherCondition_thundershower" xml:space="preserve">
+    <value>Гром душ</value>
+  </data>
+  <data name="WeatherCondition_tornado" xml:space="preserve">
+    <value>Торнадо</value>
+  </data>
+  <data name="WeatherCondition_tropical_storm" xml:space="preserve">
+    <value>Тропический шторм</value>
+  </data>
+  <data name="WeatherCondition_unknown" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="WeatherCondition_violent_storm" xml:space="preserve">
+    <value>Сильный шторм</value>
+  </data>
+  <data name="WeatherCondition_volcanic_ash" xml:space="preserve">
+    <value>Вулканический пепел</value>
+  </data>
+  <data name="WeatherCondition_windy" xml:space="preserve">
+    <value>Ветрено</value>
+  </data>
+  <data name="WindDirection_east" xml:space="preserve">
+    <value>Восток </value>
+  </data>
+  <data name="WindDirection_north" xml:space="preserve">
+    <value>Север </value>
+  </data>
+  <data name="WindDirection_northeast" xml:space="preserve">
+    <value>Северо-запад</value>
+  </data>
+  <data name="WindDirection_northwest" xml:space="preserve">
+    <value>Северо-запад</value>
+  </data>
+  <data name="WindDirection_south" xml:space="preserve">
+    <value>Южная </value>
+  </data>
+  <data name="WindDirection_southeast" xml:space="preserve">
+    <value>Юго-Восток</value>
+  </data>
+  <data name="WindDirection_southwest" xml:space="preserve">
+    <value>Юго-запад</value>
+  </data>
+  <data name="WindDirection_unknown" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="WindDirection_west" xml:space="preserve">
+    <value>Запад </value>
+  </data>
+  <data name="WindScale_eight" xml:space="preserve">
+    <value>Gale</value>
+  </data>
+  <data name="WindScale_eighteen" xml:space="preserve">
+    <value>Сильные ураганы</value>
+  </data>
+  <data name="WindScale_eleven" xml:space="preserve">
+    <value>буря</value>
+  </data>
+  <data name="WindScale_fifteen" xml:space="preserve">
+    <value>Сильные ураганы</value>
+  </data>
+  <data name="WindScale_five" xml:space="preserve">
+    <value>Легкий ветерок</value>
+  </data>
+  <data name="WindScale_four" xml:space="preserve">
+    <value>Среднее</value>
+  </data>
+  <data name="WindScale_fourteen" xml:space="preserve">
+    <value>Сильные ураганы</value>
+  </data>
+  <data name="WindScale_nine" xml:space="preserve">
+    <value>Gale</value>
+  </data>
+  <data name="WindScale_one" xml:space="preserve">
+    <value>Спокойствие</value>
+  </data>
+  <data name="WindScale_seven" xml:space="preserve">
+    <value>Сильный ветер</value>
+  </data>
+  <data name="WindScale_seventeen" xml:space="preserve">
+    <value>Супер урагана</value>
+  </data>
+  <data name="WindScale_six" xml:space="preserve">
+    <value>Шторм</value>
+  </data>
+  <data name="WindScale_sixteen" xml:space="preserve">
+    <value>Супер урагана</value>
+  </data>
+  <data name="WindScale_ten" xml:space="preserve">
+    <value>Сильный ветер</value>
+  </data>
+  <data name="WindScale_thirteen" xml:space="preserve">
+    <value>Ураган</value>
+  </data>
+  <data name="WindScale_three" xml:space="preserve">
+    <value>Бриз</value>
+  </data>
+  <data name="WindScale_twelve" xml:space="preserve">
+    <value>циклонный фильтр</value>
+  </data>
+  <data name="WindScale_two" xml:space="preserve">
+    <value>Бриз</value>
+  </data>
+  <data name="WindScale_unknown" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="WindScale_zero" xml:space="preserve">
+    <value>Не Ветер</value>
+  </data>
+  <data name="AboutText.Text" xml:space="preserve">
+    <value>о программе</value>
+  </data>
+  <data name="AppName" xml:space="preserve">
+    <value>Погода в Авроре</value>
+  </data>
+  <data name="AppNameText.Text" xml:space="preserve">
+    <value>Погода в Авроре</value>
+  </data>
+  <data name="buchaoguoshi.Text" xml:space="preserve">
+    <value>Если не больше, чем десять, десять цифр не будет отображаться</value>
+  </data>
+  <data name="chaoguoshi.Text" xml:space="preserve">
+    <value>Если не более, чем десяти, показывает нуля</value>
+  </data>
+  <data name="DateDes.Text" xml:space="preserve">
+    <value>День:</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Погода в Авроре</value>
+  </data>
+  <data name="FeedbackText.Content" xml:space="preserve">
+    <value>Обратная связь</value>
+  </data>
+  <data name="HourDes.Text" xml:space="preserve">
+    <value>Час:</value>
+  </data>
+  <data name="MonthDes.Text" xml:space="preserve">
+    <value>В месяц:</value>
+  </data>
+  <data name="OpenSourceText.Content" xml:space="preserve">
+    <value>Открытым исходным кодом лицензии</value>
+  </data>
+  <data name="ProviderText.Content" xml:space="preserve">
+    <value>Поставщики данных</value>
+  </data>
+  <data name="ShortName" xml:space="preserve">
+    <value>Погода</value>
+  </data>
+  <data name="TimeFormatDescrip.Text" xml:space="preserve">
+    <value>Дата время примеры</value>
+  </data>
+  <data name="YearDes.Text" xml:space="preserve">
+    <value>Год:</value>
+  </data>
+  <data name="bianleng" xml:space="preserve">
+    <value>Будет получить холодной</value>
+  </data>
+  <data name="bianre" xml:space="preserve">
+    <value>Будет жарко</value>
+  </data>
+  <data name="breeze0" xml:space="preserve">
+    <value>Бриз</value>
+  </data>
+  <data name="breeze1" xml:space="preserve">
+    <value>Зефир</value>
+  </data>
+  <data name="dust0" xml:space="preserve">
+    <value>Пыль</value>
+  </data>
+  <data name="duststorm0" xml:space="preserve">
+    <value>Плохой пыли</value>
+  </data>
+  <data name="few_clouds0" xml:space="preserve">
+    <value>Немного облаков</value>
+  </data>
+  <data name="few_clouds1" xml:space="preserve">
+    <value>Плавающие облака</value>
+  </data>
+  <data name="foggy0" xml:space="preserve">
+    <value>Туманный</value>
+  </data>
+  <data name="freezing_rain0" xml:space="preserve">
+    <value>Гололёд</value>
+  </data>
+  <data name="gale0" xml:space="preserve">
+    <value>Там были сильные ветры</value>
+  </data>
+  <data name="gale1" xml:space="preserve">
+    <value>Ветреный день</value>
+  </data>
+  <data name="Glance" xml:space="preserve">
+    <value>{0} {1} {2}.</value>
+  </data>
+  <data name="Glancecloudy0" xml:space="preserve">
+    <value>Облачность</value>
+  </data>
+  <data name="Glancecloudy1" xml:space="preserve">
+    <value>Облако</value>
+  </data>
+  <data name="GlanceFull" xml:space="preserve">
+    <value>{0} {1}, {2} {3}. Завтра: {4}, {5}.</value>
+  </data>
+  <data name="GlanceSunny0" xml:space="preserve">
+    <value>Очистить</value>
+  </data>
+  <data name="GlanceSunny1" xml:space="preserve">
+    <value>Облако бесплатно</value>
+  </data>
+  <data name="hail0" xml:space="preserve">
+    <value>Град</value>
+  </data>
+  <data name="haotianqi0" xml:space="preserve">
+    <value>Достройка</value>
+  </data>
+  <data name="haotianqi1" xml:space="preserve">
+    <value>Хорошая погода</value>
+  </data>
+  <data name="haze0" xml:space="preserve">
+    <value>Туман</value>
+  </data>
+  <data name="heavy_rain0" xml:space="preserve">
+    <value>Сильный дождь</value>
+  </data>
+  <data name="heavy_rain1" xml:space="preserve">
+    <value>Внимание на сильный дождь</value>
+  </data>
+  <data name="heavy_snow0" xml:space="preserve">
+    <value>Большие снега</value>
+  </data>
+  <data name="heavy_snow1" xml:space="preserve">
+    <value>Снежно-белый</value>
+  </data>
+  <data name="heavy_storm_rain0" xml:space="preserve">
+    <value>Шторм</value>
+  </data>
+  <data name="heavy_storm_rain1" xml:space="preserve">
+    <value>Не выходя</value>
+  </data>
+  <data name="huaitianqi0" xml:space="preserve">
+    <value>Плохая погода</value>
+  </data>
+  <data name="huaitianqi1" xml:space="preserve">
+    <value>Плохая погода</value>
+  </data>
+  <data name="jintian" xml:space="preserve">
+    <value>Сегодня</value>
+  </data>
+  <data name="mist0" xml:space="preserve">
+    <value>Мисти</value>
+  </data>
+  <data name="moderate_rain0" xml:space="preserve">
+    <value>Небольшой дождь</value>
+  </data>
+  <data name="moderate_rain1" xml:space="preserve">
+    <value>Дождь</value>
+  </data>
+  <data name="moderate_rain2" xml:space="preserve">
+    <value>Дождливый день</value>
+  </data>
+  <data name="moderate_rain3" xml:space="preserve">
+    <value>Необходимо принести зонтик</value>
+  </data>
+  <data name="moderate_snow0" xml:space="preserve">
+    <value>Существовал снег</value>
+  </data>
+  <data name="moderate_snow1" xml:space="preserve">
+    <value>День снега</value>
+  </data>
+  <data name="moderate_snow2" xml:space="preserve">
+    <value>Будет снег</value>
+  </data>
+  <data name="nengjiandudi0" xml:space="preserve">
+    <value>Низкая видимость</value>
+  </data>
+  <data name="nengjiandudi1" xml:space="preserve">
+    <value>Низкая видимость</value>
+  </data>
+  <data name="overcast0" xml:space="preserve">
+    <value>облака</value>
+  </data>
+  <data name="overcast1" xml:space="preserve">
+    <value>Без солнца</value>
+  </data>
+  <data name="partly_cloudy0" xml:space="preserve">
+    <value>Переменная облачность</value>
+  </data>
+  <data name="shiduda0" xml:space="preserve">
+    <value>Высокая влажность</value>
+  </data>
+  <data name="shiduda1" xml:space="preserve">
+    <value>Влажный воздух</value>
+  </data>
+  <data name="shower0" xml:space="preserve">
+    <value>Есть душевые</value>
+  </data>
+  <data name="shower1" xml:space="preserve">
+    <value>Кратковременный дождь</value>
+  </data>
+  <data name="shower_snow0" xml:space="preserve">
+    <value>Снег</value>
+  </data>
+  <data name="shower_snow1" xml:space="preserve">
+    <value>Короткое время снегопад</value>
+  </data>
+  <data name="sleet0" xml:space="preserve">
+    <value>Мокрый снег</value>
+  </data>
+  <data name="sleet1" xml:space="preserve">
+    <value>Дождь и снег</value>
+  </data>
+  <data name="snowstorm0" xml:space="preserve">
+    <value>Буря</value>
+  </data>
+  <data name="snowstorm1" xml:space="preserve">
+    <value>Бедные снегопад</value>
+  </data>
+  <data name="storm0" xml:space="preserve">
+    <value>Обратите внимание на шторм</value>
+  </data>
+  <data name="thundershower0" xml:space="preserve">
+    <value>Гром</value>
+  </data>
+  <data name="unknown_weather" xml:space="preserve">
+    <value>Неизвестные Погода</value>
+  </data>
+  <data name="wanjian" xml:space="preserve">
+    <value>Вечер</value>
+  </data>
+  <data name="wendudi0" xml:space="preserve">
+    <value>Низкая температура</value>
+  </data>
+  <data name="wendudi1" xml:space="preserve">
+    <value>Постоянное охлаждение</value>
+  </data>
+  <data name="wendugao0" xml:space="preserve">
+    <value>Высокая температура</value>
+  </data>
+  <data name="wendugao1" xml:space="preserve">
+    <value>Продолжает нагреваться</value>
+  </data>
+  <data name="windy0" xml:space="preserve">
+    <value>Ветрено</value>
+  </data>
+  <data name="xianzai" xml:space="preserve">
+    <value>Сейчас</value>
+  </data>
+  <data name="MinDes.Text" xml:space="preserve">
+    <value>Минуты:</value>
+  </data>
+  <data name="OtherDes.Text" xml:space="preserve">
+    <value>Другие:</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>Поиск городов</value>
+  </data>
+  <data name="Cacel" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>удалить</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Изменить</value>
+  </data>
+  <data name="Pin" xml:space="preserve">
+    <value>ПИН-код</value>
+  </data>
+  <data name="Refresh" xml:space="preserve">
+    <value>Обновление</value>
+  </data>
+  <data name="EditButton.Label" xml:space="preserve">
+    <value>Изменить</value>
+  </data>
+  <data name="AutoSuggestbox.PlaceholderText" xml:space="preserve">
+    <value>Когда Поиск китайских городов, используя китайский или пиньинь</value>
+  </data>
+  <data name="Thankyou" xml:space="preserve">
+    <value>Безумные режиме!</value>
+  </data>
+  <data name="ThankyouTitle" xml:space="preserve">
+    <value>Thank you!</value>
+  </data>
+  <data name="Cities_Null" xml:space="preserve">
+    <value>Здесь нет городов...</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Существует небольшая ошибка...</value>
+  </data>
+  <data name="Network_Error" xml:space="preserve">
+    <value>Сбой сетевого подключения...</value>
+  </data>
+  <data name="Quit" xml:space="preserve">
+    <value>Выйти</value>
+  </data>
+  <data name="Service_Unavailable" xml:space="preserve">
+    <value>В настоящее время недоступна служба погоды...</value>
+  </data>
+  <data name="Setting" xml:space="preserve">
+    <value>параметры</value>
+  </data>
+  <data name="DataSourceText.Text" xml:space="preserve">
+    <value>Поставщики данных:</value>
+  </data>
+  <data name="Retry" xml:space="preserve">
+    <value>Повторить?</value>
+  </data>
+  <data name="LongTime" xml:space="preserve">
+    <value>Ждать больше, чем ожидалось...</value>
+  </data>
+  <data name="Welcome0Detail.Text" xml:space="preserve">
+    <value>Легко добраться, легко видеть</value>
+  </data>
+  <data name="Welcome0Text.Text" xml:space="preserve">
+    <value>Динамический</value>
+  </data>
+  <data name="Welcome1Detail.Text" xml:space="preserve">
+    <value>Закрепите его на старте</value>
+  </data>
+  <data name="Welcome1Text.Text" xml:space="preserve">
+    <value>Плитка</value>
+  </data>
+  <data name="Welcome2Detail.Text" xml:space="preserve">
+    <value>Перейти к Lockscreen персонализации настроек&gt;-&gt;и установить lockscreen уведомления!</value>
+  </data>
+  <data name="Welcome2Text.Text" xml:space="preserve">
+    <value>Уведомление</value>
+  </data>
+  <data name="BackText.Text" xml:space="preserve">
+    <value>Назад</value>
+  </data>
+  <data name="HamCloseText.Text" xml:space="preserve">
+    <value>закрыть</value>
+  </data>
+  <data name="HamOpenText.Text" xml:space="preserve">
+    <value>Открыть</value>
+  </data>
+  <data name="MoreText.Text" xml:space="preserve">
+    <value>дополнительно</value>
+  </data>
+  <data name="RefreshText.Text" xml:space="preserve">
+    <value>Обновление</value>
+  </data>
+  <data name="NowText.Text" xml:space="preserve">
+    <value>Сведения</value>
+  </data>
+  <data name="CitiesManageText.Text" xml:space="preserve">
+    <value>Поиск менеджмент</value>
+  </data>
+  <data name="Locating" xml:space="preserve">
+    <value>Поиск...</value>
+  </data>
+  <data name="DataSourceDetailText.Text" xml:space="preserve">
+    <value>Использование пакета пожертвование для включения «Weather Underground»</value>
+  </data>
+  <data name="EndTimeText.Text" xml:space="preserve">
+    <value>Время окончания события:</value>
+  </data>
+  <data name="MinutesIn" xml:space="preserve">
+    <value>До {0} мин</value>
+  </data>
+  <data name="StartTimeText.Text" xml:space="preserve">
+    <value>Время начала:</value>
+  </data>
+  <data name="ThemeasDetailText.Text" xml:space="preserve">
+    <value>Нужно место, или использовать значение по умолчанию: 19:30 ~ 7:30</value>
+  </data>
+  <data name="ThemeasRiseSetText.Text" xml:space="preserve">
+    <value>Включить режим темный когда солнца установить</value>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value>Обновлено</value>
+  </data>
+  <data name="UpdateFailedText.Text" xml:space="preserve">
+    <value>Не удается обновить</value>
+  </data>
+  <data name="RefreshComplete" xml:space="preserve">
+    <value>Обновление завершено</value>
+  </data>
+  <data name="RefreshStamp" xml:space="preserve">
+    <value>Отметка времени: {0}</value>
+  </data>
+  <data name="RefreshStart" xml:space="preserve">
+    <value>Обновление...</value>
+  </data>
+  <data name="RequestedTheme_Default" xml:space="preserve">
+    <value>Система</value>
+  </data>
+  <data name="Today_Weather" xml:space="preserve">
+    <value>Сегодня для {0}</value>
+  </data>
+  <data name="CaiyunRadio.Content" xml:space="preserve">
+    <value>Погода в Caiyun</value>
+  </data>
+  <data name="HeWeatherRadio.Content" xml:space="preserve">
+    <value>HeWeather</value>
+  </data>
+  <data name="CaiyunWeather" xml:space="preserve">
+    <value>Китайской метеорологической администрации, Caiyun Погода</value>
+  </data>
+  <data name="DataSourceAlertText.Text" xml:space="preserve">
+    <value>Не может обеспечить все метеорологической информации</value>
+  </data>
+  <data name="HeWeather" xml:space="preserve">
+    <value>HeWeather</value>
+  </data>
+  <data name="PhotoCopyright.Content" xml:space="preserve">
+    <value>Фотографии авторские права</value>
+  </data>
+  <data name="MeetNewDataSource" xml:space="preserve">
+    <value>Новый источник данных «{0}» доступна, посмотрите на параметры предпочтений!</value>
+  </data>
+  <data name="MeetNewDataSourceTitle" xml:space="preserve">
+    <value>Смотрите, что вы находите!</value>
+  </data>
+  <data name="LockText.Text" xml:space="preserve">
+    <value>Использование пакета пожертвование для разблокировки некоторые особенности</value>
+  </data>
+  <data name="FullScreenText.Text" xml:space="preserve">
+    <value>Полный экран</value>
+  </data>
+  <data name="UpdateDetailText.Text" xml:space="preserve">
+    <value>· Добавлена локация управления
+· Исправлены незначительные ошибки</value>
+  </data>
+  <data name="UpdateTitle.Text" xml:space="preserve">
+    <value>Добро пожаловать в новые версии</value>
+  </data>
+  <data name="Calculator" xml:space="preserve">
+    <value>Конвертер единиц</value>
+  </data>
+  <data name="YouKnow" xml:space="preserve">
+    <value>Эй парень</value>
+  </data>
+  <data name="AlwaysShowText.Text" xml:space="preserve">
+    <value>Фон всегда видимый</value>
+  </data>
+  <data name="ShuffleText.Text" xml:space="preserve">
+    <value>Перемешивание фон</value>
+  </data>
+  <data name="Overcast.Header" xml:space="preserve">
+    <value>облака</value>
+  </data>
+  <data name="UpdateLogButton.Content" xml:space="preserve">
+    <value>Обновление журнала</value>
+  </data>
+  <data name="UpdateLogText.Text" xml:space="preserve">
+    <value>1.6.16111
+· Добавлена локация управления
+· Незначительные ошибки фиксированной
+
+1.6.16110
+· Исправлена проблема, причиной запуска мобильной версии, чтобы быть слишком медленным
+· Изменен метод локация
+· Интегрировать страницу города Обзор с страницу управления городами
+
+1.6.16101
+· Незначительные исправления
+· Теперь вы можете установить тайм-аут погружения режим макета панели
+
+1.6.16100
+· Исправлена проблема, что вторичные плитки не обновлять
+· Исправлена проблема, что вторичные плитки макет, чтобы быть неправильно
+· Страница приветствия вновь разработанные
+
+1.6.16086
+· Исправлена, вопрос, который быстро проведите пальцем на сенсорном экране является медленным
+· Исправлена проблема, что некоторые устройства не удается загрузить ресурсы изображений
+· Исправлена UI вывиха
+
+1.6.16085
+· Добавлено: политика конфиденциальности
+
+1.6.16080
+· Незначительные исправления
+
+1.6.16062
+· Исправлена проблема небольшой дисплей в подробности страницы
+· Добавлено скорость ветра графа
+
+1.6.16058
+· Пользовательский Интерфейс настроек
+
+1.6.16056
+· Исправлена ошибка, что вызвало фоновая задача не может начать
+· Cortana команды будут скоро доступны
+
+1.6.16054
+· Улучшение погоды будильник тосты
+
+1.6.16050
+· Теперь вы можете выбрать полупрозрачные плитки
+· Плитка настройки макета
+
+1.5.16059
+· Исправлены проблемы в настройках страницы
+· Попробуйте установить текущий BG как lockscreen обои
+
+1.5.16055
+· Вы можете настроить контрастного цвета теперь (только когда параметр Тема "Последующая система")
+· Добавлены обновления анимации
+· Вы можете настроить макет
+· Подробности страница Улучшенная
+
+1.5.16054
+· Отрегулировать настройки
+
+1.5.16052
+· исправлена проблема, вызванных форматами региона
+
+1.5.16050
+· Страница добавлена
+
+1.5.16045
+· Сократите интервал обновления автоматический фоновый
+· Улучшение пользовательского Интерфейса и макета
+· В следующей версии
+
+1.5.16040
+будет обновлен макет плитки · Совместимость с Windows 10 Build 14328, мы обновили тост и плитка
+· «Погода метро» теперь доступна! 
+· (май) Исправлена авария
+· (май) Исправлена проблема возникает на мобильных устройствах, которые не отображают lockscreen уведомления
+
+1.4.16047:
+· Пользовательский Интерфейс настройки
+· Исправлена маленькая ошибка
+ 
+1.4.16046:
+· Обновление журнала Добавлено
+· Вы можете swipe удалить обновление сведений о
+· Поверхности частиц системы обновление
+· Улучшение системы частиц
+· Молния генератор повышение
+  </value>
+  </data>
+  <data name="ContactButton.Content" xml:space="preserve">
+    <value>Свяжитесь со мной</value>
+  </data>
+  <data name="ImproveButton.Content" xml:space="preserve">
+    <value>Улучшить этот app</value>
+  </data>
+  <data name="ImproveDetail.Text" xml:space="preserve">
+    <value>Вместе со мной Сделайте этот app более совершенной! 
+ 
+Включая, но не ограничиваясь:
+
+· Улучшения пользовательского интерфейса и макет
+· Добавить более точных данных поставщиков
+· Ничья/предоставляют более икону погоды или фон
+· Кодирования
+ 
+Спасибо!</value>
+  </data>
+  <data name="Today" xml:space="preserve">
+    <value>Сегодня</value>
+  </data>
+  <data name="Tomorrow" xml:space="preserve">
+    <value>Завтра</value>
+  </data>
+  <data name="DonateOption4.Text" xml:space="preserve">
+    <value>· Включите «Weather Underground» источника данных</value>
+  </data>
+  <data name="CrashDialog.Title" xml:space="preserve">
+    <value>Ой!</value>
+  </data>
+  <data name="CrashDialog.SecondaryButtonText" xml:space="preserve">
+    <value>Выйти</value>
+  </data>
+  <data name="CrashDialog.PrimaryButtonText" xml:space="preserve">
+    <value>Отправить</value>
+  </data>
+  <data name="CrashText0.Text" xml:space="preserve">
+    <value>Что-то пошло не так! (Ω ×) 
+Теперь вы можете отправить отчет аварии для разработчика и полностью помочь этот app лучше... 
+</value>
+  </data>
+  <data name="CrashText1.Text" xml:space="preserve">
+    <value>Может быть, что эти информация может помочь вам:</value>
+  </data>
+  <data name="PrivacyText0.Text" xml:space="preserve">
+    <value>Мы никогда не будем загружать вашу персональную информацию</value>
+  </data>
+  <data name="PrivacyText1.Text" xml:space="preserve">
+    <value>В падениях, мы будет входить текущее время, текущий язык и окружающей среды информацию, то мы отправим эти строки на сервер, мы не войти в любой из вашей личной информации. Если вы не хотите отправлять отчеты, просто бросить кнопку и ничего не происходит.</value>
+  </data>
+  <data name="WhyButton.Content" xml:space="preserve">
+    <value>Что будет отправлен?</value>
+  </data>
+  <data name="GeneralText.Text" xml:space="preserve">
+    <value>Общие</value>
+  </data>
+  <data name="LanguageText.Text" xml:space="preserve">
+    <value>язык</value>
+  </data>
+  <data name="LanguageChangeText.Text" xml:space="preserve">
+    <value>Обновления или перезагрузки для применения</value>
+  </data>
+  <data name="ReportBox.PlaceholderText" xml:space="preserve">
+    <value>Напишите Ваше мнение!</value>
+  </data>
+  <data name="AppProblemButton.Content" xml:space="preserve">
+    <value>Есть проблемы?</value>
+  </data>
+  <data name="AppProblemText.Text" xml:space="preserve">
+    <value>Вы можете попробовать очистить все данные приложения для решения некоторых проблем</value>
+  </data>
+  <data name="ConfirmDeleteText.Text" xml:space="preserve">
+    <value>Подтвердить? Вам нужно перезапустить это</value>
+  </data>
+  <data name="AppDeleteButton.Content" xml:space="preserve">
+    <value>Очистить все данные</value>
+  </data>
+  <data name="LockDetail" xml:space="preserve">
+    <value>{0} {1}, {2} {3}
+завтра: {4}, {5}.</value>
+  </data>
+  <data name="RateText.Content" xml:space="preserve">
+    <value>Ставка в магазине Windows</value>
+  </data>
+  <data name="FeedbackDialog.Title" xml:space="preserve">
+    <value>Обратная связь</value>
+  </data>
+  <data name="FeedbackDialog.SecondaryButtonText" xml:space="preserve">
+    <value>Назад</value>
+  </data>
+  <data name="FeedbackDialog.PrimaryButtonText" xml:space="preserve">
+    <value>Отправить</value>
+  </data>
+  <data name="DailyDetailsPop" xml:space="preserve">
+    <value>Pcpn. вероятность для {0} дней</value>
+  </data>
+  <data name="DailyDetailsPrep" xml:space="preserve">
+    <value>Осадков для {0} дней</value>
+  </data>
+  <data name="DailyDetailsTemp" xml:space="preserve">
+    <value>Температура для {0} дней</value>
+  </data>
+  <data name="DailyDetailsVis" xml:space="preserve">
+    <value>Видимость для {0} дней</value>
+  </data>
+  <data name="Details" xml:space="preserve">
+    <value>Сведения</value>
+  </data>
+  <data name="HourlyDetailsPop" xml:space="preserve">
+    <value>Pcpn. вероятность для {0} часов</value>
+  </data>
+  <data name="HourlyDetailsTemperature" xml:space="preserve">
+    <value>Температура для {0} часов</value>
+  </data>
+  <data name="DrawerText.Text" xml:space="preserve">
+    <value>Пользовательские ящик фон</value>
+  </data>
+  <data name="MainColorText.Text" xml:space="preserve">
+    <value>Контрастный цвет</value>
+  </data>
+  <data name="CustomLayoutButton.Content" xml:space="preserve">
+    <value>Пользовательский макет</value>
+  </data>
+  <data name="PickImageButton.Content" xml:space="preserve">
+    <value>Выбрать изображение</value>
+  </data>
+  <data name="LayoutText.Text" xml:space="preserve">
+    <value>Макет</value>
+  </data>
+  <data name="ColorPicker.Title" xml:space="preserve">
+    <value>Выбрать цвет</value>
+  </data>
+  <data name="ColorPicker.AccentColorTitle" xml:space="preserve">
+    <value>Система контрастного цвета</value>
+  </data>
+  <data name="SetTimeText.Text" xml:space="preserve">
+    <value>Установка будильника</value>
+  </data>
+  <data name="AlarmButton.Content" xml:space="preserve">
+    <value>Предупреждение о стихийных бедствиях метеорологических</value>
+  </data>
+  <data name="LunarText.Text" xml:space="preserve">
+    <value>Посмотреть лунный календарь</value>
+  </data>
+  <data name="LowNowPanelText.Text" xml:space="preserve">
+    <value>Компактный формат</value>
+  </data>
+  <data name="ToggleVisibilityText.Text" xml:space="preserve">
+    <value>Выберите, что нужно показать</value>
+  </data>
+  <data name="ForecastPanelText.Text" xml:space="preserve">
+    <value>Прогноз</value>
+  </data>
+  <data name="AQIPanelText.Text" xml:space="preserve">
+    <value>ИКВ</value>
+  </data>
+  <data name="DetailsPanelText.Text" xml:space="preserve">
+    <value>Сведения</value>
+  </data>
+  <data name="SuggestsPanelText.Text" xml:space="preserve">
+    <value>Предложения</value>
+  </data>
+  <data name="ToggleNowPanelText.Text" xml:space="preserve">
+    <value>Сейчас Погода Панель Ущипнуть</value>
+  </data>
+  <data name="HeightText.Text" xml:space="preserve">
+    <value>Высота</value>
+  </data>
+  <data name="LanguageAlarmText.Text" xml:space="preserve">
+    <value>Некоторые языка необходимо установить языковой пакет</value>
+  </data>
+  <data name="DonateOption5.Text" xml:space="preserve">
+    <value>· Настройка макета</value>
+  </data>
+  <data name="SetWallPaperText.Text" xml:space="preserve">
+    <value>Автоматически задать текущий BG как lockscreen Обои</value>
+  </data>
+  <data name="SetWallPaperFalseText.Text" xml:space="preserve">
+    <value>Экспериментальные и не вступят в силу</value>
+  </data>
+  <data name="TransparentTileText.Text" xml:space="preserve">
+    <value>Включение полупрозрачного плитки</value>
+  </data>
+  <data name="TransparentTileFalseText.Text" xml:space="preserve">
+    <value>Не включен на настольной платформе</value>
+  </data>
+  <data name="EnableAlarm.Content" xml:space="preserve">
+    <value>Суровые погодные будильник</value>
+  </data>
+  <data name="MorningAlarm.Content" xml:space="preserve">
+    <value>Утро будильник</value>
+  </data>
+  <data name="EveningAlarm.Content" xml:space="preserve">
+    <value>Вечер будильник</value>
+  </data>
+  <data name="ToastGale" xml:space="preserve">
+    <value>Завтра будет Гейл</value>
+  </data>
+  <data name="ToastRain" xml:space="preserve">
+    <value>Завтра будет дождь</value>
+  </data>
+  <data name="ToastThunder" xml:space="preserve">
+    <value>Завтра будет Гром</value>
+  </data>
+  <data name="ToastHail" xml:space="preserve">
+    <value>Завтра будет град</value>
+  </data>
+  <data name="ToastSnow" xml:space="preserve">
+    <value>Завтра будет снег</value>
+  </data>
+  <data name="ToastFreeze" xml:space="preserve">
+    <value>будет ледяной дождь завтра</value>
+  </data>
+  <data name="ToastSand" xml:space="preserve">
+    <value>Завтра будет песок</value>
+  </data>
+  <data name="ToastHot" xml:space="preserve">
+    <value>Завтра будет горячей</value>
+  </data>
+  <data name="ToastCold" xml:space="preserve">
+    <value>Завтра будет холодной</value>
+  </data>
+  <data name="Known" xml:space="preserve">
+    <value>Я знаю</value>
+  </data>
+  <data name="Dismiss" xml:space="preserve">
+    <value>Закрыть</value>
+  </data>
+  <data name="DailyDetailsWind" xml:space="preserve">
+    <value>Скорость ветра для {0} дней</value>
+  </data>
+  <data name="HourlyDetailsWind" xml:space="preserve">
+    <value>Скорость ветра для {0} часов</value>
+  </data>
+  <data name="ThanksButton.Content" xml:space="preserve">
+    <value>Разработчики и кредиты</value>
+  </data>
+  <data name="EnableCrash.Text" xml:space="preserve">
+    <value>При аварии, отправить отчет</value>
+  </data>
+  <data name="EnableCrashDetail.Text" xml:space="preserve">
+    <value>Может повлиять на взаимодействие с пользователем</value>
+  </data>
+  <data name="MadebyText.Text" xml:space="preserve">
+    <value>Подготовил:</value>
+  </data>
+  <data name="BrandText.Text" xml:space="preserve">
+    <value>Ночь с полным света.</value>
+  </data>
+  <data name="DevText.Text" xml:space="preserve">
+    <value>Все коды и UI/UX дизайн создаются </value>
+  </data>
+  <data name="DevAfterText.Text" xml:space="preserve">
+    <value>.</value>
+  </data>
+  <data name="DavidBiancoText.Text" xml:space="preserve">
+    <value>Испанский перевод и некоторые улучшения пользовательского интерфейса.</value>
+  </data>
+  <data name="DevTitle.Text" xml:space="preserve">
+    <value>Developer</value>
+  </data>
+  <data name="ThanksTitle.Text" xml:space="preserve">
+    <value>Особая благодарность</value>
+  </data>
+  <data name="CortanaSup.Text" xml:space="preserve">
+    <value>Только поддержка китайского</value>
+  </data>
+  <data name="CortanaCommandsText.Content" xml:space="preserve">
+    <value>Команды Cortana</value>
+  </data>
+  <data name="PrivacyButton.Content" xml:space="preserve">
+    <value>Политика конфиденциальности</value>
+  </data>
+  <data name="Hum.Text" xml:space="preserve">
+    <value>Влажность</value>
+  </data>
+  <data name="Pop.Text" xml:space="preserve">
+    <value>Вероятность осадков</value>
+  </data>
+  <data name="Pcpn.Text" xml:space="preserve">
+    <value>Осадки</value>
+  </data>
+  <data name="Vis.Text" xml:space="preserve">
+    <value>Видимость</value>
+  </data>
+  <data name="Scale.Text" xml:space="preserve">
+    <value>Шкала ветра</value>
+  </data>
+  <data name="Dir.Text" xml:space="preserve">
+    <value>Направление Ветра</value>
+  </data>
+  <data name="Pres.Text" xml:space="preserve">
+    <value>Атом давление</value>
+  </data>
+  <data name="SunRise.Text" xml:space="preserve">
+    <value>Восход солнца</value>
+  </data>
+  <data name="SunSet.Text" xml:space="preserve">
+    <value>Закат</value>
+  </data>
+  <data name="Location.Text" xml:space="preserve">
+    <value>Расположение</value>
+  </data>
+  <data name="UtcOffset.Text" xml:space="preserve">
+    <value>Смещение UTC</value>
+  </data>
+  <data name="HumText" xml:space="preserve">
+    <value>Влажность</value>
+  </data>
+  <data name="ScaleText" xml:space="preserve">
+    <value>Шкала ветра</value>
+  </data>
+  <data name="ImmersiveTimeOutText.Text" xml:space="preserve">
+    <value>Погружения режиме время ожидания, установите значение 0, будет отображаться навсегда</value>
+  </data>
+  <data name="ChangeCityManage.Text" xml:space="preserve">
+    <value>Перетащите, чтобы изменить приоритет</value>
+  </data>
+  <data name="GotoCitiesPage.Text" xml:space="preserve">
+    <value>Перейдите на страницу города и проверить</value>
+  </data>
+  <data name="LocateRoute_Amap" xml:space="preserve">
+    <value>Gaode карта реверс geocoding(China only)</value>
+  </data>
+  <data name="LocateRoute_Omap" xml:space="preserve">
+    <value>OpenStreetMap обратный геокодирование</value>
+  </data>
+  <data name="LocateRoute_IP" xml:space="preserve">
+    <value>Запрос IP ГЕО расположение</value>
+  </data>
+  <data name="LocateRoute_unknown" xml:space="preserve">
+    <value>Встроенный обратный геокодирование</value>
+  </data>
+  <data name="ConfirmButton.Content" xml:space="preserve">
+    <value>Подтверждение</value>
+  </data>
+  <data name="ConfirmDialog.PrimaryButtonText" xml:space="preserve">
+    <value>Подтверждение</value>
+  </data>
+  <data name="LocaterText.Content" xml:space="preserve">
+    <value>Расположение поставщика услуг</value>
+  </data>
+</root>

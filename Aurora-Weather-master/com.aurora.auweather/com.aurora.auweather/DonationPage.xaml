@@ -1,0 +1,63 @@
+﻿<!-- Copyright (c) Aurora Studio. All rights reserved.
+    
+     Licensed under the MIT License. See LICENSE in the project root for license information.-->
+
+<Page
+    x:Class="Com.Aurora.AuWeather.DonationPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Com.Aurora.AuWeather"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    RequestedTheme="{x:Bind Theme, Mode=OneWay}"
+    mc:Ignorable="d">
+
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.ThemeDictionaries>
+                <ResourceDictionary Source="Themes/LightThemeDictionary.xaml" x:Key="Light"/>
+                <ResourceDictionary Source="Themes/DarkThemeDictionary.xaml" x:Key="Dark"/>
+            </ResourceDictionary.ThemeDictionaries>
+        </ResourceDictionary>
+    </Page.Resources>
+
+    <ScrollViewer Background="{ThemeResource SystemControlForegroundHighBrush}">
+        <Grid>
+            <StackPanel Orientation="Vertical" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                <TextBlock x:Uid="DonationTitle" Text="nimabi" Style="{ThemeResource SubheaderTextBlockStyle}" VerticalAlignment="Center" Margin="8"/>
+                <TextBlock Style="{ThemeResource BodyTextBlockStyle}" Margin="8" >
+            <Run x:Uid="DonateRun0" />
+            <LineBreak />
+            <Run x:Uid="DonateRun1" />
+            <LineBreak />
+            <Run x:Uid="DonateRun2" />
+                </TextBlock>
+                <TextBlock Style="{ThemeResource BodyTextBlockStyle}" Margin="12">
+            <Run x:Uid="DonateOption0" />
+            <LineBreak />
+            <Run x:Uid="DonateOption1" />
+            <LineBreak />
+            <Run x:Uid="DonateOption2" />
+            <LineBreak />
+            <Run x:Uid="DonateOption3" />
+                <LineBreak />
+            <Run x:Uid="DonateOption4" />
+                    <LineBreak />
+            <Run x:Uid="DonateOption5" />
+                </TextBlock>
+                <TextBlock x:Name="ConfirmText" Text="Loading..." VerticalAlignment="Center" HorizontalAlignment="Center" Margin="24,72,24,24" Style="{ThemeResource BodyTextBlockStyle}" >
+                </TextBlock>
+                <TextBlock x:Name="DollarText" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="24,48,24,24" Style="{ThemeResource SubtitleTextBlockStyle}" FontSize="18" >
+                </TextBlock>
+                <Slider MaxWidth="480" IsEnabled="False" x:Name="PurchaseSlider" IsThumbToolTipEnabled="False" Maximum="12" StepFrequency="1" Minimum="0" SnapsTo="StepValues" Value="6" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="24" />
+                <Button IsEnabled="False" FontSize="22" Padding="12" FontWeight="Light" x:Name="PurchaseButton" x:Uid="PurchaseButton" Click="PurchaseButton_Click" Margin="24" HorizontalAlignment="Stretch" VerticalAlignment="Center" />
+                <ProgressRing Visibility="Collapsed" IsActive="False" x:Name="PurchaseRing" Margin="12" Height="36" Width="36" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                <Grid Height="96" />
+            </StackPanel>
+            <Grid x:Name="LoadingPanel" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="{ThemeResource SystemControlTranslucentHighBrush}" >
+                <ProgressRing IsActive="True" HorizontalAlignment="Center" VerticalAlignment="Center" Width="48" Height="48" x:Name="LoadingRing" />
+            </Grid>
+        </Grid>
+
+    </ScrollViewer>
+</Page>

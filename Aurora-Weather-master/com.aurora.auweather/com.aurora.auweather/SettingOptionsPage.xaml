@@ -1,0 +1,91 @@
+﻿<!-- Copyright (c) Aurora Studio. All rights reserved.
+    
+     Licensed under the MIT License. See LICENSE in the project root for license information.-->
+
+<Page
+    x:Class="Com.Aurora.AuWeather.SettingOptionsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Com.Aurora.AuWeather"
+    xmlns:ViewModels="using:Com.Aurora.AuWeather.ViewModels"
+    xmlns:Converters="using:Com.Aurora.Shared.Converters"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    RequestedTheme="{x:Bind Context.Theme,Mode=OneWay}"
+    SizeChanged="Page_SizeChanged"
+    mc:Ignorable="d">
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.ThemeDictionaries>
+                <ResourceDictionary Source="Themes/LightThemeDictionary.xaml" x:Key="Light"/>
+                <ResourceDictionary Source="Themes/DarkThemeDictionary.xaml" x:Key="Dark"/>
+            </ResourceDictionary.ThemeDictionaries>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Themes/Styles.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+            <Converters:BoolNottoVisibilityConverter x:Key="BoolNottoVisibility" />
+            <Converters:ThemeColorConverter x:Key="ThemeColorConverter" />
+        </ResourceDictionary>
+    </Page.Resources>
+
+    <Page.Transitions>
+        <TransitionCollection>
+            <EntranceThemeTransition />
+            <NavigationThemeTransition />
+        </TransitionCollection>
+    </Page.Transitions>
+
+    <Page.DataContext>
+        <ViewModels:SettingsViewModel x:Name="Context"/>
+    </Page.DataContext>
+
+    <Grid>
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup >
+                <VisualState x:Name="Wide">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="720" />
+                    </VisualState.StateTriggers>
+                    <Storyboard>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PageTitle" Storyboard.TargetProperty="Margin" >
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="60,0,0,12" />
+                        </ObjectAnimationUsingKeyFrames>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="RootColumn0" Storyboard.TargetProperty="Width" >
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="320" />
+                        </ObjectAnimationUsingKeyFrames>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="SettingsPanel" Storyboard.TargetProperty="Visibility" >
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="Visible" />
+                        </ObjectAnimationUsingKeyFrames>
+                    </Storyboard>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition x:Name="RootColumn0" Width="0"/>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid x:Name="HeaderGrid" Background="{ThemeResource SystemControlHighlightAccentBrush}" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" >
+            <TextBlock x:Uid="SettingsText" Foreground="{x:Bind HeaderGrid.Background,Mode=OneWay,Converter={StaticResource ThemeColorConverter}}" Style="{ThemeResource TitleTextBlockStyle}" x:Name="PageTitle" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="12,0,12,12" />
+        </Grid>
+        <StackPanel x:Name="SettingsPanel" Visibility="Collapsed" Grid.Row="1" Background="{ThemeResource SystemBackgroundHighBrush}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" >
+            <Button x:Uid="DonateButton" Background="{ThemeResource SystemControlTranslucentAltHighBrush}" Foreground="{ThemeResource SystemControlForegroundAccentBrush}" x:Name="DonateButton" Click="DonateButton_Click" Visibility="{x:Bind Context.IsNotPurchased, Mode=OneWay,Converter={StaticResource BoolNottoVisibility}}" FontWeight="Normal" Style="{ThemeResource PivotTitleContentControlStyle}" Margin="8" Grid.Row="1" HorizontalContentAlignment="Stretch" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" VerticalContentAlignment="Stretch" />
+            <ListView Loaded="SettingsList_Loaded" x:Name="SettingsList" ItemContainerStyle="{ThemeResource GeneralListViewItemStyle}" ItemsSource="{Binding SettingsList}"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                <ListView.ItemTemplate>
+                    <DataTemplate x:DataType="ViewModels:SettingOption">
+                        <StackPanel Margin="0,8,0,8" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Stretch">
+                            <FontIcon Height="48" Width="48" FontFamily="Segoe MDL2 Assets" Glyph="{x:Bind Symbol}" />
+                            <TextBlock Text="{x:Bind Title}" FontSize="18" Margin="8,0,8,0" VerticalAlignment="Center" Style="{ThemeResource TitleTextBlockStyle}"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+        </StackPanel>
+        <Frame x:Name="MainFrame" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="{ThemeResource SystemControlForegroundHighBrush}" />
+    </Grid>
+</Page>

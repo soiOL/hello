@@ -1,0 +1,2028 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="fr-FR" original="COM.AURORA.AUWEATHER/STRINGS/EN-US/RESOURCES.RESW" tool-id="MultilingualAppToolkit" product-name="n/a" product-version="n/a" build-num="n/a">
+    <header>
+      <tool tool-id="MultilingualAppToolkit" tool-name="Multilingual App Toolkit" tool-version="4.0.1605.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group id="COM.AURORA.AUWEATHER/STRINGS/EN-US/RESOURCES.RESW" datatype="resx">
+        <trans-unit id="About" translate="yes" xml:space="preserve">
+          <source>About</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">À propos de</target>
+        </trans-unit>
+        <trans-unit id="AddButton.Label" translate="yes" xml:space="preserve">
+          <source>Search Cities</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Villes de recherche</target>
+        </trans-unit>
+        <trans-unit id="Add_Image" translate="yes" xml:space="preserve">
+          <source>Customize</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Personnaliser</target>
+        </trans-unit>
+        <trans-unit id="BlurBGText.Text" translate="yes" xml:space="preserve">
+          <source>Enable Blur</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Activer le flou</target>
+        </trans-unit>
+        <trans-unit id="BodyTempText.Text" translate="yes" xml:space="preserve">
+          <source>Body temperature</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Température corporelle</target>
+        </trans-unit>
+        <trans-unit id="CheckLocateAccessButton.Content" translate="yes" xml:space="preserve">
+          <source>Go to settings</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Accéder aux paramètres</target>
+        </trans-unit>
+        <trans-unit id="Cities" translate="yes" xml:space="preserve">
+          <source>Cities overview</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Vue d'ensemble de villes</target>
+        </trans-unit>
+        <trans-unit id="CitiesButton.Label" translate="yes" xml:space="preserve">
+          <source>Cities overview</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Vue d'ensemble de villes</target>
+        </trans-unit>
+        <trans-unit id="CitiesText.Text" translate="yes" xml:space="preserve">
+          <source>Cities overview</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Vue d'ensemble de villes</target>
+        </trans-unit>
+        <trans-unit id="Cities_Management" translate="yes" xml:space="preserve">
+          <source>Locating Managment</source>
+          <target state="translated">Localisation de Managment</target>
+        </trans-unit>
+        <trans-unit id="Cloudy.Header" translate="yes" xml:space="preserve">
+          <source>Cloud</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Cloud</target>
+        </trans-unit>
+        <trans-unit id="ComfortableText.Text" translate="yes" xml:space="preserve">
+          <source>Comfort index:  </source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Indice de confort :  </target>
+        </trans-unit>
+        <trans-unit id="CWText.Text" translate="yes" xml:space="preserve">
+          <source>car wash Index:  </source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">lave-auto Index :  </target>
+        </trans-unit>
+        <trans-unit id="DanweiText.Text" translate="yes" xml:space="preserve">
+          <source>Conversion</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Conversion</target>
+        </trans-unit>
+        <trans-unit id="DescripButton.Content" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Description</target>
+        </trans-unit>
+        <trans-unit id="DisableDynamicDescripText.Text" translate="yes" xml:space="preserve">
+          <source>Reduce memory usage</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Réduire l'utilisation de la mémoire</target>
+        </trans-unit>
+        <trans-unit id="DisableDynamicText.Text" translate="yes" xml:space="preserve">
+          <source>Disable dynamic</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Désactiver la dynamique</target>
+        </trans-unit>
+        <trans-unit id="DonateButton.Content" translate="yes" xml:space="preserve">
+          <source>Donate it!</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Donnez-le !</target>
+        </trans-unit>
+        <trans-unit id="DonateOption0.Text" translate="yes" xml:space="preserve">
+          <source>· Daily Alarms</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">· Alarmes quotidiennes</target>
+        </trans-unit>
+        <trans-unit id="DonateOption1.Text" translate="yes" xml:space="preserve">
+          <source>· Disaster alerts</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">· Alertes en cas de catastrophe</target>
+        </trans-unit>
+        <trans-unit id="DonateOption2.Text" translate="yes" xml:space="preserve">
+          <source>· Shorter weather refresh rate</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">· Taux de rafraîchissement de temps plus court</target>
+        </trans-unit>
+        <trans-unit id="DonateOption3.Text" translate="yes" xml:space="preserve">
+          <source>· Pin selected cities in tile and automatically update</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">· Broche de certaines villes de tuile et mettre à jour automatiquement</target>
+        </trans-unit>
+        <trans-unit id="DonateRun0.Text" translate="yes" xml:space="preserve">
+          <source>Need your help ...</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Besoin de votre aide...</target>
+        </trans-unit>
+        <trans-unit id="DonateRun1.Text" translate="yes" xml:space="preserve">
+          <source>Application development requires a lot of energy and time; Moreover, this application using the weather API which need some money to work properly. If you think it's great, wish to support it ~</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Développement d'applications nécessite beaucoup d'énergie et de temps ; En outre, cette application à l'aide de la météo API qui ont besoin de l'argent pour travailler correctement. Si vous pensez que c'est génial, souhaitent soutenir il ~</target>
+        </trans-unit>
+        <trans-unit id="DonateRun2.Text" translate="yes" xml:space="preserve">
+          <source>Help us, and you will unlock the donate version of additional features:</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Nous aider, et vous débloquerez la version donate de fonctionnalités supplémentaires :</target>
+        </trans-unit>
+        <trans-unit id="DressingText.Text" translate="yes" xml:space="preserve">
+          <source>Clothing index:  </source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Indice de l'habillement :  </target>
+        </trans-unit>
+        <trans-unit id="DynamicText.Text" translate="yes" xml:space="preserve">
+          <source>Dynamic weather</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Météo dynamique</target>
+        </trans-unit>
+        <trans-unit id="EnableEveryText.Text" translate="yes" xml:space="preserve">
+          <source>Weather alarms</source>
+          <target state="translated">Alertes météo</target>
+        </trans-unit>
+        <trans-unit id="ExperimentalText.Text" translate="yes" xml:space="preserve">
+          <source>Experimental features</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Fonctionnalités expérimentales</target>
+        </trans-unit>
+        <trans-unit id="FeedbackButton.Label" translate="yes" xml:space="preserve">
+          <source>Rate</source>
+          <target state="translated">TAUX</target>
+        </trans-unit>
+        <trans-unit id="FluText.Text" translate="yes" xml:space="preserve">
+          <source>Flu index:  </source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Indice grippe :  </target>
+        </trans-unit>
+        <trans-unit id="Foggy.Header" translate="yes" xml:space="preserve">
+          <source>Fog</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Brouillard</target>
+        </trans-unit>
+        <trans-unit id="ForceRefreshText.Text" translate="yes" xml:space="preserve">
+          <source>Force pull to refresh</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Force de traction pour actualiser</target>
+        </trans-unit>
+        <trans-unit id="FormatText.Text" translate="yes" xml:space="preserve">
+          <source>Date and Time</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Date et heure</target>
+        </trans-unit>
+        <trans-unit id="Haze.Header" translate="yes" xml:space="preserve">
+          <source>Sand and haze</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Sable et brume</target>
+        </trans-unit>
+        <trans-unit id="HumidityText.Text" translate="yes" xml:space="preserve">
+          <source>Hummidity</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Hummidity</target>
+        </trans-unit>
+        <trans-unit id="ImmersiveText.Text" translate="yes" xml:space="preserve">
+          <source>Immersive mode</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Mode immersif</target>
+        </trans-unit>
+        <trans-unit id="Immersive_Background" translate="yes" xml:space="preserve">
+          <source>Immersive background</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Arrière-plan immersive</target>
+        </trans-unit>
+        <trans-unit id="LengthParameter_KM" translate="yes" xml:space="preserve">
+          <source>km</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">km</target>
+        </trans-unit>
+        <trans-unit id="LengthParameter_M" translate="yes" xml:space="preserve">
+          <source>m</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">m</target>
+        </trans-unit>
+        <trans-unit id="LengthParameter_Mile" translate="yes" xml:space="preserve">
+          <source>mile</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Mile</target>
+        </trans-unit>
+        <trans-unit id="LengthParameter_NM" translate="yes" xml:space="preserve">
+          <source>nm</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">NM</target>
+        </trans-unit>
+        <trans-unit id="LengthParText.Text" translate="yes" xml:space="preserve">
+          <source>Visibility</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Visibilité</target>
+        </trans-unit>
+        <trans-unit id="LoadingDataText.Text" translate="yes" xml:space="preserve">
+          <source>Loading</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Le chargement est en cours.</target>
+        </trans-unit>
+        <trans-unit id="LocateDeniedButton.Content" translate="yes" xml:space="preserve">
+          <source>Location permissions are denied</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Autorisations d'emplacement sont refusées</target>
+        </trans-unit>
+        <trans-unit id="LocateOnText.Text" translate="yes" xml:space="preserve">
+          <source>Location</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Lieu</target>
+        </trans-unit>
+        <trans-unit id="LocatingText.Text" translate="yes" xml:space="preserve">
+          <source>Locating</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Recherche en cours</target>
+        </trans-unit>
+        <trans-unit id="MoonPhaseText.Text" translate="yes" xml:space="preserve">
+          <source>Moon phase</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Phase de lune</target>
+        </trans-unit>
+        <trans-unit id="NextTomorrowText.Text" translate="yes" xml:space="preserve">
+          <source>Next Tom.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Tom prochain.</target>
+        </trans-unit>
+        <trans-unit id="NoBGText.Text" translate="yes" xml:space="preserve">
+          <source>Don't show</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Ne pas afficher</target>
+        </trans-unit>
+        <trans-unit id="Now" translate="yes" xml:space="preserve">
+          <source>Current weather</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Météo actuelle</target>
+        </trans-unit>
+        <trans-unit id="NowButton.Label" translate="yes" xml:space="preserve">
+          <source>Details</source>
+          <target state="translated">Détails</target>
+        </trans-unit>
+        <trans-unit id="Obtain" translate="yes" xml:space="preserve">
+          <source>Pay what you want</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Payez ce que vous voulez</target>
+        </trans-unit>
+        <trans-unit id="PrecipitationText.Text" translate="yes" xml:space="preserve">
+          <source>Precipitation</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Précipitations</target>
+        </trans-unit>
+        <trans-unit id="Preferences" translate="yes" xml:space="preserve">
+          <source>Preferences</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Préférences</target>
+        </trans-unit>
+        <trans-unit id="PressureParameter_Atm" translate="yes" xml:space="preserve">
+          <source>Atm</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">ATM</target>
+        </trans-unit>
+        <trans-unit id="PressureParameter_CmHg" translate="yes" xml:space="preserve">
+          <source>CmHg</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">CmHg</target>
+        </trans-unit>
+        <trans-unit id="PressureParameter_Hpa" translate="yes" xml:space="preserve">
+          <source>MB</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Mo</target>
+        </trans-unit>
+        <trans-unit id="PressureParameter_Torr" translate="yes" xml:space="preserve">
+          <source>Torr</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Torr</target>
+        </trans-unit>
+        <trans-unit id="PressureParText.Text" translate="yes" xml:space="preserve">
+          <source>Pneumatic</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Pneumatique</target>
+        </trans-unit>
+        <trans-unit id="PressureText.Text" translate="yes" xml:space="preserve">
+          <source>Pneumatic</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Pneumatique</target>
+        </trans-unit>
+        <trans-unit id="PurchaseButton.Content" translate="yes" xml:space="preserve">
+          <source>Rock it!</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Secouez-le !</target>
+        </trans-unit>
+        <trans-unit id="Rainny.Header" translate="yes" xml:space="preserve">
+          <source>Rain</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Pluie</target>
+        </trans-unit>
+        <trans-unit id="RefreshButton.Label" translate="yes" xml:space="preserve">
+          <source>Refresh</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Actualiser</target>
+        </trans-unit>
+        <trans-unit id="RefreshFreqText.Text" translate="yes" xml:space="preserve">
+          <source>Refresh interval</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Intervalle d'actualisation</target>
+        </trans-unit>
+        <trans-unit id="RefreshState_four" translate="yes" xml:space="preserve">
+          <source>Four hours</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Quatre heures</target>
+        </trans-unit>
+        <trans-unit id="RefreshState_one" translate="yes" xml:space="preserve">
+          <source>Don't auto-refresh</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Actualisation automatique ne</target>
+        </trans-unit>
+        <trans-unit id="RefreshState_three" translate="yes" xml:space="preserve">
+          <source>One hour</source>
+          <target state="translated">une heure</target>
+        </trans-unit>
+        <trans-unit id="RefreshState_two" translate="yes" xml:space="preserve">
+          <source>30 Minutes</source>
+          <target state="translated">30 minutes</target>
+        </trans-unit>
+        <trans-unit id="Replace_Image" translate="yes" xml:space="preserve">
+          <source>Replace</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Remplacer</target>
+        </trans-unit>
+        <trans-unit id="RequestedTheme_Auto" translate="yes" xml:space="preserve">
+          <source>Auto</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">auto</target>
+        </trans-unit>
+        <trans-unit id="RequestedTheme_Dark" translate="yes" xml:space="preserve">
+          <source>Dark</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Foncé</target>
+        </trans-unit>
+        <trans-unit id="RequestedTheme_Light" translate="yes" xml:space="preserve">
+          <source>Light</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Clair</target>
+        </trans-unit>
+        <trans-unit id="SearchText.Text" translate="yes" xml:space="preserve">
+          <source>Search and add</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Rechercher et ajouter</target>
+        </trans-unit>
+        <trans-unit id="Settings" translate="yes" xml:space="preserve">
+          <source>Settings</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Paramètres</target>
+        </trans-unit>
+        <trans-unit id="SettingsButton.Label" translate="yes" xml:space="preserve">
+          <source>Settings</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Paramètres</target>
+        </trans-unit>
+        <trans-unit id="SettingsText.Text" translate="yes" xml:space="preserve">
+          <source>Settings</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Paramètres</target>
+        </trans-unit>
+        <trans-unit id="ShowSecondText.Text" translate="yes" xml:space="preserve">
+          <source>Show second</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Voir la deuxième</target>
+        </trans-unit>
+        <trans-unit id="ShowttText.Text" translate="yes" xml:space="preserve">
+          <source>Display am/pm</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Affichage am/pm</target>
+        </trans-unit>
+        <trans-unit id="Snowy.Header" translate="yes" xml:space="preserve">
+          <source>Winter snow</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Neige de l'hiver</target>
+        </trans-unit>
+        <trans-unit id="SpeedParameter_KMPH" translate="yes" xml:space="preserve">
+          <source>km/h</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">km/h</target>
+        </trans-unit>
+        <trans-unit id="SpeedParameter_Knot" translate="yes" xml:space="preserve">
+          <source>knot</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">nœud</target>
+        </trans-unit>
+        <trans-unit id="SpeedParameter_MPS" translate="yes" xml:space="preserve">
+          <source>m/s</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">m/s</target>
+        </trans-unit>
+        <trans-unit id="SpeedParText.Text" translate="yes" xml:space="preserve">
+          <source>Wind Speed</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Vitesse du vent</target>
+        </trans-unit>
+        <trans-unit id="SplashText.Text" translate="yes" xml:space="preserve">
+          <source>Preparing data ...</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Préparation des données...</target>
+        </trans-unit>
+        <trans-unit id="SportText.Text" translate="yes" xml:space="preserve">
+          <source>Sport index:  </source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Indice de sport :  </target>
+        </trans-unit>
+        <trans-unit id="Starry.Header" translate="yes" xml:space="preserve">
+          <source>Starry sky</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Ciel étoilé</target>
+        </trans-unit>
+        <trans-unit id="Sunny.Header" translate="yes" xml:space="preserve">
+          <source>Sunlight</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Lumière du soleil</target>
+        </trans-unit>
+        <trans-unit id="SunProgressText.Text" translate="yes" xml:space="preserve">
+          <source>Sun position</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Position du soleil</target>
+        </trans-unit>
+        <trans-unit id="TemperatureParameter_Celsius" translate="yes" xml:space="preserve">
+          <source>Celsius</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Celsius</target>
+        </trans-unit>
+        <trans-unit id="TemperatureParameter_Fahrenheit" translate="yes" xml:space="preserve">
+          <source>Fahrenheit</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Fahrenheit</target>
+        </trans-unit>
+        <trans-unit id="TemperatureParameter_Kelvin" translate="yes" xml:space="preserve">
+          <source>Kelvin</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Kelvin</target>
+        </trans-unit>
+        <trans-unit id="TempParText.Text" translate="yes" xml:space="preserve">
+          <source>Temperature</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Température</target>
+        </trans-unit>
+        <trans-unit id="ThemeText.Text" translate="yes" xml:space="preserve">
+          <source>Theme</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Thème</target>
+        </trans-unit>
+        <trans-unit id="TitleBlock.Text" translate="yes" xml:space="preserve">
+          <source>Aurora Weather</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Météo de Aurora</target>
+        </trans-unit>
+        <trans-unit id="ToastText.Text" translate="yes" xml:space="preserve">
+          <source>Weather reminder</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Rappel de la météo</target>
+        </trans-unit>
+        <trans-unit id="TomorrowText.Text" translate="yes" xml:space="preserve">
+          <source>Tomorrow</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">demain</target>
+        </trans-unit>
+        <trans-unit id="TravelText.Text" translate="yes" xml:space="preserve">
+          <source>Travel index:  </source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Indice de voyage :  </target>
+        </trans-unit>
+        <trans-unit id="UseWeekText.Text" translate="yes" xml:space="preserve">
+          <source>Use weekdays</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Utiliser les jours de semaine</target>
+        </trans-unit>
+        <trans-unit id="UVText.Text" translate="yes" xml:space="preserve">
+          <source>UV index:  </source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Indice UV :  </target>
+        </trans-unit>
+        <trans-unit id="VisibilityText.Text" translate="yes" xml:space="preserve">
+          <source>Visibility</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Visibilité</target>
+        </trans-unit>
+        <trans-unit id="WelcomeText.Text" translate="yes" xml:space="preserve">
+          <source>Welcome!</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Bienvenue !</target>
+        </trans-unit>
+        <trans-unit id="WindParameter_BeaufortandDegree" translate="yes" xml:space="preserve">
+          <source>Scale + angle</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Échelle + angle</target>
+        </trans-unit>
+        <trans-unit id="WindParameter_BeaufortandText" translate="yes" xml:space="preserve">
+          <source>Scale + direction</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Échelle + direction</target>
+        </trans-unit>
+        <trans-unit id="WindParameter_SpeedandDegree" translate="yes" xml:space="preserve">
+          <source>Speed + angle</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Vitesse + angle</target>
+        </trans-unit>
+        <trans-unit id="WindParameter_SpeedandText" translate="yes" xml:space="preserve">
+          <source>Speed + direction</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Vitesse + direction</target>
+        </trans-unit>
+        <trans-unit id="WindParText.Text" translate="yes" xml:space="preserve">
+          <source>Wind</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Éolienne</target>
+        </trans-unit>
+        <trans-unit id="WindText.Text" translate="yes" xml:space="preserve">
+          <source>Wind</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Éolienne</target>
+        </trans-unit>
+        <trans-unit id="DonationTitle.Text" translate="yes" xml:space="preserve">
+          <source>Get donation pack</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Recevoir le don pack</target>
+        </trans-unit>
+        <trans-unit id="First_quarter" translate="yes" xml:space="preserve">
+          <source>First Quarter</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Premier quartier</target>
+        </trans-unit>
+        <trans-unit id="Full_moon" translate="yes" xml:space="preserve">
+          <source>Full Moon</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Pleine lune</target>
+        </trans-unit>
+        <trans-unit id="New_Moon" translate="yes" xml:space="preserve">
+          <source>New Moon</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Nouvelle lune</target>
+        </trans-unit>
+        <trans-unit id="Third_quarter" translate="yes" xml:space="preserve">
+          <source>Third Quarter</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Troisième trimestre</target>
+        </trans-unit>
+        <trans-unit id="Waning_crescent" translate="yes" xml:space="preserve">
+          <source>Waning Crescent</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Lune gibbeuse décroissante</target>
+        </trans-unit>
+        <trans-unit id="Waning_gibbous" translate="yes" xml:space="preserve">
+          <source>Waning gibbous</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Lune gibbeuse décroissante</target>
+        </trans-unit>
+        <trans-unit id="Waxing_crescent" translate="yes" xml:space="preserve">
+          <source>Waxing Crescent</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Lune gibbeuse</target>
+        </trans-unit>
+        <trans-unit id="Waxing_gibbous" translate="yes" xml:space="preserve">
+          <source>Waxing Gibbous</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Épilation à la cire gibbeuse décroissante</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_calm" translate="yes" xml:space="preserve">
+          <source>Calm</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Paisible</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_cloudy" translate="yes" xml:space="preserve">
+          <source>Cloudy</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Nuageux</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_cold" translate="yes" xml:space="preserve">
+          <source>Getting cold</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Fait froid</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_drizzle_rain" translate="yes" xml:space="preserve">
+          <source>Drizzle</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Drizzle</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_dust" translate="yes" xml:space="preserve">
+          <source>Dust</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Poussière</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_duststorm" translate="yes" xml:space="preserve">
+          <source>Dust storm</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Tempête de poussière</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_extreme_rain" translate="yes" xml:space="preserve">
+          <source>Extreme rain</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Pluie extrême</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_few_clouds" translate="yes" xml:space="preserve">
+          <source>Few clouds</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Nuageux avec éclaircies</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_foggy" translate="yes" xml:space="preserve">
+          <source>Fog</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Brouillard</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_freezing_rain" translate="yes" xml:space="preserve">
+          <source>Freezing rain</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Pluie verglaçante</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_fresh_breeze" translate="yes" xml:space="preserve">
+          <source>Fresh breeze</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Bonne brise</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_gale" translate="yes" xml:space="preserve">
+          <source>Gale</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Gale</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_hail" translate="yes" xml:space="preserve">
+          <source>Hail</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Je vous salue</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_haze" translate="yes" xml:space="preserve">
+          <source>Haze</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Distorsion</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_heavy_rain" translate="yes" xml:space="preserve">
+          <source>Heavy rain</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Fortes pluies</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_heavy_shower_rain" translate="yes" xml:space="preserve">
+          <source>Heavy shower</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Douche lourde</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_heavy_snow" translate="yes" xml:space="preserve">
+          <source>Heavy snow</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Grande neige</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_heavy_storm_rain" translate="yes" xml:space="preserve">
+          <source>Heavy storm</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Forte tempête</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_heavy_thunderstorm" translate="yes" xml:space="preserve">
+          <source>Thunderstorm</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">ORAGE</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_high_wind" translate="yes" xml:space="preserve">
+          <source>High wind</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Vent fort</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_hot" translate="yes" xml:space="preserve">
+          <source>Getting hot</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Faire chaud</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_hurricane" translate="yes" xml:space="preserve">
+          <source>Hurricane</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Ouragan</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_light_breeze" translate="yes" xml:space="preserve">
+          <source>Light breeze</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Légère brise</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_light_rain" translate="yes" xml:space="preserve">
+          <source>Light rain</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Pluie légère</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_light_snow" translate="yes" xml:space="preserve">
+          <source>Light snow</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Petite neige</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_mist" translate="yes" xml:space="preserve">
+          <source>Mist</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Brume</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_moderate" translate="yes" xml:space="preserve">
+          <source>Moderate</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Modéré</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_moderate_rain" translate="yes" xml:space="preserve">
+          <source>Moderate rain</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Pluie modérée</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_moderate_snow" translate="yes" xml:space="preserve">
+          <source>Moderate snow</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Neige modérée</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_overcast" translate="yes" xml:space="preserve">
+          <source>Overcast</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">couche nuageuse</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_partly_cloudy" translate="yes" xml:space="preserve">
+          <source>Partly cloudy</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Éclaircies</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_rain_snow" translate="yes" xml:space="preserve">
+          <source>Rain snow</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Pluie neige</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_sand" translate="yes" xml:space="preserve">
+          <source>Sand</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Sable</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_sandstorm" translate="yes" xml:space="preserve">
+          <source>Sand storm</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Tempête de sable</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_severe_storm_rain" translate="yes" xml:space="preserve">
+          <source>Severe storm</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Violente tempête</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_shower_rain" translate="yes" xml:space="preserve">
+          <source>Shower</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Douche</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_shower_snow" translate="yes" xml:space="preserve">
+          <source>Shower snow</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Neige de douche</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_sleet" translate="yes" xml:space="preserve">
+          <source>Sleet</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Neige fondue</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_snowstorm" translate="yes" xml:space="preserve">
+          <source>Snow storm</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Tempête de neige</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_snow_flurry" translate="yes" xml:space="preserve">
+          <source>Flurry snow</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Snow Flurry</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_storm" translate="yes" xml:space="preserve">
+          <source>Storm</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Tempête</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_storm_rain" translate="yes" xml:space="preserve">
+          <source>Storm rain</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Pluie d'orage</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_strong_breeze" translate="yes" xml:space="preserve">
+          <source>Strong breeze</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Forte brise</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_strong_gale" translate="yes" xml:space="preserve">
+          <source>Strong gale</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Coup de vent</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_sunny" translate="yes" xml:space="preserve">
+          <source>Sunny</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Ensoleillé</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_thundershower" translate="yes" xml:space="preserve">
+          <source>Thunder shower</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Douche de tonnerre</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_tornado" translate="yes" xml:space="preserve">
+          <source>Tornado</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Tornade</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_tropical_storm" translate="yes" xml:space="preserve">
+          <source>Tropical storm</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Tempête tropicale</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_unknown" translate="yes" xml:space="preserve">
+          <source>...</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">...</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_violent_storm" translate="yes" xml:space="preserve">
+          <source>Violent storm</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Violente tempête</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_volcanic_ash" translate="yes" xml:space="preserve">
+          <source>Volcanic ash</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Cendres volcaniques</target>
+        </trans-unit>
+        <trans-unit id="WeatherCondition_windy" translate="yes" xml:space="preserve">
+          <source>Windy</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Vent</target>
+        </trans-unit>
+        <trans-unit id="WindDirection_east" translate="yes" xml:space="preserve">
+          <source>E</source>
+          <target state="translated" state-qualifier="mt-suggestion">East </target>
+        </trans-unit>
+        <trans-unit id="WindDirection_north" translate="yes" xml:space="preserve">
+          <source>N</source>
+          <target state="translated" state-qualifier="mt-suggestion">Nord </target>
+        </trans-unit>
+        <trans-unit id="WindDirection_northeast" translate="yes" xml:space="preserve">
+          <source>NE</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Nord-est</target>
+        </trans-unit>
+        <trans-unit id="WindDirection_northwest" translate="yes" xml:space="preserve">
+          <source>NW</source>
+          <target state="translated" state-qualifier="tm-suggestion">Nord-ouest</target>
+        </trans-unit>
+        <trans-unit id="WindDirection_south" translate="yes" xml:space="preserve">
+          <source>S</source>
+          <target state="translated" state-qualifier="mt-suggestion">Sud </target>
+        </trans-unit>
+        <trans-unit id="WindDirection_southeast" translate="yes" xml:space="preserve">
+          <source>SE</source>
+          <target state="translated" state-qualifier="tm-suggestion">Sud-est</target>
+        </trans-unit>
+        <trans-unit id="WindDirection_southwest" translate="yes" xml:space="preserve">
+          <source>SW</source>
+          <target state="translated" state-qualifier="tm-suggestion">Sud-ouest</target>
+        </trans-unit>
+        <trans-unit id="WindDirection_unknown" translate="yes" xml:space="preserve">
+          <source>...</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">...</target>
+        </trans-unit>
+        <trans-unit id="WindDirection_west" translate="yes" xml:space="preserve">
+          <source>W</source>
+          <target state="translated" state-qualifier="mt-suggestion">Ouest </target>
+        </trans-unit>
+        <trans-unit id="WindScale_eight" translate="yes" xml:space="preserve">
+          <source>Gale</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Gale</target>
+        </trans-unit>
+        <trans-unit id="WindScale_eighteen" translate="yes" xml:space="preserve">
+          <source>Strong hurricanes</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Ouragans de forte</target>
+        </trans-unit>
+        <trans-unit id="WindScale_eleven" translate="yes" xml:space="preserve">
+          <source>Storm</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Tempête</target>
+        </trans-unit>
+        <trans-unit id="WindScale_fifteen" translate="yes" xml:space="preserve">
+          <source>Stronger hurricanes</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Ouragans plus forts</target>
+        </trans-unit>
+        <trans-unit id="WindScale_five" translate="yes" xml:space="preserve">
+          <source>Light breeze</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Légère brise</target>
+        </trans-unit>
+        <trans-unit id="WindScale_four" translate="yes" xml:space="preserve">
+          <source>Moderate</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Modéré</target>
+        </trans-unit>
+        <trans-unit id="WindScale_fourteen" translate="yes" xml:space="preserve">
+          <source>Stronger hurricanes</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Ouragans plus forts</target>
+        </trans-unit>
+        <trans-unit id="WindScale_nine" translate="yes" xml:space="preserve">
+          <source>Gale</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Gale</target>
+        </trans-unit>
+        <trans-unit id="WindScale_one" translate="yes" xml:space="preserve">
+          <source>Calm</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Paisible</target>
+        </trans-unit>
+        <trans-unit id="WindScale_seven" translate="yes" xml:space="preserve">
+          <source>Strong breeze</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Forte brise</target>
+        </trans-unit>
+        <trans-unit id="WindScale_seventeen" translate="yes" xml:space="preserve">
+          <source>Super Hurricane</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Super cyclone</target>
+        </trans-unit>
+        <trans-unit id="WindScale_six" translate="yes" xml:space="preserve">
+          <source>Strong gale</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Coup de vent</target>
+        </trans-unit>
+        <trans-unit id="WindScale_sixteen" translate="yes" xml:space="preserve">
+          <source>Super Hurricane</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Super cyclone</target>
+        </trans-unit>
+        <trans-unit id="WindScale_ten" translate="yes" xml:space="preserve">
+          <source>High wind</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Vent fort</target>
+        </trans-unit>
+        <trans-unit id="WindScale_thirteen" translate="yes" xml:space="preserve">
+          <source>Hurricane</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Ouragan</target>
+        </trans-unit>
+        <trans-unit id="WindScale_three" translate="yes" xml:space="preserve">
+          <source>Breeze</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Brise</target>
+        </trans-unit>
+        <trans-unit id="WindScale_twelve" translate="yes" xml:space="preserve">
+          <source>Cyclone</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Cyclone</target>
+        </trans-unit>
+        <trans-unit id="WindScale_two" translate="yes" xml:space="preserve">
+          <source>Breeze</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Brise</target>
+        </trans-unit>
+        <trans-unit id="WindScale_unknown" translate="yes" xml:space="preserve">
+          <source>...</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">...</target>
+        </trans-unit>
+        <trans-unit id="WindScale_zero" translate="yes" xml:space="preserve">
+          <source>No wind</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Pas de vent</target>
+        </trans-unit>
+        <trans-unit id="AboutText.Text" translate="yes" xml:space="preserve">
+          <source>About</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">À propos de</target>
+        </trans-unit>
+        <trans-unit id="AppName" translate="yes" xml:space="preserve">
+          <source>Aurora Weather</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Météo de Aurora</target>
+        </trans-unit>
+        <trans-unit id="AppNameText.Text" translate="yes" xml:space="preserve">
+          <source>Aurora Weather</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Météo de Aurora</target>
+        </trans-unit>
+        <trans-unit id="buchaoguoshi.Text" translate="yes" xml:space="preserve">
+          <source>If no more than ten, ten digits won't be displayed</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Si pas plus de dix, dix chiffres ne seront pas affichés</target>
+        </trans-unit>
+        <trans-unit id="chaoguoshi.Text" translate="yes" xml:space="preserve">
+          <source>If no more than ten, shows zero</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Si pas plus de dix, indique zéro</target>
+        </trans-unit>
+        <trans-unit id="DateDes.Text" translate="yes" xml:space="preserve">
+          <source>Day:</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Jour :</target>
+        </trans-unit>
+        <trans-unit id="Description" translate="yes" xml:space="preserve">
+          <source>Aurora Weather</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Météo de Aurora</target>
+        </trans-unit>
+        <trans-unit id="FeedbackText.Content" translate="yes" xml:space="preserve">
+          <source>Feedback</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Commentaires</target>
+        </trans-unit>
+        <trans-unit id="HourDes.Text" translate="yes" xml:space="preserve">
+          <source>Hour:</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Heure :</target>
+        </trans-unit>
+        <trans-unit id="MonthDes.Text" translate="yes" xml:space="preserve">
+          <source>Month:</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Mois :</target>
+        </trans-unit>
+        <trans-unit id="OpenSourceText.Content" translate="yes" xml:space="preserve">
+          <source>Open source license</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Licence Open source</target>
+        </trans-unit>
+        <trans-unit id="ProviderText.Content" translate="yes" xml:space="preserve">
+          <source>Data providers</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Fournisseurs de données</target>
+        </trans-unit>
+        <trans-unit id="ShortName" translate="yes" xml:space="preserve">
+          <source>Weather</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Météo</target>
+        </trans-unit>
+        <trans-unit id="TimeFormatDescrip.Text" translate="yes" xml:space="preserve">
+          <source>Date-time examples</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Exemples de date-heure</target>
+        </trans-unit>
+        <trans-unit id="YearDes.Text" translate="yes" xml:space="preserve">
+          <source>Year:</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Année :</target>
+        </trans-unit>
+        <trans-unit id="bianleng" translate="yes" xml:space="preserve">
+          <source>Will get cold</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Obtiendrez froid</target>
+        </trans-unit>
+        <trans-unit id="bianre" translate="yes" xml:space="preserve">
+          <source>Will get hot</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Chauffera</target>
+        </trans-unit>
+        <trans-unit id="breeze0" translate="yes" xml:space="preserve">
+          <source>Breeze</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Brise</target>
+        </trans-unit>
+        <trans-unit id="breeze1" translate="yes" xml:space="preserve">
+          <source>Zephyr</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Zephyr</target>
+        </trans-unit>
+        <trans-unit id="dust0" translate="yes" xml:space="preserve">
+          <source>Dust</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Poussière</target>
+        </trans-unit>
+        <trans-unit id="duststorm0" translate="yes" xml:space="preserve">
+          <source>Bad dust</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Poussière de mauvais</target>
+        </trans-unit>
+        <trans-unit id="few_clouds0" translate="yes" xml:space="preserve">
+          <source>Few clouds</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Nuageux avec éclaircies</target>
+        </trans-unit>
+        <trans-unit id="few_clouds1" translate="yes" xml:space="preserve">
+          <source>Floating clouds</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Nuages flottants</target>
+        </trans-unit>
+        <trans-unit id="foggy0" translate="yes" xml:space="preserve">
+          <source>Foggy</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Brumeux</target>
+        </trans-unit>
+        <trans-unit id="freezing_rain0" translate="yes" xml:space="preserve">
+          <source>Freezing rain</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Pluie verglaçante</target>
+        </trans-unit>
+        <trans-unit id="gale0" translate="yes" xml:space="preserve">
+          <source>There were strong winds</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Il y avait des vents forts</target>
+        </trans-unit>
+        <trans-unit id="gale1" translate="yes" xml:space="preserve">
+          <source>Windy day</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Journée venteuse</target>
+        </trans-unit>
+        <trans-unit id="Glance" translate="yes" xml:space="preserve">
+          <source>{0} {1} {2}.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">{0} {1} {2}.</target>
+        </trans-unit>
+        <trans-unit id="Glancecloudy0" translate="yes" xml:space="preserve">
+          <source>Cloudy</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Nuageux</target>
+        </trans-unit>
+        <trans-unit id="Glancecloudy1" translate="yes" xml:space="preserve">
+          <source>Cloud</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Cloud</target>
+        </trans-unit>
+        <trans-unit id="GlanceFull" translate="yes" xml:space="preserve">
+          <source>{0} {1}, {2}{3}. Tomorrow: {4}, {5}.</source>
+          <target state="translated" state-qualifier="mt-suggestion">{0} {1}, {2} {3}. Demain: {4}, {5}.</target>
+        </trans-unit>
+        <trans-unit id="GlanceSunny0" translate="yes" xml:space="preserve">
+          <source>Clear</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Effacer</target>
+        </trans-unit>
+        <trans-unit id="GlanceSunny1" translate="yes" xml:space="preserve">
+          <source>Cloud-free</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Sans nuage</target>
+        </trans-unit>
+        <trans-unit id="hail0" translate="yes" xml:space="preserve">
+          <source>Hail</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Je vous salue</target>
+        </trans-unit>
+        <trans-unit id="haotianqi0" translate="yes" xml:space="preserve">
+          <source>Fit out</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">S'approvisionner</target>
+        </trans-unit>
+        <trans-unit id="haotianqi1" translate="yes" xml:space="preserve">
+          <source>Good weather</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Beau temps</target>
+        </trans-unit>
+        <trans-unit id="haze0" translate="yes" xml:space="preserve">
+          <source>Haze</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Distorsion</target>
+        </trans-unit>
+        <trans-unit id="heavy_rain0" translate="yes" xml:space="preserve">
+          <source>Heavy rain</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Fortes pluies</target>
+        </trans-unit>
+        <trans-unit id="heavy_rain1" translate="yes" xml:space="preserve">
+          <source>Out attention to heavy rain</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">À l'attention des pluies</target>
+        </trans-unit>
+        <trans-unit id="heavy_snow0" translate="yes" xml:space="preserve">
+          <source>Heavy snow</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Grande neige</target>
+        </trans-unit>
+        <trans-unit id="heavy_snow1" translate="yes" xml:space="preserve">
+          <source>Snow</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Neige</target>
+        </trans-unit>
+        <trans-unit id="heavy_storm_rain0" translate="yes" xml:space="preserve">
+          <source>The storm</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">La tempête</target>
+        </trans-unit>
+        <trans-unit id="heavy_storm_rain1" translate="yes" xml:space="preserve">
+          <source>Not going out</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Ne pas sortir</target>
+        </trans-unit>
+        <trans-unit id="huaitianqi0" translate="yes" xml:space="preserve">
+          <source>Bad weather</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Mauvais temps</target>
+        </trans-unit>
+        <trans-unit id="huaitianqi1" translate="yes" xml:space="preserve">
+          <source>Poor weather</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Mauvais temps</target>
+        </trans-unit>
+        <trans-unit id="jintian" translate="yes" xml:space="preserve">
+          <source>Today</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Aujourd'hui</target>
+        </trans-unit>
+        <trans-unit id="mist0" translate="yes" xml:space="preserve">
+          <source>Misty</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Misty</target>
+        </trans-unit>
+        <trans-unit id="moderate_rain0" translate="yes" xml:space="preserve">
+          <source>Light rain</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Pluie légère</target>
+        </trans-unit>
+        <trans-unit id="moderate_rain1" translate="yes" xml:space="preserve">
+          <source>Rain</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Pluie</target>
+        </trans-unit>
+        <trans-unit id="moderate_rain2" translate="yes" xml:space="preserve">
+          <source>Rainy Day</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Jour pluvieux</target>
+        </trans-unit>
+        <trans-unit id="moderate_rain3" translate="yes" xml:space="preserve">
+          <source>Need to bring an umbrella</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Besoin d'apporter un parapluie</target>
+        </trans-unit>
+        <trans-unit id="moderate_snow0" translate="yes" xml:space="preserve">
+          <source>There was snow</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Il y avait de la neige</target>
+        </trans-unit>
+        <trans-unit id="moderate_snow1" translate="yes" xml:space="preserve">
+          <source>Snow day</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Jour de neige</target>
+        </trans-unit>
+        <trans-unit id="moderate_snow2" translate="yes" xml:space="preserve">
+          <source>Will snow</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Bulletins d'enneigement sera</target>
+        </trans-unit>
+        <trans-unit id="nengjiandudi0" translate="yes" xml:space="preserve">
+          <source>Low visibility</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Visibilité est faible</target>
+        </trans-unit>
+        <trans-unit id="nengjiandudi1" translate="yes" xml:space="preserve">
+          <source>Low visibility</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Visibilité est faible</target>
+        </trans-unit>
+        <trans-unit id="overcast0" translate="yes" xml:space="preserve">
+          <source>Overcast</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">couche nuageuse</target>
+        </trans-unit>
+        <trans-unit id="overcast1" translate="yes" xml:space="preserve">
+          <source>No sun</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Pas de soleil</target>
+        </trans-unit>
+        <trans-unit id="partly_cloudy0" translate="yes" xml:space="preserve">
+          <source>Partly cloudy</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Éclaircies</target>
+        </trans-unit>
+        <trans-unit id="shiduda0" translate="yes" xml:space="preserve">
+          <source>High humidity</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Taux d'humidité élevé</target>
+        </trans-unit>
+        <trans-unit id="shiduda1" translate="yes" xml:space="preserve">
+          <source>Moist air</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Air humide</target>
+        </trans-unit>
+        <trans-unit id="shower0" translate="yes" xml:space="preserve">
+          <source>There are showers</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Il y a douches</target>
+        </trans-unit>
+        <trans-unit id="shower1" translate="yes" xml:space="preserve">
+          <source>Intermittent rain</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Pluie intermittente</target>
+        </trans-unit>
+        <trans-unit id="shower_snow0" translate="yes" xml:space="preserve">
+          <source>Snow showers</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Averses de neige</target>
+        </trans-unit>
+        <trans-unit id="shower_snow1" translate="yes" xml:space="preserve">
+          <source>Short-time snowfall</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Chutes de neige de courte durée</target>
+        </trans-unit>
+        <trans-unit id="sleet0" translate="yes" xml:space="preserve">
+          <source>The sleet</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">La giboulée</target>
+        </trans-unit>
+        <trans-unit id="sleet1" translate="yes" xml:space="preserve">
+          <source>Rain and snow</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Pluie et neige</target>
+        </trans-unit>
+        <trans-unit id="snowstorm0" translate="yes" xml:space="preserve">
+          <source>A storm</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Une tempête</target>
+        </trans-unit>
+        <trans-unit id="snowstorm1" translate="yes" xml:space="preserve">
+          <source>Poor snowfall</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Mauvaise chute de neige</target>
+        </trans-unit>
+        <trans-unit id="storm0" translate="yes" xml:space="preserve">
+          <source>Pay attention to storm</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Faites attention à la tempête</target>
+        </trans-unit>
+        <trans-unit id="thundershower0" translate="yes" xml:space="preserve">
+          <source>Thunder</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Tonnerre</target>
+        </trans-unit>
+        <trans-unit id="unknown_weather" translate="yes" xml:space="preserve">
+          <source>Unknown weather</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Météo inconnu</target>
+        </trans-unit>
+        <trans-unit id="wanjian" translate="yes" xml:space="preserve">
+          <source>Evening</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Soir</target>
+        </trans-unit>
+        <trans-unit id="wendudi0" translate="yes" xml:space="preserve">
+          <source>Low temperature</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Basse température</target>
+        </trans-unit>
+        <trans-unit id="wendudi1" translate="yes" xml:space="preserve">
+          <source>Continuous cooling</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Continu de refroidissement</target>
+        </trans-unit>
+        <trans-unit id="wendugao0" translate="yes" xml:space="preserve">
+          <source>High temperature</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Haute température</target>
+        </trans-unit>
+        <trans-unit id="wendugao1" translate="yes" xml:space="preserve">
+          <source>Continues to heat up</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Continue à chauffer</target>
+        </trans-unit>
+        <trans-unit id="windy0" translate="yes" xml:space="preserve">
+          <source>Windy</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Vent</target>
+        </trans-unit>
+        <trans-unit id="xianzai" translate="yes" xml:space="preserve">
+          <source>Now</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">MAINTENANT</target>
+        </trans-unit>
+        <trans-unit id="MinDes.Text" translate="yes" xml:space="preserve">
+          <source>Minute:</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Minute :</target>
+        </trans-unit>
+        <trans-unit id="OtherDes.Text" translate="yes" xml:space="preserve">
+          <source>Other:</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Autres :</target>
+        </trans-unit>
+        <trans-unit id="Add" translate="yes" xml:space="preserve">
+          <source>Search Cities</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Villes de recherche</target>
+        </trans-unit>
+        <trans-unit id="Cacel" translate="yes" xml:space="preserve">
+          <source>Cancel</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Annuler</target>
+        </trans-unit>
+        <trans-unit id="Delete" translate="yes" xml:space="preserve">
+          <source>Delete</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Supprimer</target>
+        </trans-unit>
+        <trans-unit id="Edit" translate="yes" xml:space="preserve">
+          <source>Edit</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Edition</target>
+        </trans-unit>
+        <trans-unit id="Pin" translate="yes" xml:space="preserve">
+          <source>Pin</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Code confidentiel</target>
+        </trans-unit>
+        <trans-unit id="Refresh" translate="yes" xml:space="preserve">
+          <source>Refresh</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Actualiser</target>
+        </trans-unit>
+        <trans-unit id="EditButton.Label" translate="yes" xml:space="preserve">
+          <source>Edit</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Edition</target>
+        </trans-unit>
+        <trans-unit id="AutoSuggestbox.PlaceholderText" translate="yes" xml:space="preserve">
+          <source>When search Chinese cities, using chinese or pinyin</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Quand la recherche des villes chinoises, à l'aide de chinois ou pinyin</target>
+        </trans-unit>
+        <trans-unit id="Thankyou" translate="yes" xml:space="preserve">
+          <source>Insane mode!</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Mode de fou !</target>
+        </trans-unit>
+        <trans-unit id="ThankyouTitle" translate="yes" xml:space="preserve">
+          <source>Thank you!</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Thank you!</target>
+        </trans-unit>
+        <trans-unit id="Cities_Null" translate="yes" xml:space="preserve">
+          <source>No Cities here...</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Aucune villes ici...</target>
+        </trans-unit>
+        <trans-unit id="Error" translate="yes" xml:space="preserve">
+          <source>There is a small error ...</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Il y a une petite erreur...</target>
+        </trans-unit>
+        <trans-unit id="Network_Error" translate="yes" xml:space="preserve">
+          <source>Network connection failed ...</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Échoué de la connexion réseau...</target>
+        </trans-unit>
+        <trans-unit id="Quit" translate="yes" xml:space="preserve">
+          <source>Quit</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Quitter</target>
+        </trans-unit>
+        <trans-unit id="Service_Unavailable" translate="yes" xml:space="preserve">
+          <source>The weather service is currently unavailable ...</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Le service météo est actuellement indisponible...</target>
+        </trans-unit>
+        <trans-unit id="Setting" translate="yes" xml:space="preserve">
+          <source>Settings</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Paramètres</target>
+        </trans-unit>
+        <trans-unit id="DataSourceText.Text" translate="yes" xml:space="preserve">
+          <source>Data providers:</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Fournisseurs de données :</target>
+        </trans-unit>
+        <trans-unit id="Retry" translate="yes" xml:space="preserve">
+          <source>Try again?</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Réessayez?</target>
+        </trans-unit>
+        <trans-unit id="LongTime" translate="yes" xml:space="preserve">
+          <source>Waiting longer than expected...</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Attendre plus longtemps que prévu...</target>
+        </trans-unit>
+        <trans-unit id="Welcome0Detail.Text" translate="yes" xml:space="preserve">
+          <source>Easy to reach, easy to see</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Facilement accessible, facile à voir</target>
+        </trans-unit>
+        <trans-unit id="Welcome0Text.Text" translate="yes" xml:space="preserve">
+          <source>Dynamic</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Dynamique</target>
+        </trans-unit>
+        <trans-unit id="Welcome1Detail.Text" translate="yes" xml:space="preserve">
+          <source>Pin it on the Start</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Épingler sur le départ</target>
+        </trans-unit>
+        <trans-unit id="Welcome1Text.Text" translate="yes" xml:space="preserve">
+          <source>Tile</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Mosaïque</target>
+        </trans-unit>
+        <trans-unit id="Welcome2Detail.Text" translate="yes" xml:space="preserve">
+          <source>Go to Settings-&gt;Personalization-&gt;Lockscreen and set lockscreen notifications!</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Allez à paramètres-&gt;personnalisation-&gt;Lockscreen et notifications de lockscreen set !</target>
+        </trans-unit>
+        <trans-unit id="Welcome2Text.Text" translate="yes" xml:space="preserve">
+          <source>Notification</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Notification</target>
+        </trans-unit>
+        <trans-unit id="BackText.Text" translate="yes" xml:space="preserve">
+          <source>Back</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Retour</target>
+        </trans-unit>
+        <trans-unit id="HamCloseText.Text" translate="yes" xml:space="preserve">
+          <source>Close</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Fermer</target>
+        </trans-unit>
+        <trans-unit id="HamOpenText.Text" translate="yes" xml:space="preserve">
+          <source>Open</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Ouvrir</target>
+        </trans-unit>
+        <trans-unit id="MoreText.Text" translate="yes" xml:space="preserve">
+          <source>More</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Plus</target>
+        </trans-unit>
+        <trans-unit id="RefreshText.Text" translate="yes" xml:space="preserve">
+          <source>Refresh</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Actualiser</target>
+        </trans-unit>
+        <trans-unit id="NowText.Text" translate="yes" xml:space="preserve">
+          <source>Details</source>
+          <target state="translated">Détails</target>
+        </trans-unit>
+        <trans-unit id="CitiesManageText.Text" translate="yes" xml:space="preserve">
+          <source>Locating Managment</source>
+          <target state="translated">Localisation de Managment</target>
+        </trans-unit>
+        <trans-unit id="Locating" translate="yes" xml:space="preserve">
+          <source>Locating...</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Localisation...</target>
+        </trans-unit>
+        <trans-unit id="DataSourceDetailText.Text" translate="yes" xml:space="preserve">
+          <source>Use Donation Pack to enable "Weather Underground"</source>
+          <target state="translated">Utilisez le Pack de don pour activer « Weather Underground »</target>
+        </trans-unit>
+        <trans-unit id="EndTimeText.Text" translate="yes" xml:space="preserve">
+          <source>End Time:</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Heure de fin :</target>
+        </trans-unit>
+        <trans-unit id="MinutesIn" translate="yes" xml:space="preserve">
+          <source>Before {0} min</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Avant min {0}</target>
+        </trans-unit>
+        <trans-unit id="StartTimeText.Text" translate="yes" xml:space="preserve">
+          <source>Begin Time:</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Heure de début :</target>
+        </trans-unit>
+        <trans-unit id="ThemeasDetailText.Text" translate="yes" xml:space="preserve">
+          <source>Need Location, or use default value: 19:30~7:30</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Besoin d'emplacement, ou utiliser la valeur par défaut : 19:30 ~ 07:30</target>
+        </trans-unit>
+        <trans-unit id="ThemeasRiseSetText.Text" translate="yes" xml:space="preserve">
+          <source>Enable dark mode when sun set</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Activer le mode sombre quand sun set</target>
+        </trans-unit>
+        <trans-unit id="Update" translate="yes" xml:space="preserve">
+          <source>Updated</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Mis à jour</target>
+        </trans-unit>
+        <trans-unit id="UpdateFailedText.Text" translate="yes" xml:space="preserve">
+          <source>Couldn't update</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Mise à jour impossible</target>
+        </trans-unit>
+        <trans-unit id="RefreshComplete" translate="yes" xml:space="preserve">
+          <source>Update Completed</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Mise à jour terminée</target>
+        </trans-unit>
+        <trans-unit id="RefreshStamp" translate="yes" xml:space="preserve">
+          <source>Timestamp: {0}</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Horodateur : {0}</target>
+        </trans-unit>
+        <trans-unit id="RefreshStart" translate="yes" xml:space="preserve">
+          <source>Updating...</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Mise à jour en cours</target>
+        </trans-unit>
+        <trans-unit id="RequestedTheme_Default" translate="yes" xml:space="preserve">
+          <source>Follow system</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Suivez le système</target>
+        </trans-unit>
+        <trans-unit id="Today_Weather" translate="yes" xml:space="preserve">
+          <source>Today for {0}</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Aujourd'hui pour {0}</target>
+        </trans-unit>
+        <trans-unit id="CaiyunRadio.Content" translate="yes" xml:space="preserve">
+          <source>Caiyun Weather</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Météo Caiyun</target>
+        </trans-unit>
+        <trans-unit id="HeWeatherRadio.Content" translate="yes" xml:space="preserve">
+          <source>HeWeather</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">HeWeather</target>
+        </trans-unit>
+        <trans-unit id="CaiyunWeather" translate="yes" xml:space="preserve">
+          <source>The China Meteorological Administration, Caiyun Weather</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">L'Administration météorologique de Chine, Caiyun météo</target>
+        </trans-unit>
+        <trans-unit id="DataSourceAlertText.Text" translate="yes" xml:space="preserve">
+          <source>May not provide all meteorological information</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Ne peut pas fournir tous les renseignements météorologiques</target>
+        </trans-unit>
+        <trans-unit id="HeWeather" translate="yes" xml:space="preserve">
+          <source>HeWeather</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">HeWeather</target>
+        </trans-unit>
+        <trans-unit id="PhotoCopyright.Content" translate="yes" xml:space="preserve">
+          <source>Photo Copyright</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Photo Copyright</target>
+        </trans-unit>
+        <trans-unit id="MeetNewDataSource" translate="yes" xml:space="preserve">
+          <source>New data source "{0}" is avaliable, have a look at preferences settings!</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Nouvelle source de données « {0} » est disponible, jetez un oeil sur les paramètres de préférences !</target>
+        </trans-unit>
+        <trans-unit id="MeetNewDataSourceTitle" translate="yes" xml:space="preserve">
+          <source>See what you find!</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Voir ce que vous trouvez !</target>
+        </trans-unit>
+        <trans-unit id="LockText.Text" translate="yes" xml:space="preserve">
+          <source>Use Donation Pack to unlock some features</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Don Pack permet de débloquer certaines fonctionnalités</target>
+        </trans-unit>
+        <trans-unit id="FullScreenText.Text" translate="yes" xml:space="preserve">
+          <source>Full Screen</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Plein écran</target>
+        </trans-unit>
+        <trans-unit id="UpdateDetailText.Text" translate="yes" xml:space="preserve">
+          <source>· Added Locating management
+· Minor bugs fixed</source>
+          <target state="translated">· Ajouté la localisation gestion
+· Bugs mineurs corrigés</target>
+        </trans-unit>
+        <trans-unit id="UpdateTitle.Text" translate="yes" xml:space="preserve">
+          <source>Welcome to new version</source>
+          <target state="translated" state-qualifier="mt-suggestion">Bienvenue à la nouvelle version</target>
+        </trans-unit>
+        <trans-unit id="Calculator" translate="yes" xml:space="preserve">
+          <source>Unit Converter</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Convertisseur d'unité</target>
+        </trans-unit>
+        <trans-unit id="YouKnow" translate="yes" xml:space="preserve">
+          <source>Hey guy</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Hé les gars</target>
+        </trans-unit>
+        <trans-unit id="AlwaysShowText.Text" translate="yes" xml:space="preserve">
+          <source>Background always visible</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Fond toujours visible</target>
+        </trans-unit>
+        <trans-unit id="ShuffleText.Text" translate="yes" xml:space="preserve">
+          <source>Shuffle background</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Fond de Shuffle</target>
+        </trans-unit>
+        <trans-unit id="Overcast.Header" translate="yes" xml:space="preserve">
+          <source>Overcast</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">couche nuageuse</target>
+        </trans-unit>
+        <trans-unit id="UpdateLogButton.Content" translate="yes" xml:space="preserve">
+          <source>Update Log</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Mise à jour Log</target>
+        </trans-unit>
+        <trans-unit id="UpdateLogText.Text" translate="yes" xml:space="preserve">
+          <source>1.6.16111
+· Added Locating management
+· Minor bugs fixed
+
+1.6.16110
+· Fixed an issue caused mobile version's startup to be too slow
+· Changed Locating method
+· Integrate the Cities Overview page with the Cities Management page
+
+1.6.16101
+· Minor Fixes
+· Now you can set the immersive mode time out in the custom layout panel
+
+1.6.16100
+· Fixed an issue that secondary tiles don't update
+· Fixed an issue that secondary tiles' layout to be incorrect
+· Welcome Page Re-designed
+
+1.6.16086
+· Fixed an issue that swipe on touch screen is to slow
+· Fixed an issue that some devices can't load image resources
+· Fixed UI dislocation
+
+1.6.16085
+· Added Privacy Policy
+
+1.6.16080
+· Minor fixes
+
+1.6.16062
+· Fixed a small display issue in details page
+· Added wind speed graph
+
+1.6.16058
+· UI Tweaks
+
+1.6.16056
+· Fixed a bug that caused background task can't start
+· Cortana commands will be soon avaliable
+
+1.6.16054
+· Improved weather alarm toasts
+
+1.6.16050
+· Now you can choose translucent tiles
+· Tile layout adjustment
+
+1.5.16059
+· Fixed issues in settings page
+· Try to set current BG as lockscreen wallpaper
+
+1.5.16055
+· You can customize accent color now(only when the theme setting is "Follow system")
+· Added refresh animation
+· You can customize layout now
+· Details page improved
+
+1.5.16054
+· Adjusted preference settings
+
+1.5.16052
+· fixed the issue caused by region formats
+
+1.5.16050
+· Details page added
+
+1.5.16045
+· Shorten the automatic background refresh interval
+· UI and layout enhancement
+· Tile's layout will be updated in next version
+
+1.5.16040
+· Compatible with Windows 10 Build 14328, we have updated toast and tile
+· "Weather Underground" now avaliable!
+· (may) Fixed a catastrophic failure
+· (may) Fixed an issue occurs on mobile devices that don't display lockscreen notifications
+
+1.4.16047:
+· UI tuning
+· Little bug fixed
+      
+1.4.16046:
+· Update log Added
+· You can swipe to delete the update details
+· Particle System's Surfaces updated
+· Particle System improvement
+· Lightning generator enhancement
+  </source>
+          <target state="translated">1.6.16111
+· Ajouté la localisation gestion
+· Minor bugs fixes
+
+1.6.16110
+· Correction d’un problème provoqué le démarrage de la version mobile d’être trop lent
+· Changé la méthode de localisation
+· Intégrer la page vue d’ensemble de villes avec la page de gestion des villes
+
+1.6.16101
+· Corrections mineures
+· Maintenant, vous pouvez définir le mode immersif time out dans le panneau de disposition personnalisé
+
+1.6.16100
+· Correction d’un problème secondaires tuiles ne mettre à jour
+· Correction d’un problème mise en page que carreaux secondaire pour être incorrect
+· Page d’accueil redessinée
+
+1.6.16086
+· Fixe un problème dans lequel glisser sur l’écran tactile est de ralentir le
+· Correction d’un problème que certains appareils ne peut pas charger les ressources d’image
+· Fixe la dislocation UI
+
+1.6.16085
+· Ajouté à la politique de confidentialité
+
+1.6.16080
+· Corrections mineures
+
+1.6.16062
+· Correction d’un problème de petit écran en détails page
+· Vitesse du vent a ajouté graphique
+
+1.6.16058
+· Interface Utilisateur Tweaks
+
+1.6.16056
+· Correction d’un bug qui tâche de fond causé ne peut pas démarrer
+· Cortana commandes seront bientôt disponibles
+
+1.6.16054
+· Améliorée d’alarme météo Toaste
+
+1.6.16050
+· Maintenant vous pouvez choisir des carreaux translucides
+· Réglage de la mise en page
+
+1.5.16059
+de tuiles · Correction de problèmes dans les paramètres de la page
+· Essayez de définir BG actuel comme lockscreen wallpaper
+
+1.5.16055
+· Vous pouvez personnaliser la couleur d’accentuation maintenant (uniquement lorsque le paramètre de thème est "Système de suivi")
+· Ajout d’animation rafraîchissement
+· Vous pouvez personnaliser la disposition maintenant
+· Détails page améliorée
+
+1.5.16054
+· Ajuster les paramètres de préférence
+
+1.5.16052
+· fixe le problème causé par les formats de la région
+
+1.5.16050
+· Détails page ajoutée
+
+1.5.16045
+· Raccourcir l’intervalle d’actualisation automatique en arrière-plan
+· Amélioration de l’interface Utilisateur et la disposition
+· Présentation de la tuile sera actualisée dans la prochaine version
+
+1.5.16040
+· Compatible avec Windows 10 Build 14328, nous ont mis à jour de toast et carrelage
+· « Weather Underground » maintenant disponible ! 
+· (mai) Correction d’une défaillance catastrophique
+· (mai) Fixe un problème se produit sur les périphériques mobiles qui n’affichent pas les notifications de lockscreen
+
+1.4.16047 :
+· Interface Utilisateur tuning
+· Petite corrigé d’un bug
+ 
+1.4.16046 :
+· Journal de mise à jour ajoutée
+· Vous pouvez faire glisser pour supprimer la mise à jour en détail
+· Surfaces du système de particules mise à jour de
+· Amélioration du système de particules
+· Amélioration de générateur de foudre
+  </target>
+        </trans-unit>
+        <trans-unit id="ContactButton.Content" translate="yes" xml:space="preserve">
+          <source>Contact with me</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">En contact avec moi</target>
+        </trans-unit>
+        <trans-unit id="ImproveButton.Content" translate="yes" xml:space="preserve">
+          <source>Improve this app</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Améliorer ce soft</target>
+        </trans-unit>
+        <trans-unit id="ImproveDetail.Text" translate="yes" xml:space="preserve">
+          <source>Together with me, make this app more perfect!
+
+Including but not limited to:
+
+· UI and layout improvement
+· Add more accurate data providers
+· Draw/provide more weather icon or background
+· Coding
+                                
+Thanks!</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Avec moi, faire cette application plus parfait ! 
+ 
+y compris mais non limité aux :
+
+· Amélioration de l'interface utilisateur et la disposition
+· Ajouter des fournisseurs de données plus précis
+· Tirage au sort/fournir plus l'icône météo ou fond
+· Codage
+ 
+Merci !</target>
+        </trans-unit>
+        <trans-unit id="Today" translate="yes" xml:space="preserve">
+          <source>Today</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Aujourd'hui</target>
+        </trans-unit>
+        <trans-unit id="Tomorrow" translate="yes" xml:space="preserve">
+          <source>Tomorrow</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">demain</target>
+        </trans-unit>
+        <trans-unit id="DonateOption4.Text" translate="yes" xml:space="preserve">
+          <source>· Enable the "Weather Underground" data source</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">· Activer la source de données « Weather Underground »</target>
+        </trans-unit>
+        <trans-unit id="CrashDialog.Title" translate="yes" xml:space="preserve">
+          <source>Oops!</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Désolé !</target>
+        </trans-unit>
+        <trans-unit id="CrashDialog.SecondaryButtonText" translate="yes" xml:space="preserve">
+          <source>Quit</source>
+          <target state="translated">Quitter</target>
+        </trans-unit>
+        <trans-unit id="CrashDialog.PrimaryButtonText" translate="yes" xml:space="preserve">
+          <source>Send</source>
+          <target state="translated">Envoi</target>
+        </trans-unit>
+        <trans-unit id="CrashText0.Text" translate="yes" xml:space="preserve">
+          <source>Something went wrong!( ×ω× )
+Now you can send crash report to developer, and totally help this app get better...
+</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Quelque chose a mal tourné ! (Ω ×) 
+Maintenant vous pouvez envoyer le rapport d'accident au développeur et totalement aider ce soft s'améliorent... 
+</target>
+        </trans-unit>
+        <trans-unit id="CrashText1.Text" translate="yes" xml:space="preserve">
+          <source>May be these info could help you:</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Peut-être que ces informations pourraient vous aider :</target>
+        </trans-unit>
+        <trans-unit id="PrivacyText0.Text" translate="yes" xml:space="preserve">
+          <source>We will NEVER upload your personal infomation</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Nous téléchargerons jamais vos renseignements personnels</target>
+        </trans-unit>
+        <trans-unit id="PrivacyText1.Text" translate="yes" xml:space="preserve">
+          <source>In crash reports, we will log current time, current language, and some environment information, then we will send these strings to server, we WON't log any of your personal information. If you don't want to send reports, just click quit button and nothing happens.</source>
+          <target state="translated">Dans les rapports d'incidents, on enregistrera l'heure actuelle, la langue actuelle et quelques informations sur l'environnement, puis nous enverrons ces chaînes au serveur, nous n'enregistrons aucun de vos renseignements personnels. Si vous ne voulez pas envoyer de rapports, juste cliquez sur quitter le bouton et rien ne se passe.</target>
+        </trans-unit>
+        <trans-unit id="WhyButton.Content" translate="yes" xml:space="preserve">
+          <source>What will be sent?</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Ce qui sera envoyé ?</target>
+        </trans-unit>
+        <trans-unit id="GeneralText.Text" translate="yes" xml:space="preserve">
+          <source>General</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Général</target>
+        </trans-unit>
+        <trans-unit id="LanguageText.Text" translate="yes" xml:space="preserve">
+          <source>Language</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Langue</target>
+        </trans-unit>
+        <trans-unit id="LanguageChangeText.Text" translate="yes" xml:space="preserve">
+          <source>Refresh or restart to apply</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Actualisation ou redémarrage d'appliquer</target>
+        </trans-unit>
+        <trans-unit id="ReportBox.PlaceholderText" translate="yes" xml:space="preserve">
+          <source>Write your opinion!</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Donnez votre avis !</target>
+        </trans-unit>
+        <trans-unit id="AppProblemButton.Content" translate="yes" xml:space="preserve">
+          <source>Have problems?</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Des problèmes ?</target>
+        </trans-unit>
+        <trans-unit id="AppProblemText.Text" translate="yes" xml:space="preserve">
+          <source>You can try clearing all app data to solve some problems</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Vous pouvez essayer efface toutes les données d'application pour résoudre certains problèmes</target>
+        </trans-unit>
+        <trans-unit id="ConfirmDeleteText.Text" translate="yes" xml:space="preserve">
+          <source>Confirm? you need to restart this</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Confirmer ? vous devez redémarrer cela</target>
+        </trans-unit>
+        <trans-unit id="AppDeleteButton.Content" translate="yes" xml:space="preserve">
+          <source>Clear all data</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Effacer toutes les données</target>
+        </trans-unit>
+        <trans-unit id="LockDetail" translate="yes" xml:space="preserve">
+          <source>{0} {1}, {2}{3}
+Tomorrow: {4}, {5}.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">{0} {1}, {2} {3}
+demain: {4}, {5}.</target>
+        </trans-unit>
+        <trans-unit id="RateText.Content" translate="yes" xml:space="preserve">
+          <source>Rate in Windows Store</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Tarif en magasin de Windows</target>
+        </trans-unit>
+        <trans-unit id="FeedbackDialog.Title" translate="yes" xml:space="preserve">
+          <source>Feedback</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Commentaires</target>
+        </trans-unit>
+        <trans-unit id="FeedbackDialog.SecondaryButtonText" translate="yes" xml:space="preserve">
+          <source>Back</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Retour</target>
+        </trans-unit>
+        <trans-unit id="FeedbackDialog.PrimaryButtonText" translate="yes" xml:space="preserve">
+          <source>Send</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Envoi</target>
+        </trans-unit>
+        <trans-unit id="DailyDetailsPop" translate="yes" xml:space="preserve">
+          <source>Pcpn. Probability for {0} days</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">PCPN. probabilité de {0} jours</target>
+        </trans-unit>
+        <trans-unit id="DailyDetailsPrep" translate="yes" xml:space="preserve">
+          <source>Precipitation for {0} days</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Précipitation pour {0} jours</target>
+        </trans-unit>
+        <trans-unit id="DailyDetailsTemp" translate="yes" xml:space="preserve">
+          <source>Temperature for {0} days</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Température pour {0} jours</target>
+        </trans-unit>
+        <trans-unit id="DailyDetailsVis" translate="yes" xml:space="preserve">
+          <source>Visibility for {0} days</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Visibilité pour {0} jours</target>
+        </trans-unit>
+        <trans-unit id="Details" translate="yes" xml:space="preserve">
+          <source>Details</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Détails</target>
+        </trans-unit>
+        <trans-unit id="HourlyDetailsPop" translate="yes" xml:space="preserve">
+          <source>Pcpn. Probability for {0} hours</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">PCPN. probabilité de {0} heures</target>
+        </trans-unit>
+        <trans-unit id="HourlyDetailsTemperature" translate="yes" xml:space="preserve">
+          <source>Temperature for {0} hours</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Température des heures {0}</target>
+        </trans-unit>
+        <trans-unit id="DrawerText.Text" translate="yes" xml:space="preserve">
+          <source>Custom Drawer Background</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Fond de tiroir personnalisé</target>
+        </trans-unit>
+        <trans-unit id="MainColorText.Text" translate="yes" xml:space="preserve">
+          <source>Accent Color</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Couleur de l'accentuation</target>
+        </trans-unit>
+        <trans-unit id="CustomLayoutButton.Content" translate="yes" xml:space="preserve">
+          <source>Custom Layout</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Disposition personnalisée</target>
+        </trans-unit>
+        <trans-unit id="PickImageButton.Content" translate="yes" xml:space="preserve">
+          <source>Pick Image</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Choisissez l'Image</target>
+        </trans-unit>
+        <trans-unit id="LayoutText.Text" translate="yes" xml:space="preserve">
+          <source>Layout</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Disposition</target>
+        </trans-unit>
+        <trans-unit id="ColorPicker.Title" translate="yes" xml:space="preserve">
+          <source>Pick a color</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Sélectionner une couleur</target>
+        </trans-unit>
+        <trans-unit id="ColorPicker.AccentColorTitle" translate="yes" xml:space="preserve">
+          <source>System accent color</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Couleur d'accentuation de système</target>
+        </trans-unit>
+        <trans-unit id="SetTimeText.Text" translate="yes" xml:space="preserve">
+          <source>Set alarm time</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Temps de réglage de l'alarme</target>
+        </trans-unit>
+        <trans-unit id="AlarmButton.Content" translate="yes" xml:space="preserve">
+          <source>Meteorological disaster warning</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Avertissement en cas de catastrophe météorologique</target>
+        </trans-unit>
+        <trans-unit id="LunarText.Text" translate="yes" xml:space="preserve">
+          <source>Show Lunar Calendar</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Afficher le calendrier lunaire</target>
+        </trans-unit>
+        <trans-unit id="LowNowPanelText.Text" translate="yes" xml:space="preserve">
+          <source>Compact layout</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Agencement compact</target>
+        </trans-unit>
+        <trans-unit id="ToggleVisibilityText.Text" translate="yes" xml:space="preserve">
+          <source>Choose what to show</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Choisir ce qu'il faut montrer</target>
+        </trans-unit>
+        <trans-unit id="ForecastPanelText.Text" translate="yes" xml:space="preserve">
+          <source>Forecast</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Prévision</target>
+        </trans-unit>
+        <trans-unit id="AQIPanelText.Text" translate="yes" xml:space="preserve">
+          <source>AQI</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">AQI</target>
+        </trans-unit>
+        <trans-unit id="DetailsPanelText.Text" translate="yes" xml:space="preserve">
+          <source>Details</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Détails</target>
+        </trans-unit>
+        <trans-unit id="SuggestsPanelText.Text" translate="yes" xml:space="preserve">
+          <source>Suggestions</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Propositions</target>
+        </trans-unit>
+        <trans-unit id="ToggleNowPanelText.Text" translate="yes" xml:space="preserve">
+          <source>Now weather panel tweak</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Maintenant les tweak de panneau météo</target>
+        </trans-unit>
+        <trans-unit id="HeightText.Text" translate="yes" xml:space="preserve">
+          <source>Height</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">height</target>
+        </trans-unit>
+        <trans-unit id="LanguageAlarmText.Text" translate="yes" xml:space="preserve">
+          <source>Some language requires you to install language pack</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Certaines formulations nécessite d'installer le pack de langue</target>
+        </trans-unit>
+        <trans-unit id="DonateOption5.Text" translate="yes" xml:space="preserve">
+          <source>· Customize layout</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">· Personnaliser la mise en page</target>
+        </trans-unit>
+        <trans-unit id="SetWallPaperText.Text" translate="yes" xml:space="preserve">
+          <source>Auto set current BG as lockscreen wallpaper</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Auto la valeur actuelle BG comme fond d’écran du lockscreen</target>
+        </trans-unit>
+        <trans-unit id="SetWallPaperFalseText.Text" translate="yes" xml:space="preserve">
+          <source>Experimental and may not take effect</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Expérimental et ne peut pas prendre effet</target>
+        </trans-unit>
+        <trans-unit id="TransparentTileText.Text" translate="yes" xml:space="preserve">
+          <source>Enable translucent tile</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Activez la tuile translucide</target>
+        </trans-unit>
+        <trans-unit id="TransparentTileFalseText.Text" translate="yes" xml:space="preserve">
+          <source>Not enabled on the desktop platform</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Pas activé sur la plate-forme de bureau</target>
+        </trans-unit>
+        <trans-unit id="EnableAlarm.Content" translate="yes" xml:space="preserve">
+          <source>Severe weather alarm</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Alarme de temps violent</target>
+        </trans-unit>
+        <trans-unit id="MorningAlarm.Content" translate="yes" xml:space="preserve">
+          <source>Morning alarm</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Dispositif de réveil</target>
+        </trans-unit>
+        <trans-unit id="EveningAlarm.Content" translate="yes" xml:space="preserve">
+          <source>Evening alarm</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Alarme de soirée</target>
+        </trans-unit>
+        <trans-unit id="ToastGale" translate="yes" xml:space="preserve">
+          <source>will be gale tomorrow</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">sera gale demain</target>
+        </trans-unit>
+        <trans-unit id="ToastRain" translate="yes" xml:space="preserve">
+          <source>will be heavy rain tomorrow</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">sera demain une pluie battante</target>
+        </trans-unit>
+        <trans-unit id="ToastThunder" translate="yes" xml:space="preserve">
+          <source>will be thunder tomorrow</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">sera demain à tonnerre</target>
+        </trans-unit>
+        <trans-unit id="ToastHail" translate="yes" xml:space="preserve">
+          <source>will be hail tomorrow</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">sera demain je vous salue</target>
+        </trans-unit>
+        <trans-unit id="ToastSnow" translate="yes" xml:space="preserve">
+          <source>will be heavy snow tomorrow</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">aura de fortes chutes de neige demain</target>
+        </trans-unit>
+        <trans-unit id="ToastFreeze" translate="yes" xml:space="preserve">
+          <source>will be Freezing rain tomorrow</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">va être la pluie verglaçante demain</target>
+        </trans-unit>
+        <trans-unit id="ToastSand" translate="yes" xml:space="preserve">
+          <source>will be sand tomorrow</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">sera demain sable</target>
+        </trans-unit>
+        <trans-unit id="ToastHot" translate="yes" xml:space="preserve">
+          <source>will be hot tomorrow</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">va faire chaud demain</target>
+        </trans-unit>
+        <trans-unit id="ToastCold" translate="yes" xml:space="preserve">
+          <source>will be cold tomorrow</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">sera froid demain</target>
+        </trans-unit>
+        <trans-unit id="Known" translate="yes" xml:space="preserve">
+          <source>I know</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Je sais</target>
+        </trans-unit>
+        <trans-unit id="Dismiss" translate="yes" xml:space="preserve">
+          <source>Dismiss</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Faire disparaître</target>
+        </trans-unit>
+        <trans-unit id="DailyDetailsWind" translate="yes" xml:space="preserve">
+          <source>Wind speed for {0} days</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Vitesse du vent pour {0} jours</target>
+        </trans-unit>
+        <trans-unit id="HourlyDetailsWind" translate="yes" xml:space="preserve">
+          <source>Wind speed for {0} hours</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Vitesse du vent pendant des heures de {0}</target>
+        </trans-unit>
+        <trans-unit id="ThanksButton.Content" translate="yes" xml:space="preserve">
+          <source>Developers and Credits</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Les développeurs et les crédits</target>
+        </trans-unit>
+        <trans-unit id="EnableCrash.Text" translate="yes" xml:space="preserve">
+          <source>When crash, send report</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Lors de l’écrasement, envoyer le rapport</target>
+        </trans-unit>
+        <trans-unit id="EnableCrashDetail.Text" translate="yes" xml:space="preserve">
+          <source>May affect the user experience</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Peuvent affecter l’expérience utilisateur</target>
+        </trans-unit>
+        <trans-unit id="MadebyText.Text" translate="yes" xml:space="preserve">
+          <source>Made by</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Faite par</target>
+        </trans-unit>
+        <trans-unit id="BrandText.Text" translate="yes" xml:space="preserve">
+          <source>Night with full of light.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Nuit avec plein de lumière.</target>
+        </trans-unit>
+        <trans-unit id="DevText.Text" translate="yes" xml:space="preserve">
+          <source>All the codes and UI/UX design are created by </source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Tous les codes et conception UI/UX sont créés par </target>
+        </trans-unit>
+        <trans-unit id="DevAfterText.Text" translate="yes" xml:space="preserve">
+          <source>.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">.</target>
+        </trans-unit>
+        <trans-unit id="DavidBiancoText.Text" translate="yes" xml:space="preserve">
+          <source>Spanish Translation and some UI improvements.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Traduction de l’espagnol et quelques améliorations de l’interface utilisateur.</target>
+        </trans-unit>
+        <trans-unit id="DevTitle.Text" translate="yes" xml:space="preserve">
+          <source>Developer</source>
+          <target state="translated">Developer</target>
+        </trans-unit>
+        <trans-unit id="ThanksTitle.Text" translate="yes" xml:space="preserve">
+          <source>Special Thanks</source>
+          <target state="translated">Remerciements</target>
+        </trans-unit>
+        <trans-unit id="CortanaSup.Text" translate="yes" xml:space="preserve">
+          <source>Only support Chinese</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Seul soutien chinois</target>
+        </trans-unit>
+        <trans-unit id="CortanaCommandsText.Content" translate="yes" xml:space="preserve">
+          <source>Cortana Commands</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Commandes de Cortana</target>
+        </trans-unit>
+        <trans-unit id="PrivacyButton.Content" translate="yes" xml:space="preserve">
+          <source>Privacy Policy</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">politique de confidentialité</target>
+        </trans-unit>
+        <trans-unit id="Hum.Text" translate="yes" xml:space="preserve">
+          <source>Humidity</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Humidité</target>
+        </trans-unit>
+        <trans-unit id="Pop.Text" translate="yes" xml:space="preserve">
+          <source>Probability of precipitation</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Probabilité de précipitations</target>
+        </trans-unit>
+        <trans-unit id="Pcpn.Text" translate="yes" xml:space="preserve">
+          <source>Precipitation</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Précipitations</target>
+        </trans-unit>
+        <trans-unit id="Vis.Text" translate="yes" xml:space="preserve">
+          <source>Visibility</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Visibilité</target>
+        </trans-unit>
+        <trans-unit id="Scale.Text" translate="yes" xml:space="preserve">
+          <source>Wind Scale</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Échelle de vent</target>
+        </trans-unit>
+        <trans-unit id="Dir.Text" translate="yes" xml:space="preserve">
+          <source>Wind Direction</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Direction du vent</target>
+        </trans-unit>
+        <trans-unit id="Pres.Text" translate="yes" xml:space="preserve">
+          <source>Atom Pressure</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Pression de l’atome</target>
+        </trans-unit>
+        <trans-unit id="SunRise.Text" translate="yes" xml:space="preserve">
+          <source>Sun rise</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Lever du soleil</target>
+        </trans-unit>
+        <trans-unit id="SunSet.Text" translate="yes" xml:space="preserve">
+          <source>Sun set</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Coucher du soleil</target>
+        </trans-unit>
+        <trans-unit id="Location.Text" translate="yes" xml:space="preserve">
+          <source>Location</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Lieu</target>
+        </trans-unit>
+        <trans-unit id="UtcOffset.Text" translate="yes" xml:space="preserve">
+          <source>Utc offset</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Décalage UTC</target>
+        </trans-unit>
+        <trans-unit id="HumText" translate="yes" xml:space="preserve">
+          <source>Humidity</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Humidité</target>
+        </trans-unit>
+        <trans-unit id="ScaleText" translate="yes" xml:space="preserve">
+          <source>Wind Scale</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Échelle de vent</target>
+        </trans-unit>
+        <trans-unit id="ImmersiveTimeOutText.Text" translate="yes" xml:space="preserve">
+          <source>Immersive mode time out, set to 0 will display forever</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Immersif mode temporisation, la valeur 0 affiche forever</target>
+        </trans-unit>
+        <trans-unit id="ChangeCityManage.Text" translate="yes" xml:space="preserve">
+          <source>Drag to change priority</source>
+          <target state="translated">Faites glisser pour modifier la priorité</target>
+        </trans-unit>
+        <trans-unit id="GotoCitiesPage.Text" translate="yes" xml:space="preserve">
+          <source>Please go to Cities Page and check out</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Allez sur la Page villes et découvrez</target>
+        </trans-unit>
+        <trans-unit id="LocateRoute_Amap" translate="yes" xml:space="preserve">
+          <source>Gaode Map reverse-geocoding（China only）</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Carte de Gaode inverse-geocoding(China only)</target>
+        </trans-unit>
+        <trans-unit id="LocateRoute_Omap" translate="yes" xml:space="preserve">
+          <source>OpenStreetMap reverse-geocoding</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">OpenStreetMap reverse-geocoding</target>
+        </trans-unit>
+        <trans-unit id="LocateRoute_IP" translate="yes" xml:space="preserve">
+          <source>IP geo-location query</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Requête de géo-localisation IP</target>
+        </trans-unit>
+        <trans-unit id="LocateRoute_unknown" translate="yes" xml:space="preserve">
+          <source>Built-in reverse-geocoding</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Reverse-geocoding intégré</target>
+        </trans-unit>
+        <trans-unit id="ConfirmButton.Content" translate="yes" xml:space="preserve">
+          <source>Confirm</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Confirmer</target>
+        </trans-unit>
+        <trans-unit id="ConfirmDialog.PrimaryButtonText" translate="yes" xml:space="preserve">
+          <source>Confirm</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Confirmer</target>
+        </trans-unit>
+        <trans-unit id="LocaterText.Content" translate="yes" xml:space="preserve">
+          <source>Location Service Provider</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Fournisseur de Service de localisation</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
